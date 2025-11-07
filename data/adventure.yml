@@ -105,42 +105,197 @@ ranks:
     - name: Build It Up, Knock It Down
       url: https://www.scouting.org/cub-scout-adventures/build-it-up-knock-it-down/
       required: false
+      requirements:
+        - name: build-it-up-knock-it-down#1
+          description: With your Lion adult partner, build a structure.
+          tags: []
+        - name: build-it-up-knock-it-down#2
+          description: With your den or family, build a structure.
+          tags: []
+        - name: build-it-up-knock-it-down#3
+          description: Build something that is designed to be knocked down.
+          tags: []
     - name: Champions for Nature Lion
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-lion/
       required: false
+      requirements:
+        - name: champions-for-nature-lion#1
+          description: Discover the difference between natural resources and man-made items.
+          tags: []
+        - name: champions-for-nature-lion#2
+          description: Discover the difference between organic, paper, plastic, metal and glass waste.
+          tags: []
+        - name: champions-for-nature-lion#3
+          description: Discover recycling.
+          tags: []
+        - name: champions-for-nature-lion#4
+          description: Participate in a conservation service project.
+          tags: []
     - name: Count On Me
       url: https://www.scouting.org/cub-scout-adventures/count-on-me/
       required: false
+      requirements:
+        - name: count-on-me#1
+          description: Make a Lion using only squares, triangles, and circles.
+          tags: []
+        - name: count-on-me#2
+          description: Play a game with your Lion adult partner or den that is based on counting or numbers.
+          tags: []
+        - name: count-on-me#3
+          description: Organize a group of items based on shape, then based on color, and one other category. Count how many different shapes are in each category. After organizing them build anything using only one category.
+          tags: []
     - name: Everyday Tech
       url: https://www.scouting.org/cub-scout-adventures/everyday-tech/
       required: false
+      requirements:
+        - name: everyday-tech#1
+          description: Discover technology around your home, meeting place, or neighborhood.
+          tags: []
+        - name: everyday-tech#2
+          description: Discover ways that digital technology can make life easier.
+          tags: []
+        - name: everyday-tech#3
+          description: Identify an item of digital technology you use at home. Demonstrate to your Lion adult partner how you use it safely.
+          tags: []
     - name: Gizmos and Gadgets
       url: https://www.scouting.org/cub-scout-adventures/gizmos-and-gadgets/
       required: false
+      requirements:
+        - name: gizmos-and-gadgets#1
+          description: Explore properties of motion.
+          tags: []
+        - name: gizmos-and-gadgets#2
+          description: Explore properties of force.
+          tags: []
+        - name: gizmos-and-gadgets#3
+          description: Use household materials to create a useful object.
+          tags: []
     - name: Go Fish
       url: https://www.scouting.org/cub-scout-adventures/go-fish/
       required: false
+      requirements:
+        - name: go-fish#1
+          description: With your Lion adult partner, learn the rules of fishing safely.
+          tags: []
+        - name: go-fish#2
+          description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
+          tags: []
+        - name: go-fish#3
+          description: Go fishing with your Lion adult partner.
+          tags: []
     - name: I’ll Do It Myself
       url: https://www.scouting.org/cub-scout-adventures/ill-do-it-myself/
       required: false
+      requirements:
+        - name: ill-do-it-myself#1
+          description: Make and use a “lion bag” for personal Scouting gear.
+          tags: []
+        - name: ill-do-it-myself#2
+          description: Construct a personal care checklist.
+          tags: []
+        - name: ill-do-it-myself#3
+          description: Put on your shoes without help. Take them off and put them away.
+          tags: []
     - name: Let’s Camp Lion
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-lion/
       required: false
+      requirements:
+        - name: lets-camp-lion#1
+          description: Learn about the buddy system and how it works in the outdoors.
+          tags: []
+        - name: lets-camp-lion#2
+          description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
+          tags: []
+        - name: lets-camp-lion#3
+          description: Pack up your Cub Scout Six Essentials for the campout.
+          tags: []
+        - name: lets-camp-lion#4
+          description: Attend a council or district Cub Scout overnight camp or attend an overnight campout with your pack.
+          tags: []
     - name: On a Roll
       url: https://www.scouting.org/cub-scout-adventures/on-a-roll/
       required: false
+      requirements:
+        - name: on-a-roll#1
+          description: With your den or Lion adult partner, learn about the safety gear you should use while riding a bicycle.
+          tags: []
+        - name: on-a-roll#2
+          description: With your den or Lion adult partner, learn the safety rules to follow when riding a bicycle.
+          tags: []
+        - name: on-a-roll#3
+          description: With your Lion adult partner or family, ride a bicycle wearing appropriate safety gear and follow safety rules.
+          tags: []
     - name: On Your Mark
       url: https://www.scouting.org/cub-scout-adventures/on-your-mark/
       required: false
+      requirements:
+        - name: on-your-mark#1
+          description: Play a game with your den.
+          tags: []
+        - name: on-your-mark#2
+          description: Participate in an obstacle course relay.
+          tags: []
+        - name: on-your-mark#3
+          description: Build a box derby and participate in a race.
+          tags: []
     - name: Pick My Path
       url: https://www.scouting.org/cub-scout-adventures/pick-my-path-lion/
       required: false
+      requirements:
+        - name: pick-my-path#1
+          description: Explain that choices have consequences.
+          tags: []
+        - name: pick-my-path#2
+          description: Perform a Good Turn for another person.
+          tags: []
+        - name: pick-my-path#3
+          description: Learn the basic rules of a game and play the game.
+          tags: []
     - name: Race Time Lion
       url: https://www.scouting.org/cub-scout-adventures/race-time-lion/
       required: false
+      requirements:
+        - name: race-time-lion#1
+          description: With your Lion adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+          tags: []
+        - name: race-time-lion#2
+          description: Learn the rules of the race for the vehicle chosen in Requirement 1.
+          tags: []
+        - name: race-time-lion#3
+          description: Before the race, discuss with your Lion adult partner how you will demonstrate good sportsmanship during the race.
+          tags: []
+        - name: race-time-lion#4
+          description: With your Lion adult partner, participate in a Pinewood Derby® or a Raingutter Regatta™.
+          tags: []
     - name: Ready, Set, Grow
       url: https://www.scouting.org/cub-scout-adventures/ready-set-grow/
       required: false
+      requirements:
+        - name: ready-set-grow#1
+          description: Discover where the food we eat comes from.
+          tags: []
+        - name: ready-set-grow#2
+          description: Plant a small garden outside or in a container.
+          tags: []
+        - name: ready-set-grow#3
+          description: Visit with an individual who can demonstrate different ways to garden (outside, greenhouse, container, etc.) and the basic skills needed to garden.
+          tags: []
     - name: Time to Swim
       url: https://www.scouting.org/cub-scout-adventures/time-to-swim/
       required: false
+      requirements:
+        - name: time-to-swim#1
+          description: Learn about the swimming safety rules that you need to follow.
+          tags: []
+        - name: time-to-swim#2
+          description: Demonstrate how to enter the swimming area properly.
+          tags: []
+        - name: time-to-swim#3
+          description: With your Lion adult partner as your buddy, be active in water depths matching your ability for 20 minutes.
+          tags: []
+        - name: time-to-swim#4
+          description: Place your face in the water and blow bubbles.
+          tags: []
+        - name: time-to-swim#5
+          description: Demonstrate how to exit the swimming area properly.
+          tags: []
