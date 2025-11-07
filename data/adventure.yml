@@ -1002,12 +1002,3 @@ ranks:
     - name: Swimming
       url: https://www.scouting.org/cub-scout-adventures/swimming/
       required: false
-    - name: Archery Arrow of Light
-      url: null
-      required: false
-    - name: Slingshot
-      url: null
-      required: false
-    - name: BB Guns
-      url: null
-      required: false
