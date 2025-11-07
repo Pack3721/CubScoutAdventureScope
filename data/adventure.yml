@@ -299,3 +299,82 @@ ranks:
         - name: time-to-swim#5
           description: Demonstrate how to exit the swimming area properly.
           tags: []
+  - rank: tiger
+    grade: 1st Grade
+    url: https://www.scouting.org/programs/cub-scouts/adventures/tiger/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-tiger/
+      required: true
+      alternate_name: Character & Leadership
+    - name: Tiger Bites
+      url: https://www.scouting.org/cub-scout-adventures/tiger-bites/
+      required: true
+      alternate_name: Personal Fitness
+    - name: Tiger’s Roar
+      url: https://www.scouting.org/cub-scout-adventures/tigers-roar/
+      required: true
+      alternate_name: Personal Safety
+    - name: Tiger Circles
+      url: https://www.scouting.org/cub-scout-adventures/tiger-circles/
+      required: true
+      alternate_name: Family & Reverence
+    - name: Team Tiger
+      url: https://www.scouting.org/cub-scout-adventures/team-tiger/
+      required: true
+      alternate_name: Citizenship
+    - name: Tigers in the Wild
+      url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-wild/
+      required: true
+      alternate_name: Outdoors
+    - name: Champions for Nature Tiger
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-tiger/
+      required: false
+    - name: Curiosity, Intrigue, and Magical Mysteries
+      url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
+      required: false
+    - name: Designed by Tiger
+      url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
+      required: false
+    - name: Fish On
+      url: https://www.scouting.org/cub-scout-adventures/fish-on/
+      required: false
+    - name: Floats and Boats
+      url: https://www.scouting.org/cub-scout-adventures/floats-and-boats/
+      required: false
+    - name: Good Knights
+      url: https://www.scouting.org/cub-scout-adventures/good-knights/
+      required: false
+    - name: Let’s Camp Tiger
+      url: https://www.scouting.org/cub-scout-adventures/lets-camp-tiger/
+      required: false
+    - name: Race Time Tiger
+      url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
+      required: false
+    - name: Rolling Tigers
+      url: https://www.scouting.org/cub-scout-adventures/rolling- tigers/
+      required: false
+    - name: Safe and Smart
+      url: https://www.scouting.org/cub-scout-adventures/safe-and-smart/
+      required: false
+    - name: Sky is the Limit
+      url: https://www.scouting.org/cub-scout-adventures/sky-is-the-limit/
+      required: false
+    - name: Stories in Shapes
+      url: https://www.scouting.org/cub-scout-adventures/stories-in-shapes/
+      required: false
+    - name: Summertime Fun Tiger
+      url: https://www.scouting.org/cub-scout-adventures/summertime-fun-tiger/
+      required: false
+    - name: Tech All Around
+      url: https://www.scouting.org/cub-scout-adventures/tech-all-around/
+      required: false
+    - name: Tiger Tag
+      url: https://www.scouting.org/cub-scout-adventures/tiger-tag/
+      required: false
+    - name: Tiger-iffic!
+      url: https://www.scouting.org/cub-scout-adventures/tiger-iffic/
+      required: false
+    - name: Tigers in the Water
+      url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
+      required: false
