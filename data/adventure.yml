@@ -947,58 +947,336 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/personal-fitness/
       required: true
       alternate_name: Personal Fitness
+      requirements:
+        - name: personal-fitness#1
+          description: Plan a balanced meal that you would eat when camping. Prepare that meal using the gear you would use on a campout.
+          tags: []
+        - name: personal-fitness#2
+          description: Examine what it is to be physically fit and how you incorporate this in your life. Track the number of times you are active for 30 minutes or longer over a 14-day period. Share with your patrol or family what you enjoyed and if you feel you are living up to the Scout Oath of being physically strong.
+          tags: []
+        - name: personal-fitness#3
+          description: Be active for 30 minutes with your patrol, a younger den, or at least one other person in a way that includes both stretching and moving.
+          tags: []
     - name: First Aid
       url: https://www.scouting.org/cub-scout-adventures/first-aid/
       required: true
       alternate_name: Personal Safety
+      requirements:
+        - name: first-aid#1
+          description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Arrow of Light rank.
+          tags: []
+        - name: first-aid#2
+          description: Explain what you should do if you encounter someone in need of first aid.
+          tags: []
+        - name: first-aid#3
+          description: Demonstrate what to do for hurry cases of first aid: serious bleeding, heart attack or sudden cardiac arrest, stopped breathing, stroke, poisoning.
+          tags: []
+        - name: first-aid#4
+          description: Demonstrate how to help a choking victim.
+          tags: []
+        - name: first-aid#5
+          description: Demonstrate how to treat shock.
+          tags: []
+        - name: first-aid#6
+          description: Demonstrate how to treat the following: cuts and scratches, burns and scalds, bites and stings of insects and animals, and nosebleed.
+          tags: []
+        - name: first-aid#7
+          description: Make a personal first-aid kit. Demonstrate the proper use of each item in your first-aid kit.
+          tags: []
     - name: Duty to God
       url: https://www.scouting.org/cub-scout-adventures/duty-to-god/
       required: true
       alternate_name: Family & Reverence
+      requirements:
+        - name: duty-to-god#1
+          description: Discuss with your parent or legal guardian your family's faith traditions or one of your choosing. Choose a view or value of that faith tradition that is related to the Scout Law. Discuss with your family how each family member demonstrates this value.
+          tags: []
+        - name: duty-to-god#2
+          description: Meet with a representative of a faith-based organization in your local community who provides a service that assists people in crisis regardless of their faith. Identify who they help and how.
+          tags: []
+        - name: duty-to-god#3
+          description: Discuss with your parent, legal guardian, or an adult leader what “Duty to God” means to you. Tell how you practice your Duty to God in your daily life.
+          tags: []
     - name: Citizenship
       url: https://www.scouting.org/cub-scout-adventures/citizenship/
       required: true
       alternate_name: Citizenship
+      requirements:
+        - name: citizenship#1
+          description: Identify a community service project that your patrol or pack could accomplish. Use Scouting America's SAFE Checklist and develop a plan to conduct the service project safely.
+          tags: []
+        - name: citizenship#2
+          description: Participate in a service project for a minimum of two hours or multiple service projects for a total of two hours.
+          tags: []
     - name: Outdoor Adventurer
       url: https://www.scouting.org/cub-scout-adventures/outdoor-adventurer/
       required: true
       alternate_name: Outdoors
+      requirements:
+        - name: outdoor-adventurer#1
+          description: Learn about the Scout Basic Essentials.
+          tags: []
+        - name: outdoor-adventurer#2
+          description: Determine what you will bring on an overnight campout — including a tent and sleeping bag/gear — and how you will carry your gear.
+          tags: []
+        - name: outdoor-adventurer#3
+          description: Review the four points of Scouting America's SAFE Checklist and how you will apply them on the campout.
+          tags: []
+        - name: outdoor-adventurer#4
+          description: Locate the campsite where you will be camping on a map.
+          tags: []
+        - name: outdoor-adventurer#5
+          description: With your patrol or a Scouting America troop, participate in a campout.
+          tags: []
+        - name: outdoor-adventurer#6
+          description: Upon arrival at the campout determine where to set up your campsite: kitchen, eating area, tents, and firepit. Help the patrol set up the patrol gear before setting up your own tent.
+          tags: []
+        - name: outdoor-adventurer#7
+          description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
+          tags: []
+        - name: outdoor-adventurer#8
+          description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave
+            Trace Principles for Kids.
+          tags: []
     - name: Champions for Nature AOL
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-aol/
       required: false
+      requirements:
+        - name: champions-for-nature-aol#1
+          description: Identify foods grown or processed in your state.
+          tags: []
+        - name: champions-for-nature-aol#2
+          description: Determine the benefits of purchasing food that is locally grown or processed.
+          tags: []
+        - name: champions-for-nature-aol#3
+          description: Explore the concept of a food desert.
+          tags: []
+        - name: champions-for-nature-aol#4
+          description: Explore the concept of a food oasis.
+          tags: []
+        - name: champions-for-nature-aol#5
+          description: Learn how individuals can reduce food waste.
+          tags: []
+        - name: champions-for-nature-aol#6
+          description: Participate in a conservation service project.
+          tags: []
     - name: Cycling
       url: https://www.scouting.org/cub-scout-adventures/cycling/
       required: false
+      requirements:
+        - name: cycling#1
+          description: Decide on gear and supplies you should bring might bring for a long bike ride. Determine how to safely carry the gear.
+          tags: []
+        - name: cycling#2
+          description: Discover how multi-gear bicycles work and their benefit.
+          tags: []
+        - name: cycling#3
+          description: Show how to lubricate a chain.
+          tags: []
+        - name: cycling#4
+          description: Review different bicycle locks. Demonstrate the operation of locks and, how to secure your bicycle with a lock.
+          tags: []
+        - name: cycling#5
+          description: Repair a flat tire.
+          tags: []
+        - name: cycling#6
+          description: With your patrol, pack, or family, use a map and plan a bicycle ride that is at least 10 miles.
+          tags: []
+        - name: cycling#7
+          description: With your patrol, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 10 miles.
+          tags: []
     - name: Engineer
       url: https://www.scouting.org/cub-scout-adventures/engineer/
       required: false
+      requirements:
+        - name: engineer#1
+          description: Learn the focus, related sciences, and products of civil, electrical, and mechanical engineers.
+          tags: []
+        - name: engineer#2
+          description: Pick one of the engineering fields from requirement 1 to complete the following requirements.
+          tags: []
+        - name: engineer#3
+          description: Examine a set of blueprints or specifications used by your choice of engineer.
+          tags: []
+        - name: engineer#4
+          description: Identify a project that you would like to build.
+          tags: []
+        - name: engineer#5
+          description: Using the engineering process, build your project.
+          tags: []
     - name: Estimations
       url: https://www.scouting.org/cub-scout-adventures/estimations/
       required: false
+      requirements:
+        - name: estimations#1
+          description: Estimate food measurements.
+          tags: []
+        - name: estimations#2
+          description: Estimate the time of day.
+          tags: []
+        - name: estimations#3
+          description: Estimate the height of a distant object.
+          tags: []
     - name: Fishing
       url: https://www.scouting.org/cub-scout-adventures/fishing/
       required: false
+      requirements:
+        - name: fishing#1
+          description: Make a plan to go fishing. Determine where you will go and what type of fish you plan to catch.
+          tags: []
+        - name: fishing#2
+          description: Use Scouting America's SAFE Checklist to plan what you need for your fishing experience.
+          tags: []
+        - name: fishing#3
+          description: Describe the environment where the fish might be found.
+          tags: []
+        - name: fishing#4
+          description: Make a list of the equipment and materials you will need to fish.
+          tags: []
+        - name: fishing#5
+          description: Determine the best type of knot to tie your hook to your line and tie it.
+          tags: []
+        - name: fishing#6
+          description: On your own, choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear.
+          tags: []
+        - name: fishing#7
+          description: Using what you have learned about fish and fishing equipment, spend at least one hour fishing following local guidelines and regulations.
+          tags: []
     - name: High Tech Outdoors
       url: https://www.scouting.org/cub-scout-adventures/high-tech-outdoors/
       required: false
+      requirements:
+        - name: high-tech-outdoors#1
+          description: With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather.
+          tags: []
+        - name: high-tech-outdoors#2
+          description: With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app.
+          tags: []
+        - name: high-tech-outdoors#3
+          description: Discuss how technology has improved camping gear.
+          tags: []
     - name: Into the Wild
       url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
       required: false
+      requirements:
+        - name: into-the-wild#1
+          description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
+          tags: []
+        - name: into-the-wild#2
+          description: Create a model of your animal's ecosystem.
+          tags: []
+        - name: into-the-wild#3
+          description: Investigate how your animal coexists with other animals in the wild.
+          tags: []
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
+      requirements:
+        - name: into-the-woods#1
+          description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
+          tags: []
+        - name: into-the-woods#2
+          description: Determine if your tree is deciduous or evergreen.
+          tags: []
+        - name: into-the-woods#3
+          description: Determine if your tree is native or was introduced to your area.
+          tags: []
+        - name: into-the-woods#4
+          description: Find out how your tree deals with wildfire.
+          tags: []
+        - name: into-the-woods#5
+          description: Learn how wildlife uses your tree.
+          tags: []
     - name: Knife Safety
       url: https://www.scouting.org/cub-scout-adventures/knife-safety/
       required: false
+      requirements:
+        - name: knife-safety#1
+          description: Know the safety rules for handling and using a knife.
+          tags: []
+        - name: knife-safety#2
+          description: Demonstrate the knife safety circle.
+          tags: []
+        - name: knife-safety#3
+          description: Demonstrate that you know how to care for and use a knife safely.
+          tags: []
+        - name: knife-safety#4
+          description: Choose the correct cooking knife and demonstrate how to properly slice, chop, and mince.
+          tags: []
     - name: Paddle Craft
       url: https://www.scouting.org/cub-scout-adventures/paddle-craft/
       required: false
+      requirements:
+        - name: paddle-craft#1
+          description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
+          tags: []
+        - name: paddle-craft#2
+          description: Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.
+          tags: []
+        - name: paddle-craft#3
+          description: Review Safety Afloat.
+          tags: []
+        - name: paddle-craft#4
+          description: Demonstrate how to choose and properly wear a life jacket that is the correct size.
+          tags: []
+        - name: paddle-craft#5
+          description: Jump feet first into water over your head while wearing a life jacket then swim 25 feet wearing the life jacket.
+          tags: []
+        - name: paddle-craft#6
+          description: Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely.
+          tags: []
+        - name: paddle-craft#7
+          description: Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard.
+          tags: []
+        - name: paddle-craft#8
+          description: Learn two paddle strokes, power stroke and sweep.
+          tags: []
+        - name: paddle-craft#9
+          description: With your patrol or family, go on a paddle craft outing.
+          tags: []
     - name: Race Time AOL
       url: https://www.scouting.org/cub-scout-adventures/race-time-aol/
       required: false
+      requirements:
+        - name: race-time-aol#1
+          description: With adult supervision, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+          tags: []
+        - name: race-time-aol#2
+          description: Learn the rules of the race for the vehicle chosen in requirement 1.
+          tags: []
+        - name: race-time-aol#3
+          description: Mentor a younger den to prepare for the race.
+          tags: []
     - name: Summertime Fun AOL
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-aol/
       required: false
+      requirements:
+        - name: summertime-fun-aol#1
+          description: Anytime during May through August participate in a total of three Cub Scout activities.
+          tags: []
     - name: Swimming
       url: https://www.scouting.org/cub-scout-adventures/swimming/
+      required: false
+      requirements:
+        - name: swimming#1
+          description: Review Safe Swim Defense.
+          tags: []
+        - name: swimming#2
+          description: Explain the meaning of “order of rescue” and demonstrate the reach and throw rescue techniques from land.
+          tags: []
+        - name: swimming#3
+          description: Attempt Scouting America swimmer test.
+          tags: []
+        - name: swimming#4
+          description: Have 30 minutes or more of free swim time during which you practice the buddy system and stay within your ability group. The qualified adult supervision
+            should conduct at least three buddy checks per half hour of swimming.
+          tags: []
+    - name: Archery Arrow of Light
+      url: null
+      required: false
+    - name: Slingshot
+      url: null
+      required: false
+    - name: BB Guns
+      url: null
       required: false
