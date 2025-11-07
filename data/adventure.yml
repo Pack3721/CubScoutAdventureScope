@@ -693,5 +693,8 @@ ranks:
           description: Place your face in the water and blow bubbles.
           tags: []
         - name: tigers-in-the-water#5
+          description: Demonstrate a flutter kick.
+          tags: []
+        - name: tigers-in-the-water#6
           description: Demonstrate how to exit the swimming area properly.
           tags: []
