@@ -307,74 +307,376 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/bobcat-tiger/
       required: true
       alternate_name: Character & Leadership
+      requirements:
+        - name: bobcat-tiger#1
+          description: Get to know the members of your den.
+          tags: []
+        - name: bobcat-tiger#2
+          description: Recite the Scout Oath with your den, including your Tiger adult partner.
+          tags: []
+        - name: bobcat-tiger#3
+          description: Have your Tiger adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being trustworthy, helpful, or friendly.
+          tags: []
+        - name: bobcat-tiger#4
+          description: Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each are used.
+          tags: []
+        - name: bobcat-tiger#5
+          description: Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”
+          tags: []
+        - name: bobcat-tiger#6
+          description: At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent's Guide.”
+          tags: []
     - name: Tiger Bites
       url: https://www.scouting.org/cub-scout-adventures/tiger-bites/
       required: true
       alternate_name: Personal Fitness
+      requirements:
+        - name: tiger-bites#1
+          description: Identify the 5 different food groups.
+          tags: []
+        - name: tiger-bites#2
+          description: Practice hand washing. Point out when you should wash your hands.
+          tags: []
+        - name: tiger-bites#3
+          description: Be active for 30 minutes.
+          tags: []
+        - name: tiger-bites#4
+          description: Practice methods that help you rest.
+          tags: []
     - name: Tiger’s Roar
       url: https://www.scouting.org/cub-scout-adventures/tigers-roar/
       required: true
       alternate_name: Personal Safety
+      requirements:
+        - name: tigers-roar#1
+          description: With permission from your parent or legal guardian, watch Protect Yourself Rules for the Tiger rank.
+          tags: []
+        - name: tigers-roar#2
+          description: With your Tiger adult partner, demonstrate Shout, Run, Tell as described in Protect Yourself Rules.
+          tags: []
+        - name: tigers-roar#3
+          description: With your Tiger adult partner, demonstrate how to access emergency services.
+          tags: []
+        - name: tigers-roar#4
+          description: With your Tiger adult partner, demonstrate how to safely cross a street or walk in a parking lot.
+          tags: []
     - name: Tiger Circles
       url: https://www.scouting.org/cub-scout-adventures/tiger-circles/
       required: true
       alternate_name: Family & Reverence
+      requirements:
+        - name: tiger-circles#1
+          description: With your parent or legal guardian talk about your family's faith traditions. Identify three holidays or celebrations that are part of your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
+          tags: []
+        - name: tiger-circles#2
+          description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
+          tags: []
+        - name: tiger-circles#3
+          description: Carry out an act of kindness.
+          tags: []
     - name: Team Tiger
       url: https://www.scouting.org/cub-scout-adventures/team-tiger/
       required: true
       alternate_name: Citizenship
+      requirements:
+        - name: team-tiger#1
+          description: Play a game with your den, or family members, that has a set of rules. Discuss why rules are important to the game you are playing.
+          tags: []
+        - name: team-tiger#2
+          description: With your Tiger Adult Partner, choose a job that will help your team. Follow through by doing that job at least once.
+          tags: []
+        - name: team-tiger#3
+          description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
+          tags: []
+        - name: team-tiger#4
+          description: Participate in a service project.
+          tags: []
     - name: Tigers in the Wild
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-wild/
       required: true
       alternate_name: Outdoors
+      requirements:
+        - name: tigers-in-the-wild#1
+          description: Identify the Cub Scout Six Essentials. Show what you do with each item.
+          tags: []
+        - name: tigers-in-the-wild#2
+          description: With your Tiger adult partner, learn about the Outdoor Code.
+          tags: []
+        - name: tigers-in-the-wild#3
+          description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Tiger adult partner that are natural and things that are manmade.
+          tags: []
+        - name: tigers-in-the-wild#4
+          description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
+          tags: []
+        - name: tigers-in-the-wild#5
+          description: Look for a tree where you live. Describe how this tree is helpful.
+          tags: []
     - name: Champions for Nature Tiger
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-tiger/
       required: false
+      requirements:
+        - name: champions-for-nature-tiger#1
+          description: Discover the difference between renewable natural resources and non-renewable natural resources.
+          tags: []
+        - name: champions-for-nature-tiger#2
+          description: Learn about the 3 R's: Reduce, Reuse, Recycle.
+          tags: []
+        - name: champions-for-nature-tiger#3
+          description: Discover what happens to the garbage in your community.
+          tags: []
+        - name: champions-for-nature-tiger#4
+          description: Participate in a conservation service project.
+          tags: []
     - name: Curiosity, Intrigue, and Magical Mysteries
       url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
       required: false
+      requirements:
+        - name: curiosity-intrigue-and-magical-mysteries#1
+          description: Learn a magic trick. Practice the trick. Share the trick with you den or family members.
+          tags: []
+        - name: curiosity-intrigue-and-magical-mysteries#2
+          description: Demonstrate how a magic trick works to your den, family or Tiger adult partner.
+          tags: []
+        - name: curiosity-intrigue-and-magical-mysteries#3
+          description: Write your name in secret code.
+          tags: []
+        - name: curiosity-intrigue-and-magical-mysteries#4
+          description: Write a message with the code. Challenge your den, family or Tiger adult partner to read your coded message.
+          tags: []
     - name: Designed by Tiger
       url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
       required: false
+      requirements:
+        - name: designed-by-tiger#1
+          description: Think about something that you would like to build. Draw a picture of what the final project should look like.
+          tags: []
+        - name: designed-by-tiger#2
+          description: Using your drawing as a guide, build the project.
+          tags: []
+        - name: designed-by-tiger#3
+          description: When completed, discuss with your Tiger adult partner what could be done to improve your project.
+          tags: []
+        - name: designed-by-tiger#4
+          description: Make the improvement to your project.
+          tags: []
+        - name: designed-by-tiger#5
+          description: Make a drawing of your final project.
+          tags: []
     - name: Fish On
       url: https://www.scouting.org/cub-scout-adventures/fish-on/
       required: false
+      requirements:
+        - name: fish-on#1
+          description: With your den or Tiger adult partner, identify the body of water where you will go fishing.
+          tags: []
+        - name: fish-on#2
+          description: With your Tiger adult partner, learn the rules of fishing safely.
+          tags: []
+        - name: fish-on#3
+          description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
+          tags: []
+        - name: fish-on#4
+          description: Go fishing with your Tiger adult partner.
+          tags: []
     - name: Floats and Boats
       url: https://www.scouting.org/cub-scout-adventures/floats-and-boats/
       required: false
+      requirements:
+        - name: floats-and-boats#1
+          description: Identify five different types of boats.
+          tags: []
+        - name: floats-and-boats#2
+          description: Identify five things that float and five things that do not float.
+          tags: []
+        - name: floats-and-boats#3
+          description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
+          tags: []
     - name: Good Knights
       url: https://www.scouting.org/cub-scout-adventures/good-knights/
       required: false
+      requirements:
+        - name: good-knights#1
+          description: Discuss with your den or Tiger adult partner what it means to have courteous behavior, how a knight behaves. Tell another Tiger which points of the Scout Law help you to have the same Knightly behavior.
+          tags: []
+        - name: good-knights#2
+          description: Create a shield that can be for your den or a personal shield.
+          tags: []
+        - name: good-knights#3
+          description: Using recycled and other materials, design and build a small castle in your den or at home.
+          tags: []
     - name: Let’s Camp Tiger
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-tiger/
       required: false
+      requirements:
+        - name: lets-camp-tiger#1
+          description: Learn about the buddy system and how it works in the outdoors.
+          tags: []
+        - name: lets-camp-tiger#2
+          description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
+          tags: []
+        - name: lets-camp-tiger#3
+          description: Pack up your Cub Scout Six Essentials for the campout.
+          tags: []
+        - name: lets-camp-tiger#4
+          description: Learn a camping skill.
+          tags: []
+        - name: lets-camp-tiger#5
+          description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
+          tags: []
     - name: Race Time Tiger
       url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
       required: false
+      requirements:
+        - name: race-time-tiger#1
+          description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+          tags: []
+        - name: race-time-tiger#2
+          description: Learn the rules of the race for the vehicle chosen in requirement 1.
+          tags: []
+        - name: race-time-tiger#3
+          description: Before the race, discuss with your Tiger adult partner how you will demonstrate good sportsmanship during the race.
+          tags: []
+        - name: race-time-tiger#4
+          description: With your Tiger adult partner, participate in a Pinewood Derby® or a Raingutter Regatta™.
+          tags: []
     - name: Rolling Tigers
       url: https://www.scouting.org/cub-scout-adventures/rolling- tigers/
       required: false
+      requirements:
+        - name: rolling-tigers#1
+          description: Learn the ABC's of bike gear (air, brakes, chain.)
+          tags: []
+        - name: rolling-tigers#2
+          description: With your den or Tiger adult partner, learn about the safety gear you should use while riding a bicycle.
+          tags: []
+        - name: rolling-tigers#3
+          description: With your den or Tiger adult partner, learn the safety rules to follow when riding a bicycle.
+          tags: []
+        - name: rolling-tigers#4
+          description: With your den or Tiger adult partner, demonstrate proper hand signals.
+          tags: []
+        - name: rolling-tigers#5
+          description: With your Tiger adult partner or family, ride a bike or begin learning how to ride a bike.
+          tags: []
     - name: Safe and Smart
       url: https://www.scouting.org/cub-scout-adventures/safe-and-smart/
       required: false
+      requirements:
+        - name: safe-and-smart#1
+          description: Memorize your address. Recite it to your Tiger adult partner or den leader.
+          tags: []
+        - name: safe-and-smart#2
+          description: Memorize an emergency contact's phone number. Recite it to your Tiger adult partner or den leader.
+          tags: []
+        - name: safe-and-smart#3
+          description: Show you can Stop, Drop and Roll.
+          tags: []
+        - name: safe-and-smart#4
+          description: With your Tiger adult partner or den leader, create a fire escape plan for your home or den meeting place. Include your outside meet-up spot. Practice the escape route you would take.
+          tags: []
+        - name: safe-and-smart#5
+          description: With your Tiger adult partner, find the location of the smoke detectors in your home or den meeting place. Confirm they are working properly.
+          tags: []
+        - name: safe-and-smart#6
+          description: With your Tiger adult partner or den leader, learn why matches and lighters are only for adults.
+          tags: []
+        - name: safe-and-smart#7
+          description: Visit an emergency responder station or have an emergency responder visit your den.
+          tags: []
     - name: Sky is the Limit
       url: https://www.scouting.org/cub-scout-adventures/sky-is-the-limit/
       required: false
+      requirements:
+        - name: sky-is-the-limit#1
+          description: Observe the night sky with your den or Tiger adult partner. Talk about the items you see or might see there.
+          tags: []
+        - name: sky-is-the-limit#2
+          description: Look at distant objects through a telescope, binoculars, or camera. Show how to focus the device you choose.
+          tags: []
+        - name: sky-is-the-limit#3
+          description: Observe in the sky or select from a book, chart, computer, or electronic device two constellations that are easy to see in the night sky. With your den or Tiger adult partner, find out the constellation name and how to identify them. Create a picture of one of the constellations.
+          tags: []
     - name: Stories in Shapes
       url: https://www.scouting.org/cub-scout-adventures/stories-in-shapes/
       required: false
+      requirements:
+        - name: stories-in-shapes#1
+          description: Explore art in your community.
+          tags: []
+        - name: stories-in-shapes#2
+          description: Look closely at art or a picture of art with your den or Tiger adult partner. Decide what you like about the art, and share your ideas with your den, family or Tiger adult partner.
+          tags: []
+        - name: stories-in-shapes#3
+          description: Create a piece of art using shapes.
+          tags: []
     - name: Summertime Fun Tiger
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-tiger/
       required: false
+      requirements:
+        - name: summertime-fun-tiger#1
+          description: Anytime during May through August participate in a total of three Cub Scout activities.
+          tags: []
     - name: Tech All Around
       url: https://www.scouting.org/cub-scout-adventures/tech-all-around/
       required: false
+      requirements:
+        - name: tech-all-around#1
+          description: Discover technology around your home, meeting place, or neighborhood.
+          tags: []
+        - name: tech-all-around#2
+          description: Discover ways that digital technology can make life easier.
+          tags: []
+        - name: tech-all-around#3
+          description: Identify an item of digital technology you use at home. Demonstrate to your adult partner how you use it safely.
+          tags: []
+        - name: tech-all-around#4
+          description: With your parent or legal guardian, set up a policy for digital devices.
+          tags: []
     - name: Tiger Tag
       url: https://www.scouting.org/cub-scout-adventures/tiger-tag/
       required: false
+      requirements:
+        - name: tiger-tag#1
+          description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
+          tags: []
+        - name: tiger-tag#2
+          description: Play a relay game with your den.
+          tags: []
+        - name: tiger-tag#3
+          description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
+          tags: []
+        - name: tiger-tag#4
+          description: Attend a sporting event.
+          tags: []
     - name: Tiger-iffic!
       url: https://www.scouting.org/cub-scout-adventures/tiger-iffic/
       required: false
+      requirements:
+        - name: tiger-iffic#1
+          description: Play at least two different games by yourself; one may be a video game.
+          tags: []
+        - name: tiger-iffic#2
+          description: Play a board game or another inside game with one or more members of your den or family.
+          tags: []
+        - name: tiger-iffic#3
+          description: With other members of your den or family, invent a game, or change the rules of a game you know, and play the game.
+          tags: []
     - name: Tigers in the Water
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
       required: false
+      requirements:
+        - name: tigers-in-the-water#1
+          description: Learn about the swimming safety rules that you need to follow.
+          tags: []
+        - name: tigers-in-the-water#2
+          description: Demonstrate how to enter the swimming area properly.
+          tags: []
+        - name: tigers-in-the-water#3
+          description: With your Tiger adult partner as your buddy, be active in water depths matching your ability for 20 minutes.
+          tags: []
+        - name: tigers-in-the-water#4
+          description: Place your face in the water and blow bubbles.
+          tags: []
+        - name: tigers-in-the-water#5
+          description: Demonstrate how to exit the swimming area properly.
+          tags: []
