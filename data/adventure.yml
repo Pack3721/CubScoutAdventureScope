@@ -710,73 +710,395 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/running-with-the-pack/
       required: true
       alternate_name: Personal Fitness
+      requirements:
+        - name: running-with-the-pack#1
+          description: Sample 3 different foods that are naturally 3 different colors. The food must be a protein, vegetable, fruit, dairy, or a grain.
+          tags: []
+        - name: running-with-the-pack#2
+          description: Demonstrate the proper way to brush your teeth.
+          tags: []
+        - name: running-with-the-pack#3
+          description: Be active for 30 minutes with your den or at least 1 other person that includes both stretching and moving.
+          tags: []
+        - name: running-with-the-pack#4
+          description: Be active for 10 minutes doing personal exercises.
+          tags: []
+        - name: running-with-the-pack#5
+          description: Do a relaxing activity for 10 minutes.
+          tags: []
+        - name: running-with-the-pack#6
+          description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+          tags: []
     - name: Safety in Numbers
       url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
       required: true
       alternate_name: Personal Safety
+      requirements:
+        - name: safety-in-numbers#1
+          description: With permission from your parent or legal guardian, watch the ”Protect Yourself Rules” video for the Wolf rank.
+          tags: []
+        - name: safety-in-numbers#2
+          description: Discuss “safe touch” as seen in the Protect Yourself Rules video.
+          tags: []
+        - name: safety-in-numbers#3
+          description: Learn about the buddy system and demonstrate how it works.
+          tags: []
+        - name: safety-in-numbers#4
+          description: Review common safety rules and demonstrate the proper use of playground equipment.
+          tags: []
     - name: Footsteps
       url: https://www.scouting.org/cub-scout-adventures/footsteps/
       required: true
       alternate_name: Family & Reverence
+      requirements:
+        - name: footsteps#0
+          description: Complete a Religious Emblem of the Cub Scouts family’s choosing (this OR complete requirements 1-4).
+          tags: []
+        - name: footsteps#1
+          description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft or work of art of your favorite family’s faith tradition holiday or celebration.
+          tags: []
+        - name: footsteps#2
+          description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
+          tags: []
+        - name: footsteps#3
+          description: Carry out an act of kindness.
+          tags: []
+        - name: footsteps#4
+          description: Listen to or read Aesop’s fable “The Boy Who Cried Wolf.” With your den or family discuss why being truthful is important.
+          tags: []
     - name: Council Fire
       url: https://www.scouting.org/cub-scout-adventures/council-fire/
       required: true
       alternate_name: Citizenship
+      requirements:
+        - name: council-fire#1
+          description: Learn how to properly care for and fold the United States flag. With your den or pack, participate in a flag ceremony.
+          tags: []
+        - name: council-fire#2
+          description: Identify three points of the Scout Law that are important to being a good neighbor.
+          tags: []
+        - name: council-fire#3
+          description: Build a model of your home.
+          tags: []
+        - name: council-fire#4
+          description: Using the same materials from requirement 3, create a model of a building in your community.
+          tags: []
+        - name: council-fire#5
+          description: Using the models built in requirements 3 and 4, create a neighborhood.
+          tags: []
+        - name: council-fire#6
+          description: Participate in a service project. Explain how your volunteering is helpful to your neighborhood.
+          tags: []
     - name: Paws on the Path
       url: https://www.scouting.org/cub-scout-adventures/paws-on-the-path/
       required: true
       alternate_name: Outdoors
+      requirements:
+        - name: paws-on-the-path#1
+          description: Identify the Cub Scout Six Essentials. Show what you do with each item.
+          tags: []
+        - name: paws-on-the-path#2
+          description: Learn about the buddy system and how it works in the outdoors. Pick a buddy for your walk.
+          tags: []
+        - name: paws-on-the-path#3
+          description: Identify appropriate clothes and shoes for your walk outside. Do your best to wear them on your walk.
+          tags: []
+        - name: paws-on-the-path#4
+          description: Learn about the Outdoor Code and Leave No Trace Principle for Kids.
+          tags: []
+        - name: paws-on-the-path#5
+          description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
+          tags: []
     - name: A Wolf Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
       required: false
+      requirements:
+        - name: a-wolf-goes-fishing#1
+          description: Identify the type of water you will be fishing in and what type of fish live in the water.
+          tags: []
+        - name: a-wolf-goes-fishing#2
+          description: Learn about the different types of bait used to attract fish.
+          tags: []
+        - name: a-wolf-goes-fishing#3
+          description: Demonstrate a proper cast for the pole or rod you are using.
+          tags: []
+        - name: a-wolf-goes-fishing#4
+          description: Learn the rules of fishing safely.
+          tags: []
+        - name: a-wolf-goes-fishing#5
+          description: With your den, pack, or family, go fishing.
+          tags: []
     - name: Adventures in Coins
       url: https://www.scouting.org/cub-scout-adventures/adventures-in-coins/
       required: false
+      requirements:
+        - name: adventures-in-coins#1
+          description: Identify different parts of a coin.
+          tags: []
+        - name: adventures-in-coins#2
+          description: Find the mint mark on a coin and identify the mint facility where it was made and the year it was made.
+          tags: []
+        - name: adventures-in-coins#3
+          description: Play a coin game.
+          tags: []
+        - name: adventures-in-coins#4
+          description: Choose a coin that interests you and make a coin rubbing. List information next to the coin detailing the pictures on it, the year it was made, and the mint where it was made.
+          tags: []
     - name: Air of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
       required: false
+      requirements:
+        - name: air-of-the-wolf#1
+          description: Make a paper airplane and fly it five times. Record the flight distance and time.
+          tags: []
+        - name: air-of-the-wolf#2
+          description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
+          tags: []
+        - name: air-of-the-wolf#3
+          description: Compare and contrast the two paper airplanes by distance and flight times.
+          tags: []
+        - name: air-of-the-wolf#4
+          description: Build a flying object that is not a paper airplane.
+          tags: []
     - name: Champions for Nature Wolf
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
       required: false
+      requirements:
+        - name: champions-for-nature-wolf#1
+          description: Discover the difference between renewable natural resources and non-renewable natural resources.
+          tags: []
+        - name: champions-for-nature-wolf#2
+          description: Learn about the 3 R’s: Reduce, Reuse, Recycle.
+          tags: []
+        - name: champions-for-nature-wolf#3
+          description: Discover what happens to the recyclables in your community.
+          tags: []
+        - name: champions-for-nature-wolf#4
+          description: Participate in a conservation project.
+          tags: []
     - name: Code of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
       required: false
+      requirements:
+        - name: code-of-the-wolf#1
+          description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
+          tags: []
+        - name: code-of-the-wolf#2
+          description: Build and play a game that requires the use of codes or patterns.
+          tags: []
+        - name: code-of-the-wolf#3
+          description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
+          tags: []
+        - name: code-of-the-wolf#4
+          description: Using a package that contains a number of different colored items, discover the most common color.
+          tags: []
     - name: Computing Wolves
       url: https://www.scouting.org/cub-scout-adventures/computing-wolves/
       required: false
+      requirements:
+        - name: computing-wolves#1
+          description: Discover the basic components of a computer.
+          tags: []
+        - name: computing-wolves#2
+          description: Determine how to properly dispose of computer components.
+          tags: []
+        - name: computing-wolves#3
+          description: Using a digital device application of your choice, create a story that you can share with others.
+          tags: []
+        - name: computing-wolves#4
+          description: With your parent or legal guardian, set up a policy for safely using digital devices.
+          tags: []
     - name: Cubs Who Care
       url: https://www.scouting.org/cub-scout-adventures/cubs-who-care/
       required: false
+      requirements:
+        - name: cubs-who-care#1
+          description: Explore what it is to have a physical disability.
+          tags: []
+        - name: cubs-who-care#2
+          description: Explore what it is to have a visual impairment.
+          tags: []
+        - name: cubs-who-care#3
+          description: Explore what it is to have a hearing loss.
+          tags: []
+        - name: cubs-who-care#4
+          description: Explore barriers to getting around.
+          tags: []
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
+      requirements:
+        - name: digging-in-the-past#1
+          description: Play a dinosaur game that shows what you know about them.
+          tags: []
+        - name: digging-in-the-past#2
+          description: Create an imaginary dinosaur. Share with your den or family its name, what it eats, its size, and where it lives.
+          tags: []
+        - name: digging-in-the-past#3
+          description: Be a paleontologist and dig through a dinosaur dig.
+          tags: []
+        - name: digging-in-the-past#4
+          description: Build a fossil layer.
+          tags: []
     - name: Finding Your Way
       url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
       required: false
+      requirements:
+        - name: finding-your-way#1
+          description: Using a map, locate where you live.
+          tags: []
+        - name: finding-your-way#2
+          description: Draw a map for a friend to locate your home or school. Create a key for the map.
+          tags: []
+        - name: finding-your-way#3
+          description: Find the directions north, east, south, and west and the compass rose on a map.
+          tags: []
+        - name: finding-your-way#4
+          description: Find the directions north, east, south, and west using a compass.
+          tags: []
+        - name: finding-your-way#5
+          description: Practice using both a map and a compass.
+          tags: []
     - name: Germs Alive!
       url: https://www.scouting.org/cub-scout-adventures/germs-alive/
       required: false
+      requirements:
+        - name: germs-alive#1
+          description: Wash your hands with soap and water while singing the “Happy Birthday” song two times.
+          tags: []
+        - name: germs-alive#2
+          description: Play Germ Magnet with our den or your family. Wash your hands afterward.
+          tags: []
+        - name: germs-alive#3
+          description: Conduct the sneeze demonstration.
+          tags: []
+        - name: germs-alive#4
+          description: Conduct the mucus demonstration.
+          tags: []
+        - name: germs-alive#5
+          description: Grow a mold culture. Show what formed at a den or pack meeting.
+          tags: []
     - name: Let’s Camp Wolf
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
       required: false
+      requirements:
+        - name: lets-camp-wolf#1
+          description: Learn about the buddy system and how it works in the outdoors.
+          tags: []
+        - name: lets-camp-wolf#2
+          description: Know the Cub Scout Six Essentials.
+          tags: []
+        - name: lets-camp-wolf#3
+          description: In addition to your Cub Scout Six Essentials, list the personal items you need for your campout.
+          tags: []
+        - name: lets-camp-wolf#4
+          description: Learn a camping skill.
+          tags: []
+        - name: lets-camp-wolf#5
+          description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
+          tags: []
     - name: Paws for Water
       url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
       required: false
+      requirements:
+        - name: paws-for-water#0
+          description: Enroll in and complete a swimming instruction program offered by an accredited instructor OR pass the Scouting America swimmer test (this OR complete requirements 1-6).
+          tags: []
+        - name: paws-for-water#1
+          description: Learn about the swimming safety rules that you need to follow.
+          tags: []
+        - name: paws-for-water#2
+          description: Demonstrate how to enter the swimming area properly.
+          tags: []
+        - name: paws-for-water#3
+          description: Using the buddy system and staying within your ability group, go swimming with your den or family for 30 minutes.
+          tags: []
+        - name: paws-for-water#4
+          description: Attempt at least one swimming stroke: front crawl, restful backstroke, or breaststroke.
+          tags: []
+        - name: paws-for-water#5
+          description: Jump feet first into water that is chest high or deeper.
+          tags: []
+        - name: paws-for-water#6
+          description: Demonstrate how to exit the swimming area properly.
+          tags: []
     - name: Paws of Skill
       url: https://www.scouting.org/cub-scout-adventures/paws-of-skill/
       required: false
+      requirements:
+        - name: paws-of-skill#1
+          description: With your den, discuss sportsmanship and what it means to be a good sport. Make the connection between sportsmanship and the Scout Oath and the Scout Law.
+          tags: []
+        - name: paws-of-skill#2
+          description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
+          tags: []
+        - name: paws-of-skill#3
+          description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
+          tags: []
     - name: Pedal With the Pack
       url: https://www.scouting.org/cub-scout-adventures/pedal-with-the-pack/
       required: false
+      requirements:
+        - name: pedal-with-the-pack#1
+          description: Show how to properly wear a bicycle helmet.Show you can take off and put on without help.
+          tags: []
+        - name: pedal-with-the-pack#2
+          description: Decide what you should wear when riding a bike.
+          tags: []
+        - name: pedal-with-the-pack#3
+          description: Learn about different types of bikes and when/where you might ride these different types.
+          tags: []
+        - name: pedal-with-the-pack#4
+          description: Demonstrate you can start and stop your bicycle without help.
+          tags: []
+        - name: pedal-with-the-pack#5
+          description: Demonstrate proper hand signals.
+          tags: []
+        - name: pedal-with-the-pack#6
+          description: With your den, pack, or family, follow the buddy system and take a bike ride.
+          tags: []
     - name: Race Time Wolf
       url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
       required: false
+      requirements:
+        - name: race-time-wolf#1
+          description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+          tags: []
+        - name: race-time-wolf#2
+          description: Learn the rules of the race for the vehicle chosen in requirement 1.
+          tags: []
+        - name: race-time-wolf#3
+          description: Identify how you could increase the speed of your chosen vehicle.
+          tags: []
+        - name: race-time-wolf#4
+          description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
+          tags: []
+        - name: race-time-wolf#5
+          description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
+          tags: []
     - name: Spirit of the Water
       url: https://www.scouting.org/cub-scout-adventures/spirit-of-the-water/
       required: false
+      requirements:
+        - name: spirit-of-the-water#1
+          description: Discover where the water in your home comes from.
+          tags: []
+        - name: spirit-of-the-water#2
+          description: Discuss how water can become polluted.
+          tags: []
+        - name: spirit-of-the-water#3
+          description: Share some ways you can conserve water in your home.
+          tags: []
+        - name: spirit-of-the-water#4
+          description: Discover how water in your community is treated to become safe to drink.
+          tags: []
     - name: Summertime Fun Wolf
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
       required: false
+      requirements:
+        - name: summertime-fun-wolf#1
+          description: Anytime during May through August participate in a total of three Cub Scout activities.
+          tags: []
   - rank: bear
     grade: 3rd Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/bear/
@@ -785,10 +1107,51 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/bobcat-bear/
       required: true
       alternate_name: Character & Leadership
+      requirements:
+        - name: bobcat-bear#1
+          description: Get to know members of your den.
+          tags: []
+        - name: bobcat-bear#2
+          description: Recite the Scout Oath and Law with your den and den leader.
+          tags: []
+        - name: bobcat-bear#3
+          description: Learn about the Scout Oath. Identify the three points of the Scout Oath.
+          tags: []
+        - name: bobcat-bear#4
+          description: With your den create a den Code of Conduct.
+          tags: []
+        - name: bobcat-bear#5
+          description: Learn about the denner position and responsibilities.
+          tags: []
+        - name: bobcat-bear#6
+          description: Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake. Show how each is used.
+          tags: []
+        - name: bobcat-bear#7
+          description: Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.” Explain why it is important to do your best.
+          tags: []
+        - name: bobcat-bear#8
+          description: At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”
+          tags: []
     - name: Bear Strong
       url: https://www.scouting.org/cub-scout-adventures/bear-strong/
       required: true
       alternate_name: Personal Fitness
+      requirements:
+        - name: bear-strong#1
+          description: Sample food from three of the following food groups: protein, vegetables, fruits, dairy, and grains.
+          tags: []
+        - name: bear-strong#2
+          description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
+          tags: []
+        - name: bear-strong#3
+          description: Be active for 15 minutes doing personal exercises that include cardio, muscular strength, and flexibility.
+          tags: []
+        - name: bear-strong#4
+          description: Do a relaxing activity for 10 minutes.
+          tags: []
+        - name: bear-strong#5
+          description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+          tags: []
     - name: Standing Tall
       url: https://www.scouting.org/cub-scout-adventures/standing-tall/
       required: true
