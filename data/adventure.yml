@@ -1,0 +1,146 @@
+ranks:
+  - rank: lion
+    grade : kindergarten
+    url: https://www.scouting.org/cub-scout-adventures/lion/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-lion/
+      required: true
+      alternate_name: Character & Leadership
+      requirements:
+        - name: bobcat-lion#1
+          description: Get to know the members of your den.
+          tags: []
+        - name: bobcat-lion#2
+          description: Have your Lion adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being friendly.
+          tags: []
+        - name: bobcat-lion#3
+          description: Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”
+          tags: []
+        - name: bobcat-lion#4
+          description: At home, with your parent or legal guardian, do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”
+          tags: []
+    - name: Fun on the Run
+      url: https://www.scouting.org/cub-scout-adventures/fun-on-the-run/
+      required: true
+      alternate_name: Personal Fitness
+      requirements:
+        - name: fun-on-the-run#1
+          description: Identify the five different food groups.
+          tags: []
+        - name: fun-on-the-run#2
+          description: Practice hand washing. Point out when you should wash your hands.
+          tags: []
+        - name: fun-on-the-run#3
+          description: Be active for 20 minutes.
+          tags: []
+        - name: fun-on-the-run#4
+          description: Practice methods that help you rest.
+          tags: []
+    - name: Lion’s Roar
+      url: https://www.scouting.org/cub-scout-adventures/lions-roar/
+      required: true
+      alternate_name: Personal Safety
+      requirements:
+        - name: lions-roar#1
+          description: With permission from your parent or legal guardian, watch Protect Yourself Rules for the Lion rank.
+          tags: []
+        - name: lions-roar#2
+          description: With your Lion adult partner, demonstrate Shout, Run, Tell as described in Protect Yourself Rules.
+          tags: []
+        - name: lions-roar#3
+          description: With your Lion adult partner, demonstrate how to access emergency services.
+          tags: []
+        - name: lions-roar#4
+          description: With your Lion Adult Partner, demonstrate how to safely cross a street or walk in a parking lot.
+          tags: []
+    - name: Lion’s Pride
+      url: https://www.scouting.org/cub-scout-adventures/lions-pride/
+      required: true
+      alternate_name: Family & Reverence
+      requirements:
+        - name: lions-pride#1
+          description: With your parent or legal guardian talk about your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
+          tags: []
+        - name: lions-pride#2
+          description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
+          tags: []
+        - name: lions-pride#3
+          description: Make a cheerful card or a drawing for someone you love and give it to them.
+          tags: []
+    - name: King of the Jungle
+      url: https://www.scouting.org/cub-scout-adventures/king-of-the-jungle/
+      required: true
+      alternate_name: Citizenship
+      requirements:
+        - name: king-of-the-jungle#1
+          description: Draw a picture or take a photo of the people you live with.
+          tags: []
+        - name: king-of-the-jungle#2
+          description: With your Lion adult partner, choose a job that will help your family. Follow through by doing that job at least once.
+          tags: []
+        - name: king-of-the-jungle#3
+          description: Talk with a grandparent or other older adult about what citizenship means to them.
+          tags: []
+        - name: king-of-the-jungle#4
+          description: Participate in a service project.
+          tags: []
+    - name: Mountain Lion
+      url: https://www.scouting.org/cub-scout-adventures/mountain-lion/
+      required: true
+      alternate_name: Outdoors
+      requirements:
+        - name: mountain-lion#1
+          description: Identify the Cub Scout Six Essentials. Show what you do with each item.
+          tags: []
+        - name: mountain-lion#2
+          description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Lion adult partner that are natural and things that are manmade.
+          tags: []
+        - name: mountain-lion#3
+          description: Discover what S.A.W. means.
+          tags: []
+        - name: mountain-lion#4
+          description: Identify common animals that are found where you live. Separate those animals into domesticated and wild.
+          tags: []
+    - name: Build It Up, Knock It Down
+      url: https://www.scouting.org/cub-scout-adventures/build-it-up-knock-it-down/
+      required: false
+    - name: Champions for Nature Lion
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-lion/
+      required: false
+    - name: Count On Me
+      url: https://www.scouting.org/cub-scout-adventures/count-on-me/
+      required: false
+    - name: Everyday Tech
+      url: https://www.scouting.org/cub-scout-adventures/everyday-tech/
+      required: false
+    - name: Gizmos and Gadgets
+      url: https://www.scouting.org/cub-scout-adventures/gizmos-and-gadgets/
+      required: false
+    - name: Go Fish
+      url: https://www.scouting.org/cub-scout-adventures/go-fish/
+      required: false
+    - name: I’ll Do It Myself
+      url: https://www.scouting.org/cub-scout-adventures/ill-do-it-myself/
+      required: false
+    - name: Let’s Camp Lion
+      url: https://www.scouting.org/cub-scout-adventures/lets-camp-lion/
+      required: false
+    - name: On a Roll
+      url: https://www.scouting.org/cub-scout-adventures/on-a-roll/
+      required: false
+    - name: On Your Mark
+      url: https://www.scouting.org/cub-scout-adventures/on-your-mark/
+      required: false
+    - name: Pick My Path
+      url: https://www.scouting.org/cub-scout-adventures/pick-my-path-lion/
+      required: false
+    - name: Race Time Lion
+      url: https://www.scouting.org/cub-scout-adventures/race-time-lion/
+      required: false
+    - name: Ready, Set, Grow
+      url: https://www.scouting.org/cub-scout-adventures/ready-set-grow/
+      required: false
+    - name: Time to Swim
+      url: https://www.scouting.org/cub-scout-adventures/time-to-swim/
+      required: false
