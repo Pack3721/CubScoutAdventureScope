@@ -1,3 +1,5 @@
+meta:
+  date: 2024-06-01
 ranks:
   - rank: lion
     grade : kindergarten
@@ -1298,7 +1300,7 @@ ranks:
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
       required: false
-  - rank: Arrow of Light
+  - rank: arrow of light
     grade: 5th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
     adventure_list:
