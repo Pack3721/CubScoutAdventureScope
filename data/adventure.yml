@@ -1226,6 +1226,9 @@ ranks:
           description: Demonstrate that you know how to care for and use a knife safely.
           tags: []
         - name: knife-safety#4
+          description: Demonstrate the proper use of a pocketknife to make a useful object on a campout.
+          tags: []
+        - name: knife-safety#5
           description: Choose the correct cooking knife and demonstrate how to properly slice, chop, and mince.
           tags: []
     - name: Paddle Craft
