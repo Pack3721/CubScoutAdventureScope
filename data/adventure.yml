@@ -698,3 +698,316 @@ ranks:
         - name: tigers-in-the-water#6
           description: Demonstrate how to exit the swimming area properly.
           tags: []
+  - rank: wolf
+    grade: 2nd Grade
+    url: https://www.scouting.org/programs/cub-scouts/adventures/wolf/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-wolf/
+      required: true
+      alternate_name: Character & Leadership
+    - name: Running With the Pack
+      url: https://www.scouting.org/cub-scout-adventures/running-with-the-pack/
+      required: true
+      alternate_name: Personal Fitness
+    - name: Safety in Numbers
+      url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
+      required: true
+      alternate_name: Personal Safety
+    - name: Footsteps
+      url: https://www.scouting.org/cub-scout-adventures/footsteps/
+      required: true
+      alternate_name: Family & Reverence
+    - name: Council Fire
+      url: https://www.scouting.org/cub-scout-adventures/council-fire/
+      required: true
+      alternate_name: Citizenship
+    - name: Paws on the Path
+      url: https://www.scouting.org/cub-scout-adventures/paws-on-the-path/
+      required: true
+      alternate_name: Outdoors
+    - name: A Wolf Goes Fishing
+      url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
+      required: false
+    - name: Adventures in Coins
+      url: https://www.scouting.org/cub-scout-adventures/adventures-in-coins/
+      required: false
+    - name: Air of the Wolf
+      url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
+      required: false
+    - name: Champions for Nature Wolf
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
+      required: false
+    - name: Code of the Wolf
+      url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
+      required: false
+    - name: Computing Wolves
+      url: https://www.scouting.org/cub-scout-adventures/computing-wolves/
+      required: false
+    - name: Cubs Who Care
+      url: https://www.scouting.org/cub-scout-adventures/cubs-who-care/
+      required: false
+    - name: Digging in the Past
+      url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
+      required: false
+    - name: Finding Your Way
+      url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
+      required: false
+    - name: Germs Alive!
+      url: https://www.scouting.org/cub-scout-adventures/germs-alive/
+      required: false
+    - name: Let’s Camp Wolf
+      url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
+      required: false
+    - name: Paws for Water
+      url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
+      required: false
+    - name: Paws of Skill
+      url: https://www.scouting.org/cub-scout-adventures/paws-of-skill/
+      required: false
+    - name: Pedal With the Pack
+      url: https://www.scouting.org/cub-scout-adventures/pedal-with-the-pack/
+      required: false
+    - name: Race Time Wolf
+      url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
+      required: false
+    - name: Spirit of the Water
+      url: https://www.scouting.org/cub-scout-adventures/spirit-of-the-water/
+      required: false
+    - name: Summertime Fun Wolf
+      url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
+      required: false
+  - rank: bear
+    grade: 3rd Grade
+    url: https://www.scouting.org/programs/cub-scouts/adventures/bear/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-bear/
+      required: true
+      alternate_name: Character & Leadership
+    - name: Bear Strong
+      url: https://www.scouting.org/cub-scout-adventures/bear-strong/
+      required: true
+      alternate_name: Personal Fitness
+    - name: Standing Tall
+      url: https://www.scouting.org/cub-scout-adventures/standing-tall/
+      required: true
+      alternate_name: Personal Safety
+    - name: Fellowship
+      url: https://www.scouting.org/cub-scout-adventures/fellowship/
+      required: true
+      alternate_name: Family & Reverence
+    - name: Paws for Action
+      url: https://www.scouting.org/cub-scout-adventures/paws-for-action/
+      required: true
+      alternate_name: Citizenship
+    - name: Bear Habitat
+      url: https://www.scouting.org/cub-scout-adventures/bear-habitat/
+      required: true
+      alternate_name: Outdoors
+    - name: A Bear Goes Fishing
+      url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
+      required: false
+    - name: Balancing Bears
+      url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
+      required: false
+    - name: Baloo the Builder
+      url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
+      required: false
+    - name: Bears Afloat
+      url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
+      required: false
+    - name: Bears on Bikes
+      url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
+      required: false
+    - name: Champions for Nature Bear
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
+      required: false
+    - name: Chef Tech
+      url: https://www.scouting.org/cub-scout-adventures/chef-tech/
+      required: false
+    - name: Critter Care
+      url: https://www.scouting.org/cub-scout-adventures/critter-care/
+      required: false
+    - name: Forensics
+      url: https://www.scouting.org/cub-scout-adventures/forensics/
+      required: false
+    - name: Let’s Camp Bear
+      url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
+      required: false
+    - name: Marble Madness
+      url: https://www.scouting.org/cub-scout-adventures/marble-madness/
+      required: false
+    - name: Race Time Bear
+      url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
+      required: false
+    - name: Roaring Laughter
+      url: https://www.scouting.org/cub-scout-adventures/roaring-laughter/
+      required: false
+    - name: Salmon Run
+      url: https://www.scouting.org/cub-scout-adventures/salmon-run/
+      required: false
+    - name: Summertime Fun Bear
+      url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
+      required: false
+    - name: Super Science
+      url: https://www.scouting.org/cub-scout-adventures/super-science/
+      required: false
+    - name: Whittling
+      url: https://www.scouting.org/cub-scout-adventures/whittling/
+      required: false
+  - rank: webelos
+    grade: 4th Grade
+    url: https://www.scouting.org/programs/cub-scouts/adventures/webelos/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-webelos/
+      required: true
+      alternate_name: Character & Leadership
+    - name: Stronger, Faster, Higher
+      url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
+      required: true
+      alternate_name: Personal Fitness
+    - name: My Safety
+      url: https://www.scouting.org/cub-scout-adventures/my-safety/
+      required: true
+      alternate_name: Personal Safety
+    - name: My Family
+      url: https://www.scouting.org/cub-scout-adventures/my-family/
+      required: true
+      alternate_name: Family & Reverence
+    - name: My Community
+      url: https://www.scouting.org/cub-scout-adventures/my-community/
+      required: true
+      alternate_name: Citizenship
+    - name: Webelos Walkabout
+      url: https://www.scouting.org/cub-scout-adventures/webelos-walkabout/
+      required: true
+      alternate_name: Outdoors
+    - name: Aquanaut
+      url: https://www.scouting.org/cub-scout-adventures/aquanaut/
+      required: false
+    - name: Art Explosion
+      url: https://www.scouting.org/cub-scout-adventures/art-explosion/
+      required: false
+    - name: Aware and Care
+      url: https://www.scouting.org/cub-scout-adventures/aware-and-care/
+      required: false
+    - name: Build It
+      url: https://www.scouting.org/cub-scout-adventures/build-it/
+      required: false
+    - name: Catch the Big One
+      url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
+      required: false
+    - name: Champions for Nature Webelos
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
+      required: false
+    - name: Chef’s Knife
+      url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
+      required: false
+    - name: Earth Rocks
+      url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
+      required: false
+    - name: Let’s Camp Webelos
+      url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
+      required: false
+    - name: Math on the Trail
+      url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
+      required: false
+    - name: Modular Design
+      url: https://www.scouting.org/cub-scout-adventures/modular-design/
+      required: false
+    - name: Paddle Onward
+      url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
+      required: false
+    - name: Pedal Away
+      url: https://www.scouting.org/cub-scout-adventures/pedal-away/
+      required: false
+    - name: Race Time Webelos
+      url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
+      required: false
+    - name: Summertime Fun Webelos
+      url: https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/
+      required: false
+    - name: Tech on the Trail
+      url: https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/
+      required: false
+    - name: Yo-yo
+      url: https://www.scouting.org/cub-scout-adventures/yo-yo/
+      required: false
+  - rank: Arrow of Light
+    grade: 5th Grade
+    url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
+    adventure_list:
+    - name: Bobcat Adventure
+      url: https://www.scouting.org/cub-scout-adventures/bobcat-arrow-of-light/
+      required: true
+      alternate_name: Character & Leadership
+    - name: Personal Fitness
+      url: https://www.scouting.org/cub-scout-adventures/personal-fitness/
+      required: true
+      alternate_name: Personal Fitness
+    - name: First Aid
+      url: https://www.scouting.org/cub-scout-adventures/first-aid/
+      required: true
+      alternate_name: Personal Safety
+    - name: Duty to God
+      url: https://www.scouting.org/cub-scout-adventures/duty-to-god/
+      required: true
+      alternate_name: Family & Reverence
+    - name: Citizenship
+      url: https://www.scouting.org/cub-scout-adventures/citizenship/
+      required: true
+      alternate_name: Citizenship
+    - name: Outdoor Adventurer
+      url: https://www.scouting.org/cub-scout-adventures/outdoor-adventurer/
+      required: true
+      alternate_name: Outdoors
+    - name: Champions for Nature AOL
+      url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-aol/
+      required: false
+    - name: Cycling
+      url: https://www.scouting.org/cub-scout-adventures/cycling/
+      required: false
+    - name: Engineer
+      url: https://www.scouting.org/cub-scout-adventures/engineer/
+      required: false
+    - name: Estimations
+      url: https://www.scouting.org/cub-scout-adventures/estimations/
+      required: false
+    - name: Fishing
+      url: https://www.scouting.org/cub-scout-adventures/fishing/
+      required: false
+    - name: High Tech Outdoors
+      url: https://www.scouting.org/cub-scout-adventures/high-tech-outdoors/
+      required: false
+    - name: Into the Wild
+      url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
+      required: false
+    - name: Into the Woods
+      url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
+      required: false
+    - name: Knife Safety
+      url: https://www.scouting.org/cub-scout-adventures/knife-safety/
+      required: false
+    - name: Paddle Craft
+      url: https://www.scouting.org/cub-scout-adventures/paddle-craft/
+      required: false
+    - name: Race Time AOL
+      url: https://www.scouting.org/cub-scout-adventures/race-time-aol/
+      required: false
+    - name: Summertime Fun AOL
+      url: https://www.scouting.org/cub-scout-adventures/summertime-fun-aol/
+      required: false
+    - name: Swimming
+      url: https://www.scouting.org/cub-scout-adventures/swimming/
+      required: false
+    - name: Archery Arrow of Light
+      url: null
+      required: false
+    - name: Slingshot
+      url: null
+      required: false
+    - name: BB Guns
+      url: null
+      required: false
