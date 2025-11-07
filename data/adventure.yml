@@ -491,6 +491,9 @@ ranks:
         - name: floats-and-boats#3
           description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
           tags: []
+        - name: floats-and-boats#4
+          description: Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat.
+          tags: []
     - name: Good Knights
       url: https://www.scouting.org/cub-scout-adventures/good-knights/
       required: false
