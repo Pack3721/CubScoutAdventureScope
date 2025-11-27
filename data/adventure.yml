@@ -2171,13 +2171,13 @@ ranks:
       requirements:
         - name: estimations#1
           description: Estimate food measurements.
-          tags: []
+          tags: [stem, mathematics]
         - name: estimations#2
           description: Estimate the time of day.
-          tags: []
+          tags: [stem, mathematics]
         - name: estimations#3
           description: Estimate the height of a distant object.
-          tags: []
+          tags: [stem, mathematics]
     - name: Fishing
       url: https://www.scouting.org/cub-scout-adventures/fishing/
       required: false
