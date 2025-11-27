@@ -212,10 +212,10 @@ ranks:
           tags: [buddy-system]
         - name: lets-camp-lion#2
           description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
-          tags: []
+          tags: [packing, weather]
         - name: lets-camp-lion#3
           description: Pack up your Cub Scout Six Essentials for the campout.
-          tags: []
+          tags: [six-essentials, packing]
         - name: lets-camp-lion#4
           description: Attend a council or district Cub Scout overnight camp or attend an overnight campout with your pack.
           tags: []
@@ -533,13 +533,13 @@ ranks:
           tags: [buddy-system]
         - name: lets-camp-tiger#2
           description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
-          tags: []
+          tags: [packing, weather]
         - name: lets-camp-tiger#3
           description: Pack up your Cub Scout Six Essentials for the campout.
           tags: [packing]
         - name: lets-camp-tiger#4
           description: Learn a camping skill.
-          tags: [test]
+          tags: [tent, knots]
         - name: lets-camp-tiger#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1020,7 +1020,7 @@ ranks:
           tags: [six-essentials, packing]
         - name: lets-camp-wolf#4
           description: Learn a camping skill.
-          tags: [test]
+          tags: [tent, knots]
         - name: lets-camp-wolf#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1241,19 +1241,19 @@ ranks:
       requirements:
         - name: bear-habitat#1
           description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials, walk]
+          tags: [six-essentials, walk, weather]
         - name: bear-habitat#2
           description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
           tags: [walk]
         - name: bear-habitat#3
-          description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
+          description: “Choose the Right Path” Learn about the path and surrounding area you will be walking on.
           tags: [walk]
         - name: bear-habitat#4
           description: “Trash your Trash” Make a plan for what you will do with your personal trash or trash you find along the trail.
-          tags: [walk]
+          tags: [walk, outdoor-code]
         - name: bear-habitat#5
           description: “Leave What You Find” Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.
-          tags: [walk]
+          tags: [walk, outdoor-code]
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
@@ -1440,7 +1440,7 @@ ranks:
           tags: [six-essentials, packing]
         - name: lets-camp-bear#4
           description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
-          tags: [test]
+          tags: [tent]
         - name: lets-camp-bear#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1665,13 +1665,13 @@ ranks:
       requirements:
         - name: webelos-walkabout#1
           description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials, walk]
+          tags: [six-essentials, walk, weather]
         - name: webelos-walkabout#2
           description: Plan a 2-mile route for your walk.
           tags: [walk]
         - name: webelos-walkabout#3
           description: Check the weather forecast for the time of your planned 2-mile walk.
-          tags: [walk]
+          tags: [walk, weather]
         - name: webelos-walkabout#4
           description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
           tags: [walk]
@@ -1832,16 +1832,16 @@ ranks:
           tags: []
         - name: lets-camp-webelos#2
           description: Upon arrival at the campground, determine where to set up a tent.
-          tags: [test]
+          tags: [tent]
         - name: lets-camp-webelos#3
           description: Set up your tent without help from an adult.
-          tags: [test]
+          tags: [tent]
         - name: lets-camp-webelos#4
           description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
-          tags: []
+          tags: [weather]
         - name: lets-camp-webelos#5
           description: Show how to tie a bowline.  Explain when this knot should be used and why.
-          tags: []
+          tags: [knots]
     - name: Math on the Trail
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
@@ -2222,7 +2222,7 @@ ranks:
         - name: high-tech-outdoors#1
           tags: [stem, technology]
           description: With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather.
-          tags: [stem, technology]
+          tags: [stem, technology, weather]
         - name: high-tech-outdoors#2
           description: With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app.
           tags: [stem, technology]
