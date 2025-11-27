@@ -1369,22 +1369,23 @@ ranks:
     - name: Chef Tech
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
       required: false
+      alternate_name: Technology
       requirements:
         - name: chef-tech#1
           description: Pick a kitchen appliance that uses technology to complete the following requirements.
-          tags: []
+          tags: [stem, technology]
         - name: chef-tech#2
           description: With an adult, review the safety guidelines in the owner’s manual and follow all safety guidelines.
           tags: []
         - name: chef-tech#3
           description: With adult supervision, download a cooking app or search online to find a recipe.
-          tags: []
+          tags: [stem, technology]
         - name: chef-tech#4
           description: With adult supervision, follow the selected recipe and make the recipe.
           tags: []
         - name: chef-tech#5
           description: Think of a way technology can improve the appliance used to make your recipe.
-          tags: []
+          tags: [stem, technology]
     - name: Critter Care
       url: https://www.scouting.org/cub-scout-adventures/critter-care/
       required: false
