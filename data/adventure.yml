@@ -1368,8 +1368,7 @@ ranks:
           tags: [conservation]
         - name: champions-for-nature-bear#5
           description: Participate in a conservation project.
-          tags: [conservation]
-          tags: [service-project]
+          tags: [conservation, service-project]
     - name: Chef Tech
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
       required: false
@@ -1460,10 +1459,10 @@ ranks:
           tags: [indoor-game]
         - name: marble-madness#4
           description: Build a marble racetrack with at least two lanes.
-          tags: []
+          tags: [stem, engineering]
         - name: marble-madness#5
           description: Build a marble maze.
-          tags: []
+          tags: [stem, engineering]
     - name: Race Time Bear
       url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
       required: false
@@ -1554,16 +1553,16 @@ ranks:
       requirements:
         - name: whittling#1
           description: Read, understand, and promise to abide by the “Cub Scout Knife Safety Rules.”
-          tags: []
+          tags: [knife-safety]
         - name: whittling#2
           description: Demonstrate the knife safety circle.
-          tags: []
+          tags: [knife-safety]
         - name: whittling#3
           description: Demonstrate that you know how to care for and use your pocketknife safely.
-          tags: []
+          tags: [knife-care]
         - name: whittling#4
           description: Make two carvings with a pocketknife.
-          tags: []
+          tags: [knife-use]
   - rank: webelos
     grade: 4th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/webelos/
@@ -1797,16 +1796,16 @@ ranks:
       requirements:
         - name: chefs-knife#1
           description: Read, understand, and promise to follow the “Cub Scout Knife Safety Rules.”
-          tags: []
+          tags: [knife-safety]
         - name: chefs-knife#2
           description: Demonstrate the knife safety circle.
-          tags: []
+          tags: [knife-safety]
         - name: chefs-knife#3
           description: Demonstrate that you know how to care for and use a kitchen knife safely.
-          tags: []
+          tags: [knife-care]
         - name: chefs-knife#4
           description: Choose the correct cooking knife and demonstrate how to properly slice, dice, and mince.
-          tags: []
+          tags: [knife-use]
     - name: Earth Rocks
       url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
       required: false
@@ -2269,19 +2268,19 @@ ranks:
       requirements:
         - name: knife-safety#1
           description: Know the safety rules for handling and using a knife.
-          tags: []
+          tags: [knife-safety]
         - name: knife-safety#2
           description: Demonstrate the knife safety circle.
-          tags: []
+          tags: [knife-safety]
         - name: knife-safety#3
           description: Demonstrate that you know how to care for and use a knife safely.
-          tags: []
+          tags: [knife-care]
         - name: knife-safety#4
           description: Demonstrate the proper use of a pocketknife to make a useful object on a campout.
-          tags: []
+          tags: [knife-use]
         - name: knife-safety#5
           description: Choose the correct cooking knife and demonstrate how to properly slice, chop, and mince.
-          tags: []
+          tags: [knife-use]
     - name: Paddle Craft
       url: https://www.scouting.org/cub-scout-adventures/paddle-craft/
       required: false
