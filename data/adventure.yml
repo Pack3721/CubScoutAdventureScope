@@ -1231,6 +1231,19 @@ ranks:
     - name: Balancing Bears
       url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
       required: false
+      requirements:
+        - name: balancing-bears#1
+          description: Make trail mix using trail mix math.
+          tags: []
+        - name: balancing-bears#2
+          description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
+          tags: []
+        - name: balancing-bears#3
+          description: Find  examples of bilateral symmetry in nature.
+          tags: []
+        - name: balancing-bears#4
+          description: Find examples of radial symmetry in nature.
+          tags: []
     - name: Baloo the Builder
       url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
       required: false
