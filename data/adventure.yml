@@ -120,6 +120,7 @@ ranks:
     - name: Champions for Nature Lion
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-lion/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-lion#1
           description: Discover the difference between natural resources and man-made items.
@@ -416,6 +417,7 @@ ranks:
     - name: Champions for Nature Tiger
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-tiger/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-tiger#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
@@ -865,6 +867,7 @@ ranks:
     - name: Champions for Nature Wolf
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-wolf#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
@@ -1320,6 +1323,7 @@ ranks:
     - name: Champions for Nature Bear
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-bear#1
           description: Discover natural resources.
@@ -1728,6 +1732,7 @@ ranks:
     - name: Champions for Nature Webelos
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-webelos#1
           description: Discover the four components that make up a habitat: food, water, shelter, space.
@@ -2057,6 +2062,7 @@ ranks:
     - name: Champions for Nature AOL
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-aol/
       required: false
+      alternate_name: Conservation
       requirements:
         - name: champions-for-nature-aol#1
           description: Identify foods grown or processed in your state.
