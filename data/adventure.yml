@@ -1261,6 +1261,22 @@ ranks:
     - name: Race Time Bear
       url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
       required: false
+      requirements:
+        - name: race-time-bear#1
+          description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+          tags: []
+        - name: race-time-bear#2
+          description: Learn the rules of the race for the vehicle chosen in requirement 1.
+          tags: []
+        - name: race-time-bear#3
+          description: Identify how you could increase the speed of your chosen vehicle.
+          tags: []
+        - name: race-time-bear#4
+          description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
+          tags: []
+        - name: race-time-bear#5
+          description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
+          tags: []
     - name: Roaring Laughter
       url: https://www.scouting.org/cub-scout-adventures/roaring-laughter/
       required: false
