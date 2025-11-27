@@ -1547,6 +1547,7 @@ ranks:
     - name: Whittling
       url: https://www.scouting.org/cub-scout-adventures/whittling/
       required: false
+      alternate_name: Knife Skills
       requirements:
         - name: whittling#1
           description: Read, understand, and promise to abide by the “Cub Scout Knife Safety Rules.”
@@ -1788,6 +1789,7 @@ ranks:
     - name: Chef’s Knife
       url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
       required: false
+      alternate_name: Knife Skills
       requirements:
         - name: chefs-knife#1
           description: Read, understand, and promise to follow the “Cub Scout Knife Safety Rules.”
@@ -2259,6 +2261,7 @@ ranks:
     - name: Knife Safety
       url: https://www.scouting.org/cub-scout-adventures/knife-safety/
       required: false
+      alternate_name: Knife Skills
       requirements:
         - name: knife-safety#1
           description: Know the safety rules for handling and using a knife.
