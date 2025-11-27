@@ -1414,6 +1414,19 @@ ranks:
     - name: Earth Rocks
       url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
       required: false
+      requirements:
+        - name: earth-rocks#1
+          description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
+          tags: []
+        - name: earth-rocks#2
+          description: Find a rock, safely break it apart and examine it.
+          tags: []
+        - name: earth-rocks#3
+          description: Make a mineral test kit and test minerals according to the Mohs scale of mineral hardness. Using the rock cycle chart or one like it, discuss how hardness determines which materials can be used in homes, in landscapes, or for recreation.
+          tags: []
+        - name: earth-rocks#4
+          description: Grow  a crystal.
+          tags: []
     - name: Let’s Camp Webelos
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
       required: false
