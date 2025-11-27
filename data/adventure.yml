@@ -1426,6 +1426,22 @@ ranks:
     - name: Paddle Onward
       url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
       required: false
+      requirements:
+        - name: paddle-onward#1
+          description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
+          tags: []
+        - name: paddle-onward#2
+          description: Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.
+          tags: []
+        - name: paddle-onward#3
+          description: Review Safety Afloat.
+          tags: []
+        - name: paddle-onward#4
+          description: Demonstrate how to choose  and properly wear a life jacket  that is the correct size. 
+          tags: []
+        - name: paddle-onward#5
+          description: Jump feet first into water over your head while wearing a life jacket  Then swim 25 feet wearing the life jacket. 
+          tags: []
     - name: Pedal Away
       url: https://www.scouting.org/cub-scout-adventures/pedal-away/
       required: false
