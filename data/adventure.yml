@@ -1396,6 +1396,19 @@ ranks:
     - name: Art Explosion
       url: https://www.scouting.org/cub-scout-adventures/art-explosion/
       required: false
+      requirements:
+        - name: art-explosion#1
+          description: Create a piece of art by exploring drawing techniques using pencils.
+          tags: []
+        - name: art-explosion#2
+          description: Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
+          tags: []
+        - name: art-explosion#3
+          description: Create a piece of art using paint as your medium.
+          tags: []
+        - name: art-explosion#4
+          description: Create a piece of art combining at least two media.
+          tags: []
     - name: Aware and Care
       url: https://www.scouting.org/cub-scout-adventures/aware-and-care/
       required: false
