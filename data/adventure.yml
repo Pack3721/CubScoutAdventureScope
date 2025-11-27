@@ -1405,6 +1405,22 @@ ranks:
     - name: Catch the Big One
       url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
       required: false
+      requirements:
+        - name: catch-the-big-one#1
+          description: Make a plan to go fishing.  Determine where you will go and what type of fish you plan to catch.  All of the following requirements are to be completed based on your choice.
+          tags: []
+        - name: catch-the-big-one#2
+          description: Use Scouting America SAFE Checklist to plan what you need for your fishing experience.
+          tags: []
+        - name: catch-the-big-one#3
+          description: Describe the environment where the fish might be found.
+          tags: []
+        - name: catch-the-big-one#4
+          description: Make a list of the equipment and materials you will need to fish.
+          tags: []
+        - name: catch-the-big-one#5
+          description: Determine the best type of knot to tie your hook to your line and tie it.
+          tags: []
     - name: Champions for Nature Webelos
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
       required: false
