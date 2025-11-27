@@ -669,10 +669,10 @@ ranks:
           tags: []
         - name: tiger-tag#3
           description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
-          tags: []
+          tags: [sport]
         - name: tiger-tag#4
           description: Attend a sporting event.
-          tags: []
+          tags: [sport]
     - name: Tiger-iffic!
       url: https://www.scouting.org/cub-scout-adventures/tiger-iffic/
       required: false
@@ -1046,13 +1046,13 @@ ranks:
       requirements:
         - name: paws-of-skill#1
           description: With your den, discuss sportsmanship and what it means to be a good sport. Make the connection between sportsmanship and the Scout Oath and the Scout Law.
-          tags: []
+          tags: [sport]
         - name: paws-of-skill#2
           description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
-          tags: []
+          tags: [sport]
         - name: paws-of-skill#3
           description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
-          tags: []
+          tags: [sport]
     - name: Pedal With the Pack
       url: https://www.scouting.org/cub-scout-adventures/pedal-with-the-pack/
       required: false
