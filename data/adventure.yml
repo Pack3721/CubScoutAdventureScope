@@ -63,13 +63,13 @@ ranks:
       requirements:
         - name: lions-pride#1
           description: With your parent or legal guardian talk about your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
-          tags: []
+          tags: [art]
         - name: lions-pride#2
           description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
           tags: []
         - name: lions-pride#3
           description: Make a cheerful card or a drawing for someone you love and give it to them.
-          tags: []
+          tags: [art]
     - name: King of the Jungle
       url: https://www.scouting.org/cub-scout-adventures/king-of-the-jungle/
       required: true
@@ -185,7 +185,7 @@ ranks:
           tags: []
         - name: go-fish#2
           description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
-          tags: []
+          tags: [art]
         - name: go-fish#3
           description: Go fishing with your Lion adult partner.
           tags: []
@@ -776,7 +776,7 @@ ranks:
           tags: []
         - name: footsteps#1
           description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft or work of art of your favorite family’s faith tradition holiday or celebration.
-          tags: []
+          tags: [art]
         - name: footsteps#2
           description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
           tags: []
@@ -864,7 +864,7 @@ ranks:
           tags: [indoor-game, game]
         - name: adventures-in-coins#4
           description: Choose a coin that interests you and make a coin rubbing. List information next to the coin detailing the pictures on it, the year it was made, and the mint where it was made.
-          tags: []
+          tags: [art]
     - name: Air of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
       required: false
