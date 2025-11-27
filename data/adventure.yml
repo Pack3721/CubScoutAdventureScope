@@ -1273,6 +1273,19 @@ ranks:
     - name: Super Science
       url: https://www.scouting.org/cub-scout-adventures/super-science/
       required: false
+      requirements:
+        - name: super-science#1
+          description: Conduct static electricity investigation.
+          tags: []
+        - name: super-science#2
+          description: Conduct the sink-or-float investigation.
+          tags: []
+        - name: super-science#3
+          description: Conduct the color-morphing investigation.
+          tags: []
+        - name: super-science#4
+          description: Conduct the color-layering investigation.
+          tags: []
     - name: Whittling
       url: https://www.scouting.org/cub-scout-adventures/whittling/
       required: false
