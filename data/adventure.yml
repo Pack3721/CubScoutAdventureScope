@@ -1158,18 +1158,73 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/standing-tall/
       required: true
       alternate_name: Personal Safety
+      requirements:
+        - name: standing-tall#1
+          description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Bear rank.
+          tags: []
+        - name: standing-tall#2
+          description: Complete the Personal Space Bubble worksheet that is part of the Protect Yourself Rules resources.
+          tags: []
+        - name: standing-tall#3
+          description: With your parent or legal guardian, set up a family policy for digital devices.
+          tags: []
+        - name: standing-tall#4
+          description: Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity.
+          tags: []
     - name: Fellowship
       url: https://www.scouting.org/cub-scout-adventures/fellowship/
       required: true
       alternate_name: Family & Reverence
+      requirements:
+        - name: fellowship#1
+          description: With your parent or legal guardian talk about your family’s faith traditions.
+          tags: []
+        - name: fellowship#2
+          description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
+          tags: []
+        - name: fellowship#3
+          description: Carry out an act of kindness.
+          tags: []
+        - name: fellowship#4
+          description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
+          tags: []
     - name: Paws for Action
       url: https://www.scouting.org/cub-scout-adventures/paws-for-action/
       required: true
       alternate_name: Citizenship
+      requirements:
+        - name: paws-for-action#1
+          description: Familiarize yourself with the flag of the United States of America including the history, demonstrating how to raise and lower the flag, how to properly fold and display, and the United States etiquette.
+          tags: []
+        - name: paws-for-action#2
+          description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
+          tags: []
+        - name: paws-for-action#3
+          description: Learn about the mission of any non-profit. Find out how they fund their activities and how volunteers are used to help.
+          tags: []
+        - name: paws-for-action#4
+          description: Participate in a service project.
+          tags: []
     - name: Bear Habitat
       url: https://www.scouting.org/cub-scout-adventures/bear-habitat/
       required: true
       alternate_name: Outdoors
+      requirements:
+        - name: bear-habitat#1
+          description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
+          tags: []
+        - name: bear-habitat#2
+          description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
+          tags: []
+        - name: bear-habitat#3
+          description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
+          tags: []
+        - name: bear-habitat#4
+          description: “Trash your Trash” Make a plan for what you will do with your personal trash or trash you find along the trail.
+          tags: []
+        - name: bear-habitat#5
+          description: “Leave What You Find” Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.
+          tags: []
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
@@ -1229,26 +1284,112 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/bobcat-webelos/
       required: true
       alternate_name: Character & Leadership
+      requirements:
+        - name: bobcat-webelos#1
+          description: Get to know members of your den.
+          tags: []
+        - name: bobcat-webelos#2
+          description: Recite the Scout Oath and the Scout Law with your den and den leader. Describe the three points of the Scout Oath.
+          tags: []
+        - name: bobcat-webelos#3
+          description: Learn about the Scout Law.
+          tags: []
+        - name: bobcat-webelos#4
+          description: With your den create a den Code of Conduct.
+          tags: []
+        - name: bobcat-webelos#5
+          description: Learn about the denner position and responsibilities.
+          tags: []
     - name: Stronger, Faster, Higher
       url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
       required: true
       alternate_name: Personal Fitness
+      requirements:
+        - name: stronger-faster-higher#1
+          description: With your den or family, plan, cook, and eat a balanced meal.
+          tags: []
+        - name: stronger-faster-higher#2
+          description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
+          tags: []
+        - name: stronger-faster-higher#3
+          description: Be active for 15 minutes doing personal exercises that boost your heart rate, use your muscles, and work on flexibility.
+          tags: []
+        - name: stronger-faster-higher#4
+          description: Do a relaxing activity for 10 minutes.
+          tags: []
+        - name: stronger-faster-higher#5
+          description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+          tags: []
     - name: My Safety
       url: https://www.scouting.org/cub-scout-adventures/my-safety/
       required: true
       alternate_name: Personal Safety
+      requirements:
+        - name: my-safety#1
+          description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Webelos rank.
+          tags: []
+        - name: my-safety#2
+          description: Identify items in your house that are hazardous and make sure they are stored properly. Identify on the package where it describes what to do if someone is accidentally exposed to them.
+          tags: []
+        - name: my-safety#3
+          description: Identify ways you and your family keep your home or your meeting space safe.
+          tags: []
+        - name: my-safety#4
+          description: Complete the Be Prepared for Natural Events worksheet. Complete a worksheet for at least two natural events most likely to happen near where you live.
+          tags: []
     - name: My Family
       url: https://www.scouting.org/cub-scout-adventures/my-family/
       required: true
       alternate_name: Family & Reverence
+      requirements:
+        - name: my-family#1
+          description: With your parent or legal guardian, talk about your family’s faith traditions.   Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your family’s faith traditions.
+          tags: []
+        - name: my-family#2
+          description: Carry out an act of kindness.
+          tags: []
+        - name: my-family#3
+          description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
+          tags: []
+        - name: my-family#4
+          description: Discuss with your parent or legal guardian what it means to be reverent. Tell how you practice being reverent in your daily life.
+          tags: []
     - name: My Community
       url: https://www.scouting.org/cub-scout-adventures/my-community/
       required: true
       alternate_name: Citizenship
+      requirements:
+        - name: my-community#1
+          description: Learn about majority and plurality types of voting.
+          tags: []
+        - name: my-community#2
+          description: Speak with someone who is elected to their position.  Discover the type of voting that was used for to elect them and why.
+        - name: my-community#3
+          description: Choose a federal law and create a timeline of the history of the law.  Include the involvement of the 3 branches of government.
+          tags: []
+        - name: my-community#4
+          description: Participate in a service project.
+          tags: []
     - name: Webelos Walkabout
       url: https://www.scouting.org/cub-scout-adventures/webelos-walkabout/
       required: true
       alternate_name: Outdoors
+      requirements:
+        - name: webelos-walkabout#1
+          description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
+          tags: []
+        - name: webelos-walkabout#2
+          description: Plan a 2-mile route for your walk.
+          tags: []
+        - name: webelos-walkabout#3
+          description: Check the weather forecast for the time of your planned 2-mile walk.
+          tags: []
+        - name: webelos-walkabout#4
+          description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
+          tags: []
+        - name: webelos-walkabout#5
+          description: Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness.
+          tags: []
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
       required: false
@@ -1299,7 +1440,7 @@ ranks:
       required: false
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
-      required: false
+      required: false  
   - rank: arrow of light
     grade: 5th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
