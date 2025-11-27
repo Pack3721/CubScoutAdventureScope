@@ -94,10 +94,10 @@ ranks:
       requirements:
         - name: mountain-lion#1
           description: Identify the Cub Scout Six Essentials. Show what you do with each item.
-          tags: []
+          tags: [six-essentials]
         - name: mountain-lion#2
           description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Lion adult partner that are natural and things that are manmade.
-          tags: []
+          tags: [six-essentials]
         - name: mountain-lion#3
           description: Discover what S.A.W. means.
           tags: []
@@ -406,13 +406,13 @@ ranks:
       requirements:
         - name: tigers-in-the-wild#1
           description: Identify the Cub Scout Six Essentials. Show what you do with each item.
-          tags: []
+          tags: [six-essentials]
         - name: tigers-in-the-wild#2
           description: With your Tiger adult partner, learn about the Outdoor Code.
           tags: []
         - name: tigers-in-the-wild#3
           description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Tiger adult partner that are natural and things that are manmade.
-          tags: []
+          tags: [six-essentials]
         - name: tigers-in-the-wild#4
           description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
           tags: []
@@ -810,7 +810,7 @@ ranks:
       requirements:
         - name: paws-on-the-path#1
           description: Identify the Cub Scout Six Essentials. Show what you do with each item.
-          tags: []
+          tags: [six-essentials]
         - name: paws-on-the-path#2
           description: Learn about the buddy system and how it works in the outdoors. Pick a buddy for your walk.
           tags: [buddy-system]
@@ -822,7 +822,7 @@ ranks:
           tags: []
         - name: paws-on-the-path#5
           description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
-          tags: []
+          tags: [six-essentials]
     - name: A Wolf Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
       required: false
@@ -1004,10 +1004,10 @@ ranks:
           tags: [buddy-system]
         - name: lets-camp-wolf#2
           description: Know the Cub Scout Six Essentials.
-          tags: []
+          tags: [six-essentials]
         - name: lets-camp-wolf#3
           description: In addition to your Cub Scout Six Essentials, list the personal items you need for your campout.
-          tags: []
+          tags: [six-essentials]
         - name: lets-camp-wolf#4
           description: Learn a camping skill.
           tags: []
@@ -1230,7 +1230,7 @@ ranks:
       requirements:
         - name: bear-habitat#1
           description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: []
+          tags: [six-essentials]
         - name: bear-habitat#2
           description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
           tags: []
@@ -1421,10 +1421,10 @@ ranks:
           tags: [buddy-system]
         - name: lets-camp-bear#2
           description: Pack your Cub Scout Six Essentials for the campout.
-          tags: []
+          tags: [six-essentials]
         - name: lets-camp-bear#3
           description: In addition to your Cub Scout Six Essentials, show the personal items you need for your campout.
-          tags: []
+          tags: [six-essentials]
         - name: lets-camp-bear#4
           description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
           tags: []
@@ -1650,7 +1650,7 @@ ranks:
       requirements:
         - name: webelos-walkabout#1
           description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: []
+          tags: [six-essentials]
         - name: webelos-walkabout#2
           description: Plan a 2-mile route for your walk.
           tags: []
