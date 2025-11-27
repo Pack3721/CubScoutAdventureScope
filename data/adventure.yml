@@ -143,7 +143,7 @@ ranks:
           tags: []
         - name: count-on-me#2
           description: Play a game with your Lion adult partner or den that is based on counting or numbers.
-          tags: []
+          tags: [game]
         - name: count-on-me#3
           description: Organize a group of items based on shape, then based on color, and one other category. Count how many different shapes are in each category. After organizing them build anything using only one category.
           tags: []
@@ -237,7 +237,7 @@ ranks:
       requirements:
         - name: on-your-mark#1
           description: Play a game with your den.
-          tags: []
+          tags: [game]
         - name: on-your-mark#2
           description: Participate in an obstacle course relay.
           tags: []
@@ -256,7 +256,7 @@ ranks:
           tags: []
         - name: pick-my-path#3
           description: Learn the basic rules of a game and play the game.
-          tags: []
+          tags: [game]
     - name: Race Time Lion
       url: https://www.scouting.org/cub-scout-adventures/race-time-lion/
       required: false
@@ -389,13 +389,13 @@ ranks:
       requirements:
         - name: team-tiger#1
           description: Play a game with your den, or family members, that has a set of rules. Discuss why rules are important to the game you are playing.
-          tags: []
+          tags: [game]
         - name: team-tiger#2
           description: With your Tiger Adult Partner, choose a job that will help your team. Follow through by doing that job at least once.
           tags: []
         - name: team-tiger#3
           description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
-          tags: [team-game]
+          tags: [team-game, game]
         - name: team-tiger#4
           description: Participate in a service project.
           tags: [service-project]
@@ -663,13 +663,13 @@ ranks:
       requirements:
         - name: tiger-tag#1
           description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
-          tags: [active-game]
+          tags: [active-game, game]
         - name: tiger-tag#2
           description: Play a relay game with your den.
-          tags: [active-game]
+          tags: [active-game, game]
         - name: tiger-tag#3
           description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
-          tags: [sport]
+          tags: [sport, game]
         - name: tiger-tag#4
           description: Attend a sporting event.
           tags: [sport]
@@ -679,16 +679,17 @@ ranks:
       requirements:
         - name: tiger-iffic#1
           description: Play at least two different games by yourself; one may be a video game.
+          tags: [game]
         - name: tiger-iffic#2
-          tags: [indoor-game]
+          tags: [indoor-game, game]
           description: Play a board game or another inside game with one or more members of your den or family.
         - name: tiger-iffic#3
-          tags: [indoor-game]
+          tags: [indoor-game, game]
           description: With other members of your den or family, invent a game, or change the rules of a game you know, and play the game.
           tags: [create-game, indoor-game]
         - name: tiger-iffic#4
           description: Play a team game with your den or family.
-          tags: [team-game]
+          tags: [team-game, game]
     - name: Tigers in the Water
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
       required: false
@@ -855,7 +856,7 @@ ranks:
           tags: []
         - name: adventures-in-coins#3
           description: Play a coin game.
-          tags: [indoor-game]
+          tags: [indoor-game, game]
         - name: adventures-in-coins#4
           description: Choose a coin that interests you and make a coin rubbing. List information next to the coin detailing the pictures on it, the year it was made, and the mint where it was made.
           tags: []
@@ -946,7 +947,7 @@ ranks:
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
-          tags: []
+          tags: [game]
         - name: digging-in-the-past#2
           description: Create an imaginary dinosaur. Share with your den or family its name, what it eats, its size, and where it lives.
           tags: []
@@ -1482,7 +1483,7 @@ ranks:
           tags: []
         - name: roaring-laughter#3
           description: Play charades with your den or family.
-          tags: []
+          tags: [game]
         - name: roaring-laughter#4
           description: Have a “funniest joke contest” with your den or family.
           tags: []
