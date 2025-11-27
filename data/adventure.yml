@@ -286,6 +286,7 @@ ranks:
     - name: Time to Swim
       url: https://www.scouting.org/cub-scout-adventures/time-to-swim/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: time-to-swim#1
           description: Learn about the swimming safety rules that you need to follow.
@@ -683,6 +684,7 @@ ranks:
     - name: Tigers in the Water
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: tigers-in-the-water#1
           description: Learn about the swimming safety rules that you need to follow.
@@ -1005,6 +1007,7 @@ ranks:
     - name: Paws for Water
       url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: paws-for-water#0
           description: Enroll in and complete a swimming instruction program offered by an accredited instructor OR pass the Scouting America swimmer test (this OR complete requirements 1-6).
@@ -1473,6 +1476,7 @@ ranks:
     - name: Salmon Run
       url: https://www.scouting.org/cub-scout-adventures/salmon-run/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: salmon-run#1
           description: With your den or an adult, identify the attributes of qualified adult supervision at a swimming activity.
@@ -1646,6 +1650,7 @@ ranks:
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: aquanaut#1
           description: State the safety precautions you need to take before doing any swimming activity.
@@ -2282,6 +2287,7 @@ ranks:
     - name: Swimming
       url: https://www.scouting.org/cub-scout-adventures/swimming/
       required: false
+      alternate_name: Swimming
       requirements:
         - name: swimming#1
           description: Review Safe Swim Defense.
