@@ -1440,7 +1440,23 @@ ranks:
       required: false
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
-      required: false  
+      required: false
+      requirements:
+        - name: yo-yo#1
+          description: Learn the safety rules of using a yo-yo and always follow them.
+          tags: []
+        - name: yo-yo#2
+          description: Discover how to find the proper yo-yo string length for you.
+          tags: []
+        - name: yo-yo#3
+          description: Explain why it is important to have the correct string length and to be in the right location before throwing a yo-yo.
+          tags: []
+        - name: yo-yo#4
+          description: Demonstrate how to properly string a yo-yo and how to create a slip knot
+          tags: []
+        - name: yo-yo#5
+          description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
+          tags: []
   - rank: arrow of light
     grade: 5th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
