@@ -1237,6 +1237,22 @@ ranks:
     - name: Bears Afloat
       url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
       required: false
+      requirements:
+        - name: bears-afloat#1
+          description: Before attempting requirements 6 and 7 for this Adventure, you must pass Scouting America swimmer test.
+          tags: []
+        - name: bears-afloat#2
+          description: Pick a paddle craft you’ll use to complete all requirements; canoe, kayak, or stand-up paddleboard.
+          tags: []
+        - name: bears-afloat#3
+          description: With your den or an adult, discuss the role of qualified adult supervision at a paddle craft activity.
+          tags: []
+        - name: bears-afloat#4
+          description: Explain the safety rules to follow when safely using a paddle craft.
+          tags: []
+        - name: bears-afloat#5
+          description: Discover how to tell if a life jacket is the correct size and approved for your paddle craft activity. Demonstrate how to wear it.
+          tags: []
     - name: Bears on Bikes
       url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
       required: false
