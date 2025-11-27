@@ -1252,6 +1252,22 @@ ranks:
     - name: Forensics
       url: https://www.scouting.org/cub-scout-adventures/forensics/
       required: false
+      requirements:
+        - name: forensics#1
+          description: Explore the term “forensics” and how it is used to help solve crimes.
+          tags: []
+        - name: forensics#2
+          description: Analyze your fingerprints.
+          tags: []
+        - name: forensics#3
+          description: Make a shoe imprint.
+          tags: []
+        - name: forensics#4
+          description: Do an analysis of four different substances; salt, sugar, baking soda and cornstarch.
+          tags: []
+        - name: forensics#5
+          description: Learn about chromatography and how it is used in solving crimes.
+          tags: []
     - name: Let’s Camp Bear
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
