@@ -395,7 +395,7 @@ ranks:
           tags: []
         - name: team-tiger#3
           description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
-          tags: []
+          tags: [team-game]
         - name: team-tiger#4
           description: Participate in a service project.
           tags: [service-project]
@@ -688,7 +688,7 @@ ranks:
           tags: []
         - name: tiger-iffic#4
           description: Play a team game with your den or family.
-          tags: []
+          tags: [team-game]
     - name: Tigers in the Water
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
       required: false
