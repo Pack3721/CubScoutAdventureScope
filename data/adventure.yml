@@ -1408,6 +1408,22 @@ ranks:
     - name: Champions for Nature Webelos
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
       required: false
+      requirements:
+        - name: champions-for-nature-webelos#1
+          description: Discover the four components that make up a habitat: food, water, shelter, space.
+          tags: []
+        - name: champions-for-nature-webelos#2
+          description: Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5.
+          tags: []
+        - name: champions-for-nature-webelos#3
+          description: Identify the characteristics that classify an animal as a threatened or endangered species.
+          tags: []
+        - name: champions-for-nature-webelos#4
+          description: Explore what caused this animal to be threatened or endangered.
+          tags: []
+        - name: champions-for-nature-webelos#5
+          description: Research what is currently being done to protect the animal.
+          tags: []
     - name: Chef’s Knife
       url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
       required: false
