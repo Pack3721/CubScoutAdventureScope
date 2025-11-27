@@ -29,7 +29,7 @@ ranks:
       requirements:
         - name: fun-on-the-run#1
           description: Identify the five different food groups.
-          tags: []
+          tags: [food]
         - name: fun-on-the-run#2
           description: Practice hand washing. Point out when you should wash your hands.
           tags: []
@@ -282,7 +282,7 @@ ranks:
       requirements:
         - name: ready-set-grow#1
           description: Discover where the food we eat comes from.
-          tags: []
+          tags: [food]
         - name: ready-set-grow#2
           description: Plant a small garden outside or in a container.
           tags: []
@@ -343,7 +343,7 @@ ranks:
       requirements:
         - name: tiger-bites#1
           description: Identify the 5 different food groups.
-          tags: []
+          tags: [food]
         - name: tiger-bites#2
           description: Practice hand washing. Point out when you should wash your hands.
           tags: []
@@ -734,7 +734,7 @@ ranks:
       requirements:
         - name: running-with-the-pack#1
           description: Sample 3 different foods that are naturally 3 different colors. The food must be a protein, vegetable, fruit, dairy, or a grain.
-          tags: []
+          tags: [food]
         - name: running-with-the-pack#2
           description: Demonstrate the proper way to brush your teeth.
           tags: []
@@ -1170,7 +1170,7 @@ ranks:
       requirements:
         - name: bear-strong#1
           description: Sample food from three of the following food groups: protein, vegetables, fruits, dairy, and grains.
-          tags: []
+          tags: [food]
         - name: bear-strong#2
           description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
           tags: []
@@ -1631,7 +1631,7 @@ ranks:
       requirements:
         - name: my-family#1
           description: With your parent or legal guardian, talk about your family’s faith traditions.   Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your family’s faith traditions.
-          tags: []
+          tags: [art, food]
         - name: my-family#2
           description: Carry out an act of kindness.
           tags: []
@@ -2102,7 +2102,7 @@ ranks:
           tags: []
         - name: outdoor-adventurer#7
           description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
-          tags: []
+          tags: [food]
         - name: outdoor-adventurer#8
           description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave No Trace Principles for Kids.
           tags: [outdoor-code]
@@ -2113,23 +2113,22 @@ ranks:
       requirements:
         - name: champions-for-nature-aol#1
           description: Identify foods grown or processed in your state.
-          tags: [conservation]
+          tags: [conservation, food]
         - name: champions-for-nature-aol#2
           description: Determine the benefits of purchasing food that is locally grown or processed.
-          tags: [conservation]
+          tags: [conservation, food]
         - name: champions-for-nature-aol#3
           description: Explore the concept of a food desert.
-          tags: [conservation]
+          tags: [conservation, food]
         - name: champions-for-nature-aol#4
           description: Explore the concept of a food oasis.
-          tags: [conservation]
+          tags: [conservation, food]
         - name: champions-for-nature-aol#5
           description: Learn how individuals can reduce food waste.
-          tags: [conservation]
+          tags: [conservation, food]
         - name: champions-for-nature-aol#6
           description: Participate in a conservation service project.
           tags: [conservation, service-project]
-          tags: [service-project]
     - name: Cycling
       url: https://www.scouting.org/cub-scout-adventures/cycling/
       required: false
@@ -2181,7 +2180,7 @@ ranks:
       requirements:
         - name: estimations#1
           description: Estimate food measurements.
-          tags: [stem, mathematics]
+          tags: [stem, mathematics, food]
         - name: estimations#2
           description: Estimate the time of day.
           tags: [stem, mathematics]
