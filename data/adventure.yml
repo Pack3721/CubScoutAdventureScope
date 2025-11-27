@@ -1673,7 +1673,7 @@ ranks:
           tags: []
         - name: webelos-walkabout#5
           description: Demonstrate first aid for each of the following events that could occur on your 2-mile walk; blister, sprained ankle, sunburn, dehydration and heat related illness.
-          tags: []
+          tags: [first-aid]
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
       required: false
@@ -2029,22 +2029,22 @@ ranks:
           tags: []
         - name: first-aid#2
           description: Explain what you should do if you encounter someone in need of first aid.
-          tags: []
+          tags: [first-aid]
         - name: first-aid#3
           description: Demonstrate what to do for hurry cases of first aid: serious bleeding, heart attack or sudden cardiac arrest, stopped breathing, stroke, poisoning.
-          tags: []
+          tags: [first-aid]
         - name: first-aid#4
           description: Demonstrate how to help a choking victim.
-          tags: []
+          tags: [first-aid]
         - name: first-aid#5
           description: Demonstrate how to treat shock.
-          tags: []
+          tags: [first-aid]
         - name: first-aid#6
           description: Demonstrate how to treat the following: cuts and scratches, burns and scalds, bites and stings of insects and animals, and nosebleed.
-          tags: []
+          tags: [first-aid]
         - name: first-aid#7
           description: Make a personal first-aid kit. Demonstrate the proper use of each item in your first-aid kit.
-          tags: []
+          tags: [first-aid]
     - name: Duty to God
       url: https://www.scouting.org/cub-scout-adventures/duty-to-god/
       required: true
