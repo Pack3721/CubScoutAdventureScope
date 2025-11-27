@@ -536,7 +536,7 @@ ranks:
           tags: [packing]
         - name: lets-camp-tiger#4
           description: Learn a camping skill.
-          tags: []
+          tags: [test]
         - name: lets-camp-tiger#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1011,7 +1011,7 @@ ranks:
           tags: [six-essentials, packing]
         - name: lets-camp-wolf#4
           description: Learn a camping skill.
-          tags: []
+          tags: [test]
         - name: lets-camp-wolf#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1428,7 +1428,7 @@ ranks:
           tags: [six-essentials, packing]
         - name: lets-camp-bear#4
           description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
-          tags: []
+          tags: [test]
         - name: lets-camp-bear#5
           description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
           tags: []
@@ -1814,10 +1814,10 @@ ranks:
           tags: []
         - name: lets-camp-webelos#2
           description: Upon arrival at the campground, determine where to set up a tent.
-          tags: []
+          tags: [test]
         - name: lets-camp-webelos#3
           description: Set up your tent without help from an adult.
-          tags: []
+          tags: [test]
         - name: lets-camp-webelos#4
           description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
           tags: []
