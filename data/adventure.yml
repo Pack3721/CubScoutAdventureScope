@@ -1429,6 +1429,22 @@ ranks:
     - name: Pedal Away
       url: https://www.scouting.org/cub-scout-adventures/pedal-away/
       required: false
+      requirements:
+        - name: pedal-away#1
+          description: Decide  on gear and supplies you should bring for a long bike ride.
+          tags: []
+        - name: pedal-away#2
+          description: Discover how multi-gear bicycles work and how they benefit a rider.
+          tags: []
+        - name: pedal-away#3
+          description: Practice how to lubricate a chain.
+          tags: []
+        - name: pedal-away#4
+          description: Pick a bicycle lock that you will use. Demonstrate how it locks and unlocks, how it secures your bicycle, and how you carry it while you are riding your bicycle.
+          tags: []
+        - name: pedal-away#5
+          description: With your family, den, or pack, use a map and plan a bicycle ride that is at least 5 miles.
+          tags: []
     - name: Race Time Webelos
       url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
       required: false
