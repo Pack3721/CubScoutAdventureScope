@@ -448,10 +448,10 @@ ranks:
           tags: []
         - name: curiosity-intrigue-and-magical-mysteries#3
           description: Write your name in secret code.
-          tags: []
+          tags: [codes]
         - name: curiosity-intrigue-and-magical-mysteries#4
           description: Write a message with the code. Challenge your den, family or Tiger adult partner to read your coded message.
-          tags: []
+          tags: [codes]
     - name: Designed by Tiger
       url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
       required: false
@@ -899,10 +899,10 @@ ranks:
       requirements:
         - name: code-of-the-wolf#1
           description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
-          tags: []
+          tags: [codes]
         - name: code-of-the-wolf#2
           description: Build and play a game that requires the use of codes or patterns.
-          tags: [create-game, indoor-game]
+          tags: [create-game, indoor-game, codes]
         - name: code-of-the-wolf#3
           description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
           tags: []
