@@ -919,16 +919,16 @@ ranks:
       requirements:
         - name: computing-wolves#1
           description: Discover the basic components of a computer.
-          tags: []
+          tags: [stem, technology]
         - name: computing-wolves#2
           description: Determine how to properly dispose of computer components.
-          tags: []
+          tags: [stem, technology]
         - name: computing-wolves#3
           description: Using a digital device application of your choice, create a story that you can share with others.
-          tags: []
+          tags: [stem, technology]
         - name: computing-wolves#4
           description: With your parent or legal guardian, set up a policy for safely using digital devices.
-          tags: []
+          tags: [stem, technology]
     - name: Cubs Who Care
       url: https://www.scouting.org/cub-scout-adventures/cubs-who-care/
       required: false
@@ -1938,16 +1938,16 @@ ranks:
       requirements:
         - name: tech-on-the-trail#1
           description: Discuss how technology can help keep you safe in the outdoors.
-          tags: []
+          tags: [stem, technology]
         - name: tech-on-the-trail#2
           description: Explore Global Positioning Satellite and how to use it.
-          tags: []
+          tags: [stem, technology]
         - name: tech-on-the-trail#3
           description: With an adult, choose an online mapping program tool and plan a 2-mile trek.
-          tags: []
+          tags: [stem, technology]
         - name: tech-on-the-trail#4
           description: Take your 2-mile trek.
-          tags: []
+          tags: [stem, technology]
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
       required: false
@@ -2208,14 +2208,15 @@ ranks:
       alternate_name: Technology
       requirements:
         - name: high-tech-outdoors#1
+          tags: [stem, technology]
           description: With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather.
-          tags: []
+          tags: [stem, technology]
         - name: high-tech-outdoors#2
           description: With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app.
-          tags: []
+          tags: [stem, technology]
         - name: high-tech-outdoors#3
           description: Discuss how technology has improved camping gear.
-          tags: []
+          tags: [stem, technology]
     - name: Into the Wild
       url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
       required: false
