@@ -637,6 +637,7 @@ ranks:
     - name: Summertime Fun Tiger
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-tiger/
       required: false
+      alternate_name: Summer Time
       requirements:
         - name: summertime-fun-tiger#1
           description: Anytime during May through August participate in a total of three Cub Scout activities.
@@ -1116,6 +1117,7 @@ ranks:
     - name: Summertime Fun Wolf
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
       required: false
+      alternate_name: Summer Time
       requirements:
         - name: summertime-fun-wolf#1
           description: Anytime during May through August participate in a total of three Cub Scout activities.
@@ -1514,6 +1516,7 @@ ranks:
     - name: Summertime Fun Bear
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
       required: false
+      alternate_name: Summer Time
       requirements:
         - name: summertime-fun-bear#1
           description: Anytime during May through August participate in a total of three Cub Scout activities.
@@ -1920,6 +1923,7 @@ ranks:
     - name: Summertime Fun Webelos
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/
       required: false
+      alternate_name: Summer Time
       requirements:
         - name: summertime-fun-webelos#1
           description: Anytime during May through August participate in a total of three Cub Scout activities. 
@@ -2307,6 +2311,7 @@ ranks:
     - name: Summertime Fun AOL
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-aol/
       required: false
+      alternate_name: Summer Time
       requirements:
         - name: summertime-fun-aol#1
           description: Anytime during May through August participate in a total of three Cub Scout activities.
