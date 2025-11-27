@@ -1302,6 +1302,7 @@ ranks:
     - name: Bears Afloat
       url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
       required: false
+      alternate_name: Paddle Craft
       requirements:
         - name: bears-afloat#1
           description: Before attempting requirements 6 and 7 for this Adventure, you must pass Scouting America swimmer test.
@@ -1859,6 +1860,7 @@ ranks:
     - name: Paddle Onward
       url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
       required: false
+      alternate_name: Paddle Craft
       requirements:
         - name: paddle-onward#1
           description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
@@ -2259,6 +2261,7 @@ ranks:
     - name: Paddle Craft
       url: https://www.scouting.org/cub-scout-adventures/paddle-craft/
       required: false
+      alternate_name: Paddle Craft
       requirements:
         - name: paddle-craft#1
           description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
