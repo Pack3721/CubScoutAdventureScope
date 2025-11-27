@@ -1393,6 +1393,22 @@ ranks:
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
       required: false
+      requirements:
+        - name: aquanaut#1
+          description: State the safety precautions you need to take before doing any swimming activity.
+          tags: []
+        - name: aquanaut#2
+          description: Explain the meaning of “order of rescue” and demonstrate the reach and throw rescue techniques from land.
+          tags: []
+        - name: aquanaut#3
+          description: Learn how to prevent and treat hypothermia.
+          tags: []
+        - name: aquanaut#4
+          description: Attempt to tread water.
+          tags: []
+        - name: aquanaut#5
+          description: Attempt Scouting America swimmer test.
+          tags: []
     - name: Art Explosion
       url: https://www.scouting.org/cub-scout-adventures/art-explosion/
       required: false
