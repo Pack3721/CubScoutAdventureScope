@@ -663,10 +663,10 @@ ranks:
       requirements:
         - name: tiger-tag#1
           description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
-          tags: []
+          tags: [active-game]
         - name: tiger-tag#2
           description: Play a relay game with your den.
-          tags: []
+          tags: [active-game]
         - name: tiger-tag#3
           description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
           tags: [sport]
@@ -1049,7 +1049,7 @@ ranks:
           tags: [sport]
         - name: paws-of-skill#2
           description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
-          tags: [sport]
+          tags: [sport, active-game]
         - name: paws-of-skill#3
           description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
           tags: [sport]
