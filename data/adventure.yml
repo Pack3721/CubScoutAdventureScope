@@ -1438,6 +1438,19 @@ ranks:
     - name: Tech on the Trail
       url: https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/
       required: false
+      requirements:
+        - name: tech-on-the-trail#1
+          description: Discuss how technology can help keep you safe in the outdoors.
+          tags: []
+        - name: tech-on-the-trail#2
+          description: Explore Global Positioning Satellite and how to use it.
+          tags: []
+        - name: tech-on-the-trail#3
+          description: With an adult, choose an online mapping program tool and plan a 2-mile trek.
+          tags: []
+        - name: tech-on-the-trail#4
+          description: Take your 2-mile trek.
+          tags: []
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
       required: false
