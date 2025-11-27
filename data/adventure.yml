@@ -1267,6 +1267,22 @@ ranks:
     - name: Salmon Run
       url: https://www.scouting.org/cub-scout-adventures/salmon-run/
       required: false
+      requirements:
+        - name: salmon-run#1
+          description: With your den or an adult, identify the attributes of qualified adult supervision at a swimming activity.
+          tags: []
+        - name: salmon-run#2
+          description: Learn the three swimming ability groups for Scouting America and water depths appropriate for each. 
+          tags: []
+        - name: salmon-run#3
+          description: Go swimming with your den, pack, or family for 30 minutes using the buddy system.
+          tags: []
+        - name: salmon-run#4
+          description: Demonstrate the use the buddy system, buddy checks, and ability groups with your den or an adult.
+          tags: []
+        - name: salmon-run#5
+          description: Attempt Scouting America beginner swim test.
+          tags: []
     - name: Summertime Fun Bear
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
       required: false
