@@ -1417,6 +1417,22 @@ ranks:
     - name: Let’s Camp Webelos
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
       required: false
+      requirements:
+        - name: lets-camp-webelos#1
+          description: With your den, pack, or family, plan and participate in a campout.
+          tags: []
+        - name: lets-camp-webelos#2
+          description: Upon arrival at the campground, determine where to set up a tent.
+          tags: []
+        - name: lets-camp-webelos#3
+          description: Set up your tent without help from an adult.
+          tags: []
+        - name: lets-camp-webelos#4
+          description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
+          tags: []
+        - name: lets-camp-webelos#5
+          description: Show how to tie a bowline.  Explain when this knot should be used and why.
+          tags: []
     - name: Math on the Trail
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
