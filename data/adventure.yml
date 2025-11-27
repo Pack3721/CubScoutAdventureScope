@@ -203,6 +203,7 @@ ranks:
     - name: Let’s Camp Lion
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-lion/
       required: false
+      alternate_name: Camping
       requirements:
         - name: lets-camp-lion#1
           description: Learn about the buddy system and how it works in the outdoors.
@@ -522,6 +523,7 @@ ranks:
     - name: Let’s Camp Tiger
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-tiger/
       required: false
+      alternate_name: Camping
       requirements:
         - name: lets-camp-tiger#1
           description: Learn about the buddy system and how it works in the outdoors.
@@ -995,6 +997,7 @@ ranks:
     - name: Let’s Camp Wolf
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
       required: false
+      alternate_name: Camping
       requirements:
         - name: lets-camp-wolf#1
           description: Learn about the buddy system and how it works in the outdoors.
@@ -1411,6 +1414,7 @@ ranks:
     - name: Let’s Camp Bear
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
+      alternate_name: Camping
       requirements:
         - name: lets-camp-bear#1
           description: Review the buddy system and how it works in the outdoors.
@@ -1802,6 +1806,7 @@ ranks:
     - name: Let’s Camp Webelos
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
       required: false
+      alternate_name: Camping
       requirements:
         - name: lets-camp-webelos#1
           description: With your den, pack, or family, plan and participate in a campout.
