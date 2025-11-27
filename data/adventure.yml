@@ -137,16 +137,17 @@ ranks:
     - name: Count On Me
       url: https://www.scouting.org/cub-scout-adventures/count-on-me/
       required: false
+      alternate_name: Math
       requirements:
         - name: count-on-me#1
           description: Make a Lion using only squares, triangles, and circles.
-          tags: []
+          tags: [stem, mathematics]
         - name: count-on-me#2
           description: Play a game with your Lion adult partner or den that is based on counting or numbers.
-          tags: [game]
+          tags: [game, stem, mathematics]
         - name: count-on-me#3
           description: Organize a group of items based on shape, then based on color, and one other category. Count how many different shapes are in each category. After organizing them build anything using only one category.
-          tags: []
+          tags: [stem, mathematics]
     - name: Everyday Tech
       url: https://www.scouting.org/cub-scout-adventures/everyday-tech/
       required: false
@@ -241,7 +242,7 @@ ranks:
           tags: [game]
         - name: on-your-mark#2
           description: Participate in an obstacle course relay.
-          tags: []
+          tags: [game, active-game]
         - name: on-your-mark#3
           description: Build a box derby and participate in a race.
           tags: []
@@ -902,16 +903,16 @@ ranks:
       requirements:
         - name: code-of-the-wolf#1
           description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
-          tags: [codes]
+          tags: [codes, stem, mathematics]
         - name: code-of-the-wolf#2
           description: Build and play a game that requires the use of codes or patterns.
-          tags: [create-game, indoor-game, codes]
+          tags: [create-game, indoor-game, codes, stem, mathematics]
         - name: code-of-the-wolf#3
           description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
-          tags: []
+          tags: [stem, mathematics]
         - name: code-of-the-wolf#4
           description: Using a package that contains a number of different colored items, discover the most common color.
-          tags: []
+          tags: [stem, mathematics]
     - name: Computing Wolves
       url: https://www.scouting.org/cub-scout-adventures/computing-wolves/
       required: false
@@ -1834,16 +1835,17 @@ ranks:
     - name: Math on the Trail
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
+      alternate_name: Math
       requirements:
         - name: math-on-the-trail#1
           description: Determine your walking pace by walking ¼ mile.  Make a projection on how long it would take you to walk 2 miles.
-          tags: []
+          tags: [stem, mathematics]
         - name: math-on-the-trail#2
           description: Walk 2 miles and record the time it took you to complete the two miles.
-          tags: []
+          tags: [stem, mathematics]
         - name: math-on-the-trail#3
           description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
-          tags: []
+          tags: [stem, mathematics]
     - name: Modular Design
       url: https://www.scouting.org/cub-scout-adventures/modular-design/
       required: false
