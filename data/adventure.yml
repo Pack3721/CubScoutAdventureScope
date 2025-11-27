@@ -1402,6 +1402,19 @@ ranks:
     - name: Build It
       url: https://www.scouting.org/cub-scout-adventures/build-it/
       required: false
+      requirements:
+        - name: build-it#1
+          description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
+          tags: []
+        - name: build-it#2
+          description: Demonstrate  how to check for plumb, level, and square when building.
+          tags: []
+        - name: build-it#3
+          description: With the guidance of your Webelos den leader, parent, or legal guardian, select a carpentry project that requires it to be either plumb, level, and/or square.  Create a list of materials and tools you will need to complete the project.
+          tags: []
+        - name: build-it#4
+          description: Build  your carpentry project.
+          tags: []
     - name: Catch the Big One
       url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
       required: false
