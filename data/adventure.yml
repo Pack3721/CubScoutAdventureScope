@@ -1420,6 +1420,16 @@ ranks:
     - name: Math on the Trail
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
+      requirements:
+        - name: math-on-the-trail#1
+          description: Determine your walking pace by walking ¼ mile.  Make a projection on how long it would take you to walk 2 miles.
+          tags: []
+        - name: math-on-the-trail#2
+          description: Walk 2 miles and record the time it took you to complete the two miles.
+          tags: []
+        - name: math-on-the-trail#3
+          description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
+          tags: []
     - name: Modular Design
       url: https://www.scouting.org/cub-scout-adventures/modular-design/
       required: false
