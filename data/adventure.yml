@@ -124,16 +124,16 @@ ranks:
       requirements:
         - name: champions-for-nature-lion#1
           description: Discover the difference between natural resources and man-made items.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-lion#2
           description: Discover the difference between organic, paper, plastic, metal and glass waste.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-lion#3
           description: Discover recycling.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-lion#4
           description: Participate in a conservation service project.
-          tags: [service-project]
+          tags: [service-project, conservation]
     - name: Count On Me
       url: https://www.scouting.org/cub-scout-adventures/count-on-me/
       required: false
@@ -428,15 +428,16 @@ ranks:
       requirements:
         - name: champions-for-nature-tiger#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-tiger#2
           description: Learn about the 3 R's: Reduce, Reuse, Recycle.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-tiger#3
           description: Discover what happens to the garbage in your community.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-tiger#4
           description: Participate in a conservation service project.
+          tags: [service-project, conservation]
           tags: [service-project]
     - name: Curiosity, Intrigue, and Magical Mysteries
       url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
@@ -888,15 +889,16 @@ ranks:
       requirements:
         - name: champions-for-nature-wolf#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-wolf#2
           description: Learn about the 3 R’s: Reduce, Reuse, Recycle.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-wolf#3
           description: Discover what happens to the recyclables in your community.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-wolf#4
           description: Participate in a conservation project.
+          tags: [conservation]
           tags: [service-project]
     - name: Code of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
@@ -1113,10 +1115,10 @@ ranks:
           tags: []
         - name: spirit-of-the-water#2
           description: Discuss how water can become polluted.
-          tags: []
+          tags: [conservation]
         - name: spirit-of-the-water#3
           description: Share some ways you can conserve water in your home.
-          tags: []
+          tags: [conservation]
         - name: spirit-of-the-water#4
           description: Discover how water in your community is treated to become safe to drink.
           tags: []
@@ -1354,18 +1356,19 @@ ranks:
       requirements:
         - name: champions-for-nature-bear#1
           description: Discover natural resources.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-bear#2
           description: Discover what happens to the wastewater in your community.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-bear#3
           description: Investigate soil.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-bear#4
           description: Investigate air pollution.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-bear#5
           description: Participate in a conservation project.
+          tags: [conservation]
           tags: [service-project]
     - name: Chef Tech
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
@@ -1773,18 +1776,19 @@ ranks:
       requirements:
         - name: champions-for-nature-webelos#6
           description: Participate in a conservation service project.
-          tags: [service-project]
+          tags: [service-project, conservation]
         - name: champions-for-nature-webelos#2
           description: Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-webelos#3
           description: Identify the characteristics that classify an animal as a threatened or endangered species.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-webelos#4
           description: Explore what caused this animal to be threatened or endangered.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-webelos#5
           description: Research what is currently being done to protect the animal.
+          tags: [conservation]
           tags: []
     - name: Chef’s Knife
       url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
@@ -2110,21 +2114,22 @@ ranks:
       requirements:
         - name: champions-for-nature-aol#1
           description: Identify foods grown or processed in your state.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-aol#2
           description: Determine the benefits of purchasing food that is locally grown or processed.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-aol#3
           description: Explore the concept of a food desert.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-aol#4
           description: Explore the concept of a food oasis.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-aol#5
           description: Learn how individuals can reduce food waste.
-          tags: []
+          tags: [conservation]
         - name: champions-for-nature-aol#6
           description: Participate in a conservation service project.
+          tags: [conservation, service-project]
           tags: [service-project]
     - name: Cycling
       url: https://www.scouting.org/cub-scout-adventures/cycling/
