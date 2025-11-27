@@ -1423,6 +1423,22 @@ ranks:
     - name: Modular Design
       url: https://www.scouting.org/cub-scout-adventures/modular-design/
       required: false
+      requirements:
+        - name: modular-design#1
+          description: Learn what modular design is and identify three things that use modular design in their construction.
+          tags: []
+        - name: modular-design#2
+          description: Using modular-based building pieces, build a model without a set of instructions.
+          tags: []
+        - name: modular-design#3
+          description: Using the model made in requirement 2, create a set of step-by-step instructions on how to make your model.
+          tags: []
+        - name: modular-design#4
+          description: Have someone make your model using your instructions.
+          tags: []
+        - name: modular-design#5
+          description: Using the same modular pieces used in requirement 2, build another model of something different.
+          tags: []
     - name: Paddle Onward
       url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
       required: false
