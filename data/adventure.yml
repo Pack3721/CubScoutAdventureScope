@@ -1249,6 +1249,19 @@ ranks:
     - name: Critter Care
       url: https://www.scouting.org/cub-scout-adventures/critter-care/
       required: false
+      requirements:
+        - name: critter-care#1
+          description: Identify an animal that would be good pet for your family.
+          tags: []
+        - name: critter-care#2
+          description: Choose two animals that are allowed as pets in your community.  Compare and contrast why these pets may be a good choice for you.
+          tags: []
+        - name: critter-care#3
+          description: Based on your choice in requirement 1, investigate how to properly care for your chosen animal.
+          tags: []
+        - name: critter-care#4
+          description: Discover three ways a pet can help people.
+          tags: []
     - name: Forensics
       url: https://www.scouting.org/cub-scout-adventures/forensics/
       required: false
