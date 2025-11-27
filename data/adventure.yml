@@ -1234,6 +1234,22 @@ ranks:
     - name: Baloo the Builder
       url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
       required: false
+      requirements:
+        - name: baloo-the-builder#1
+          description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
+          tags: []
+        - name: baloo-the-builder#2
+          description: Practice using four of the tools you learned about in requirement 1.
+          tags: []
+        - name: baloo-the-builder#3
+          description: Choose a project to build.
+          tags: []
+        - name: baloo-the-builder#4
+          description: Determine the tools and materials needed to build your project in requirement 3.
+          tags: []
+        - name: baloo-the-builder#5
+          description: Build your project.
+          tags: []
     - name: Bears Afloat
       url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
       required: false
