@@ -110,13 +110,13 @@ ranks:
       requirements:
         - name: build-it-up-knock-it-down#1
           description: With your Lion adult partner, build a structure.
-          tags: []
+          tags: [stem, engineering]
         - name: build-it-up-knock-it-down#2
           description: With your den or family, build a structure.
-          tags: []
+          tags: [stem, engineering]
         - name: build-it-up-knock-it-down#3
           description: Build something that is designed to be knocked down.
-          tags: []
+          tags: [stem, engineering]
     - name: Champions for Nature Lion
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-lion/
       required: false
@@ -255,7 +255,7 @@ ranks:
           tags: []
         - name: pick-my-path#2
           description: Perform a Good Turn for another person.
-          tags: []
+          tags: [good-turn]
         - name: pick-my-path#3
           description: Learn the basic rules of a game and play the game.
           tags: [game]
@@ -272,7 +272,7 @@ ranks:
           tags: []
         - name: race-time-lion#3
           description: Before the race, discuss with your Lion adult partner how you will demonstrate good sportsmanship during the race.
-          tags: []
+          tags: [sportsmanship]
         - name: race-time-lion#4
           description: With your Lion adult partner, participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
@@ -521,7 +521,7 @@ ranks:
           tags: []
         - name: good-knights#4
           description: Do a Good Turn.
-          tags: []
+          tags: [good-turn]
     - name: Let’s Camp Tiger
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-tiger/
       required: false
@@ -555,7 +555,7 @@ ranks:
           tags: []
         - name: race-time-tiger#3
           description: Before the race, discuss with your Tiger adult partner how you will demonstrate good sportsmanship during the race.
-          tags: []
+          tags: [sportsmanship]
         - name: race-time-tiger#4
           description: With your Tiger adult partner, participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
@@ -1053,7 +1053,7 @@ ranks:
       requirements:
         - name: paws-of-skill#1
           description: With your den, discuss sportsmanship and what it means to be a good sport. Make the connection between sportsmanship and the Scout Oath and the Scout Law.
-          tags: [sport]
+          tags: [sport,sportsmanship]
         - name: paws-of-skill#2
           description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
           tags: [sport, active-game]
@@ -1099,7 +1099,7 @@ ranks:
           tags: []
         - name: race-time-wolf#4
           description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
-          tags: []
+          tags: [sportsmanship]
         - name: race-time-wolf#5
           description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
@@ -1476,7 +1476,7 @@ ranks:
           tags: []
         - name: race-time-bear#4
           description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
-          tags: []
+          tags: [sportsmanship]
         - name: race-time-bear#5
           description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
@@ -1924,7 +1924,7 @@ ranks:
           tags: []
         - name: race-time-webelos#4
           description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
-          tags: []
+          tags: [sportsmanship]
         - name: race-time-webelos#5
           description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
@@ -1971,7 +1971,7 @@ ranks:
           tags: []
         - name: yo-yo#5
           description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
-          tags: []
+          tags: [stem, physical-science]
   - rank: arrow of light
     grade: 5th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
