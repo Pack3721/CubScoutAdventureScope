@@ -97,10 +97,10 @@ ranks:
           tags: [six-essentials]
         - name: mountain-lion#2
           description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Lion adult partner that are natural and things that are manmade.
-          tags: [six-essentials]
+          tags: [six-essentials, walk]
         - name: mountain-lion#3
           description: Discover what S.A.W. means.
-          tags: []
+          tags: [six-essentials]
         - name: mountain-lion#4
           description: Identify common animals that are found where you live. Separate those animals into domesticated and wild.
           tags: []
@@ -411,10 +411,10 @@ ranks:
           tags: [six-essentials]
         - name: tigers-in-the-wild#2
           description: With your Tiger adult partner, learn about the Outdoor Code.
-          tags: []
+          tags: [outdoor-code]
         - name: tigers-in-the-wild#3
           description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Tiger adult partner that are natural and things that are manmade.
-          tags: [six-essentials]
+          tags: [six-essentials,walk]
         - name: tigers-in-the-wild#4
           description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
           tags: [art]
@@ -819,16 +819,16 @@ ranks:
           tags: [six-essentials]
         - name: paws-on-the-path#2
           description: Learn about the buddy system and how it works in the outdoors. Pick a buddy for your walk.
-          tags: [buddy-system]
+          tags: [buddy-system, walk]
         - name: paws-on-the-path#3
           description: Identify appropriate clothes and shoes for your walk outside. Do your best to wear them on your walk.
           tags: []
         - name: paws-on-the-path#4
           description: Learn about the Outdoor Code and Leave No Trace Principle for Kids.
-          tags: []
+          tags: [outdoor-code]
         - name: paws-on-the-path#5
           description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
-          tags: [six-essentials]
+          tags: [six-essentials, walk]
     - name: A Wolf Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
       required: false
@@ -1239,19 +1239,19 @@ ranks:
       requirements:
         - name: bear-habitat#1
           description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials]
+          tags: [six-essentials, walk]
         - name: bear-habitat#2
           description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
-          tags: []
+          tags: [walk]
         - name: bear-habitat#3
           description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
-          tags: []
+          tags: [walk]
         - name: bear-habitat#4
           description: “Trash your Trash” Make a plan for what you will do with your personal trash or trash you find along the trail.
-          tags: []
+          tags: [walk]
         - name: bear-habitat#5
           description: “Leave What You Find” Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.
-          tags: []
+          tags: [walk]
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
@@ -1663,19 +1663,19 @@ ranks:
       requirements:
         - name: webelos-walkabout#1
           description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials]
+          tags: [six-essentials, walk]
         - name: webelos-walkabout#2
           description: Plan a 2-mile route for your walk.
-          tags: []
+          tags: [walk]
         - name: webelos-walkabout#3
           description: Check the weather forecast for the time of your planned 2-mile walk.
-          tags: []
+          tags: [walk]
         - name: webelos-walkabout#4
           description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
-          tags: []
+          tags: [walk]
         - name: webelos-walkabout#5
           description: Demonstrate first aid for each of the following events that could occur on your 2-mile walk; blister, sprained ankle, sunburn, dehydration and heat related illness.
-          tags: [first-aid]
+          tags: [first-aid, walk]
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
       required: false
@@ -1849,7 +1849,7 @@ ranks:
           tags: [stem, mathematics]
         - name: math-on-the-trail#2
           description: Walk 2 miles and record the time it took you to complete the two miles.
-          tags: [stem, mathematics]
+          tags: [stem, mathematics, walk]
         - name: math-on-the-trail#3
           description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
           tags: [stem, mathematics]
@@ -2070,7 +2070,7 @@ ranks:
       requirements:
         - name: citizenship#1
           description: Identify a community service project that your patrol or pack could accomplish. Use Scouting America's SAFE Checklist and develop a plan to conduct the service project safely.
-          tags: []
+          tags: [service-project]
         - name: citizenship#2
           description: Participate in a service project for a minimum of two hours or multiple service projects for a total of two hours.
           tags: [service-project]
@@ -2101,9 +2101,8 @@ ranks:
           description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
           tags: []
         - name: outdoor-adventurer#8
-          description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave
-            Trace Principles for Kids.
-          tags: []
+          description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave No Trace Principles for Kids.
+          tags: [outdoor-code]
     - name: Champions for Nature AOL
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-aol/
       required: false
