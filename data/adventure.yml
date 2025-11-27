@@ -176,6 +176,7 @@ ranks:
     - name: Go Fish
       url: https://www.scouting.org/cub-scout-adventures/go-fish/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: go-fish#1
           description: With your Lion adult partner, learn the rules of fishing safely.
@@ -470,6 +471,7 @@ ranks:
     - name: Fish On
       url: https://www.scouting.org/cub-scout-adventures/fish-on/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: fish-on#1
           description: With your den or Tiger adult partner, identify the body of water where you will go fishing.
@@ -818,6 +820,7 @@ ranks:
     - name: A Wolf Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: a-wolf-goes-fishing#1
           description: Identify the type of water you will be fishing in and what type of fish live in the water.
@@ -1234,6 +1237,7 @@ ranks:
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: a-bear-goes-fishing#1
           description: Learn about three types of fish in your area.
@@ -1718,6 +1722,7 @@ ranks:
     - name: Catch the Big One
       url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: catch-the-big-one#1
           description: Make a plan to go fishing.  Determine where you will go and what type of fish you plan to catch.  All of the following requirements are to be completed based on your choice.
@@ -2147,6 +2152,7 @@ ranks:
     - name: Fishing
       url: https://www.scouting.org/cub-scout-adventures/fishing/
       required: false
+      alternate_name: Fishing
       requirements:
         - name: fishing#1
           description: Make a plan to go fishing. Determine where you will go and what type of fish you plan to catch.
