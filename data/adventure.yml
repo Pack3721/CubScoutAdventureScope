@@ -685,7 +685,7 @@ ranks:
           tags: []
         - name: tiger-iffic#3
           description: With other members of your den or family, invent a game, or change the rules of a game you know, and play the game.
-          tags: []
+          tags: [create-game]
         - name: tiger-iffic#4
           description: Play a team game with your den or family.
           tags: [team-game]
@@ -901,7 +901,7 @@ ranks:
           tags: []
         - name: code-of-the-wolf#2
           description: Build and play a game that requires the use of codes or patterns.
-          tags: []
+          tags: [create-game]
         - name: code-of-the-wolf#3
           description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
           tags: []
