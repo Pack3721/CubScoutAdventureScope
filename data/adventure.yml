@@ -1435,6 +1435,10 @@ ranks:
     - name: Summertime Fun Webelos
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/
       required: false
+      requirements:
+        - name: summertime-fun-webelos#1
+          description: Anytime during May through August participate in a total of three Cub Scout activities. 
+          tags: []
     - name: Tech on the Trail
       url: https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/
       required: false
