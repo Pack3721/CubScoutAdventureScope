@@ -219,6 +219,7 @@ ranks:
     - name: On a Roll
       url: https://www.scouting.org/cub-scout-adventures/on-a-roll/
       required: false
+      alternate_name: Biking
       requirements:
         - name: on-a-roll#1
           description: With your den or Lion adult partner, learn about the safety gear you should use while riding a bicycle.
@@ -553,8 +554,9 @@ ranks:
           description: With your Tiger adult partner, participate in a Pinewood Derby® or a Raingutter Regatta™.
           tags: []
     - name: Rolling Tigers
-      url: https://www.scouting.org/cub-scout-adventures/rolling- tigers/
+      url: https://www.scouting.org/cub-scout-adventures/rolling-tigers/
       required: false
+      alternate_name: Biking
       requirements:
         - name: rolling-tigers#1
           description: Learn the ABC's of bike gear (air, brakes, chain.)
@@ -1049,6 +1051,7 @@ ranks:
     - name: Pedal With the Pack
       url: https://www.scouting.org/cub-scout-adventures/pedal-with-the-pack/
       required: false
+      alternate_name: Biking
       requirements:
         - name: pedal-with-the-pack#1
           description: Show how to properly wear a bicycle helmet.Show you can take off and put on without help.
@@ -1311,6 +1314,7 @@ ranks:
     - name: Bears on Bikes
       url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
       required: false
+      alternate_name: Biking
       requirements:
         - name: bears-on-bikes#1
           description: Show how to properly wear a bicycle helmet.
@@ -1864,6 +1868,7 @@ ranks:
     - name: Pedal Away
       url: https://www.scouting.org/cub-scout-adventures/pedal-away/
       required: false
+      alternate_name: Biking
       requirements:
         - name: pedal-away#1
           description: Decide  on gear and supplies you should bring for a long bike ride.
@@ -2095,6 +2100,7 @@ ranks:
     - name: Cycling
       url: https://www.scouting.org/cub-scout-adventures/cycling/
       required: false
+      alternate_name: Biking
       requirements:
         - name: cycling#1
           description: Decide on gear and supplies you should bring might bring for a long bike ride. Determine how to safely carry the gear.
