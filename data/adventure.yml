@@ -153,13 +153,13 @@ ranks:
       requirements:
         - name: everyday-tech#1
           description: Discover technology around your home, meeting place, or neighborhood.
-          tags: []
+          tags: [stem, technology]
         - name: everyday-tech#2
           description: Discover ways that digital technology can make life easier.
-          tags: []
+          tags: [stem, technology]
         - name: everyday-tech#3
           description: Identify an item of digital technology you use at home. Demonstrate to your Lion adult partner how you use it safely.
-          tags: []
+          tags: [stem, technology]
     - name: Gizmos and Gadgets
       url: https://www.scouting.org/cub-scout-adventures/gizmos-and-gadgets/
       required: false
@@ -648,16 +648,16 @@ ranks:
       requirements:
         - name: tech-all-around#1
           description: Discover technology around your home, meeting place, or neighborhood.
-          tags: []
+          tags: [stem, technology]
         - name: tech-all-around#2
           description: Discover ways that digital technology can make life easier.
-          tags: []
+          tags: [stem, technology]
         - name: tech-all-around#3
           description: Identify an item of digital technology you use at home. Demonstrate to your adult partner how you use it safely.
-          tags: []
+          tags: [stem, technology]
         - name: tech-all-around#4
           description: With your parent or legal guardian, set up a policy for digital devices.
-          tags: []
+          tags: [stem, technology]
     - name: Tiger Tag
       url: https://www.scouting.org/cub-scout-adventures/tiger-tag/
       required: false
