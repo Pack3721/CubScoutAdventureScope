@@ -259,6 +259,7 @@ ranks:
     - name: Race Time Lion
       url: https://www.scouting.org/cub-scout-adventures/race-time-lion/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-lion#1
           description: With your Lion adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -540,6 +541,7 @@ ranks:
     - name: Race Time Tiger
       url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-tiger#1
           description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -1074,6 +1076,7 @@ ranks:
     - name: Race Time Wolf
       url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-wolf#1
           description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -1446,6 +1449,7 @@ ranks:
     - name: Race Time Bear
       url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-bear#1
           description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -1888,6 +1892,7 @@ ranks:
     - name: Race Time Webelos
       url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-webelos#1
           description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.
@@ -2279,6 +2284,7 @@ ranks:
     - name: Race Time AOL
       url: https://www.scouting.org/cub-scout-adventures/race-time-aol/
       required: false
+      alternate_name: Race Time
       requirements:
         - name: race-time-aol#1
           description: With adult supervision, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
