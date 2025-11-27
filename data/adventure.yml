@@ -1228,6 +1228,22 @@ ranks:
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
+      requirements:
+        - name: a-bear-goes-fishing#1
+          description: Learn about three types of fish in your area.
+          tags: []
+        - name: a-bear-goes-fishing#2
+          description: Learn about your local fishing regulations with your den leader or an adult.
+          tags: []
+        - name: a-bear-goes-fishing#3
+          description: List three of the regulations you learned about, and one reason each regulation exists.
+          tags: []
+        - name: a-bear-goes-fishing#4
+          description: Become familiar with the safe use of the fishing equipment you will be using on your outing.
+          tags: []
+        - name: a-bear-goes-fishing#5
+          description: Learn the proper way to attach the hook, lure, or fly to the line.
+          tags: []
     - name: Balancing Bears
       url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
       required: false
