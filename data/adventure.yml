@@ -207,7 +207,7 @@ ranks:
       requirements:
         - name: lets-camp-lion#1
           description: Learn about the buddy system and how it works in the outdoors.
-          tags: []
+          tags: [buddy-system]
         - name: lets-camp-lion#2
           description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
           tags: []
@@ -527,7 +527,7 @@ ranks:
       requirements:
         - name: lets-camp-tiger#1
           description: Learn about the buddy system and how it works in the outdoors.
-          tags: []
+          tags: [buddy-system]
         - name: lets-camp-tiger#2
           description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
           tags: []
@@ -756,7 +756,7 @@ ranks:
           tags: []
         - name: safety-in-numbers#3
           description: Learn about the buddy system and demonstrate how it works.
-          tags: []
+          tags: [buddy-system]
         - name: safety-in-numbers#4
           description: Review common safety rules and demonstrate the proper use of playground equipment.
           tags: []
@@ -813,7 +813,7 @@ ranks:
           tags: []
         - name: paws-on-the-path#2
           description: Learn about the buddy system and how it works in the outdoors. Pick a buddy for your walk.
-          tags: []
+          tags: [buddy-system]
         - name: paws-on-the-path#3
           description: Identify appropriate clothes and shoes for your walk outside. Do your best to wear them on your walk.
           tags: []
@@ -1001,7 +1001,7 @@ ranks:
       requirements:
         - name: lets-camp-wolf#1
           description: Learn about the buddy system and how it works in the outdoors.
-          tags: []
+          tags: [buddy-system]
         - name: lets-camp-wolf#2
           description: Know the Cub Scout Six Essentials.
           tags: []
@@ -1418,7 +1418,7 @@ ranks:
       requirements:
         - name: lets-camp-bear#1
           description: Review the buddy system and how it works in the outdoors.
-          tags: []
+          tags: [buddy-system]
         - name: lets-camp-bear#2
           description: Pack your Cub Scout Six Essentials for the campout.
           tags: []
