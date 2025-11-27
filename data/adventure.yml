@@ -1255,6 +1255,22 @@ ranks:
     - name: Let’s Camp Bear
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
+      requirements:
+        - name: lets-camp-bear#1
+          description: Review the buddy system and how it works in the outdoors.
+          tags: []
+        - name: lets-camp-bear#2
+          description: Pack your Cub Scout Six Essentials for the campout.
+          tags: []
+        - name: lets-camp-bear#3
+          description: In addition to your Cub Scout Six Essentials, show the personal items you need for your campout.
+          tags: []
+        - name: lets-camp-bear#4
+          description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
+          tags: []
+        - name: lets-camp-bear#5
+          description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
+          tags: []
     - name: Marble Madness
       url: https://www.scouting.org/cub-scout-adventures/marble-madness/
       required: false
