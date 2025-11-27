@@ -86,7 +86,7 @@ ranks:
           tags: []
         - name: king-of-the-jungle#4
           description: Participate in a service project.
-          tags: []
+          tags: [service-project]
     - name: Mountain Lion
       url: https://www.scouting.org/cub-scout-adventures/mountain-lion/
       required: true
@@ -133,7 +133,7 @@ ranks:
           tags: []
         - name: champions-for-nature-lion#4
           description: Participate in a conservation service project.
-          tags: []
+          tags: [service-project]
     - name: Count On Me
       url: https://www.scouting.org/cub-scout-adventures/count-on-me/
       required: false
@@ -398,7 +398,7 @@ ranks:
           tags: []
         - name: team-tiger#4
           description: Participate in a service project.
-          tags: []
+          tags: [service-project]
     - name: Tigers in the Wild
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-wild/
       required: true
@@ -435,7 +435,7 @@ ranks:
           tags: []
         - name: champions-for-nature-tiger#4
           description: Participate in a conservation service project.
-          tags: []
+          tags: [service-project]
     - name: Curiosity, Intrigue, and Magical Mysteries
       url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
       required: false
@@ -802,7 +802,7 @@ ranks:
           tags: []
         - name: council-fire#6
           description: Participate in a service project. Explain how your volunteering is helpful to your neighborhood.
-          tags: []
+          tags: [service-project]
     - name: Paws on the Path
       url: https://www.scouting.org/cub-scout-adventures/paws-on-the-path/
       required: true
@@ -891,7 +891,7 @@ ranks:
           tags: []
         - name: champions-for-nature-wolf#4
           description: Participate in a conservation project.
-          tags: []
+          tags: [service-project]
     - name: Code of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
       required: false
@@ -1222,7 +1222,7 @@ ranks:
           tags: []
         - name: paws-for-action#4
           description: Participate in a service project.
-          tags: []
+          tags: [service-project]
     - name: Bear Habitat
       url: https://www.scouting.org/cub-scout-adventures/bear-habitat/
       required: true
@@ -1356,7 +1356,7 @@ ranks:
           tags: []
         - name: champions-for-nature-bear#5
           description: Participate in a conservation project.
-          tags: []
+          tags: [service-project]
     - name: Chef Tech
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
       required: false
@@ -1642,7 +1642,7 @@ ranks:
           tags: []
         - name: my-community#4
           description: Participate in a service project.
-          tags: []
+          tags: [service-project]
     - name: Webelos Walkabout
       url: https://www.scouting.org/cub-scout-adventures/webelos-walkabout/
       required: true
@@ -1756,9 +1756,9 @@ ranks:
       required: false
       alternate_name: Conservation
       requirements:
-        - name: champions-for-nature-webelos#1
-          description: Discover the four components that make up a habitat: food, water, shelter, space.
-          tags: []
+        - name: champions-for-nature-webelos#6
+          description: Participate in a conservation service project.
+          tags: [service-project]
         - name: champions-for-nature-webelos#2
           description: Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5.
           tags: []
@@ -2053,7 +2053,7 @@ ranks:
           tags: []
         - name: citizenship#2
           description: Participate in a service project for a minimum of two hours or multiple service projects for a total of two hours.
-          tags: []
+          tags: [service-project]
     - name: Outdoor Adventurer
       url: https://www.scouting.org/cub-scout-adventures/outdoor-adventurer/
       required: true
@@ -2106,7 +2106,7 @@ ranks:
           tags: []
         - name: champions-for-nature-aol#6
           description: Participate in a conservation service project.
-          tags: []
+          tags: [service-project]
     - name: Cycling
       url: https://www.scouting.org/cub-scout-adventures/cycling/
       required: false
