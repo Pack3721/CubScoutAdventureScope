@@ -1243,6 +1243,22 @@ ranks:
     - name: Champions for Nature Bear
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
       required: false
+      requirements:
+        - name: champions-for-nature-bear#1
+          description: Discover natural resources.
+          tags: []
+        - name: champions-for-nature-bear#2
+          description: Discover what happens to the wastewater in your community.
+          tags: []
+        - name: champions-for-nature-bear#3
+          description: Investigate soil.
+          tags: []
+        - name: champions-for-nature-bear#4
+          description: Investigate air pollution.
+          tags: []
+        - name: champions-for-nature-bear#5
+          description: Participate in a conservation project.
+          tags: []
     - name: Chef Tech
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
       required: false
