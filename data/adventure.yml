@@ -1240,6 +1240,22 @@ ranks:
     - name: Bears on Bikes
       url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
       required: false
+      requirements:
+        - name: bears-on-bikes#1
+          description: Show how to properly wear a bicycle helmet.
+          tags: []
+        - name: bears-on-bikes#2
+          description: Decide what you should wear when riding a bike.
+          tags: []
+        - name: bears-on-bikes#3
+          description: Demonstrate proper hand signals.
+          tags: []
+        - name: bears-on-bikes#4
+          description: Demonstrate how to adjust saddle height.
+          tags: []
+        - name: bears-on-bikes#5
+          description: Demonstrate how to operate brakes.
+          tags: []
     - name: Champions for Nature Bear
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
       required: false
