@@ -1264,6 +1264,22 @@ ranks:
     - name: Roaring Laughter
       url: https://www.scouting.org/cub-scout-adventures/roaring-laughter/
       required: false
+      requirements:
+        - name: roaring-laughter#1
+          description: Think about what makes you laugh. Discuss these with your den or family.
+          tags: []
+        - name: roaring-laughter#2
+          description: Practice reading tongue twisters.
+          tags: []
+        - name: roaring-laughter#3
+          description: Play charades with your den or family.
+          tags: []
+        - name: roaring-laughter#4
+          description: Have a “funniest joke contest” with your den or family.
+          tags: []
+        - name: roaring-laughter#5
+          description: Practice “run-ons” with your den or family.
+          tags: []
     - name: Salmon Run
       url: https://www.scouting.org/cub-scout-adventures/salmon-run/
       required: false
