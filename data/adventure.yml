@@ -936,13 +936,13 @@ ranks:
       requirements:
         - name: cubs-who-care#1
           description: Explore what it is to have a physical disability.
-          tags: []
+          tags: [inclusion]
         - name: cubs-who-care#2
           description: Explore what it is to have a visual impairment.
-          tags: []
+          tags: [inclusion]
         - name: cubs-who-care#3
           description: Explore what it is to have a hearing loss.
-          tags: []
+          tags: [inclusion]
         - name: cubs-who-care#4
           description: Explore barriers to getting around.
           tags: []
@@ -1212,7 +1212,7 @@ ranks:
           tags: []
         - name: fellowship#4
           description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
-          tags: []
+          tags: [inclusion]
     - name: Paws for Action
       url: https://www.scouting.org/cub-scout-adventures/paws-for-action/
       required: true
