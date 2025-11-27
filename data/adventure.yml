@@ -1276,6 +1276,19 @@ ranks:
     - name: Whittling
       url: https://www.scouting.org/cub-scout-adventures/whittling/
       required: false
+      requirements:
+        - name: whittling#1
+          description: Read, understand, and promise to abide by the “Cub Scout Knife Safety Rules.”
+          tags: []
+        - name: whittling#2
+          description: Demonstrate the knife safety circle.
+          tags: []
+        - name: whittling#3
+          description: Demonstrate that you know how to care for and use your pocketknife safely.
+          tags: []
+        - name: whittling#4
+          description: Make two carvings with a pocketknife.
+          tags: []
   - rank: webelos
     grade: 4th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/webelos/
