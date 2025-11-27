@@ -533,7 +533,7 @@ ranks:
           tags: []
         - name: lets-camp-tiger#3
           description: Pack up your Cub Scout Six Essentials for the campout.
-          tags: []
+          tags: [packing]
         - name: lets-camp-tiger#4
           description: Learn a camping skill.
           tags: []
@@ -1007,7 +1007,7 @@ ranks:
           tags: [six-essentials]
         - name: lets-camp-wolf#3
           description: In addition to your Cub Scout Six Essentials, list the personal items you need for your campout.
-          tags: [six-essentials]
+          tags: [six-essentials, packing]
         - name: lets-camp-wolf#4
           description: Learn a camping skill.
           tags: []
@@ -1421,10 +1421,10 @@ ranks:
           tags: [buddy-system]
         - name: lets-camp-bear#2
           description: Pack your Cub Scout Six Essentials for the campout.
-          tags: [six-essentials]
+          tags: [six-essentials, packing]
         - name: lets-camp-bear#3
           description: In addition to your Cub Scout Six Essentials, show the personal items you need for your campout.
-          tags: [six-essentials]
+          tags: [six-essentials, packing]
         - name: lets-camp-bear#4
           description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
           tags: []
@@ -2064,7 +2064,7 @@ ranks:
           tags: []
         - name: outdoor-adventurer#2
           description: Determine what you will bring on an overnight campout — including a tent and sleeping bag/gear — and how you will carry your gear.
-          tags: []
+          tags: [packing]
         - name: outdoor-adventurer#3
           description: Review the four points of Scouting America's SAFE Checklist and how you will apply them on the campout.
           tags: []
