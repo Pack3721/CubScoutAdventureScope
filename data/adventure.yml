@@ -377,7 +377,7 @@ ranks:
       requirements:
         - name: tiger-circles#1
           description: With your parent or legal guardian talk about your family's faith traditions. Identify three holidays or celebrations that are part of your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
-          tags: []
+          tags: [art]
         - name: tiger-circles#2
           description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
           tags: []
@@ -417,7 +417,7 @@ ranks:
           tags: [six-essentials]
         - name: tigers-in-the-wild#4
           description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
-          tags: []
+          tags: [art]
         - name: tigers-in-the-wild#5
           description: Look for a tree where you live. Describe how this tree is helpful.
           tags: []
@@ -486,7 +486,7 @@ ranks:
           tags: []
         - name: fish-on#3
           description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
-          tags: []
+          tags: [art]
         - name: fish-on#4
           description: Go fishing with your Tiger adult partner.
           tags: []
@@ -1705,7 +1705,7 @@ ranks:
           tags: [art]
         - name: art-explosion#2
           description: Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
-          tags: []
+          tags: [art, technology]
         - name: art-explosion#3
           description: Create a piece of art using paint as your medium.
           tags: [art]
