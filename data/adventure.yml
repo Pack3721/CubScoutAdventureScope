@@ -166,13 +166,13 @@ ranks:
       requirements:
         - name: gizmos-and-gadgets#1
           description: Explore properties of motion.
-          tags: []
+          tags: [stem, physical-science]
         - name: gizmos-and-gadgets#2
           description: Explore properties of force.
-          tags: []
+          tags: [stem, physical-science]
         - name: gizmos-and-gadgets#3
           description: Use household materials to create a useful object.
-          tags: []
+          tags: [stem, physical-science]
     - name: Go Fish
       url: https://www.scouting.org/cub-scout-adventures/go-fish/
       required: false
@@ -867,16 +867,16 @@ ranks:
       requirements:
         - name: air-of-the-wolf#1
           description: Make a paper airplane and fly it five times. Record the flight distance and time.
-          tags: []
+          tags: [stem, physical-science]
         - name: air-of-the-wolf#2
           description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
-          tags: []
+          tags: [stem, physical-science]
         - name: air-of-the-wolf#3
           description: Compare and contrast the two paper airplanes by distance and flight times.
-          tags: []
+          tags: [stem, physical-science]
         - name: air-of-the-wolf#4
           description: Build a flying object that is not a paper airplane.
-          tags: []
+          tags: [stem, physical-science]
     - name: Champions for Nature Wolf
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
       required: false
@@ -948,16 +948,16 @@ ranks:
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
-          tags: [game]
+          tags: [game, stem, life-science]
         - name: digging-in-the-past#2
           description: Create an imaginary dinosaur. Share with your den or family its name, what it eats, its size, and where it lives.
-          tags: []
+          tags: [stem, life-science]
         - name: digging-in-the-past#3
           description: Be a paleontologist and dig through a dinosaur dig.
-          tags: []
+          tags: [stem, life-science]
         - name: digging-in-the-past#4
           description: Build a fossil layer.
-          tags: []
+          tags: [stem, life-science]
     - name: Finding Your Way
       url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
       required: false
@@ -983,19 +983,19 @@ ranks:
       requirements:
         - name: germs-alive#1
           description: Wash your hands with soap and water while singing the “Happy Birthday” song two times.
-          tags: []
+          tags: [stem, life-science]
         - name: germs-alive#2
           description: Play Germ Magnet with our den or your family. Wash your hands afterward.
-          tags: []
+          tags: [stem, life-science]
         - name: germs-alive#3
           description: Conduct the sneeze demonstration.
-          tags: []
+          tags: [stem, life-science]
         - name: germs-alive#4
           description: Conduct the mucus demonstration.
-          tags: []
+          tags: [stem, life-science]
         - name: germs-alive#5
           description: Grow a mold culture. Show what formed at a den or pack meeting.
-          tags: []
+          tags: [stem, life-science]
     - name: Let’s Camp Wolf
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
       required: false
@@ -1272,16 +1272,16 @@ ranks:
       requirements:
         - name: balancing-bears#1
           description: Make trail mix using trail mix math.
-          tags: []
+          tags: [stem, life-science]
         - name: balancing-bears#2
           description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
-          tags: []
+          tags: [stem, life-science]
         - name: balancing-bears#3
           description: Find  examples of bilateral symmetry in nature.
-          tags: []
+          tags: [stem, life-science]
         - name: balancing-bears#4
           description: Find examples of radial symmetry in nature.
-          tags: []
+          tags: [stem, life-science]
     - name: Baloo the Builder
       url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
       required: false
@@ -1402,19 +1402,19 @@ ranks:
       requirements:
         - name: forensics#1
           description: Explore the term “forensics” and how it is used to help solve crimes.
-          tags: []
+          tags: [stem, physical-science]
         - name: forensics#2
           description: Analyze your fingerprints.
-          tags: []
+          tags: [stem, physical-science]
         - name: forensics#3
           description: Make a shoe imprint.
-          tags: []
+          tags: [stem, physical-science]
         - name: forensics#4
           description: Do an analysis of four different substances; salt, sugar, baking soda and cornstarch.
-          tags: []
+          tags: [stem, physical-science]
         - name: forensics#5
           description: Learn about chromatography and how it is used in solving crimes.
-          tags: []
+          tags: [stem, physical-science]
     - name: Let’s Camp Bear
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
@@ -1527,16 +1527,16 @@ ranks:
       requirements:
         - name: super-science#1
           description: Conduct static electricity investigation.
-          tags: []
+          tags: [stem, physical-science]
         - name: super-science#2
           description: Conduct the sink-or-float investigation.
-          tags: []
+          tags: [stem, physical-science]
         - name: super-science#3
           description: Conduct the color-morphing investigation.
-          tags: []
+          tags: [stem, physical-science]
         - name: super-science#4
           description: Conduct the color-layering investigation.
-          tags: []
+          tags: [stem, physical-science]
     - name: Whittling
       url: https://www.scouting.org/cub-scout-adventures/whittling/
       required: false
@@ -1798,16 +1798,16 @@ ranks:
       requirements:
         - name: earth-rocks#1
           description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
-          tags: []
+          tags: [stem, life-science]
         - name: earth-rocks#2
           description: Find a rock, safely break it apart and examine it.
-          tags: []
+          tags: [stem, life-science]
         - name: earth-rocks#3
           description: Make a mineral test kit and test minerals according to the Mohs scale of mineral hardness. Using the rock cycle chart or one like it, discuss how hardness determines which materials can be used in homes, in landscapes, or for recreation.
-          tags: []
+          tags: [stem, life-science]
         - name: earth-rocks#4
           description: Grow  a crystal.
-          tags: []
+          tags: [stem, life-science]
     - name: Let’s Camp Webelos
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
       required: false
@@ -1847,19 +1847,19 @@ ranks:
       requirements:
         - name: modular-design#1
           description: Learn what modular design is and identify three things that use modular design in their construction.
-          tags: []
+          tags: [stem, engineering]
         - name: modular-design#2
           description: Using modular-based building pieces, build a model without a set of instructions.
-          tags: []
+          tags: [stem, engineering]
         - name: modular-design#3
           description: Using the model made in requirement 2, create a set of step-by-step instructions on how to make your model.
-          tags: []
+          tags: [stem, engineering]
         - name: modular-design#4
           description: Have someone make your model using your instructions.
-          tags: []
+          tags: [stem, engineering]
         - name: modular-design#5
           description: Using the same modular pieces used in requirement 2, build another model of something different.
-          tags: []
+          tags: [stem, engineering]
     - name: Paddle Onward
       url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
       required: false
@@ -2146,19 +2146,19 @@ ranks:
       requirements:
         - name: engineer#1
           description: Learn the focus, related sciences, and products of civil, electrical, and mechanical engineers.
-          tags: []
+          tags: [stem, engineering]
         - name: engineer#2
           description: Pick one of the engineering fields from requirement 1 to complete the following requirements.
-          tags: []
+          tags: [stem, engineering]
         - name: engineer#3
           description: Examine a set of blueprints or specifications used by your choice of engineer.
-          tags: []
+          tags: [stem, engineering]
         - name: engineer#4
           description: Identify a project that you would like to build.
-          tags: []
+          tags: [stem, engineering]
         - name: engineer#5
           description: Using the engineering process, build your project.
-          tags: []
+          tags: [stem, engineering]
     - name: Estimations
       url: https://www.scouting.org/cub-scout-adventures/estimations/
       required: false
@@ -2217,32 +2217,32 @@ ranks:
       requirements:
         - name: into-the-wild#1
           description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-wild#2
           description: Create a model of your animal's ecosystem.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-wild#3
           description: Investigate how your animal coexists with other animals in the wild.
-          tags: []
+          tags: [stem, life-science]
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
       requirements:
         - name: into-the-woods#1
           description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-woods#2
           description: Determine if your tree is deciduous or evergreen.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-woods#3
           description: Determine if your tree is native or was introduced to your area.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-woods#4
           description: Find out how your tree deals with wildfire.
-          tags: []
+          tags: [stem, life-science]
         - name: into-the-woods#5
           description: Learn how wildlife uses your tree.
-          tags: []
+          tags: [stem, life-science]
     - name: Knife Safety
       url: https://www.scouting.org/cub-scout-adventures/knife-safety/
       required: false
