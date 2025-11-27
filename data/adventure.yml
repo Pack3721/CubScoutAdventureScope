@@ -1432,6 +1432,22 @@ ranks:
     - name: Race Time Webelos
       url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
       required: false
+      requirements:
+        - name: race-time-webelos#1
+          description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.
+          tags: []
+        - name: race-time-webelos#2
+          description: Learn the rules of the race for the vehicle chosen in requirement 1.
+          tags: []
+        - name: race-time-webelos#3
+          description: Explore the properties of friction and how it impacts your chosen vehicle.
+          tags: []
+        - name: race-time-webelos#4
+          description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
+          tags: []
+        - name: race-time-webelos#5
+          description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
+          tags: []
     - name: Summertime Fun Webelos
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/
       required: false
