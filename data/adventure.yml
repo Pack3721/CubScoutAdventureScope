@@ -623,19 +623,20 @@ ranks:
     - name: Stories in Shapes
       url: https://www.scouting.org/cub-scout-adventures/stories-in-shapes/
       required: false
+      alternate_name: Art
       requirements:
         - name: stories-in-shapes#1
           description: Explore art in your community.
-          tags: []
+          tags: [art]
         - name: stories-in-shapes#2
           description: Look closely at art or a picture of art with your den or Tiger adult partner. Decide what you like about the art, and share your ideas with your den, family or Tiger adult partner.
-          tags: []
+          tags: [art]
         - name: stories-in-shapes#3
           description: Create a piece of art using shapes.
-          tags: []
+          tags: [art]
         - name: stories-in-shapes#4
           description: Learn how to spell your name in Braille and sign language.
-          tags: []
+          tags: [art]
     - name: Summertime Fun Tiger
       url: https://www.scouting.org/cub-scout-adventures/summertime-fun-tiger/
       required: false
@@ -1697,19 +1698,20 @@ ranks:
     - name: Art Explosion
       url: https://www.scouting.org/cub-scout-adventures/art-explosion/
       required: false
+      alternate_name: Art
       requirements:
         - name: art-explosion#1
           description: Create a piece of art by exploring drawing techniques using pencils.
-          tags: []
+          tags: [art]
         - name: art-explosion#2
           description: Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
           tags: []
         - name: art-explosion#3
           description: Create a piece of art using paint as your medium.
-          tags: []
+          tags: [art]
         - name: art-explosion#4
           description: Create a piece of art combining at least two media.
-          tags: []
+          tags: [art]
     - name: Aware and Care
       url: https://www.scouting.org/cub-scout-adventures/aware-and-care/
       required: false
