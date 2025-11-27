@@ -947,7 +947,7 @@ ranks:
           tags: [inclusion]
         - name: cubs-who-care#4
           description: Explore barriers to getting around.
-          tags: []
+          tags: [inclusion]
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
