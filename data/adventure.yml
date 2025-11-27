@@ -1364,6 +1364,7 @@ ranks:
           tags: []
         - name: my-community#2
           description: Speak with someone who is elected to their position.  Discover the type of voting that was used for to elect them and why.
+          tags: []
         - name: my-community#3
           description: Choose a federal law and create a timeline of the history of the law.  Include the involvement of the 3 branches of government.
           tags: []
