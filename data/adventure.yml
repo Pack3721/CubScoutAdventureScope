@@ -1399,6 +1399,19 @@ ranks:
     - name: Aware and Care
       url: https://www.scouting.org/cub-scout-adventures/aware-and-care/
       required: false
+      requirements:
+        - name: aware-and-care#1
+          description: Do an activity that shows the challenges of a being visually impaired.
+          tags: []
+        - name: aware-and-care#2
+          description: Do an activity that shows the challenges of being hearing impaired.
+          tags: []
+        - name: aware-and-care#3
+          description: Explore barriers to access.
+          tags: []
+        - name: aware-and-care#4
+          description: Meet someone who has a disability or someone who works with people with disabilities about what obstacles they must overcome and how they do it.
+          tags: []
     - name: Build It
       url: https://www.scouting.org/cub-scout-adventures/build-it/
       required: false
