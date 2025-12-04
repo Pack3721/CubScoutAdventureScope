@@ -78,26 +78,35 @@
 			return cloud;
 		}
 
-		// Filter requirements by selected cloud items
-		function filterRequirements(requirements, selectedCloud) {
-			if (!selectedCloud.length) return [];
-			return requirements.filter(req => {
-				// Match by adventureAlt, adventure name, or tags
+
+		// Filter requirements by selected cloud items and group by rank
+		function filterRequirementsByRank(requirements, selectedCloud) {
+			if (!selectedCloud.length) return {};
+			const filtered = requirements.filter(req => {
 				return selectedCloud.some(sel =>
 					req.adventureAlt === sel.text ||
 					req.adventure === sel.text ||
 					req.tags.includes(sel.text)
 				);
 			});
+			// Group by rank
+			const grouped = {};
+			filtered.forEach(req => {
+				const rank = req.rank || "Unknown";
+				if (!grouped[rank]) grouped[rank] = [];
+				grouped[rank].push(req);
+			});
+			return grouped;
 		}
 
-		// Split requirements into 6 columns
-		function splitIntoColumns(items, numCols = 6) {
-			const cols = Array.from({ length: numCols }, () => []);
-			items.forEach((item, i) => {
-				cols[i % numCols].push(item);
+		// Get up to 6 ranks in order of appearance
+		function getRankOrder(requirements) {
+			const order = [];
+			requirements.forEach(req => {
+				const rank = req.rank || "Unknown";
+				if (!order.includes(rank)) order.push(rank);
 			});
-			return cols;
+			return order.slice(0, 6);
 		}
 
 		// Main
@@ -107,6 +116,7 @@
 				const data = jsyaml.load(yamlText);
 				const { requiredNames, notRequiredNames, tags, requirements } = extractKeywordsAndRequirements(data);
 				const cloud = renderCloud({ requiredNames, notRequiredNames, tags });
+
 
 				const ractive = new Ractive({
 					target: '#keyword-cloud',
@@ -122,14 +132,15 @@
 							{{/each}}
 						</div>
 						<div id="requirements-grid">
-							{{#if filteredRequirements.length}}
+							{{#if rankOrder.length}}
 								<div class="columns is-multiline">
-									{{#each columns:colIdx}}
+									{{#each rankOrder}}
 										<div class="column is-one-sixth">
+											<h2 class="subtitle has-text-weight-bold">{{.}}</h2>
 											<ul>
-												{{#each .}}
+												{{#each filteredRequirements[.]}}
 													<li>
-														<strong>{{adventure}}</strong> <span class="is-size-7">({rank})</span><br>
+														<strong>{{adventure}}</strong><br>
 														<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
 														{{#if tags.length}}
 															<br><span class="tag is-light">{{tags.join(', ')}}</span>
@@ -149,8 +160,8 @@
 					data: {
 						cloud,
 						selectedCloud: [],
-						filteredRequirements: [],
-						columns: [[],[],[],[],[],[]]
+						filteredRequirements: {},
+						rankOrder: []
 					},
 					on: {
 						toggleCloud(event) {
@@ -161,9 +172,16 @@
 							if (idx >= 0) selected.splice(idx, 1);
 							else selected.push(item);
 							this.set('selectedCloud', selected);
-							const filtered = filterRequirements(requirements, selected);
+							const filtered = filterRequirementsByRank(requirements, selected);
+							const order = getRankOrder(requirements.filter(req => {
+								return selected.some(sel =>
+									req.adventureAlt === sel.text ||
+									req.adventure === sel.text ||
+									req.tags.includes(sel.text)
+								);
+							}));
 							this.set('filteredRequirements', filtered);
-							this.set('columns', splitIntoColumns(filtered, 6));
+							this.set('rankOrder', order);
 						}
 					}
 				});
