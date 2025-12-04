@@ -84,4 +84,7 @@
 	.cloud-keyword:not(.selected) {
 		display: none !important;
 	}
+	#clear-btn {
+		display: none !important;
+	}
 }
