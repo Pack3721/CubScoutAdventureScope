@@ -107,14 +107,24 @@
 					req.tags.includes(sel.text)
 				);
 			});
-			// Group by rank
+			// Group by rank, then by adventure (as array for Ractive)
 			const grouped = {};
 			filtered.forEach(req => {
 				const rank = req.rank || "Unknown";
-				if (!grouped[rank]) grouped[rank] = [];
-				grouped[rank].push(req);
+				if (!grouped[rank]) grouped[rank] = {};
+				const adv = req.adventure || "Unknown Adventure";
+				if (!grouped[rank][adv]) grouped[rank][adv] = [];
+				grouped[rank][adv].push(req);
 			});
-			return grouped;
+			// Convert adventures to array for each rank
+			const groupedForRactive = {};
+			Object.keys(grouped).forEach(rank => {
+				groupedForRactive[rank] = Object.keys(grouped[rank]).map(advName => ({
+					name: advName,
+					requirements: grouped[rank][advName]
+				}));
+			});
+			return groupedForRactive;
 		}
 
 		// Get up to 6 ranks in order of appearance
@@ -154,17 +164,21 @@
 									{{#each rankOrder}}
 										<div class="column is-one-sixth">
 											<h2 class="subtitle has-text-weight-bold">{{.}}</h2>
-											<ul>
-												{{#each filteredRequirements[.]}}
-													<li>
-														<strong>{{adventure}}</strong><br>
-														<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
-														{{#if tags.length}}
-															<br><span class="tag is-light">{{tags.join(', ')}}</span>
-														{{/if}}
-													</li>
-												{{/each}}
-											</ul>
+											{{#each filteredRequirements[.]}}
+												<div class="mb-2">
+													<div class="has-text-weight-semibold">{{name}}</div>
+													<ul>
+														{{#each requirements}}
+															<li>
+																<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
+																{{#if tags.length}}
+																	<br><span class="tag is-light">{{tags.join(', ')}}</span>
+																{{/if}}
+															</li>
+														{{/each}}
+													</ul>
+												</div>
+											{{/each}}
 										</div>
 									{{/each}}
 								</div>
