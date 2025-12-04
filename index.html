@@ -29,12 +29,13 @@
 			return await res.text();
 		}
 
-		// Helper: extract keywords
-		function extractKeywords(data) {
+		// Helper: extract keywords and requirements
+		function extractKeywordsAndRequirements(data) {
 			const requiredNames = new Set();
 			const notRequiredNames = new Set();
 			const tags = new Set();
-			if (!data.ranks) return { requiredNames, notRequiredNames, tags };
+			const requirements = [];
+			if (!data.ranks) return { requiredNames, notRequiredNames, tags, requirements };
 			data.ranks.forEach(rank => {
 				if (!rank.adventure_list) return;
 				rank.adventure_list.forEach(adv => {
@@ -49,13 +50,23 @@
 							if (req.tags && Array.isArray(req.tags)) {
 								req.tags.forEach(tag => tags.add(tag));
 							}
+							requirements.push({
+								adventure: adv.name,
+								adventureAlt: adv.alternate_name || "",
+								adventureRequired: !!adv.required,
+								adventureUrl: adv.url,
+								requirement: req.name,
+								description: req.description || "",
+								tags: req.tags || [],
+								rank: rank.rank
+							});
 						});
 					}
 				});
 			});
 			// Remove empty tag
 			tags.delete("");
-			return { requiredNames, notRequiredNames, tags };
+			return { requiredNames, notRequiredNames, tags, requirements };
 		}
 
 		// Render cloud
@@ -67,28 +78,98 @@
 			return cloud;
 		}
 
+		// Filter requirements by selected cloud items
+		function filterRequirements(requirements, selectedCloud) {
+			if (!selectedCloud.length) return [];
+			return requirements.filter(req => {
+				// Match by adventureAlt, adventure name, or tags
+				return selectedCloud.some(sel =>
+					req.adventureAlt === sel.text ||
+					req.adventure === sel.text ||
+					req.tags.includes(sel.text)
+				);
+			});
+		}
+
+		// Split requirements into 6 columns
+		function splitIntoColumns(items, numCols = 6) {
+			const cols = Array.from({ length: numCols }, () => []);
+			items.forEach((item, i) => {
+				cols[i % numCols].push(item);
+			});
+			return cols;
+		}
+
 		// Main
 		(async function() {
 			try {
 				const yamlText = await fetchYAML('data/adventure.yml');
 				const data = jsyaml.load(yamlText);
-				const keywords = extractKeywords(data);
-				const cloud = renderCloud(keywords);
-				// Ractive render
-				new Ractive({
+				const { requiredNames, notRequiredNames, tags, requirements } = extractKeywordsAndRequirements(data);
+				const cloud = renderCloud({ requiredNames, notRequiredNames, tags });
+
+				const ractive = new Ractive({
 					target: '#keyword-cloud',
 					template: `
-						<div>
+					<div>
+						<div class="mb-4">
 							{{#each cloud:i}}
-								<span class="cloud-keyword {{type}}">{{text}}</span>
+								<span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'has-background-warning-light' : ''}}"
+									style="cursor:pointer;"
+									on-click="toggleCloud"
+									data-index="{{i}}"
+								>{{text}}</span>
 							{{/each}}
 						</div>
+						<div id="requirements-grid">
+							{{#if filteredRequirements.length}}
+								<div class="columns is-multiline">
+									{{#each columns:colIdx}}
+										<div class="column is-one-sixth">
+											<ul>
+												{{#each .}}
+													<li>
+														<strong>{{adventure}}</strong> <span class="is-size-7">({rank})</span><br>
+														<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
+														{{#if tags.length}}
+															<br><span class="tag is-light">{{tags.join(', ')}}</span>
+														{{/if}}
+													</li>
+												{{/each}}
+											</ul>
+										</div>
+									{{/each}}
+								</div>
+							{{else}}
+								<p class="has-text-grey">Select a word cloud item to see matching requirements.</p>
+							{{/if}}
+						</div>
+					</div>
 					`,
-					data: { cloud }
+					data: {
+						cloud,
+						selectedCloud: [],
+						filteredRequirements: [],
+						columns: [[],[],[],[],[],[]]
+					},
+					on: {
+						toggleCloud(event) {
+							const i = parseInt(event.node.getAttribute('data-index'), 10);
+							const item = this.get('cloud')[i];
+							let selected = this.get('selectedCloud').slice();
+							const idx = selected.findIndex(sel => sel.text === item.text && sel.type === item.type);
+							if (idx >= 0) selected.splice(idx, 1);
+							else selected.push(item);
+							this.set('selectedCloud', selected);
+							const filtered = filterRequirements(requirements, selected);
+							this.set('filteredRequirements', filtered);
+							this.set('columns', splitIntoColumns(filtered, 6));
+						}
+					}
 				});
 			} catch (e) {
 				document.getElementById('keyword-cloud').innerHTML = '<p class="has-text-danger">Failed to load data.</p>';
-                console.error(e);
+				console.error(e);
 			}
 		})();
 	</script>
