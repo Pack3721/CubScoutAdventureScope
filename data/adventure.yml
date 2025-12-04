@@ -17,10 +17,10 @@ ranks:
           description: Have your Lion adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being friendly.
           tags: []
         - name: bobcat-lion#3
-          description: Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”
+          description: Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto "Do Your Best."
           tags: []
         - name: bobcat-lion#4
-          description: At home, with your parent or legal guardian, do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”
+          description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
           tags: []
     - name: Fun on the Run
       url: https://www.scouting.org/cub-scout-adventures/fun-on-the-run/
@@ -194,7 +194,7 @@ ranks:
       required: false
       requirements:
         - name: ill-do-it-myself#1
-          description: Make and use a “lion bag” for personal Scouting gear.
+          description: Make and use a "lion bag" for personal Scouting gear.
           tags: []
         - name: ill-do-it-myself#2
           description: Construct a personal care checklist.
@@ -331,10 +331,10 @@ ranks:
           description: Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each are used.
           tags: []
         - name: bobcat-tiger#5
-          description: Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”
+          description: Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto "Do Your Best."
           tags: []
         - name: bobcat-tiger#6
-          description: At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent's Guide.”
+          description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
           tags: []
     - name: Tiger Bites
       url: https://www.scouting.org/cub-scout-adventures/tiger-bites/
@@ -430,7 +430,7 @@ ranks:
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
           tags: [conservation]
         - name: champions-for-nature-tiger#2
-          description: Learn about the 3 R's: Reduce, Reuse, Recycle.
+          description: Learn about the 3 R's; Reduce, Reuse, Recycle.
           tags: [conservation]
         - name: champions-for-nature-tiger#3
           description: Discover what happens to the garbage in your community.
@@ -438,7 +438,6 @@ ranks:
         - name: champions-for-nature-tiger#4
           description: Participate in a conservation service project.
           tags: [service-project, conservation]
-          tags: [service-project]
     - name: Curiosity, Intrigue, and Magical Mysteries
       url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
       required: false
@@ -684,15 +683,14 @@ ranks:
       required: false
       requirements:
         - name: tiger-iffic#1
-          description: Play at least two different games by yourself; one may be a video game.
+          description: 'Play at least two different games by yourself; one may be a video game.'
           tags: [game]
         - name: tiger-iffic#2
           tags: [indoor-game, game]
           description: Play a board game or another inside game with one or more members of your den or family.
         - name: tiger-iffic#3
-          tags: [indoor-game, game]
           description: With other members of your den or family, invent a game, or change the rules of a game you know, and play the game.
-          tags: [create-game, indoor-game]
+          tags: [create-game, indoor-game, game]
         - name: tiger-iffic#4
           description: Play a team game with your den or family.
           tags: [team-game, game]
@@ -756,10 +754,10 @@ ranks:
       alternate_name: Personal Safety
       requirements:
         - name: safety-in-numbers#1
-          description: With permission from your parent or legal guardian, watch the ”Protect Yourself Rules” video for the Wolf rank.
+          description: With permission from your parent or legal guardian, watch the "Protect Yourself Rules" video for the Wolf rank.
           tags: []
         - name: safety-in-numbers#2
-          description: Discuss “safe touch” as seen in the Protect Yourself Rules video.
+          description: Discuss "safe touch" as seen in the Protect Yourself Rules video.
           tags: []
         - name: safety-in-numbers#3
           description: Learn about the buddy system and demonstrate how it works.
@@ -785,7 +783,7 @@ ranks:
           description: Carry out an act of kindness.
           tags: []
         - name: footsteps#4
-          description: Listen to or read Aesop’s fable “The Boy Who Cried Wolf.” With your den or family discuss why being truthful is important.
+          description: Listen to or read Aesop’s fable "The Boy Who Cried Wolf." With your den or family discuss why being truthful is important.
           tags: []
     - name: Council Fire
       url: https://www.scouting.org/cub-scout-adventures/council-fire/
@@ -891,15 +889,14 @@ ranks:
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
           tags: [conservation]
         - name: champions-for-nature-wolf#2
-          description: Learn about the 3 R’s: Reduce, Reuse, Recycle.
+          description: 'Learn about the 3 R’s: Reduce, Reuse, Recycle.'
           tags: [conservation]
         - name: champions-for-nature-wolf#3
           description: Discover what happens to the recyclables in your community.
           tags: [conservation]
         - name: champions-for-nature-wolf#4
           description: Participate in a conservation project.
-          tags: [conservation]
-          tags: [service-project]
+          tags: [conservation,service-project]
     - name: Code of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
       required: false
@@ -990,7 +987,7 @@ ranks:
       required: false
       requirements:
         - name: germs-alive#1
-          description: Wash your hands with soap and water while singing the “Happy Birthday” song two times.
+          description: Wash your hands with soap and water while singing the "Happy Birthday" song two times.
           tags: [stem, natural-science]
         - name: germs-alive#2
           description: Play Germ Magnet with our den or your family. Wash your hands afterward.
@@ -1042,7 +1039,7 @@ ranks:
           description: Using the buddy system and staying within your ability group, go swimming with your den or family for 30 minutes.
           tags: []
         - name: paws-for-water#4
-          description: Attempt at least one swimming stroke: front crawl, restful backstroke, or breaststroke.
+          description: 'Attempt at least one swimming stroke: front crawl, restful backstroke, or breaststroke.'
           tags: []
         - name: paws-for-water#5
           description: Jump feet first into water that is chest high or deeper.
@@ -1158,10 +1155,10 @@ ranks:
           description: Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake. Show how each is used.
           tags: []
         - name: bobcat-bear#7
-          description: Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.” Explain why it is important to do your best.
+          description: Share with your den, or family, a time when you demonstrated the Cub Scout motto "Do Your Best." Explain why it is important to do your best.
           tags: []
         - name: bobcat-bear#8
-          description: At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”
+          description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
           tags: []
     - name: Bear Strong
       url: https://www.scouting.org/cub-scout-adventures/bear-strong/
@@ -1169,7 +1166,7 @@ ranks:
       alternate_name: Personal Fitness
       requirements:
         - name: bear-strong#1
-          description: Sample food from three of the following food groups: protein, vegetables, fruits, dairy, and grains.
+          description: 'Sample food from three of the following food groups: protein, vegetables, fruits, dairy, and grains.'
           tags: [food]
         - name: bear-strong#2
           description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
@@ -1243,16 +1240,16 @@ ranks:
           description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
           tags: [six-essentials, walk, weather]
         - name: bear-habitat#2
-          description: “Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route.
+          description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
           tags: [walk]
         - name: bear-habitat#3
-          description: “Choose the Right Path” Learn about the path and surrounding area you will be walking on.
+          description: '"Choose the Right Path" Learn about the path and surrounding area you will be walking on.'
           tags: [walk]
         - name: bear-habitat#4
-          description: “Trash your Trash” Make a plan for what you will do with your personal trash or trash you find along the trail.
+          description: '"Trash your Trash" Make a plan for what you will do with your personal trash or trash you find along the trail.'
           tags: [walk, outdoor-code]
         - name: bear-habitat#5
-          description: “Leave What You Find” Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.
+          description: '"Leave What You Find" Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.'
           tags: [walk, outdoor-code]
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
@@ -1318,7 +1315,7 @@ ranks:
           description: Before attempting requirements 6 and 7 for this Adventure, you must pass Scouting America swimmer test.
           tags: []
         - name: bears-afloat#2
-          description: Pick a paddle craft you’ll use to complete all requirements; canoe, kayak, or stand-up paddleboard.
+          description: "Pick a paddle craft you’ll use to complete all requirements: canoe, kayak, or stand-up paddleboard."
           tags: []
         - name: bears-afloat#3
           description: With your den or an adult, discuss the role of qualified adult supervision at a paddle craft activity.
@@ -1410,7 +1407,7 @@ ranks:
       required: false
       requirements:
         - name: forensics#1
-          description: Explore the term “forensics” and how it is used to help solve crimes.
+          description: Explore the term "forensics" and how it is used to help solve crimes.
           tags: [stem, physical-science]
         - name: forensics#2
           description: Analyze your fingerprints.
@@ -1419,7 +1416,7 @@ ranks:
           description: Make a shoe imprint.
           tags: [stem, physical-science]
         - name: forensics#4
-          description: Do an analysis of four different substances; salt, sugar, baking soda and cornstarch.
+          description: "Do an analysis of four different substances: salt, sugar, baking soda and cornstarch."
           tags: [stem, physical-science]
         - name: forensics#5
           description: Learn about chromatography and how it is used in solving crimes.
@@ -1497,10 +1494,10 @@ ranks:
           description: Play charades with your den or family.
           tags: [game]
         - name: roaring-laughter#4
-          description: Have a “funniest joke contest” with your den or family.
+          description: Have a "funniest joke contest" with your den or family.
           tags: []
         - name: roaring-laughter#5
-          description: Practice “run-ons” with your den or family.
+          description: Practice "run-ons" with your den or family.
           tags: []
     - name: Salmon Run
       url: https://www.scouting.org/cub-scout-adventures/salmon-run/
@@ -1552,7 +1549,7 @@ ranks:
       alternate_name: Knife Skills
       requirements:
         - name: whittling#1
-          description: Read, understand, and promise to abide by the “Cub Scout Knife Safety Rules.”
+          description: Read, understand, and promise to abide by the "Cub Scout Knife Safety Rules."
           tags: [knife-safety]
         - name: whittling#2
           description: Demonstrate the knife safety circle.
@@ -1676,7 +1673,7 @@ ranks:
           description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
           tags: [walk]
         - name: webelos-walkabout#5
-          description: Demonstrate first aid for each of the following events that could occur on your 2-mile walk; blister, sprained ankle, sunburn, dehydration and heat related illness.
+          description: "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
           tags: [first-aid, walk]
     - name: Aquanaut
       url: https://www.scouting.org/cub-scout-adventures/aquanaut/
@@ -1687,7 +1684,7 @@ ranks:
           description: State the safety precautions you need to take before doing any swimming activity.
           tags: []
         - name: aquanaut#2
-          description: Explain the meaning of “order of rescue” and demonstrate the reach and throw rescue techniques from land.
+          description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
           tags: []
         - name: aquanaut#3
           description: Learn how to prevent and treat hypothermia.
@@ -1788,14 +1785,13 @@ ranks:
         - name: champions-for-nature-webelos#5
           description: Research what is currently being done to protect the animal.
           tags: [conservation]
-          tags: []
     - name: Chef’s Knife
       url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
       required: false
       alternate_name: Knife Skills
       requirements:
         - name: chefs-knife#1
-          description: Read, understand, and promise to follow the “Cub Scout Knife Safety Rules.”
+          description: Read, understand, and promise to follow the "Cub Scout Knife Safety Rules."
           tags: [knife-safety]
         - name: chefs-knife#2
           description: Demonstrate the knife safety circle.
@@ -1884,7 +1880,7 @@ ranks:
           description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
           tags: []
         - name: paddle-onward#2
-          description: Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.
+          description: 'Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.'
           tags: []
         - name: paddle-onward#3
           description: Review Safety Afloat.
@@ -2010,7 +2006,7 @@ ranks:
           description: With your patrol, or with your parent/legal guardian, visit a Scouting America troop.
           tags: []
         - name: bobcat-arrow-of-light#8
-          description: At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”
+          description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
           tags: []
     - name: Personal Fitness
       url: https://www.scouting.org/cub-scout-adventures/personal-fitness/
@@ -2038,7 +2034,7 @@ ranks:
           description: Explain what you should do if you encounter someone in need of first aid.
           tags: [first-aid]
         - name: first-aid#3
-          description: Demonstrate what to do for hurry cases of first aid: serious bleeding, heart attack or sudden cardiac arrest, stopped breathing, stroke, poisoning.
+          description: 'Demonstrate what to do for hurry cases of first aid: serious bleeding, heart attack or sudden cardiac arrest, stopped breathing, stroke, poisoning.'
           tags: [first-aid]
         - name: first-aid#4
           description: Demonstrate how to help a choking victim.
@@ -2047,7 +2043,7 @@ ranks:
           description: Demonstrate how to treat shock.
           tags: [first-aid]
         - name: first-aid#6
-          description: Demonstrate how to treat the following: cuts and scratches, burns and scalds, bites and stings of insects and animals, and nosebleed.
+          description: 'Demonstrate how to treat the following: cuts and scratches, burns and scalds, bites and stings of insects and animals, and nosebleed.'
           tags: [first-aid]
         - name: first-aid#7
           description: Make a personal first-aid kit. Demonstrate the proper use of each item in your first-aid kit.
@@ -2064,7 +2060,7 @@ ranks:
           description: Meet with a representative of a faith-based organization in your local community who provides a service that assists people in crisis regardless of their faith. Identify who they help and how.
           tags: []
         - name: duty-to-god#3
-          description: Discuss with your parent, legal guardian, or an adult leader what “Duty to God” means to you. Tell how you practice your Duty to God in your daily life.
+          description: Discuss with your parent, legal guardian, or an adult leader what "Duty to God" means to you. Tell how you practice your Duty to God in your daily life.
           tags: []
     - name: Citizenship
       url: https://www.scouting.org/cub-scout-adventures/citizenship/
@@ -2098,7 +2094,7 @@ ranks:
           description: With your patrol or a Scouting America troop, participate in a campout.
           tags: []
         - name: outdoor-adventurer#6
-          description: Upon arrival at the campout determine where to set up your campsite: kitchen, eating area, tents, and firepit. Help the patrol set up the patrol gear before setting up your own tent.
+          description: 'Upon arrival at the campout determine where to set up your campsite: kitchen, eating area, tents, and firepit. Help the patrol set up the patrol gear before setting up your own tent.'
           tags: []
         - name: outdoor-adventurer#7
           description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
@@ -2219,7 +2215,6 @@ ranks:
       alternate_name: Technology
       requirements:
         - name: high-tech-outdoors#1
-          tags: [stem, technology]
           description: With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather.
           tags: [stem, technology, weather]
         - name: high-tech-outdoors#2
@@ -2289,7 +2284,7 @@ ranks:
           description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
           tags: []
         - name: paddle-craft#2
-          description: Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.
+          description: 'Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.'
           tags: []
         - name: paddle-craft#3
           description: Review Safety Afloat.
@@ -2343,7 +2338,7 @@ ranks:
           description: Review Safe Swim Defense.
           tags: []
         - name: swimming#2
-          description: Explain the meaning of “order of rescue” and demonstrate the reach and throw rescue techniques from land.
+          description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
           tags: []
         - name: swimming#3
           description: Attempt Scouting America swimmer test.
