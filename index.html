@@ -10,6 +10,24 @@
 		.required { color: #3273dc; font-weight: bold; }
 		.not-required { color: #23d160; }
 		.tag-keyword { color: #ff3860; font-style: italic; }
+
+		/* Allow tags to wrap */
+		.tag-keyword {
+			white-space: normal;
+			word-break: break-word;
+		}
+		.tag.is-light {
+			display: inline;
+			white-space: normal;
+			word-break: break-word;
+			max-width: 100%;
+			background: #f9f9f9;
+			color: #363636;
+			border-radius: 0.3em;
+			padding: 0.1em 0.5em;
+			box-sizing: border-box;
+			background-clip: padding-box;
+		}
 		.cloud-keyword.selected.required {
 			background: #3273dc;
 			color: #fff !important;
