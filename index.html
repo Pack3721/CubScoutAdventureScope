@@ -139,9 +139,13 @@
 		// Render cloud
 		function renderCloud({ requiredNames, notRequiredNames, tags }) {
 			const cloud = [];
-			requiredNames.forEach(name => cloud.push({ text: name, type: 'required' }));
-			notRequiredNames.forEach(name => cloud.push({ text: name, type: 'not-required' }));
-			tags.forEach(tag => cloud.push({ text: tag, type: 'tag-keyword' }));
+			// Sort each set alphabetically
+			const requiredSorted = Array.from(requiredNames).sort((a, b) => a.localeCompare(b));
+			const notRequiredSorted = Array.from(notRequiredNames).sort((a, b) => a.localeCompare(b));
+			const tagsSorted = Array.from(tags).sort((a, b) => a.localeCompare(b));
+			requiredSorted.forEach(name => cloud.push({ text: name, type: 'required' }));
+			notRequiredSorted.forEach(name => cloud.push({ text: name, type: 'not-required' }));
+			tagsSorted.forEach(tag => cloud.push({ text: tag, type: 'tag-keyword' }));
 			return cloud;
 		}
 
