@@ -6,16 +6,34 @@
 	<title>Cub Scout Adventure Scope</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<style>
-		.cloud-keyword { font-size: 1.2em; margin: 0.3em; display: inline-block; }
+		.cloud-keyword { font-size: 1.2em; margin: 0.3em; display: inline-block; transition: background 0.2s, color 0.2s; cursor: pointer; border-radius: 0.3em; padding: 0.1em 0.5em; }
 		.required { color: #3273dc; font-weight: bold; }
 		.not-required { color: #23d160; }
 		.tag-keyword { color: #ff3860; font-style: italic; }
+		.cloud-keyword.selected.required {
+			background: #3273dc;
+			color: #fff !important;
+			box-shadow: 0 0 0 2px #b5b5b5;
+		}
+		.cloud-keyword.selected.not-required {
+			background: #23d160;
+			color: #fff !important;
+			box-shadow: 0 0 0 2px #b5b5b5;
+		}
+		.cloud-keyword.selected.tag-keyword {
+			background: #ff3860;
+			color: #fff !important;
+			box-shadow: 0 0 0 2px #b5b5b5;
+		}
 	</style>
 </head>
 <body>
 	<section class="section">
 		<div class="container">
-			<h1 class="title">Cub Scout Adventure Scope</h1>
+			<div class="is-flex is-align-items-center mb-2">
+				<h1 class="title mr-3">Cub Scout Adventure Scope</h1>
+				<button id="clear-btn" class="button is-small is-light">Clear</button>
+			</div>
 			<div id="keyword-cloud"></div>
 		</div>
 	</section>
@@ -124,8 +142,7 @@
 					<div>
 						<div class="mb-4">
 							{{#each cloud:i}}
-								<span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'has-background-warning-light' : ''}}"
-									style="cursor:pointer;"
+								<span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
 									on-click="toggleCloud"
 									data-index="{{i}}"
 								>{{text}}</span>
@@ -184,6 +201,13 @@
 							this.set('rankOrder', order);
 						}
 					}
+				});
+
+				// Add clear button functionality
+				document.getElementById('clear-btn').addEventListener('click', function() {
+					ractive.set('selectedCloud', []);
+					ractive.set('filteredRequirements', {});
+					ractive.set('rankOrder', []);
 				});
 			} catch (e) {
 				document.getElementById('keyword-cloud').innerHTML = '<p class="has-text-danger">Failed to load data.</p>';
