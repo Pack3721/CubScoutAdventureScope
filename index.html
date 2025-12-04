@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cub Scout Adventure Scope</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<style>
+		.cloud-keyword { font-size: 1.2em; margin: 0.3em; display: inline-block; }
+		.required { color: #3273dc; font-weight: bold; }
+		.not-required { color: #23d160; }
+		.tag-keyword { color: #ff3860; font-style: italic; }
+	</style>
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<h1 class="title">Cub Scout Adventure Scope</h1>
+			<div id="keyword-cloud"></div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/ractive@1.4.4/ractive.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+	<script>
+		// Helper: fetch YAML file
+		async function fetchYAML(url) {
+			const res = await fetch(url);
+			if (!res.ok) throw new Error('Failed to fetch YAML');
+			return await res.text();
+		}
+
+		// Helper: extract keywords
+		function extractKeywords(data) {
+			const requiredNames = new Set();
+			const notRequiredNames = new Set();
+			const tags = new Set();
+			if (!data.ranks) return { requiredNames, notRequiredNames, tags };
+			data.ranks.forEach(rank => {
+				if (!rank.adventure_list) return;
+				rank.adventure_list.forEach(adv => {
+					// alternate_name
+					if (adv.alternate_name) {
+						if (adv.required) requiredNames.add(adv.alternate_name);
+						else notRequiredNames.add(adv.alternate_name);
+					}
+					// requirements tags
+					if (adv.requirements) {
+						adv.requirements.forEach(req => {
+							if (req.tags && Array.isArray(req.tags)) {
+								req.tags.forEach(tag => tags.add(tag));
+							}
+						});
+					}
+				});
+			});
+			// Remove empty tag
+			tags.delete("");
+			return { requiredNames, notRequiredNames, tags };
+		}
+
+		// Render cloud
+		function renderCloud({ requiredNames, notRequiredNames, tags }) {
+			const cloud = [];
+			requiredNames.forEach(name => cloud.push({ text: name, type: 'required' }));
+			notRequiredNames.forEach(name => cloud.push({ text: name, type: 'not-required' }));
+			tags.forEach(tag => cloud.push({ text: tag, type: 'tag-keyword' }));
+			return cloud;
+		}
+
+		// Main
+		(async function() {
+			try {
+				const yamlText = await fetchYAML('data/adventure.yml');
+				const data = jsyaml.load(yamlText);
+				const keywords = extractKeywords(data);
+				const cloud = renderCloud(keywords);
+				// Ractive render
+				new Ractive({
+					target: '#keyword-cloud',
+					template: `
+						<div>
+							{{#each cloud:i}}
+								<span class="cloud-keyword {{type}}">{{text}}</span>
+							{{/each}}
+						</div>
+					`,
+					data: { cloud }
+				});
+			} catch (e) {
+				document.getElementById('keyword-cloud').innerHTML = '<p class="has-text-danger">Failed to load data.</p>';
+                console.error(e);
+			}
+		})();
+	</script>
+</body>
+</html>
 
