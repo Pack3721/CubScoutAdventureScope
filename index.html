@@ -25,6 +25,33 @@
 			color: #fff !important;
 			box-shadow: 0 0 0 2px #b5b5b5;
 		}
+
+		.adventure-group {
+			margin-bottom: 1.2em;
+		}
+		.adventure-box {
+			border-radius: 0.5em;
+			box-shadow: 0 2px 8px rgba(50,115,220,0.06);
+			padding: 0.7em 1em 0.5em 1em;
+			border: 1px solid #e3e3e3;
+			background: var(--rank-bg, #f5f7fa);
+		}
+		.adventure-title {
+			font-size: 1.1em;
+			font-weight: 600;
+			color: var(--rank-color, #363636);
+			margin-bottom: 0.3em;
+		}
+		.rank-header {
+			padding: 0.5em 0;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 0.5em 0.5em 0 0;
+			margin-bottom: 0.5em;
+			color: #fff;
+			background: var(--rank-color, #363636);
+		}
 	</style>
 </head>
 <body>
@@ -146,6 +173,33 @@
 				const cloud = renderCloud({ requiredNames, notRequiredNames, tags });
 
 
+
+
+				// Cub Scout rank colors
+				const rankColors = {
+					lion:    { color: '#FFD700', text: '#7a5c00', bg: '#FFF9E3' }, // gold/yellow
+					tiger:   { color: '#FF8800', text: '#7a3c00', bg: '#FFF2E0' }, // orange
+					wolf:    { color: '#D7263D', text: '#fff', bg: '#FFE3E8' },    // red
+					bear:    { color: '#1E90FF', text: '#fff', bg: '#E3F0FF' },    // blue
+					webelos: { color: '#2E8B57', text: '#fff', bg: '#E3FFF0' },    // green
+					'arrow of light': { color: '#20B2AA', text: '#fff', bg: '#E0FFFF' }, // teal
+				};
+
+				function getRankKey(rank) {
+					return (rank || '').trim().toLowerCase();
+				}
+
+				function buildRankStyles(rankOrder) {
+					const styles = {};
+					rankOrder.forEach(rank => {
+						const key = getRankKey(rank);
+						styles[rank] = rankColors[key] || { color: '#363636', text: '#fff', bg: '#f5f7fa' };
+					});
+					return styles;
+				}
+
+				let rankStyles = {};
+
 				const ractive = new Ractive({
 					target: '#keyword-cloud',
 					template: `
@@ -161,22 +215,28 @@
 						<div id="requirements-grid">
 							{{#if rankOrder.length}}
 								<div class="columns is-multiline">
-									{{#each rankOrder}}
+									{{#each rankOrder:i}}
 										<div class="column is-one-sixth">
-											<h2 class="subtitle has-text-weight-bold">{{.}}</h2>
-											{{#each filteredRequirements[.]}}
-												<div class="mb-2">
-													<div class="has-text-weight-semibold">{{name}}</div>
-													<ul>
-														{{#each requirements}}
-															<li>
-																<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
-																{{#if tags.length}}
-																	<br><span class="tag is-light">{{tags.join(', ')}}</span>
-																{{/if}}
-															</li>
-														{{/each}}
-													</ul>
+											<div class="rank-header" style="background: {{rankStyles[rankOrder[i]].color}}; color: {{rankStyles[rankOrder[i]].text}};">
+												{{rankOrder[i]}}
+											</div>
+											{{#each filteredRequirements[rankOrder[i]]:j}}
+												<div class="adventure-group">
+													<div class="adventure-box" style="background: {{rankStyles[rankOrder[i]].bg}};">
+														<div class="adventure-title" style="color: {{rankStyles[rankOrder[i]].color}};">
+															{{name}}
+														</div>
+														<ul>
+															{{#each requirements}}
+																<li>
+																	<a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: {{description}}
+																	{{#if tags.length}}
+																		<br><span class="tag is-light">{{tags.join(', ')}}</span>
+																	{{/if}}
+																</li>
+															{{/each}}
+														</ul>
+													</div>
 												</div>
 											{{/each}}
 										</div>
@@ -192,7 +252,8 @@
 						cloud,
 						selectedCloud: [],
 						filteredRequirements: {},
-						rankOrder: []
+						rankOrder: [],
+						rankStyles: {}
 					},
 					on: {
 						toggleCloud(event) {
@@ -211,8 +272,10 @@
 									req.tags.includes(sel.text)
 								);
 							}));
+							rankStyles = buildRankStyles(order);
 							this.set('filteredRequirements', filtered);
 							this.set('rankOrder', order);
+							this.set('rankStyles', rankStyles);
 						}
 					}
 				});
@@ -222,6 +285,7 @@
 					ractive.set('selectedCloud', []);
 					ractive.set('filteredRequirements', {});
 					ractive.set('rankOrder', []);
+					ractive.set('rankStyles', {});
 				});
 			} catch (e) {
 				document.getElementById('keyword-cloud').innerHTML = '<p class="has-text-danger">Failed to load data.</p>';
