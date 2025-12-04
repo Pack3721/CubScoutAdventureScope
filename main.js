@@ -1,6 +1,21 @@
-// Helper: fetch YAML file with cache busting using Jekyll build revision
+// Helper: get cache buster from main.js script tag
+function getCacheBuster() {
+    const scripts = document.getElementsByTagName('script');
+    for (let i = 0; i < scripts.length; i++) {
+        const src = scripts[i].getAttribute('src');
+        if (src && src.startsWith('main.js')) {
+            const match = src.match(/[?&]v=([^&]+)/);
+            if (match) {
+                return match[1];
+            }
+        }
+    }
+    return '';
+}
+
+// Helper: fetch YAML file with cache busting using extracted value
 async function fetchYAML(url) {
-    const cacheBuster = encodeURIComponent('{{ site.github.build_revision }}');
+    const cacheBuster = encodeURIComponent(getCacheBuster());
     const bustedUrl = `${url}?v=${cacheBuster}`;
     const res = await fetch(bustedUrl);
     if (!res.ok) throw new Error('Failed to fetch YAML');
