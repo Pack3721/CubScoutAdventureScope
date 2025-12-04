@@ -68,6 +68,12 @@
 			color: #fff;
 			background: var(--rank-color, #363636);
 		}
+
+        @media print {
+            .cloud-keyword:not(.selected) {
+                display: none !important;
+            }
+        }
 	</style>
 </head>
 <body>
