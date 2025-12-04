@@ -197,7 +197,7 @@ function getRankOrder(requirements) {
                             {{/each}}
                         </div>
                     {{else}}
-                        <p class="has-text-grey">Select a word cloud item to see matching requirements.</p>
+                        <p class="has-text-grey requirements-empty-message">Select a word cloud item to see matching requirements.</p>
                     {{/if}}
                 </div>
             </div>

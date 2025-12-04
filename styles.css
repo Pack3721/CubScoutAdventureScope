@@ -87,4 +87,7 @@
 	#clear-btn {
 		display: none !important;
 	}
+	.requirements-empty-message {
+		display: none !important;
+	}
 }
