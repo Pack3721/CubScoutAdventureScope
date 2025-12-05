@@ -851,6 +851,7 @@ ranks:
           description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
           tags: [six-essentials, walk]
     - name: A Wolf Goes Fishing
+      stem_nova: [Nova WILD!]
       url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
       required: false
       alternate_name: Fishing
@@ -908,7 +909,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
       required: false
       alternate_name: Conservation
-      stem_nova: [Down and Dirty]
+      stem_nova: [Down and Dirty, Nova WILD!]
       requirements:
         - name: champions-for-nature-wolf#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
@@ -978,7 +979,7 @@ ranks:
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty, Uncovering the Past]
+      stem_nova: [Science is Everywhere, Down and Dirty, Uncovering the Past, Nova WILD!]
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
@@ -1140,7 +1141,7 @@ ranks:
     - name: Spirit of the Water
       url: https://www.scouting.org/cub-scout-adventures/spirit-of-the-water/
       required: false
-      stem_nova: [Up and Away]
+      stem_nova: [Up and Away, Nova WILD!]
       requirements:
         - name: spirit-of-the-water#1
           description: Discover where the water in your home comes from.
@@ -1290,7 +1291,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
       alternate_name: Fishing
-      stem_nova: [Science is Everywhere, Swing!]
+      stem_nova: [Science is Everywhere, Swing!, Nova WILD!]
       requirements:
         - name: a-bear-goes-fishing#1
           description: Learn about three types of fish in your area.
@@ -1388,7 +1389,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
       required: false
       alternate_name: Conservation
-      stem_nova: [Down and Dirty]
+      stem_nova: [Down and Dirty, Nova WILD!]
       requirements:
         - name: champions-for-nature-bear#1
           description: Discover natural resources.
@@ -1429,7 +1430,7 @@ ranks:
     - name: Critter Care
       url: https://www.scouting.org/cub-scout-adventures/critter-care/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Nova WILD!]
       requirements:
         - name: critter-care#1
           description: Identify an animal that would be good pet for your family.
@@ -1794,6 +1795,7 @@ ranks:
           description: Build  your carpentry project.
           tags: []
     - name: Catch the Big One
+      stem_nova: [Nova WILD!]
       url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
       required: false
       alternate_name: Fishing
@@ -2159,6 +2161,7 @@ ranks:
           description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave No Trace Principles for Kids.
           tags: [outdoor-code]
     - name: Champions for Nature AOL
+      stem_nova: [Nova WILD!]
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-aol/
       required: false
       alternate_name: Conservation
@@ -2284,7 +2287,7 @@ ranks:
     - name: Into the Wild
       url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Nova WILD!]
       requirements:
         - name: into-the-wild#1
           description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
@@ -2298,7 +2301,7 @@ ranks:
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty, Out of This World]
+      stem_nova: [Science is Everywhere, Down and Dirty, Out of This World, Nova WILD!]
       requirements:
         - name: into-the-woods#1
           description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
