@@ -10,15 +10,22 @@
 	<link rel="stylesheet" href="styles.css?v={{ site.github.build_revision }}">
 </head>
 <body>
-	<section class="section">
-		<div class="container">
-			<div class="is-flex is-align-items-center mb-2">
-				<h1 class="title mr-3">Cub Scout Adventure Scope</h1>
-				<button id="clear-btn" class="button is-small is-light">Clear</button>
-			</div>
-			<div id="keyword-cloud"></div>
-		</div>
-	</section>
+	   <section class="section">
+		   <div class="container">
+			   <div class="mb-2">
+			   </div>
+			   <div class="is-flex is-align-items-center mb-2">
+				   <h1 class="title is-2 mb-2">Cub Scout Adventure Scope</h1>
+				   <button id="clear-btn" class="button is-small is-light" style="margin-left: 1em;">Clear</button>
+			   </div>
+			   <div id="keyword-cloud"></div>
+		   </div>
+	   </section>
+   <div class="has-text-centered mt-5 mb-3">
+	   <a href="{{ site.github.repository_url }}" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center;">
+		   <img src="https://img.shields.io/badge/github-{{ site.github.repository_name }}-blue?logo=github" alt="GitHub Repo Badge">
+	   </a>
+   </div>
 	<script src="https://cdn.jsdelivr.net/npm/ractive@1.4.4/ractive.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 	<script src="main.js?v={{ site.github.build_revision }}"></script>
