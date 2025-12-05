@@ -922,13 +922,14 @@ ranks:
     - name: Code of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
       required: false
+      alternate_name: Math
       requirements:
         - name: code-of-the-wolf#1
           description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
           tags: [codes, stem, mathematics]
         - name: code-of-the-wolf#2
           description: Build and play a game that requires the use of codes or patterns.
-          tags: [create-game, indoor-game, codes, stem, mathematics]
+          tags: [create-game, indoor-game, codes, stem, mathematics, game]
         - name: code-of-the-wolf#3
           description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
           tags: [stem, mathematics]
@@ -1475,7 +1476,7 @@ ranks:
           tags: []
         - name: marble-madness#3
           description: Play three different marble games.
-          tags: [indoor-game]
+          tags: [indoor-game, game]
         - name: marble-madness#4
           description: Build a marble racetrack with at least two lanes.
           tags: [stem, engineering]
@@ -2195,6 +2196,7 @@ ranks:
     - name: Estimations
       url: https://www.scouting.org/cub-scout-adventures/estimations/
       required: false
+      alternate_name: Math
       requirements:
         - name: estimations#1
           description: Estimate food measurements.
