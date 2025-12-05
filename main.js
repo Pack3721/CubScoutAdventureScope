@@ -27,8 +27,9 @@ function extractKeywordsAndRequirements(data) {
     const requiredNames = new Set();
     const notRequiredNames = new Set();
     const tags = new Set();
+    const stemNovaNames = new Set();
     const requirements = [];
-    if (!data.ranks) return { requiredNames, notRequiredNames, tags, requirements };
+    if (!data.ranks) return { requiredNames, notRequiredNames, tags, stemNovaNames, requirements };
     data.ranks.forEach(rank => {
         if (!rank.adventure_list) return;
         rank.adventure_list.forEach(adv => {
@@ -37,6 +38,14 @@ function extractKeywordsAndRequirements(data) {
                 if (adv.required) requiredNames.add(adv.alternate_name);
                 else notRequiredNames.add(adv.alternate_name);
             }
+            // stem_nova (array or string)
+            let stemNovaArr = [];
+            if (Array.isArray(adv.stem_nova)) {
+                stemNovaArr = adv.stem_nova.filter(x => typeof x === 'string');
+            } else if (typeof adv.stem_nova === 'string') {
+                stemNovaArr = [adv.stem_nova];
+            }
+            stemNovaArr.forEach(nova => stemNovaNames.add(nova));
             // requirements tags
             if (adv.requirements) {
                 adv.requirements.forEach(req => {
@@ -51,7 +60,8 @@ function extractKeywordsAndRequirements(data) {
                         requirement: req.name,
                         description: req.description || "",
                         tags: req.tags || [],
-                        rank: rank.rank
+                        rank: rank.rank,
+                        stemNova: stemNovaArr.length ? stemNovaArr : null
                     });
                 });
             }
@@ -59,19 +69,23 @@ function extractKeywordsAndRequirements(data) {
     });
     // Remove empty tag
     tags.delete("");
-    return { requiredNames, notRequiredNames, tags, requirements };
+    stemNovaNames.delete("");
+    return { requiredNames, notRequiredNames, tags, stemNovaNames, requirements };
 }
 
 // Render cloud
 function renderCloud({ requiredNames, notRequiredNames, tags }) {
     const cloud = [];
-    // Sort each set alphabetically
-    const requiredSorted = Array.from(requiredNames).sort((a, b) => a.localeCompare(b));
-    const notRequiredSorted = Array.from(notRequiredNames).sort((a, b) => a.localeCompare(b));
-    const tagsSorted = Array.from(tags).sort((a, b) => a.localeCompare(b));
+    // Defensive: filter to only strings before sorting
+    const onlyStrings = arr => arr.filter(x => typeof x === 'string');
+    const requiredSorted = onlyStrings(Array.from(requiredNames)).sort((a, b) => a.localeCompare(b));
+    const notRequiredSorted = onlyStrings(Array.from(notRequiredNames)).sort((a, b) => a.localeCompare(b));
+    const tagsSorted = onlyStrings(Array.from(tags)).sort((a, b) => a.localeCompare(b));
+    const stemNovaSorted = onlyStrings(Array.from(arguments[0].stemNovaNames || [])).sort((a, b) => a.localeCompare(b));
     requiredSorted.forEach(name => cloud.push({ text: name, type: 'required' }));
     notRequiredSorted.forEach(name => cloud.push({ text: name, type: 'not-required' }));
     tagsSorted.forEach(tag => cloud.push({ text: tag, type: 'tag-keyword' }));
+    stemNovaSorted.forEach(name => cloud.push({ text: name, type: 'stem-nova' }));
     return cloud;
 }
 
@@ -82,7 +96,8 @@ function filterRequirementsByRank(requirements, selectedCloud) {
         return selectedCloud.some(sel =>
             req.adventureAlt === sel.text ||
             req.adventure === sel.text ||
-            req.tags.includes(sel.text)
+            req.tags.includes(sel.text) ||
+            (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
         );
     });
     // Group by rank, then by adventure (as array for Ractive)
@@ -120,10 +135,20 @@ function getRankOrder(requirements) {
     try {
         const yamlText = await fetchYAML('data/adventure.yml');
         const data = jsyaml.load(yamlText);
-        const { requiredNames, notRequiredNames, tags, requirements } = extractKeywordsAndRequirements(data);
-        const cloud = renderCloud({ requiredNames, notRequiredNames, tags });
+        const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
+        const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
 
-        // Cub Scout rank colors
+        // Build a map of nova_awards name -> url (normalize to lower case, trimmed)
+        let novaAwardLinks = {};
+        if (data.nova_awards && Array.isArray(data.nova_awards)) {
+            data.nova_awards.forEach(award => {
+                if (award.name && award.url) {
+                    novaAwardLinks[award.name.trim().toLowerCase()] = award.url;
+                }
+            });
+        }
+
+        // Cub Scout rank colors and stem nova color
         const rankColors = {
             lion:    { color: '#FFD700', text: '#7a5c00', bg: '#FFF9E3' }, // gold/yellow
             tiger:   { color: '#FF8800', text: '#7a3c00', bg: '#FFF2E0' }, // orange
@@ -131,6 +156,7 @@ function getRankOrder(requirements) {
             bear:    { color: '#1E90FF', text: '#fff', bg: '#E3F0FF' },    // blue
             webelos: { color: '#2E8B57', text: '#fff', bg: '#E3FFF0' },    // green
             'arrow of light': { color: '#20B2AA', text: '#fff', bg: '#E0FFFF' }, // teal
+            'stem-nova': { color: '#FF6EC7', text: '#fff', bg: '#FFF0FA' } // magenta/pink for stem nova
         };
 
         function getRankKey(rank) {
@@ -157,7 +183,13 @@ function getRankOrder(requirements) {
                         <span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
                             on-click="toggleCloud"
                             data-index="{{i}}"
-                        >{{text}}</span>
+                        >
+                            {{#if type === 'stem-nova'}}
+                                <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+                            {{else}}
+                                {{text}}
+                            {{/if}}
+                        </span>
                     {{/each}}
                 </div>
                 <div id="requirements-grid">
@@ -176,13 +208,51 @@ function getRankOrder(requirements) {
                                                     {{#if requirements[0].adventureAlt}}
                                                         <span class="adventure-altname">{{requirements[0].adventureAlt}}</span>
                                                     {{/if}}
+                                                    {{#if requirements[0].stemNova}}
+                                                        <span class="stem-nova-badge has-tooltip"
+                                                            style="color: #FF6EC7; margin-left: 0.5em; font-size: 1.1em; cursor: pointer; background: none; border-radius: 0; padding: 0; position: relative;"
+                                                            on-click="togglePopover"
+                                                            data-adventure="{{name}}"
+                                                        >
+                                                            💥
+                                                            {{#if popoverAdventure === name}}
+                                                                <div class="card popover-stem-nova" style="position: absolute; left: 1.5em; top: 0; z-index: 10; min-width: 180px; max-width: 260px; background: #fff; border: 1px solid #FF6EC7; box-shadow: 0 2px 8px rgba(50,115,220,0.10); border-radius: 0.5em; padding: 0.7em 1em;">
+                                                                    <header class="card-header" style="background: #FF6EC7; color: #fff; border-radius: 0.5em 0.5em 0 0; padding: 0.3em 0.7em; font-size: 1em; font-weight: bold;">
+                                                                        STEM Nova Adventures
+                                                                    </header>
+                                                                    <div class="card-content" style="padding: 0.5em 0 0.2em 0;">
+                                                                        <ul style="margin: 0; padding-left: 1.1em;">
+                                                                            {{#each requirements[0].stemNova:n}}
+                                                                                <li style="color: #FF6EC7; font-weight: 500; margin-bottom: 0.3em; line-height: 1.4;">
+                                                                                    {{#if novaAwardLinks && novaAwardLinks[requirements[0].stemNova[n].toLowerCase().trim()]}}
+                                                                                        <a href="{{novaAwardLinks[requirements[0].stemNova[n].toLowerCase().trim()]}}" target="_blank" style="color: #FF6EC7; text-decoration: underline;">{{requirements[0].stemNova[n]}}</a>
+                                                                                    {{else}}
+                                                                                        {{requirements[0].stemNova[n]}}
+                                                                                    {{/if}}
+                                                                                </li>
+                                                                            {{/each}}
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            {{/if}}
+                                                        </span>
+                                                    {{/if}}
                                                 </div>
                                                 <ul>
                                                     {{#each requirements:i}}
                                                         <li>
                                                             <a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: <span class="requirement-desc">{{description}}</span>
                                                             {{#if tags.length}}
-                                                                <br><span class="tag is-light">{{tags.join(', ')}}</span>
+                                                                <br>
+                                                                {{#each tags:k}}
+                                                                    <span class="tag is-light" style="margin-right:0.2em;">
+                                                                        {{#if requirements[0].stemNova && requirements[0].stemNova.includes(tags[k])}}
+                                                                            💥 {{tags[k]}}
+                                                                        {{else}}
+                                                                            {{tags[k]}}
+                                                                        {{/if}}
+                                                                    </span>
+                                                                {{/each}}
                                                             {{/if}}
                                                         </li>
                                                         {{#if i < requirements.length - 1}}
@@ -207,7 +277,9 @@ function getRankOrder(requirements) {
                 selectedCloud: [],
                 filteredRequirements: {},
                 rankOrder: [],
-                rankStyles: {}
+                rankStyles: {},
+                popoverAdventure: null,
+                novaAwardLinks
             },
             on: {
                 toggleCloud(event) {
@@ -223,13 +295,22 @@ function getRankOrder(requirements) {
                         return selected.some(sel =>
                             req.adventureAlt === sel.text ||
                             req.adventure === sel.text ||
-                            req.tags.includes(sel.text)
+                            req.tags.includes(sel.text) ||
+                            (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
                         );
                     }));
                     rankStyles = buildRankStyles(order);
                     this.set('filteredRequirements', filtered);
                     this.set('rankOrder', order);
                     this.set('rankStyles', rankStyles);
+                },
+                togglePopover(event) {
+                    const adventureName = event.node.getAttribute('data-adventure');
+                    if (this.get('popoverAdventure') === adventureName) {
+                        this.set('popoverAdventure', null);
+                    } else {
+                        this.set('popoverAdventure', adventureName);
+                    }
                 }
             }
         });
@@ -241,6 +322,8 @@ function getRankOrder(requirements) {
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
         });
+
+        // Remove special style for stem-nova; let all tags use the same style
     } catch (e) {
         document.getElementById('keyword-cloud').innerHTML = '<p class="has-text-danger">Failed to load data.</p>';
         console.error(e);
