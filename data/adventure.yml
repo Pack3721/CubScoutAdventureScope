@@ -1311,6 +1311,7 @@ ranks:
     - name: Balancing Bears
       url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
       required: false
+      alternate_name: Math
       stem_nova: [1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: balancing-bears#1
