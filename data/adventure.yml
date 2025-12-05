@@ -907,6 +907,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
       required: false
       alternate_name: Conservation
+      stem_nova: [Down and Dirty]
       requirements:
         - name: champions-for-nature-wolf#1
           description: Discover the difference between renewable natural resources and non-renewable natural resources.
@@ -974,7 +975,7 @@ ranks:
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
@@ -991,7 +992,7 @@ ranks:
     - name: Finding Your Way
       url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: finding-your-way#1
           description: Using a map, locate where you live.
@@ -1378,6 +1379,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
       required: false
       alternate_name: Conservation
+      stem_nova: [Down and Dirty]
       requirements:
         - name: champions-for-nature-bear#1
           description: Discover natural resources.
@@ -1454,6 +1456,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
       alternate_name: Camping
+      stem_nova: [Down and Dirty]
       requirements:
         - name: lets-camp-bear#1
           description: Review the buddy system and how it works in the outdoors.
@@ -1560,7 +1563,7 @@ ranks:
     - name: Super Science
       url: https://www.scouting.org/cub-scout-adventures/super-science/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: super-science#1
           description: Conduct static electricity investigation.
@@ -1800,6 +1803,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
       required: false
       alternate_name: Conservation
+      stem_nova: [Down and Dirty]
       requirements:
         - name: champions-for-nature-webelos#6
           description: Participate in a conservation service project.
@@ -1836,7 +1840,7 @@ ranks:
     - name: Earth Rocks
       url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: earth-rocks#1
           description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
@@ -1854,6 +1858,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
       required: false
       alternate_name: Camping
+      stem_nova: [Down and Dirty]
       requirements:
         - name: lets-camp-webelos#1
           description: With your den, pack, or family, plan and participate in a campout.
@@ -2260,7 +2265,7 @@ ranks:
     - name: Into the Wild
       url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: into-the-wild#1
           description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
@@ -2274,7 +2279,7 @@ ranks:
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Down and Dirty]
       requirements:
         - name: into-the-woods#1
           description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
