@@ -873,6 +873,7 @@ ranks:
     - name: Adventures in Coins
       url: https://www.scouting.org/cub-scout-adventures/adventures-in-coins/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: adventures-in-coins#1
           description: Identify different parts of a coin.
@@ -973,6 +974,7 @@ ranks:
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
@@ -989,6 +991,7 @@ ranks:
     - name: Finding Your Way
       url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: finding-your-way#1
           description: Using a map, locate where you live.
@@ -1008,6 +1011,7 @@ ranks:
     - name: Germs Alive!
       url: https://www.scouting.org/cub-scout-adventures/germs-alive/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: germs-alive#1
           description: Wash your hands with soap and water while singing the "Happy Birthday" song two times.
@@ -1278,6 +1282,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
       alternate_name: Fishing
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: a-bear-goes-fishing#1
           description: Learn about three types of fish in your area.
@@ -1412,6 +1417,7 @@ ranks:
     - name: Critter Care
       url: https://www.scouting.org/cub-scout-adventures/critter-care/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: critter-care#1
           description: Identify an animal that would be good pet for your family.
@@ -1467,6 +1473,7 @@ ranks:
     - name: Marble Madness
       url: https://www.scouting.org/cub-scout-adventures/marble-madness/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: marble-madness#1
           description: Make a marble bag.
@@ -1553,6 +1560,7 @@ ranks:
     - name: Super Science
       url: https://www.scouting.org/cub-scout-adventures/super-science/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: super-science#1
           description: Conduct static electricity investigation.
@@ -1828,6 +1836,7 @@ ranks:
     - name: Earth Rocks
       url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: earth-rocks#1
           description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
@@ -1982,6 +1991,7 @@ ranks:
     - name: Yo-yo
       url: https://www.scouting.org/cub-scout-adventures/yo-yo/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: yo-yo#1
           description: Learn the safety rules of using a yo-yo and always follow them.
@@ -2250,6 +2260,7 @@ ranks:
     - name: Into the Wild
       url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: into-the-wild#1
           description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
@@ -2263,6 +2274,7 @@ ranks:
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
+      stem_nova: [Science is Everywhere]
       requirements:
         - name: into-the-woods#1
           description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
