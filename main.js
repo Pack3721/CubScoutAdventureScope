@@ -218,7 +218,7 @@ function getRankOrder(requirements) {
                                                             {{#if popoverAdventure === name}}
                                                                 <div class="card popover-stem-nova" style="position: absolute; left: 1.5em; top: 0; z-index: 10; min-width: 180px; max-width: 260px; background: #fff; border: 1px solid #FF6EC7; box-shadow: 0 2px 8px rgba(50,115,220,0.10); border-radius: 0.5em; padding: 0.7em 1em;">
                                                                     <header class="card-header" style="background: #FF6EC7; color: #fff; border-radius: 0.5em 0.5em 0 0; padding: 0.3em 0.7em; font-size: 1em; font-weight: bold;">
-                                                                        STEM Nova Adventures
+                                                                        STEM Nova Awards
                                                                     </header>
                                                                     <div class="card-content" style="padding: 0.5em 0 0.2em 0;">
                                                                         <ul style="margin: 0; padding-left: 1.1em;">
