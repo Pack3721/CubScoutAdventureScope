@@ -890,6 +890,7 @@ ranks:
     - name: Air of the Wolf
       url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
       required: false
+      stem_nova: [Swing!, 1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: air-of-the-wolf#1
           description: Make a paper airplane and fly it five times. Record the flight distance and time.
@@ -925,6 +926,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/code-of-the-wolf/
       required: false
       alternate_name: Math
+      stem_nova: [Cub Scouts Can Code, 1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: code-of-the-wolf#1
           description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
@@ -942,6 +944,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/computing-wolves/
       required: false
       alternate_name: Technology
+      stem_nova: [Cub Scouts Can Code, Tech Talk]
       requirements:
         - name: computing-wolves#1
           description: Discover the basic components of a computer.
@@ -975,7 +978,7 @@ ranks:
     - name: Digging in the Past
       url: https://www.scouting.org/cub-scout-adventures/digging-in-the-past/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Uncovering the Past]
       requirements:
         - name: digging-in-the-past#1
           description: Play a dinosaur game that shows what you know about them.
@@ -992,7 +995,7 @@ ranks:
     - name: Finding Your Way
       url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Tech Talk, Out of This World, Uncovering the Past]
       requirements:
         - name: finding-your-way#1
           description: Using a map, locate where you live.
@@ -1012,7 +1015,7 @@ ranks:
     - name: Germs Alive!
       url: https://www.scouting.org/cub-scout-adventures/germs-alive/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Out of This World]
       requirements:
         - name: germs-alive#1
           description: Wash your hands with soap and water while singing the "Happy Birthday" song two times.
@@ -1033,6 +1036,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
       required: false
       alternate_name: Camping
+      stem_nova: [Out of This World]
       requirements:
         - name: lets-camp-wolf#1
           description: Learn about the buddy system and how it works in the outdoors.
@@ -1078,6 +1082,7 @@ ranks:
     - name: Paws of Skill
       url: https://www.scouting.org/cub-scout-adventures/paws-of-skill/
       required: false
+      stem_nova: [Swing!]
       requirements:
         - name: paws-of-skill#1
           description: With your den, discuss sportsmanship and what it means to be a good sport. Make the connection between sportsmanship and the Scout Oath and the Scout Law.
@@ -1115,6 +1120,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
       required: false
       alternate_name: Race Time
+      stem_nova: [Up and Away, 1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: race-time-wolf#1
           description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -1134,6 +1140,7 @@ ranks:
     - name: Spirit of the Water
       url: https://www.scouting.org/cub-scout-adventures/spirit-of-the-water/
       required: false
+      stem_nova: [Up and Away]
       requirements:
         - name: spirit-of-the-water#1
           description: Discover where the water in your home comes from.
@@ -1283,7 +1290,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
       alternate_name: Fishing
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Swing!]
       requirements:
         - name: a-bear-goes-fishing#1
           description: Learn about three types of fish in your area.
@@ -1303,6 +1310,7 @@ ranks:
     - name: Balancing Bears
       url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
       required: false
+      stem_nova: [1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: balancing-bears#1
           description: Make trail mix using trail mix math.
@@ -1319,6 +1327,7 @@ ranks:
     - name: Baloo the Builder
       url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
       required: false
+      stem_nova: [Swing!]
       requirements:
         - name: baloo-the-builder#1
           description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
@@ -1400,6 +1409,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/chef-tech/
       required: false
       alternate_name: Technology
+      stem_nova: [Cub Scouts Can Code, Tech Talk]
       requirements:
         - name: chef-tech#1
           description: Pick a kitchen appliance that uses technology to complete the following requirements.
@@ -1436,6 +1446,7 @@ ranks:
     - name: Forensics
       url: https://www.scouting.org/cub-scout-adventures/forensics/
       required: false
+      stem_nova: [Tech Talk, Uncovering the Past, Fearful Symmetry]
       requirements:
         - name: forensics#1
           description: Explore the term "forensics" and how it is used to help solve crimes.
@@ -1456,7 +1467,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
       required: false
       alternate_name: Camping
-      stem_nova: [Down and Dirty]
+      stem_nova: [Down and Dirty, Out of This World]
       requirements:
         - name: lets-camp-bear#1
           description: Review the buddy system and how it works in the outdoors.
@@ -1476,7 +1487,7 @@ ranks:
     - name: Marble Madness
       url: https://www.scouting.org/cub-scout-adventures/marble-madness/
       required: false
-      stem_nova: [Science is Everywhere]
+      stem_nova: [Science is Everywhere, Swing!, Fearful Symmetry]
       requirements:
         - name: marble-madness#1
           description: Make a marble bag.
@@ -1497,6 +1508,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
       required: false
       alternate_name: Race Time
+      stem_nova: [Up and Away, 1-2-3 Go!]
       requirements:
         - name: race-time-bear#1
           description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
@@ -1563,7 +1575,7 @@ ranks:
     - name: Super Science
       url: https://www.scouting.org/cub-scout-adventures/super-science/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Out of This World, Up and Away]
       requirements:
         - name: super-science#1
           description: Conduct static electricity investigation.
@@ -1733,6 +1745,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/art-explosion/
       required: false
       alternate_name: Art
+      stem_nova: [Fearful Symmetry]
       requirements:
         - name: art-explosion#1
           description: Create a piece of art by exploring drawing techniques using pencils.
@@ -1766,6 +1779,7 @@ ranks:
     - name: Build It
       url: https://www.scouting.org/cub-scout-adventures/build-it/
       required: false
+      stem_nova: [Tech Talk, Swing!, Fearful Symmetry]
       requirements:
         - name: build-it#1
           description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
@@ -1803,7 +1817,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
       required: false
       alternate_name: Conservation
-      stem_nova: [Down and Dirty]
+      stem_nova: [Down and Dirty, Out of This World]
       requirements:
         - name: champions-for-nature-webelos#6
           description: Participate in a conservation service project.
@@ -1840,7 +1854,7 @@ ranks:
     - name: Earth Rocks
       url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Uncovering the Past]
       requirements:
         - name: earth-rocks#1
           description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
@@ -1879,6 +1893,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
       alternate_name: Math
+      stem_nova: [1-2-3 Go!]
       requirements:
         - name: math-on-the-trail#1
           description: Determine your walking pace by walking ¼ mile.  Make a projection on how long it would take you to walk 2 miles.
@@ -1892,6 +1907,7 @@ ranks:
     - name: Modular Design
       url: https://www.scouting.org/cub-scout-adventures/modular-design/
       required: false
+      stem_nova: [Cub Scouts Can Code, Swing!, 1-2-3 Go!, Fearful Symmetry]
       requirements:
         - name: modular-design#1
           description: Learn what modular design is and identify three things that use modular design in their construction.
@@ -1952,6 +1968,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
       required: false
       alternate_name: Race Time
+      stem_nova: [Up and Away]
       requirements:
         - name: race-time-webelos#1
           description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.
@@ -1980,6 +1997,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/
       required: false
       alternate_name: Technology
+      stem_nova: [Cub Scouts Can Code, Tech Talk]
       requirements:
         - name: tech-on-the-trail#1
           description: Discuss how technology can help keep you safe in the outdoors.
@@ -2192,6 +2210,7 @@ ranks:
     - name: Engineer
       url: https://www.scouting.org/cub-scout-adventures/engineer/
       required: false
+      stem_nova: [Out of This World, Swing!]
       requirements:
         - name: engineer#1
           description: Learn the focus, related sciences, and products of civil, electrical, and mechanical engineers.
@@ -2279,7 +2298,7 @@ ranks:
     - name: Into the Woods
       url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
       required: false
-      stem_nova: [Science is Everywhere, Down and Dirty]
+      stem_nova: [Science is Everywhere, Down and Dirty, Out of This World]
       requirements:
         - name: into-the-woods#1
           description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
@@ -2352,6 +2371,7 @@ ranks:
       url: https://www.scouting.org/cub-scout-adventures/race-time-aol/
       required: false
       alternate_name: Race Time
+      stem_nova: [Up and Away, 1-2-3 Go!]
       requirements:
         - name: race-time-aol#1
           description: With adult supervision, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
