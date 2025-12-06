@@ -16,9 +16,12 @@
 		<div class="container">
 			<div class="mb-2">
 			</div>
-			   <div class="is-flex is-align-items-center mb-2">
-				   <h1 class="title is-2 mb-2">Cub Scout Adventure Scope</h1>
-			   </div>
+			<div class="is-flex is-align-items-center mb-2" style="gap: 1em;">
+				<h1 class="title is-2 mb-2" style="margin-bottom: 0;">Cub Scout Adventure Scope</h1>
+				<span id="qr-code-container" style="display: flex; align-items: center;">
+				  <img id="qr-code-img" src="" alt="QR Code" style="height: 38px; width: 38px; margin-left: 0.5em; border-radius: 0.2em; border: 1px solid #eee; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.04);" title="Scan to open this view">
+				</span>
+			</div>
 			   <div class="is-flex is-align-items-center mb-3">
 				   <button id="copy-url-btn" class="button is-small is-light" title="Copy link to this view" style="margin-right: 0.5em;">
 					   <span class="icon is-small">
@@ -159,9 +162,30 @@
 			   </div>
 	</script>
 
-	<script src="https://cdn.jsdelivr.net/npm/ractive@1.4.4/ractive.min.js"></script>
-	   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-	   <script src="main.js?v={{ site.github.build_revision }}"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/ractive@1.4.4/ractive.min.js"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+	 <script src="main.js?v={{ site.github.build_revision }}"></script>
+	 <script>
+		 // QR code update logic
+		 function updateQrCode() {
+			 var url = window.location.href;
+			 var qrImg = document.getElementById('qr-code-img');
+			 if (qrImg) {
+				 // Use a free QR code API (e.g., goqr.me)
+				 qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=80x80&margin=2&data=' + encodeURIComponent(url);
+			 }
+		 }
+		 window.addEventListener('DOMContentLoaded', updateQrCode);
+		 window.addEventListener('popstate', updateQrCode);
+		 // Also update QR code when query string changes (main.js calls replaceState)
+		 (function() {
+			 var origReplaceState = history.replaceState;
+			 history.replaceState = function() {
+				 origReplaceState.apply(this, arguments);
+				 updateQrCode();
+			 };
+		 })();
+	 </script>
 
 
 </body>
