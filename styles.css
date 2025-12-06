@@ -96,7 +96,9 @@
 	.cloud-keyword:not(.selected) {
 		display: none !important;
 	}
-	#clear-btn {
+	#clear-btn,
+	#copy-url-btn,
+	#toggle-cloud-btn {
 		display: none !important;
 	}
 	.requirements-empty-message {

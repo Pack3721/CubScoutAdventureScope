@@ -248,7 +248,8 @@ function setupCopyUrlButton() {
                 rankOrder: [],
                 rankStyles: {},
                 popoverAdventure: null,
-                novaAwardLinks
+                novaAwardLinks,
+                cloudCollapsed: false
             },
             on: {
                 toggleCloud(event) {
@@ -273,6 +274,22 @@ function setupCopyUrlButton() {
                     this.set('rankOrder', order);
                     this.set('rankStyles', rankStyles);
                     updateQueryStringAndTitle(selected);
+                },
+                toggleCloudCollapse() {
+                    const collapsed = this.get('cloudCollapsed');
+                    this.set('cloudCollapsed', !collapsed);
+                    // Update button text/icon
+                    const btn = document.getElementById('toggle-cloud-btn');
+                    const icon = document.getElementById('toggle-cloud-icon');
+                    if (btn && icon) {
+                        if (!collapsed) {
+                            btn.querySelector('span:last-child').textContent = 'Expand Cloud';
+                            icon.innerHTML = '<path fill="currentColor" d="M7 14l5-5 5 5H7z"/>';
+                        } else {
+                            btn.querySelector('span:last-child').textContent = 'Collapse Cloud';
+                            icon.innerHTML = '<path fill="currentColor" d="M7 10l5 5 5-5H7z"/>';
+                        }
+                    }
                 },
                 togglePopover(event) {
                     const adventureName = event.node.getAttribute('data-adventure');
@@ -310,6 +327,11 @@ function setupCopyUrlButton() {
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
             updateQueryStringAndTitle([]);
+        });
+
+        // Add cloud collapse/expand button functionality
+        document.getElementById('toggle-cloud-btn').addEventListener('click', function() {
+            ractive.fire('toggleCloudCollapse');
         });
 
         // Remove special style for stem-nova; let all tags use the same style

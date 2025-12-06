@@ -27,6 +27,12 @@
 					   <span>Copy URL</span>
 				   </button>
 				   <button id="clear-btn" class="button is-small is-light" style="margin-left: 0.5em;">Clear</button>
+				   <button id="toggle-cloud-btn" class="button is-small is-light" style="margin-left: 0.5em;" title="Show/hide word cloud">
+					   <span class="icon is-small">
+						   <svg id="toggle-cloud-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+					   </span>
+					   <span>Collapse Cloud</span>
+				   </button>
 			   </div>
 			   <div id="keyword-cloud"></div>
 
@@ -40,21 +46,39 @@
 		</a>
 	</div>
 
-	<script id="cloud-template" type="text/ractive">
-			   <div>
-				   <div class="mb-4">
-					   {{#each cloud:i}}
-						   <span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
-							   on-click="toggleCloud"
-							   data-index="{{i}}">
-							   {{#if type === 'stem-nova'}}
-								   <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
-							   {{else}}
-								   {{text}}
-							   {{/if}}
-						   </span>
-					   {{/each}}
-				   </div>
+	   <script id="cloud-template" type="text/ractive">
+				  <div>
+					  <div class="mb-4" style="transition: max-height 0.3s;">
+						  {{#if !cloudCollapsed}}
+							  {{#each cloud:i}}
+								  <span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
+									  on-click="toggleCloud"
+									  data-index="{{i}}">
+									  {{#if type === 'stem-nova'}}
+										  <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+									  {{else}}
+										  {{text}}
+									  {{/if}}
+								  </span>
+							  {{/each}}
+						  {{else}}
+							  {{#if selectedCloud.length}}
+								  {{#each selectedCloud:i}}
+									  <span class="cloud-keyword {{type}} selected"
+										  on-click="toggleCloud"
+										  data-index="{{cloud.indexOf(selectedCloud[i])}}">
+										  {{#if type === 'stem-nova'}}
+											  <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+										  {{else}}
+											  {{text}}
+										  {{/if}}
+									  </span>
+								  {{/each}}
+							  {{else}}
+								  <span class="has-text-grey">(No items selected)</span>
+							  {{/if}}
+						  {{/if}}
+					  </div>
 				   <div id="requirements-grid">
 					   {{#if rankOrder.length}}
 						   <div class="columns is-multiline">
