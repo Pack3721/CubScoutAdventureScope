@@ -304,6 +304,9 @@ function setupCopyUrlButton() {
             }
         });
 
+        // Expose ractive globally for QR sizing logic
+        window.ractive = ractive;
+
         // Initial filter and title update if loaded with query string
         if (initialSelectedCloud.length) {
             const filtered = filterRequirementsByRank(requirements, initialSelectedCloud);
