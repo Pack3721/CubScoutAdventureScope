@@ -276,7 +276,7 @@ ranks:
           tags: [game]
         - name: on-your-mark#2
           description: Participate in an obstacle course relay.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: on-your-mark#3
           description: Build a box derby and participate in a race.
           tags: []
@@ -383,7 +383,7 @@ ranks:
           tags: []
         - name: tiger-bites#3
           description: Be active for 30 minutes.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: tiger-bites#4
           description: Practice methods that help you rest.
           tags: []
@@ -431,7 +431,7 @@ ranks:
           tags: [flag-ettiquette]
         - name: team-tiger#3
           description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
-          tags: [team-game, game]
+          tags: [game-team, game]
         - name: team-tiger#4
           description: Participate in a service project.
           tags: [service-project]
@@ -702,10 +702,10 @@ ranks:
       requirements:
         - name: tiger-tag#1
           description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
-          tags: [active-game, game]
+          tags: [game-active, game]
         - name: tiger-tag#2
           description: Play a relay game with your den.
-          tags: [active-game, game]
+          tags: [game-active, game]
         - name: tiger-tag#3
           description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
           tags: [sport, game]
@@ -720,14 +720,14 @@ ranks:
           description: 'Play at least two different games by yourself; one may be a video game.'
           tags: [game]
         - name: tiger-iffic#2
-          tags: [indoor-game, game]
+          tags: [game-indoor, game]
           description: Play a board game or another inside game with one or more members of your den or family.
         - name: tiger-iffic#3
           description: With other members of your den or family, invent a game, or change the rules of a game you know, and play the game.
-          tags: [create-game, indoor-game, game]
+          tags: [game-create, game-indoor, game]
         - name: tiger-iffic#4
           description: Play a team game with your den or family.
-          tags: [team-game, game]
+          tags: [game-team, game]
     - name: Tigers in the Water
       url: https://www.scouting.org/cub-scout-adventures/tigers-in-the-water/
       required: false
@@ -794,7 +794,7 @@ ranks:
           tags: []
         - name: running-with-the-pack#3
           description: Be active for 30 minutes with your den or at least 1 other person that includes both stretching and moving.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: running-with-the-pack#4
           description: Be active for 10 minutes doing personal exercises.
           tags: []
@@ -918,7 +918,7 @@ ranks:
           tags: []
         - name: adventures-in-coins#3
           description: Play a coin game.
-          tags: [indoor-game, game]
+          tags: [game-indoor, game]
         - name: adventures-in-coins#4
           description: Choose a coin that interests you and make a coin rubbing. List information next to the coin detailing the pictures on it, the year it was made, and the mint where it was made.
           tags: [art]
@@ -968,7 +968,7 @@ ranks:
           tags: [codes, stem, mathematics]
         - name: code-of-the-wolf#2
           description: Build and play a game that requires the use of codes or patterns.
-          tags: [create-game, indoor-game, codes, stem, mathematics, game]
+          tags: [game-create, game-indoor, codes, stem, mathematics, game]
         - name: code-of-the-wolf#3
           description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
           tags: [stem, mathematics]
@@ -1124,7 +1124,7 @@ ranks:
           tags: [sport,sportsmanship]
         - name: paws-of-skill#2
           description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
-          tags: [sport, active-game]
+          tags: [sport, game-active]
         - name: paws-of-skill#3
           description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
           tags: [sport]
@@ -1240,7 +1240,7 @@ ranks:
           tags: [food]
         - name: bear-strong#2
           description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: bear-strong#3
           description: Be active for 15 minutes doing personal exercises that include cardio, muscular strength, and flexibility.
           tags: []
@@ -1546,7 +1546,7 @@ ranks:
           tags: []
         - name: marble-madness#3
           description: Play three different marble games.
-          tags: [indoor-game, game]
+          tags: [game-indoor, game]
         - name: marble-madness#4
           description: Build a marble racetrack with at least two lanes.
           tags: [stem, engineering]
@@ -1689,7 +1689,7 @@ ranks:
           tags: [meal-planning, food]
         - name: stronger-faster-higher#2
           description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: stronger-faster-higher#3
           description: Be active for 15 minutes doing personal exercises that boost your heart rate, use your muscles, and work on flexibility.
           tags: []
@@ -2139,7 +2139,7 @@ ranks:
           tags: []
         - name: personal-fitness#3
           description: Be active for 30 minutes with your patrol, a younger den, or at least one other person in a way that includes both stretching and moving.
-          tags: [game, active-game]
+          tags: [game, game-active]
         - name: personal-fitness#4
           description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in Arrow of Light patrol and pack activities.
           tags: [first-aid]
