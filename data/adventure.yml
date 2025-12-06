@@ -428,7 +428,7 @@ ranks:
           tags: [game]
         - name: team-tiger#2
           description: With your Tiger Adult Partner, choose a job that will help your team. Follow through by doing that job at least once.
-          tags: [flag-ettiquite]
+          tags: [flag-ettiquette]
         - name: team-tiger#3
           description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
           tags: [team-game, game]
@@ -848,7 +848,7 @@ ranks:
       requirements:
         - name: council-fire#1
           description: Learn how to properly care for and fold the United States flag. With your den or pack, participate in a flag ceremony.
-          tags: [flag-ettiquite]
+          tags: [flag-ettiquette]
         - name: council-fire#2
           description: Identify three points of the Scout Law that are important to being a good neighbor.
           tags: []
