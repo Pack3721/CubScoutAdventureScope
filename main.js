@@ -259,16 +259,25 @@ function setupCopyUrlButton() {
             return (rank || '').trim().toLowerCase();
         }
 
-        function buildRankStyles(rankOrder) {
+        // Build styles and grade map for ranks
+        function buildRankStylesAndGrades(rankOrder) {
             const styles = {};
+            const grades = {};
+            if (data && Array.isArray(data.ranks)) {
+                data.ranks.forEach(r => {
+                    const key = getRankKey(r.rank);
+                    grades[r.rank] = r.grade || '';
+                });
+            }
             rankOrder.forEach(rank => {
                 const key = getRankKey(rank);
                 styles[rank] = rankColors[key] || { color: '#363636', text: '#fff', bg: '#f5f7fa' };
             });
-            return styles;
+            return { styles, grades };
         }
 
         let rankStyles = {};
+        let rankGrades = {};
 
         // --- Get initial selection from query string ---
         let initialSelectedCloud = [];
@@ -286,6 +295,7 @@ function setupCopyUrlButton() {
                 filteredRequirements: {},
                 rankOrder: [],
                 rankStyles: {},
+                rankGrades: {}, // ensure grades are empty on initial load
                 popoverAdventure: null,
                 novaAwardLinks,
                 cloudCollapsed: initialSelectedCloud.length > 0
@@ -308,10 +318,13 @@ function setupCopyUrlButton() {
                             (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
                         );
                     }));
-                    rankStyles = buildRankStyles(order);
+                    const { styles, grades } = buildRankStylesAndGrades(order);
+                    rankStyles = styles;
+                    rankGrades = grades;
                     this.set('filteredRequirements', filtered);
                     this.set('rankOrder', order);
                     this.set('rankStyles', rankStyles);
+                    this.set('rankGrades', rankGrades);
                     updateQueryStringAndTitle(selected);
                 },
                 toggleCloudCollapse() {
@@ -355,10 +368,13 @@ function setupCopyUrlButton() {
                     (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
                 );
             }));
-            rankStyles = buildRankStyles(order);
+            const { styles, grades } = buildRankStylesAndGrades(order);
+            rankStyles = styles;
+            rankGrades = grades;
             ractive.set('filteredRequirements', filtered);
             ractive.set('rankOrder', order);
             ractive.set('rankStyles', rankStyles);
+            ractive.set('rankGrades', rankGrades);
             updateQueryStringAndTitle(initialSelectedCloud);
         }
 
@@ -368,6 +384,7 @@ function setupCopyUrlButton() {
             ractive.set('filteredRequirements', {});
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
+            ractive.set('rankGrades', {});
             ractive.set('cloudCollapsed', false); // Expand the cloud
             updateQueryStringAndTitle([]);
         });

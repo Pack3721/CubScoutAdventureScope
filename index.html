@@ -87,9 +87,12 @@
 						   <div class="columns is-multiline">
 							   {{#each rankOrder:i}}
 								   <div class="column is-one-sixth">
-									   <div class="rank-header" style="background: {{rankStyles[rankOrder[i]].color}}; color: {{rankStyles[rankOrder[i]].text}};">
-										   {{rankOrder[i]}}
-									   </div>
+																	 <div class="rank-header" style="background: {{rankStyles[rankOrder[i]].color}}; color: {{rankStyles[rankOrder[i]].text}};">
+																			 {{rankOrder[i]}}
+																			 {{#if rankGrades && rankGrades[rankOrder[i]]}}
+																				 <span class="has-text-weight-normal" style="font-size:0.85em; margin-left:0.3em; opacity:0.85;">({{rankGrades[rankOrder[i]]}})</span>
+																			 {{/if}}
+																	 </div>
 									   {{#each filteredRequirements[rankOrder[i]]:j}}
 										   <div class="adventure-group">
 											   <div class="adventure-box" style="background: {{rankStyles[rankOrder[i]].bg}};">
