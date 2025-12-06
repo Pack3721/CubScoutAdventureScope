@@ -86,7 +86,7 @@ ranks:
           tags: []
         - name: lions-roar#3
           description: With your Lion adult partner, demonstrate how to access emergency services.
-          tags: []
+          tags: [first-aid]
         - name: lions-roar#4
           description: With your Lion Adult Partner, demonstrate how to safely cross a street or walk in a parking lot.
           tags: []
@@ -114,7 +114,7 @@ ranks:
           tags: []
         - name: king-of-the-jungle#2
           description: With your Lion adult partner, choose a job that will help your family. Follow through by doing that job at least once.
-          tags: []
+          tags: [flag-ettiquite]
         - name: king-of-the-jungle#3
           description: Talk with a grandparent or other older adult about what citizenship means to them.
           tags: []
@@ -383,7 +383,7 @@ ranks:
           tags: []
         - name: tiger-bites#3
           description: Be active for 30 minutes.
-          tags: []
+          tags: [game, active-game]
         - name: tiger-bites#4
           description: Practice methods that help you rest.
           tags: []
@@ -400,7 +400,7 @@ ranks:
           tags: []
         - name: tigers-roar#3
           description: With your Tiger adult partner, demonstrate how to access emergency services.
-          tags: []
+          tags: [first-aid]
         - name: tigers-roar#4
           description: With your Tiger adult partner, demonstrate how to safely cross a street or walk in a parking lot.
           tags: []
@@ -428,7 +428,7 @@ ranks:
           tags: [game]
         - name: team-tiger#2
           description: With your Tiger Adult Partner, choose a job that will help your team. Follow through by doing that job at least once.
-          tags: []
+          tags: [flag-ettiquite]
         - name: team-tiger#3
           description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
           tags: [team-game, game]
@@ -625,19 +625,19 @@ ranks:
           tags: []
         - name: safe-and-smart#3
           description: Show you can Stop, Drop and Roll.
-          tags: []
+          tags: [first-aid, fire-safety]
         - name: safe-and-smart#4
           description: With your Tiger adult partner or den leader, create a fire escape plan for your home or den meeting place. Include your outside meet-up spot. Practice the escape route you would take.
-          tags: []
+          tags: [fire-safety]
         - name: safe-and-smart#5
           description: With your Tiger adult partner, find the location of the smoke detectors in your home or den meeting place. Confirm they are working properly.
           tags: []
         - name: safe-and-smart#6
           description: With your Tiger adult partner or den leader, learn why matches and lighters are only for adults.
-          tags: []
+          tags: [fire-safety]
         - name: safe-and-smart#7
           description: Visit an emergency responder station or have an emergency responder visit your den.
-          tags: []
+          tags: [first-aid]
     - name: Sky is the Limit
       url: https://www.scouting.org/cub-scout-adventures/sky-is-the-limit/
       required: false
@@ -794,7 +794,7 @@ ranks:
           tags: []
         - name: running-with-the-pack#3
           description: Be active for 30 minutes with your den or at least 1 other person that includes both stretching and moving.
-          tags: []
+          tags: [game, active-game]
         - name: running-with-the-pack#4
           description: Be active for 10 minutes doing personal exercises.
           tags: []
@@ -803,7 +803,7 @@ ranks:
           tags: []
         - name: running-with-the-pack#6
           description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-          tags: []
+          tags: [first-aid]
     - name: Safety in Numbers
       url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
       required: true
@@ -848,7 +848,7 @@ ranks:
       requirements:
         - name: council-fire#1
           description: Learn how to properly care for and fold the United States flag. With your den or pack, participate in a flag ceremony.
-          tags: []
+          tags: [flag-ettiquite]
         - name: council-fire#2
           description: Identify three points of the Scout Law that are important to being a good neighbor.
           tags: []
@@ -935,7 +935,7 @@ ranks:
           tags: [stem, physical-science]
         - name: air-of-the-wolf#3
           description: Compare and contrast the two paper airplanes by distance and flight times.
-          tags: [stem, physical-science]
+          tags: [stem, physical-science, game]
         - name: air-of-the-wolf#4
           description: Build a flying object that is not a paper airplane.
           tags: [stem, physical-science]
@@ -1240,7 +1240,7 @@ ranks:
           tags: [food]
         - name: bear-strong#2
           description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
-          tags: []
+          tags: [game, active-game]
         - name: bear-strong#3
           description: Be active for 15 minutes doing personal exercises that include cardio, muscular strength, and flexibility.
           tags: []
@@ -1249,7 +1249,7 @@ ranks:
           tags: []
         - name: bear-strong#5
           description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-          tags: []
+          tags: [first-aid]
     - name: Standing Tall
       url: https://www.scouting.org/cub-scout-adventures/standing-tall/
       required: true
@@ -1291,7 +1291,7 @@ ranks:
       requirements:
         - name: paws-for-action#1
           description: Familiarize yourself with the flag of the United States of America including the history, demonstrating how to raise and lower the flag, how to properly fold and display, and the United States etiquette.
-          tags: []
+          tags: [flag-ettiquette]
         - name: paws-for-action#2
           description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
           tags: []
@@ -1308,7 +1308,7 @@ ranks:
       requirements:
         - name: bear-habitat#1
           description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials, walk, weather]
+          tags: [six-essentials, walk, weather, packing]
         - name: bear-habitat#2
           description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
           tags: [walk]
@@ -1321,6 +1321,19 @@ ranks:
         - name: bear-habitat#5
           description: '"Leave What You Find" Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.'
           tags: [walk, outdoor-code]
+        - name: bear-habitat#6
+          description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
+          tags: [fire-safety,outdoor-code]
+        - name: bear-habitat#7
+          description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
+          tags: [walk, outdoor-code]
+        - name: bear-habitat#8
+          description: '"Be Kind to Other Visitors" Identify what you need to do as a den to be kind to others on the path.'
+          tags: [walk, outdoor-code]
+        - name: bear-habitat#9
+          description: Go on your one-mile walk while practicing your Leave No Trace Principles for Kids.
+          tags: [walk, outdoor-code]
+
     - name: A Bear Goes Fishing
       url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
       required: false
@@ -1341,7 +1354,7 @@ ranks:
           tags: []
         - name: a-bear-goes-fishing#5
           description: Learn the proper way to attach the hook, lure, or fly to the line.
-          tags: []
+          tags: [knots]
     - name: Balancing Bears
       url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
       required: false
@@ -1350,7 +1363,7 @@ ranks:
       requirements:
         - name: balancing-bears#1
           description: Make trail mix using trail mix math.
-          tags: [stem, natural-science]
+          tags: [stem, natural-science, food]
         - name: balancing-bears#2
           description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
           tags: [stem, natural-science]
@@ -1367,16 +1380,16 @@ ranks:
       requirements:
         - name: baloo-the-builder#1
           description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-          tags: []
+          tags: [knife-safety, tools]
         - name: baloo-the-builder#2
           description: Practice using four of the tools you learned about in requirement 1.
-          tags: []
+          tags: [tools]
         - name: baloo-the-builder#3
           description: Choose a project to build.
           tags: []
         - name: baloo-the-builder#4
           description: Determine the tools and materials needed to build your project in requirement 3.
-          tags: []
+          tags: [tools]
         - name: baloo-the-builder#5
           description: Build your project.
           tags: []
@@ -1495,7 +1508,7 @@ ranks:
           tags: [stem, physical-science]
         - name: forensics#4
           description: "Do an analysis of four different substances: salt, sugar, baking soda and cornstarch."
-          tags: [stem, physical-science]
+          tags: [stem, physical-science, food]
         - name: forensics#5
           description: Learn about chromatography and how it is used in solving crimes.
           tags: [stem, physical-science]
@@ -1673,10 +1686,10 @@ ranks:
       requirements:
         - name: stronger-faster-higher#1
           description: With your den or family, plan, cook, and eat a balanced meal.
-          tags: [meal-planning]
+          tags: [meal-planning, food]
         - name: stronger-faster-higher#2
           description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
-          tags: []
+          tags: [game, active-game]
         - name: stronger-faster-higher#3
           description: Be active for 15 minutes doing personal exercises that boost your heart rate, use your muscles, and work on flexibility.
           tags: []
@@ -1744,7 +1757,7 @@ ranks:
       requirements:
         - name: webelos-walkabout#1
           description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
-          tags: [six-essentials, walk, weather]
+          tags: [six-essentials, walk, weather, packing]
         - name: webelos-walkabout#2
           description: Plan a 2-mile route for your walk.
           tags: [walk]
@@ -1767,10 +1780,10 @@ ranks:
           tags: []
         - name: aquanaut#2
           description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
-          tags: []
+          tags: [first-aid]
         - name: aquanaut#3
           description: Learn how to prevent and treat hypothermia.
-          tags: []
+          tags: [first-aid]
         - name: aquanaut#4
           description: Attempt to tread water.
           tags: []
@@ -1819,13 +1832,13 @@ ranks:
       requirements:
         - name: build-it#1
           description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-          tags: []
+          tags: [tools, knife-safety]
         - name: build-it#2
           description: Demonstrate  how to check for plumb, level, and square when building.
-          tags: []
+          tags: [tools]
         - name: build-it#3
           description: With the guidance of your Webelos den leader, parent, or legal guardian, select a carpentry project that requires it to be either plumb, level, and/or square.  Create a list of materials and tools you will need to complete the project.
-          tags: []
+          tags: [tools]
         - name: build-it#4
           description: Build  your carpentry project.
           tags: []
@@ -1926,6 +1939,18 @@ ranks:
         - name: lets-camp-webelos#5
           description: Show how to tie a bowline.  Explain when this knot should be used and why.
           tags: [knots]
+        - name: lets-camp-webelos#6
+          description: Know the fire safety rules. Using those rules, locate a safe area to build a campfire.
+          tags: [fire-safety]
+        - name: lets-camp-webelos#7
+          description: Using tinder, kindling, and fuel wood, properly build a teepee fire lay. If circumstances permit, and there is no local restriction on fires, show how to safely light the fire while under adult supervision. After allowing the fire to burn safely, extinguish the flames with minimal impact to the fire site.
+          tags: [fire-safety]
+        - name: lets-camp-webelos#8
+          description: Recite the Outdoor Code and Leave No Trace Principles for Kids from Memory.
+          tags: [outdoor-code]
+        - name: lets-camp-webelos#9
+          description: After your campout, share the things you did to follow the Outdoor Code and Leave No Trace Principles for Kids with your den or family.
+          tags: [outdoor-code]
     - name: Math on the Trail
       url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
       required: false
@@ -2114,7 +2139,10 @@ ranks:
           tags: []
         - name: personal-fitness#3
           description: Be active for 30 minutes with your patrol, a younger den, or at least one other person in a way that includes both stretching and moving.
-          tags: []
+          tags: [games, active-game]
+        - name: personal-fitness#4
+          description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in Arrow of Light patrol and pack activities.
+          tags: [first-aid]
     - name: First Aid
       url: https://www.scouting.org/cub-scout-adventures/first-aid/
       required: true
@@ -2349,7 +2377,7 @@ ranks:
           tags: [stem, natural-science]
         - name: into-the-woods#4
           description: Find out how your tree deals with wildfire.
-          tags: [stem, natural-science]
+          tags: [stem, natural-science, fire-safety]
         - name: into-the-woods#5
           description: Learn how wildlife uses your tree.
           tags: [stem, natural-science]
