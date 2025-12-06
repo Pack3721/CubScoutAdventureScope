@@ -162,9 +162,34 @@ function updateQueryStringAndTitle(selectedCloud) {
     }
 }
 
+// Copy URL button logic
+function setupCopyUrlButton() {
+    var btn = document.getElementById('copy-url-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+        var url = window.location.href;
+        navigator.clipboard.writeText(url).then(function() {
+            btn.classList.add('is-success');
+            btn.querySelector('span:last-child').textContent = 'Copied!';
+            setTimeout(function() {
+                btn.classList.remove('is-success');
+                btn.querySelector('span:last-child').textContent = 'Copy URL';
+            }, 1200);
+        }, function() {
+            btn.classList.add('is-danger');
+            btn.querySelector('span:last-child').textContent = 'Failed';
+            setTimeout(function() {
+                btn.classList.remove('is-danger');
+                btn.querySelector('span:last-child').textContent = 'Copy URL';
+            }, 1200);
+        });
+    });
+}
+
 // Main
 (async function() {
     try {
+        setupCopyUrlButton();
         const yamlText = await fetchYAML('data/adventure.yml');
         const data = jsyaml.load(yamlText);
         const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
