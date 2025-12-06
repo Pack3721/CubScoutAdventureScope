@@ -130,6 +130,38 @@ function getRankOrder(requirements) {
     return order.slice(0, 6);
 }
 
+// --- Query String & Title Helpers ---
+function encodeCloudItems(items) {
+    // Encode as type:text|type:text
+    return items.map(item => encodeURIComponent(item.type + ':' + item.text)).join('|');
+}
+function decodeCloudItems(str, cloud) {
+    if (!str) return [];
+    return str.split('|').map(pair => {
+        const [type, ...textArr] = decodeURIComponent(pair).split(':');
+        const text = textArr.join(':');
+        // Find the matching cloud item (to preserve reference)
+        return cloud.find(c => c.type === type && c.text === text);
+    }).filter(Boolean);
+}
+let originalTitle = document.title;
+function updateQueryStringAndTitle(selectedCloud) {
+    const encoded = encodeCloudItems(selectedCloud);
+    const url = new URL(window.location);
+    if (encoded) {
+        url.searchParams.set('q', encoded);
+    } else {
+        url.searchParams.delete('q');
+    }
+    window.history.replaceState({}, '', url);
+    // Update title
+    if (selectedCloud.length) {
+        document.title = originalTitle + ': ' + selectedCloud.map(i => i.text).join(', ');
+    } else {
+        document.title = originalTitle;
+    }
+}
+
 // Main
 (async function() {
     try {
@@ -173,6 +205,13 @@ function getRankOrder(requirements) {
         }
 
         let rankStyles = {};
+
+        // --- Get initial selection from query string ---
+        let initialSelectedCloud = [];
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('q')) {
+            initialSelectedCloud = decodeCloudItems(params.get('q'), cloud);
+        }
 
         const ractive = new Ractive({
             target: '#keyword-cloud',
@@ -274,7 +313,7 @@ function getRankOrder(requirements) {
             `,
             data: {
                 cloud,
-                selectedCloud: [],
+                selectedCloud: initialSelectedCloud,
                 filteredRequirements: {},
                 rankOrder: [],
                 rankStyles: {},
@@ -303,6 +342,7 @@ function getRankOrder(requirements) {
                     this.set('filteredRequirements', filtered);
                     this.set('rankOrder', order);
                     this.set('rankStyles', rankStyles);
+                    updateQueryStringAndTitle(selected);
                 },
                 togglePopover(event) {
                     const adventureName = event.node.getAttribute('data-adventure');
@@ -315,12 +355,31 @@ function getRankOrder(requirements) {
             }
         });
 
+        // Initial filter and title update if loaded with query string
+        if (initialSelectedCloud.length) {
+            const filtered = filterRequirementsByRank(requirements, initialSelectedCloud);
+            const order = getRankOrder(requirements.filter(req => {
+                return initialSelectedCloud.some(sel =>
+                    req.adventureAlt === sel.text ||
+                    req.adventure === sel.text ||
+                    req.tags.includes(sel.text) ||
+                    (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+                );
+            }));
+            rankStyles = buildRankStyles(order);
+            ractive.set('filteredRequirements', filtered);
+            ractive.set('rankOrder', order);
+            ractive.set('rankStyles', rankStyles);
+            updateQueryStringAndTitle(initialSelectedCloud);
+        }
+
         // Add clear button functionality
         document.getElementById('clear-btn').addEventListener('click', function() {
             ractive.set('selectedCloud', []);
             ractive.set('filteredRequirements', {});
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
+            updateQueryStringAndTitle([]);
         });
 
         // Remove special style for stem-nova; let all tags use the same style
