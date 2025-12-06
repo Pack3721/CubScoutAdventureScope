@@ -343,7 +343,7 @@ ranks:
         - name: time-to-swim#5
           description: Demonstrate how to exit the swimming area properly.
           tags: []
-  - rank: tiger
+  - rank: Tiger
     grade: 1st Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/tiger/
     adventure_list:
