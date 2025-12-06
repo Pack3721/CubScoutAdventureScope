@@ -164,21 +164,23 @@ function getRankOrder(requirements) {
 const typeToLetter = { req: 'r', elec: 'e', keyword: 'k', nova: 'n' };
 const letterToType = { r: 'req', e: 'elec', k: 'keyword', n: 'nova' };
 function encodeCloudItems(items) {
-    // Encode as t_text.t_text, where t is the mapped letter
+    // Replace any non-alphanumeric character in item.text with _, and lowercase everything
     return items.map(item => {
-        const letter = typeToLetter[item.type] || item.type[0];
-        return encodeURIComponent(letter + '_' + item.text);
+        const letter = (typeToLetter[item.type] || item.type[0]).toLowerCase();
+        const safeText = (item.text || '').toLowerCase().replace(/[^a-z0-9]/g, '_');
+        return letter + '_' + safeText;
     }).join('.');
 }
 function decodeCloudItems(str, cloud) {
     if (!str) return [];
-    return str.split('.').map(pair => {
-        const decoded = decodeURIComponent(pair);
-        const letter = decoded[0];
+    return str.toLowerCase().split('.').map(pair => {
+        const letter = pair[0];
         const type = letterToType[letter] || letter;
-        const text = decoded.slice(2); // skip letter and underscore
-        // Find the matching cloud item (to preserve reference)
-        return cloud.find(c => c.type === type && c.text === text);
+        const encodedText = pair.slice(2); // skip letter and underscore
+        // Build regex: replace _ with . (wildcard), match from start to end, case-insensitive
+        const regex = new RegExp('^' + encodedText.replace(/_/g, '.') + '$', 'i');
+        // Find the first matching cloud item of the correct type (case-insensitive)
+        return cloud.find(c => c.type === type && regex.test((c.text || '').toLowerCase()));
     }).filter(Boolean);
 }
 let originalTitle = document.title;
