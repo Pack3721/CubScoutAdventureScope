@@ -51,27 +51,27 @@
 					  <div class="mb-4" style="transition: max-height 0.3s;">
 						  {{#if !cloudCollapsed}}
 							  {{#each cloud:i}}
-								  <span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
-									  on-click="toggleCloud"
-									  data-index="{{i}}">
-									  {{#if type === 'stem-nova'}}
-										  <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
-									  {{else}}
-										  {{text}}
-									  {{/if}}
+								<span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
+									on-click="toggleCloud"
+									data-index="{{i}}">
+								{{#if type === 'nova'}}
+									<span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+								{{else}}
+									{{text}}
+								{{/if}}
 								  </span>
 							  {{/each}}
 						  {{else}}
 							  {{#if selectedCloud.length}}
 								  {{#each selectedCloud:i}}
-									  <span class="cloud-keyword {{type}} selected"
-										  on-click="toggleCloud"
-										  data-index="{{cloud.indexOf(selectedCloud[i])}}">
-										  {{#if type === 'stem-nova'}}
-											  <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
-										  {{else}}
-											  {{text}}
-										  {{/if}}
+									<span class="cloud-keyword {{type}} selected"
+										on-click="toggleCloud"
+										data-index="{{cloud.indexOf(selectedCloud[i])}}">
+									{{#if type === 'nova'}}
+										<span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+									{{else}}
+										{{text}}
+									{{/if}}
 									  </span>
 								  {{/each}}
 							  {{else}}

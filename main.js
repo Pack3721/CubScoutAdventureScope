@@ -82,10 +82,10 @@ function renderCloud({ requiredNames, notRequiredNames, tags }) {
     const notRequiredSorted = onlyStrings(Array.from(notRequiredNames)).sort((a, b) => a.localeCompare(b));
     const tagsSorted = onlyStrings(Array.from(tags)).sort((a, b) => a.localeCompare(b));
     const stemNovaSorted = onlyStrings(Array.from(arguments[0].stemNovaNames || [])).sort((a, b) => a.localeCompare(b));
-    requiredSorted.forEach(name => cloud.push({ text: name, type: 'required' }));
-    notRequiredSorted.forEach(name => cloud.push({ text: name, type: 'not-required' }));
-    tagsSorted.forEach(tag => cloud.push({ text: tag, type: 'tag-keyword' }));
-    stemNovaSorted.forEach(name => cloud.push({ text: name, type: 'stem-nova' }));
+    requiredSorted.forEach(name => cloud.push({ text: name, type: 'req' }));
+    notRequiredSorted.forEach(name => cloud.push({ text: name, type: 'elec' }));
+    tagsSorted.forEach(tag => cloud.push({ text: tag, type: 'keyword' }));
+    stemNovaSorted.forEach(name => cloud.push({ text: name, type: 'nova' }));
     return cloud;
 }
 
@@ -94,10 +94,10 @@ function filterRequirementsByRank(requirements, selectedCloud) {
     if (!selectedCloud.length) return {};
     const filtered = requirements.filter(req => {
         return selectedCloud.some(sel =>
-            req.adventureAlt === sel.text ||
-            req.adventure === sel.text ||
-            req.tags.includes(sel.text) ||
-            (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+            (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+            (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+            (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
+            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
         );
     });
     // Group by rank, then by adventure (as array for Ractive)
@@ -263,10 +263,10 @@ function setupCopyUrlButton() {
                     const filtered = filterRequirementsByRank(requirements, selected);
                     const order = getRankOrder(requirements.filter(req => {
                         return selected.some(sel =>
-                            req.adventureAlt === sel.text ||
-                            req.adventure === sel.text ||
-                            req.tags.includes(sel.text) ||
-                            (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+                            (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                            (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                            (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
+                            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
                         );
                     }));
                     rankStyles = buildRankStyles(order);
@@ -307,10 +307,10 @@ function setupCopyUrlButton() {
             const filtered = filterRequirementsByRank(requirements, initialSelectedCloud);
             const order = getRankOrder(requirements.filter(req => {
                 return initialSelectedCloud.some(sel =>
-                    req.adventureAlt === sel.text ||
-                    req.adventure === sel.text ||
-                    req.tags.includes(sel.text) ||
-                    (Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+                    (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                    (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                    (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
+                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
                 );
             }));
             rankStyles = buildRankStyles(order);

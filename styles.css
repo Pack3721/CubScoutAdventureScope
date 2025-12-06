@@ -1,26 +1,64 @@
-/* STEM Nova tag styles */
-.cloud-keyword.stem-nova {
+
+/* Word cloud base style */
+.cloud-keyword {
+	font-size: 1.2em;
+	margin: 0.3em;
+	display: inline-block;
+	transition: background 0.2s, color 0.2s;
+	cursor: pointer;
+	border-radius: 0.3em;
+	padding: 0.1em 0.5em;
+}
+
+/* Required (req) */
+.cloud-keyword.req {
+	color: #3273dc;
+	font-weight: bold;
+}
+.cloud-keyword.selected.req {
+	background: #3273dc;
+	color: #fff !important;
+	box-shadow: 0 0 0 2px #b5b5b5;
+}
+
+/* Elective (elec) */
+.cloud-keyword.elec {
+	color: #23d160;
+}
+.cloud-keyword.selected.elec {
+	background: #23d160;
+	color: #fff !important;
+	box-shadow: 0 0 0 2px #b5b5b5;
+}
+
+/* Keyword (keyword) */
+.cloud-keyword.keyword {
+	color: #ff3860;
+	font-style: italic;
+	white-space: normal;
+	word-break: break-word;
+	font-size: 0.95em;
+	padding: 0.05em 0.28em;
+}
+.cloud-keyword.selected.keyword {
+	background: #ff3860;
+	color: #fff !important;
+	box-shadow: 0 0 0 2px #b5b5b5;
+}
+
+/* STEM Nova (nova) */
+.cloud-keyword.nova {
 	background: #FFF0FA;
 	color: #FF6EC7;
 	font-size: 1em;
 	padding: 0.05em 0.35em;
 }
-.cloud-keyword.stem-nova.selected {
+.cloud-keyword.selected.nova {
 	background: #FF6EC7;
 	color: #fff !important;
 	box-shadow: 0 0 0 2px #b5b5b5;
 }
-/* Cub Scout Adventure Scope custom styles */
-.cloud-keyword { font-size: 1.2em; margin: 0.3em; display: inline-block; transition: background 0.2s, color 0.2s; cursor: pointer; border-radius: 0.3em; padding: 0.1em 0.5em; }
-.required { color: #3273dc; font-weight: bold; }
-.not-required { color: #23d160; }
-.tag-keyword { color: #ff3860; font-style: italic; }
 
-/* Allow tags to wrap */
-.tag-keyword {
-	white-space: normal;
-	word-break: break-word;
-}
 .tag.is-light {
 	display: inline;
 	white-space: normal;
@@ -32,21 +70,6 @@
 	padding: 0.1em 0.5em;
 	box-sizing: border-box;
 	background-clip: padding-box;
-}
-.cloud-keyword.selected.required {
-	background: #3273dc;
-	color: #fff !important;
-	box-shadow: 0 0 0 2px #b5b5b5;
-}
-.cloud-keyword.selected.not-required {
-	background: #23d160;
-	color: #fff !important;
-	box-shadow: 0 0 0 2px #b5b5b5;
-}
-.cloud-keyword.selected.tag-keyword {
-	background: #ff3860;
-	color: #fff !important;
-	box-shadow: 0 0 0 2px #b5b5b5;
 }
 
 .adventure-group {
@@ -66,7 +89,7 @@
 	margin-bottom: 0.1em;
 }
 .adventure-altname {
-	font-size: 0.95em;
+	font-size: 0.85em;
 	font-style: italic;
 	color: #888;
 	background: #f9f9f9;
@@ -93,15 +116,15 @@
 }
 
 @media print {
-	.cloud-keyword:not(.selected) {
-		display: none !important;
-	}
-	#clear-btn,
-	#copy-url-btn,
-	#toggle-cloud-btn {
-		display: none !important;
-	}
-	.requirements-empty-message {
-		display: none !important;
-	}
+  .cloud-keyword:not(.selected) {
+    display: none !important;
+  }
+  #clear-btn,
+  #copy-url-btn,
+  #toggle-cloud-btn {
+    display: none !important;
+  }
+  .requirements-empty-message {
+    display: none !important;
+  }
 }
