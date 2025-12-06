@@ -2139,7 +2139,7 @@ ranks:
           tags: []
         - name: personal-fitness#3
           description: Be active for 30 minutes with your patrol, a younger den, or at least one other person in a way that includes both stretching and moving.
-          tags: [games, active-game]
+          tags: [game, active-game]
         - name: personal-fitness#4
           description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in Arrow of Light patrol and pack activities.
           tags: [first-aid]
