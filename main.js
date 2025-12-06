@@ -160,17 +160,23 @@ function getRankOrder(requirements) {
 }
 
 // --- Query String & Title Helpers ---
-// Use __ for key-value, , for list
+// Map type to first letter for compact query string
+const typeToLetter = { req: 'r', elec: 'e', keyword: 'k', nova: 'n' };
+const letterToType = { r: 'req', e: 'elec', k: 'keyword', n: 'nova' };
 function encodeCloudItems(items) {
-    // Encode as type__text.type__text, use standard encodeURIComponent (spaces as %20)
-    return items.map(item => encodeURIComponent(item.type + '__' + item.text)).join('.');
+    // Encode as t_text.t_text, where t is the mapped letter
+    return items.map(item => {
+        const letter = typeToLetter[item.type] || item.type[0];
+        return encodeURIComponent(letter + '_' + item.text);
+    }).join('.');
 }
 function decodeCloudItems(str, cloud) {
     if (!str) return [];
     return str.split('.').map(pair => {
         const decoded = decodeURIComponent(pair);
-        const [type, ...textArr] = decoded.split('__');
-        const text = textArr.join('__');
+        const letter = decoded[0];
+        const type = letterToType[letter] || letter;
+        const text = decoded.slice(2); // skip letter and underscore
         // Find the matching cloud item (to preserve reference)
         return cloud.find(c => c.type === type && c.text === text);
     }).filter(Boolean);
