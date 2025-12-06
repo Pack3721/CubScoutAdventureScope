@@ -164,10 +164,10 @@ function getRankOrder(requirements) {
 const typeToLetter = { req: 'r', elec: 'e', keyword: 'k', nova: 'n' };
 const letterToType = { r: 'req', e: 'elec', k: 'keyword', n: 'nova' };
 function encodeCloudItems(items) {
-    // Replace any non-alphanumeric character in item.text with _, and lowercase everything
+    // Replace any character except a-z, 0-9, or dash with _, and lowercase everything
     return items.map(item => {
         const letter = (typeToLetter[item.type] || item.type[0]).toLowerCase();
-        const safeText = (item.text || '').toLowerCase().replace(/[^a-z0-9]/g, '_');
+        const safeText = (item.text || '').toLowerCase().replace(/[^a-z0-9-]/g, '_');
         return letter + '_' + safeText;
     }).join('.');
 }
