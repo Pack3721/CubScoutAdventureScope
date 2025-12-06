@@ -249,7 +249,7 @@ function setupCopyUrlButton() {
                 rankStyles: {},
                 popoverAdventure: null,
                 novaAwardLinks,
-                cloudCollapsed: false
+                cloudCollapsed: initialSelectedCloud.length > 0
             },
             on: {
                 toggleCloud(event) {
