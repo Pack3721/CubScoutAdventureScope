@@ -131,15 +131,17 @@ function getRankOrder(requirements) {
 }
 
 // --- Query String & Title Helpers ---
+// Use __ for key-value, , for list
 function encodeCloudItems(items) {
-    // Encode as type:text|type:text
-    return items.map(item => encodeURIComponent(item.type + ':' + item.text)).join('|');
+    // Encode as type__text.type__text, use standard encodeURIComponent (spaces as %20)
+    return items.map(item => encodeURIComponent(item.type + '__' + item.text)).join('.');
 }
 function decodeCloudItems(str, cloud) {
     if (!str) return [];
-    return str.split('|').map(pair => {
-        const [type, ...textArr] = decodeURIComponent(pair).split(':');
-        const text = textArr.join(':');
+    return str.split('.').map(pair => {
+        const decoded = decodeURIComponent(pair);
+        const [type, ...textArr] = decoded.split('__');
+        const text = textArr.join('__');
         // Find the matching cloud item (to preserve reference)
         return cloud.find(c => c.type === type && c.text === text);
     }).filter(Boolean);
