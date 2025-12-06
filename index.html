@@ -2,6 +2,7 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,129 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="stylesheet" href="styles.css?v={{ site.github.build_revision }}">
 </head>
+
 <body>
-	   <section class="section">
-		   <div class="container">
-			   <div class="mb-2">
+	<section class="section">
+		<div class="container">
+			<div class="mb-2">
+			</div>
+			<div class="is-flex is-align-items-center mb-2">
+				<h1 class="title is-2 mb-2">Cub Scout Adventure Scope</h1>
+				<button id="clear-btn" class="button is-small is-light" style="margin-left: 1em;">Clear</button>
+			</div>
+			<div id="keyword-cloud"></div>
+
+		</div>
+	</section>
+	<div class="has-text-centered mt-5 mb-3">
+		<a href="{{ site.github.repository_url }}" target="_blank" title="View on GitHub"
+			style="display: inline-flex; align-items: center;">
+			<img src="https://img.shields.io/badge/github-{{ site.github.repository_name }}-blue?logo=github"
+				alt="GitHub Repo Badge">
+		</a>
+	</div>
+
+	<script id="cloud-template" type="text/ractive">
+			   <div>
+				   <div class="mb-4">
+					   {{#each cloud:i}}
+						   <span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
+							   on-click="toggleCloud"
+							   data-index="{{i}}"
+						   >
+							   {{#if type === 'stem-nova'}}
+								   <span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
+							   {{else}}
+								   {{text}}
+							   {{/if}}
+						   </span>
+					   {{/each}}
+				   </div>
+				   <div id="requirements-grid">
+					   {{#if rankOrder.length}}
+						   <div class="columns is-multiline">
+							   {{#each rankOrder:i}}
+								   <div class="column is-one-sixth">
+									   <div class="rank-header" style="background: {{rankStyles[rankOrder[i]].color}}; color: {{rankStyles[rankOrder[i]].text}};">
+										   {{rankOrder[i]}}
+									   </div>
+									   {{#each filteredRequirements[rankOrder[i]]:j}}
+										   <div class="adventure-group">
+											   <div class="adventure-box" style="background: {{rankStyles[rankOrder[i]].bg}};">
+												   <div class="adventure-title" style="color: {{rankStyles[rankOrder[i]].color}};">
+													   {{name}}
+													   {{#if requirements[0].adventureAlt}}
+														   <span class="adventure-altname">{{requirements[0].adventureAlt}}</span>
+													   {{/if}}
+													   {{#if requirements[0].stemNova}}
+														   <span class="stem-nova-badge has-tooltip"
+															   style="color: #FF6EC7; margin-left: 0.5em; font-size: 1.1em; cursor: pointer; background: none; border-radius: 0; padding: 0; position: relative;"
+															   on-click="togglePopover"
+															   data-adventure="{{name}}">
+															   💥
+															   {{#if popoverAdventure === name}}
+																   <div class="card popover-stem-nova" style="position: absolute; left: 1.5em; top: 0; z-index: 10; min-width: 180px; max-width: 260px; background: #fff; border: 1px solid #FF6EC7; box-shadow: 0 2px 8px rgba(50,115,220,0.10); border-radius: 0.5em; padding: 0.7em 1em;">
+																	   <header class="card-header" style="background: #FF6EC7; color: #fff; border-radius: 0.5em 0.5em 0 0; padding: 0.3em 0.7em; font-size: 1em; font-weight: bold;">
+																		   STEM Nova Awards
+																	   </header>
+																	   <div class="card-content" style="padding: 0.5em 0 0.2em 0;">
+																		   <ul style="margin: 0; padding-left: 1.1em;">
+																			   {{#each requirements[0].stemNova:n}}
+																				   <li style="color: #FF6EC7; font-weight: 500; margin-bottom: 0.3em; line-height: 1.4;">
+																					   {{#if novaAwardLinks && novaAwardLinks[requirements[0].stemNova[n].toLowerCase().trim()]}}
+																						   <a href="{{novaAwardLinks[requirements[0].stemNova[n].toLowerCase().trim()]}}" target="_blank" style="color: #FF6EC7; text-decoration: underline;">{{requirements[0].stemNova[n]}}</a>
+																					   {{else}}
+																						   {{requirements[0].stemNova[n]}}
+																					   {{/if}}
+																				   </li>
+																			   {{/each}}
+																		   </ul>
+																	   </div>
+																   </div>
+															   {{/if}}
+														   </span>
+													   {{/if}}
+												   </div>
+												   <ul>
+													   {{#each requirements:i}}
+														   <li>
+															   <a href="{{adventureUrl}}" target="_blank">{{requirement}}</a>: <span class="requirement-desc">{{description}}</span>
+															   {{#if tags.length}}
+																   <br>
+																   {{#each tags:k}}
+																	   <span class="tag is-light" style="margin-right:0.2em;">
+																		   {{#if requirements[0].stemNova && requirements[0].stemNova.includes(tags[k])}}
+																			   💥 {{tags[k]}}
+																		   {{else}}
+																			   {{tags[k]}}
+																		   {{/if}}
+																	   </span>
+																   {{/each}}
+															   {{/if}}
+														   </li>
+														   {{#if i < requirements.length - 1}}
+															   <hr style="margin: 0.4em 0; border: none; border-top: 1px solid #e3e3e3;">
+														   {{/if}}
+													   {{/each}}
+												   </ul>
+											   </div>
+										   </div>
+									   {{/each}}
+								   </div>
+							   {{/each}}
+						   </div>
+					   {{else}}
+						   <p class="has-text-grey requirements-empty-message">Select a word cloud item to see matching requirements.</p>
+					   {{/if}}
+				   </div>
 			   </div>
-			   <div class="is-flex is-align-items-center mb-2">
-				   <h1 class="title is-2 mb-2">Cub Scout Adventure Scope</h1>
-				   <button id="clear-btn" class="button is-small is-light" style="margin-left: 1em;">Clear</button>
-			   </div>
-			   <div id="keyword-cloud"></div>
-		   </div>
-	   </section>
-   <div class="has-text-centered mt-5 mb-3">
-	   <a href="{{ site.github.repository_url }}" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center;">
-		   <img src="https://img.shields.io/badge/github-{{ site.github.repository_name }}-blue?logo=github" alt="GitHub Repo Badge">
-	   </a>
-   </div>
+	</script>
+
 	<script src="https://cdn.jsdelivr.net/npm/ractive@1.4.4/ractive.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 	<script src="main.js?v={{ site.github.build_revision }}"></script>
+
+
 </body>
+
 </html>
