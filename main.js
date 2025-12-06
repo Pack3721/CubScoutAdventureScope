@@ -1,3 +1,32 @@
+// QR code update logic (moved from index.html)
+function updateQrCode() {
+    var url = window.location.href;
+    var qrImg = document.getElementById('qr-code-img');
+    // Determine QR size based on number of selected items
+    var selectedCount = 0;
+    if (window.ractive && typeof window.ractive.get === 'function') {
+        var selected = window.ractive.get('selectedCloud');
+        if (Array.isArray(selected)) selectedCount = selected.length;
+    }
+    // Base size 80, add 10px per item over 2, max 200
+    var size = 80 + Math.max(0, (selectedCount - 2)) * 10;
+    size = Math.min(size, 200);
+    if (qrImg) {
+        qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=' + size + 'x' + size + '&margin=2&data=' + encodeURIComponent(url);
+        qrImg.style.width = size + 'px';
+        qrImg.style.height = size + 'px';
+    }
+}
+window.addEventListener('DOMContentLoaded', updateQrCode);
+window.addEventListener('popstate', updateQrCode);
+// Also update QR code when query string changes (main.js calls replaceState)
+(function() {
+    var origReplaceState = history.replaceState;
+    history.replaceState = function() {
+        origReplaceState.apply(this, arguments);
+        updateQrCode();
+    };
+})();
 // Helper: get cache buster from main.js script tag
 function getCacheBuster() {
     const scripts = document.getElementsByTagName('script');
