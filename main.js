@@ -326,6 +326,7 @@ function setupCopyUrlButton() {
             ractive.set('filteredRequirements', {});
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
+            ractive.set('cloudCollapsed', false); // Expand the cloud
             updateQueryStringAndTitle([]);
         });
 
