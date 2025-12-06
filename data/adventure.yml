@@ -35,8 +35,8 @@ nova_awards:
     category: "Math"
     url: "http://stlbsa.org/wp-content/uploads/2025/05/Fearful-Symmetry-2022_GSLAC-JUN1-2025.pdf"
 ranks:
-  - rank: lion
-    grade : kindergarten
+  - rank: Lion
+    grade : Kindergarten
     url: https://www.scouting.org/cub-scout-adventures/lion/
     adventure_list:
     - name: Bobcat Adventure
@@ -751,7 +751,7 @@ ranks:
         - name: tigers-in-the-water#6
           description: Demonstrate how to exit the swimming area properly.
           tags: []
-  - rank: wolf
+  - rank: Wolf
     grade: 2nd Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/wolf/
     adventure_list:
@@ -1197,7 +1197,7 @@ ranks:
         - name: summertime-fun-wolf#1
           description: Anytime during May through August participate in a total of three Cub Scout activities.
           tags: []
-  - rank: bear
+  - rank: Bear
     grade: 3rd Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/bear/
     adventure_list:
@@ -1655,7 +1655,7 @@ ranks:
         - name: whittling#4
           description: Make two carvings with a pocketknife.
           tags: [knife-use]
-  - rank: webelos
+  - rank: Webelos
     grade: 4th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/webelos/
     adventure_list:
@@ -2093,7 +2093,7 @@ ranks:
         - name: yo-yo#5
           description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
           tags: [stem, physical-science]
-  - rank: arrow of light
+  - rank: Arrow of Light
     grade: 5th Grade
     url: https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/
     adventure_list:
