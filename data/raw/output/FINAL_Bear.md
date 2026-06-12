@@ -187,12 +187,3 @@
 3. Demonstrate that you know how to care for and use your pocketknife safely.
 4. Make two carvings with a pocketknife.
 
-## Archery Bear (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery-bear/)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot/)
-
-
-## BB Guns (elective) [🔗](https://www.scouting.org/cub-scout-adventures/bb-guns/)
-
-

@@ -174,12 +174,3 @@
 3. Share some ways you can conserve water in your home.
 4. Discover how water in your community is treated to become safe to drink.
 
-## Archery Wolf (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery-wolf/)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot/)
-
-
-## BB Guns (elective) [🔗](https://www.scouting.org/cub-scout-adventures/bb-guns/)
-
-

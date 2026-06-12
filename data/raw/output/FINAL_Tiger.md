@@ -168,12 +168,3 @@
 5. Demonstrate a flutter kick.
 6. Demonstrate how to exit the swimming area properly.
 
-## Archery Tiger (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery-tiger/)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot/)
-
-
-## BB Guns (elective) [🔗](https://www.scouting.org/cub-scout-adventures/bb-guns/)
-
-

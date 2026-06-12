@@ -156,6 +156,7 @@
 
 ## Summertime Fun Webelos (elective) [🔗](https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/)
 
+1. Anytime during May through August participate in a total of three Cub Scout activities.
 
 ## Tech on the Trail (elective) [🔗](https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/)
 
@@ -169,13 +170,4 @@
 5. Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
 6. Show that you can properly wind a yo-yo.
 7. Attempt each of the following: gravity pull, sleeper, breakaway.
-
-## Archery Webelos (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery-webelos/)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot/)
-
-
-## BB Guns (elective) [🔗](https://www.scouting.org/cub-scout-adventures/bb-guns/)
-
 

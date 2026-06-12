@@ -130,9 +130,3 @@
 4. Place your face in the water and blow bubbles.
 5. Demonstrate how to exit the swimming area properly.
 
-## Archery Lion (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot)
-
-

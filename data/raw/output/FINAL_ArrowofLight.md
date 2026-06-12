@@ -2,9 +2,18 @@
 
 ## Bobcat Adventure (required) [🔗](https://www.scouting.org/cub-scout-adventures/bobcat-arrow-of-light/)
 
+1. Bring a map of the area.
+2. Pack enough water for the day.
+3. Wear sturdy hiking boots.
+4. Check the weather forecast before departing.
+5. Carry a first-aid kit.
 
 ## Personal Fitness (required) [🔗](https://www.scouting.org/cub-scout-adventures/personal-fitness/)
 
+1. Plan a balanced meal that you would eat when camping. Prepare that meal using the gear you would use on a campout.
+2. Examine what it is to be physically fit and how you incorporate this in your life. Track the number of times you are active for 30 minutes or longer over a 14-day period. Share with your patrol or family what you enjoyed and if you feel you are living up to the Scout Oath of being physically strong.
+3. Be active for 30 minutes with your patrol, a younger den, or at least one other person in a way that includes both stretching and moving.
+4. Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in Arrow of Light patrol and pack activities.
 
 ## First Aid (required) [🔗](https://www.scouting.org/cub-scout-adventures/first-aid/)
 
@@ -18,6 +27,9 @@
 
 ## Duty to God (required) [🔗](https://www.scouting.org/cub-scout-adventures/duty-to-god/)
 
+1. Discuss with your parent or legal guardian your family’s faith traditions or one of your choosing. Choose a view or value of that faith tradition that is related to the Scout Law. Discuss with your family how each family member demonstrates this value.
+2. Meet with a representative of a faith-based organization in your local community who provides a service that assists people in crisis regardless of their faith. Identify who they help and how.
+3. Discuss with your parent, legal guardian, or an adult leader what “Duty to God” means to you. Tell how you practice your Duty to God in your daily life.
 
 ## Citizenship (required) [🔗](https://www.scouting.org/cub-scout-adventures/citizenship/)
 
@@ -46,9 +58,21 @@
 
 ## Cycling (elective) [🔗](https://www.scouting.org/cub-scout-adventures/cycling/)
 
+1. Decide on gear and supplies you should bring might bring for a long bike ride. Determine how to safely carry the gear.
+2. Discover how multi-gear bicycles work and their benefit.
+3. Show how to lubricate a chain.
+4. Review different bicycle locks. Demonstrate the operation of locks and, how to secure your bicycle with a lock.
+5. Repair a flat tire.
+6. With your patrol, pack, or family, use a map and plan a bicycle ride that is at least 10 miles.
+7. With your patrol, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 10 miles.
 
 ## Engineer (elective) [🔗](https://www.scouting.org/cub-scout-adventures/engineer/)
 
+1. Learn the focus, related sciences, and products of civil, electrical, and mechanical engineers.
+2. Pick one of the engineering fields from requirement 1 to complete the following requirements.
+3. Examine a set of blueprints or specifications used by your choice of engineer.
+4. Identify a project that you would like to build.
+5. Using the engineering process, build your project.
 
 ## Estimations (elective) [🔗](https://www.scouting.org/cub-scout-adventures/estimations/)
 
@@ -108,13 +132,4 @@
 2. Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
 3. Attempt Scouting America swimmer test.
 4. Have 30 minutes or more of free swim time during which you practice the buddy system and stay within your ability group. The qualified adult supervision should conduct at least three buddy checks per half hour of swimming.
-
-## Archery Arrow of Light (elective) [🔗](https://www.scouting.org/cub-scout-adventures/archery-arrow-of-light/)
-
-
-## Slingshot (elective) [🔗](https://www.scouting.org/cub-scout-adventures/slingshot/)
-
-
-## BB Guns (elective) [🔗](https://www.scouting.org/cub-scout-adventures/bb-guns/)
-
 
