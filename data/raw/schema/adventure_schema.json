@@ -1,0 +1,47 @@
+{
+  "title" : "Results",
+  "type" : "object",
+  "required" : [
+    "Adventures"
+  ],
+  "$defs" : {
+    "Adventure" : {
+      "title" : "Adventure",
+      "properties" : {
+        "kind" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      },
+      "additionalProperties" : false,
+      "type" : "object",
+      "required" : [
+        "name",
+        "kind",
+        "url"
+      ],
+      "x-order" : [
+        "name",
+        "kind",
+        "url"
+      ]
+    }
+  },
+  "x-order" : [
+    "Adventures"
+  ],
+  "properties" : {
+    "Adventures" : {
+      "items" : {
+        "$ref" : "#\/$defs\/Adventure"
+      },
+      "type" : "array"
+    }
+  },
+  "additionalProperties" : false
+}

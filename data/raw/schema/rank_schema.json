@@ -1,0 +1,42 @@
+{
+  "$defs" : {
+    "Rank" : {
+      "type" : "object",
+      "title" : "Rank",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        }
+      },
+      "additionalProperties" : false,
+      "x-order" : [
+        "name",
+        "url"
+      ],
+      "required" : [
+        "name",
+        "url"
+      ]
+    }
+  },
+  "x-order" : [
+    "Ranks"
+  ],
+  "type" : "object",
+  "properties" : {
+    "Ranks" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#\/$defs\/Rank"
+      }
+    }
+  },
+  "required" : [
+    "Ranks"
+  ],
+  "title" : "Results",
+  "additionalProperties" : false
+}

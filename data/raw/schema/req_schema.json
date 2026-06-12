@@ -1,0 +1,42 @@
+{
+  "properties" : {
+    "Requirements" : {
+      "items" : {
+        "$ref" : "#\/$defs\/Requirement"
+      },
+      "type" : "array"
+    }
+  },
+  "type" : "object",
+  "title" : "Results",
+  "$defs" : {
+    "Requirement" : {
+      "title" : "Requirement",
+      "x-order" : [
+        "reqNo",
+        "text"
+      ],
+      "required" : [
+        "reqNo",
+        "text"
+      ],
+      "additionalProperties" : false,
+      "properties" : {
+        "text" : {
+          "type" : "string"
+        },
+        "reqNo" : {
+          "type" : "integer"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  "required" : [
+    "Requirements"
+  ],
+  "x-order" : [
+    "Requirements"
+  ],
+  "additionalProperties" : false
+}
