@@ -432,7 +432,7 @@ adventure_list:
       tags: []
 - name: Summertime Fun Wolf
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
-  required: true
+  required: false
   alternate_name: Summer Time
   requirements:
     - name: summertime-fun-wolf#1
