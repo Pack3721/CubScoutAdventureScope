@@ -40,7 +40,7 @@ adventure_list:
       description: Be active for 30 minutes.
       tags: [game, game-active]
     - name: tiger-bites#4
-      description: Practice methods that help you rest.
+      description: Practice methods that help you sleep.
       tags: []
 - name: Tiger’s Roar
   url: https://www.scouting.org/cub-scout-adventures/tigers-roar/
@@ -57,7 +57,7 @@ adventure_list:
       description: With your Tiger adult partner, demonstrate how to access emergency services.
       tags: [first-aid]
     - name: tigers-roar#4
-      description: With your Tiger adult partner, demonstrate how to safely cross a street or walk in a parking lot.
+      description: With your Tiger adult partner, demonstrate that you know what to do if you get lost or separated.
       tags: []
 - name: Tiger Circles
   url: https://www.scouting.org/cub-scout-adventures/tiger-circles/
@@ -65,7 +65,7 @@ adventure_list:
   alternate_name: Family & Reverence
   requirements:
     - name: tiger-circles#1
-      description: With your parent or legal guardian talk about your family's faith traditions. Identify three holidays or celebrations that are part of your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
+      description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Draw a picture of your favorite family’s faith tradition holiday or celebration.
       tags: [art]
     - name: tiger-circles#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
@@ -359,7 +359,7 @@ adventure_list:
       description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
       tags: [game-active, game]
     - name: tiger-tag#2
-      description: Play a relay game with your den.
+      description: Play a relay game with your den. Share with your Tiger adult partner or your den why you like this game.
       tags: [game-active, game]
     - name: tiger-tag#3
       description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.

@@ -74,7 +74,7 @@ adventure_list:
   alternate_name: Family & Reverence
   requirements:
     - name: fellowship#1
-      description: With your parent or legal guardian talk about your family’s faith traditions.
+      description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your favorite family’s faith tradition, holiday or celebration.
       tags: []
     - name: fellowship#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
@@ -156,6 +156,9 @@ adventure_list:
     - name: a-bear-goes-fishing#5
       description: Learn the proper way to attach the hook, lure, or fly to the line.
       tags: [knots]
+    - name: a-bear-goes-fishing#6
+      description: Go on a fishing adventure, and for 30 minutes or more, put into practice the things you learned about fish and fishing equipment.
+      tags: []
 - name: Balancing Bears
   url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
   required: false
@@ -214,6 +217,12 @@ adventure_list:
     - name: bears-afloat#5
       description: Discover how to tell if a life jacket is the correct size and approved for your paddle craft activity. Demonstrate how to wear it.
       tags: []
+    - name: bears-afloat#6
+      description: Explore how your paddle craft responds as you move your paddle through the water from different places.
+      tags: []
+    - name: bears-afloat#7
+      description: "Have 30 minutes, or more, of canoe, kayak, or stand-up paddleboard paddle time."
+      tags: []
 - name: Bears on Bikes
   url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
   required: false
@@ -233,6 +242,12 @@ adventure_list:
       tags: []
     - name: bears-on-bikes#5
       description: Demonstrate how to operate brakes.
+      tags: []
+    - name: bears-on-bikes#6
+      description: Learn how to use a pump to inflate your tires. Discuss why riding with low-pressure or flat tires is unsafe and can cause damage to your bike.
+      tags: []
+    - name: bears-on-bikes#7
+      description: With your family, den, or pack, follow the buddy system and go on a 30-minute bike ride.
       tags: []
 - name: Champions for Nature Bear
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
@@ -313,6 +328,9 @@ adventure_list:
     - name: forensics#5
       description: Learn about chromatography and how it is used in solving crimes.
       tags: [stem, physical-science]
+    - name: forensics#6
+      description: Find out how officers collect evidence.
+      tags: []
 - name: Let’s Camp Bear
   url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
   required: false

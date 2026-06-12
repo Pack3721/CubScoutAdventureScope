@@ -73,9 +73,6 @@ adventure_list:
   required: true
   alternate_name: Family & Reverence
   requirements:
-    - name: footsteps#0
-      description: Complete a Religious Emblem of the Cub Scouts family’s choosing (this OR complete requirements 1-4).
-      tags: []
     - name: footsteps#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft or work of art of your favorite family’s faith tradition holiday or celebration.
       tags: [art]
@@ -340,9 +337,6 @@ adventure_list:
   required: false
   alternate_name: Swimming
   requirements:
-    - name: paws-for-water#0
-      description: Enroll in and complete a swimming instruction program offered by an accredited instructor OR pass the Scouting America swimmer test (this OR complete requirements 1-6).
-      tags: []
     - name: paws-for-water#1
       description: Learn about the swimming safety rules that you need to follow.
       tags: []
@@ -438,7 +432,7 @@ adventure_list:
       tags: []
 - name: Summertime Fun Wolf
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
-  required: false
+  required: true
   alternate_name: Summer Time
   requirements:
     - name: summertime-fun-wolf#1

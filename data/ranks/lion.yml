@@ -59,7 +59,7 @@ adventure_list:
   alternate_name: Family & Reverence
   requirements:
     - name: lions-pride#1
-      description: With your parent or legal guardian talk about your family's faith traditions. Draw a picture of your favorite family's faith tradition holiday or celebration.
+      description: With your parent or legal guardian talk about your family’s faith traditions. Draw a picture of your favorite family’s faith tradition holiday or celebration.
       tags: [art]
     - name: lions-pride#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.

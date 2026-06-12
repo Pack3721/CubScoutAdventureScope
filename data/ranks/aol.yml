@@ -212,6 +212,9 @@ adventure_list:
     - name: estimations#3
       description: Estimate the height of a distant object.
       tags: [stem, mathematics]
+    - name: estimations#4
+      description: Estimate the distance between two points.
+      tags: [stem, mathematics]
 - name: Fishing
   url: https://www.scouting.org/cub-scout-adventures/fishing/
   required: false
@@ -265,6 +268,12 @@ adventure_list:
       tags: [stem, natural-science]
     - name: into-the-wild#3
       description: Investigate how your animal coexists with other animals in the wild.
+      tags: [stem, natural-science]
+    - name: into-the-wild#4
+      description: Describe how humans interact with your chosen animal's ecosystem.
+      tags: [stem, natural-science]
+    - name: into-the-wild#5
+      description: Discover how wildlife management benefits your animal.
       tags: [stem, natural-science]
 - name: Into the Woods
   url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
@@ -352,6 +361,12 @@ adventure_list:
       tags: []
     - name: race-time-aol#3
       description: Mentor a younger den to prepare for the race.
+      tags: []
+    - name: race-time-aol#4
+      description: Before the race, discuss with your patrol den how you will demonstrate good sportsmanship during the race.
+      tags: [sportsmanship]
+    - name: race-time-aol#5
+      description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
       tags: []
 - name: Summertime Fun AOL
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-aol/

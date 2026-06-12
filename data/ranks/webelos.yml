@@ -218,6 +218,12 @@ adventure_list:
     - name: catch-the-big-one#5
       description: Determine the best type of knot to tie your hook to your line and tie it.
       tags: []
+    - name: catch-the-big-one#6
+      description: Choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear.
+      tags: []
+    - name: catch-the-big-one#7
+      description: Using what you have learned about fish and fishing equipment, spend at least one hour fishing following local guidelines and regulations.
+      tags: []
 - name: Champions for Nature Webelos
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
   required: false
