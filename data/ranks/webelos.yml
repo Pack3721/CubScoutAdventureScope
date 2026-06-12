@@ -1,0 +1,438 @@
+rank: Webelos
+grade: 4th Grade
+url: https://www.scouting.org/programs/cub-scouts/adventures/webelos/
+adventure_list:
+- name: Bobcat Adventure
+  url: https://www.scouting.org/cub-scout-adventures/bobcat-webelos/
+  required: true
+  alternate_name: Character & Leadership
+  requirements:
+    - name: bobcat-webelos#1
+      description: Get to know members of your den.
+      tags: []
+    - name: bobcat-webelos#2
+      description: Recite the Scout Oath and the Scout Law with your den and den leader. Describe the three points of the Scout Oath.
+      tags: []
+    - name: bobcat-webelos#3
+      description: Learn about the Scout Law.
+      tags: []
+    - name: bobcat-webelos#4
+      description: With your den create a den Code of Conduct.
+      tags: []
+    - name: bobcat-webelos#5
+      description: Learn about the denner position and responsibilities.
+      tags: []
+- name: Stronger, Faster, Higher
+  url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
+  required: true
+  alternate_name: Personal Fitness
+  requirements:
+    - name: stronger-faster-higher#1
+      description: With your den or family, plan, cook, and eat a balanced meal.
+      tags: [meal-planning, food]
+    - name: stronger-faster-higher#2
+      description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
+      tags: [game, game-active]
+    - name: stronger-faster-higher#3
+      description: Be active for 15 minutes doing personal exercises that boost your heart rate, use your muscles, and work on flexibility.
+      tags: []
+    - name: stronger-faster-higher#4
+      description: Do a relaxing activity for 10 minutes.
+      tags: []
+    - name: stronger-faster-higher#5
+      description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+      tags: []
+- name: My Safety
+  url: https://www.scouting.org/cub-scout-adventures/my-safety/
+  required: true
+  alternate_name: Personal Safety
+  requirements:
+    - name: my-safety#1
+      description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Webelos rank.
+      tags: []
+    - name: my-safety#2
+      description: Identify items in your house that are hazardous and make sure they are stored properly. Identify on the package where it describes what to do if someone is accidentally exposed to them.
+      tags: []
+    - name: my-safety#3
+      description: Identify ways you and your family keep your home or your meeting space safe.
+      tags: []
+    - name: my-safety#4
+      description: Complete the Be Prepared for Natural Events worksheet. Complete a worksheet for at least two natural events most likely to happen near where you live.
+      tags: []
+- name: My Family
+  url: https://www.scouting.org/cub-scout-adventures/my-family/
+  required: true
+  alternate_name: Family & Reverence
+  requirements:
+    - name: my-family#1
+      description: With your parent or legal guardian, talk about your family’s faith traditions.   Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your family’s faith traditions.
+      tags: [art, food]
+    - name: my-family#2
+      description: Carry out an act of kindness.
+      tags: []
+    - name: my-family#3
+      description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
+      tags: []
+    - name: my-family#4
+      description: Discuss with your parent or legal guardian what it means to be reverent. Tell how you practice being reverent in your daily life.
+      tags: []
+- name: My Community
+  url: https://www.scouting.org/cub-scout-adventures/my-community/
+  required: true
+  alternate_name: Citizenship
+  requirements:
+    - name: my-community#1
+      description: Learn about majority and plurality types of voting.
+      tags: []
+    - name: my-community#2
+      description: Speak with someone who is elected to their position.  Discover the type of voting that was used for to elect them and why.
+      tags: []
+    - name: my-community#3
+      description: Choose a federal law and create a timeline of the history of the law.  Include the involvement of the 3 branches of government.
+      tags: []
+    - name: my-community#4
+      description: Participate in a service project.
+      tags: [service-project]
+- name: Webelos Walkabout
+  url: https://www.scouting.org/cub-scout-adventures/webelos-walkabout/
+  required: true
+  alternate_name: Outdoors
+  requirements:
+    - name: webelos-walkabout#1
+      description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
+      tags: [six-essentials, walk, weather, packing]
+    - name: webelos-walkabout#2
+      description: Plan a 2-mile route for your walk.
+      tags: [walk]
+    - name: webelos-walkabout#3
+      description: Check the weather forecast for the time of your planned 2-mile walk.
+      tags: [walk, weather]
+    - name: webelos-walkabout#4
+      description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
+      tags: [walk]
+    - name: webelos-walkabout#5
+      description: "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
+      tags: [first-aid, walk]
+- name: Aquanaut
+  url: https://www.scouting.org/cub-scout-adventures/aquanaut/
+  required: false
+  alternate_name: Swimming
+  requirements:
+    - name: aquanaut#1
+      description: State the safety precautions you need to take before doing any swimming activity.
+      tags: []
+    - name: aquanaut#2
+      description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
+      tags: [first-aid]
+    - name: aquanaut#3
+      description: Learn how to prevent and treat hypothermia.
+      tags: [first-aid]
+    - name: aquanaut#4
+      description: Attempt to tread water.
+      tags: []
+    - name: aquanaut#5
+      description: Attempt Scouting America swimmer test.
+      tags: []
+- name: Art Explosion
+  url: https://www.scouting.org/cub-scout-adventures/art-explosion/
+  required: false
+  alternate_name: Art
+  stem_nova: [Fearful Symmetry]
+  requirements:
+    - name: art-explosion#1
+      description: Create a piece of art by exploring drawing techniques using pencils.
+      tags: [art]
+    - name: art-explosion#2
+      description: Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
+      tags: [art, technology]
+    - name: art-explosion#3
+      description: Create a piece of art using paint as your medium.
+      tags: [art]
+    - name: art-explosion#4
+      description: Create a piece of art combining at least two media.
+      tags: [art]
+- name: Aware and Care
+  url: https://www.scouting.org/cub-scout-adventures/aware-and-care/
+  required: false
+  alternate_name: Disabilities Awareness
+  requirements:
+    - name: aware-and-care#1
+      description: Do an activity that shows the challenges of a being visually impaired.
+      tags: [inclusion]
+    - name: aware-and-care#2
+      description: Do an activity that shows the challenges of being hearing impaired.
+      tags: [inclusion]
+    - name: aware-and-care#3
+      description: Explore barriers to access.
+      tags: [inclusion]
+    - name: aware-and-care#4
+      description: Meet someone who has a disability or someone who works with people with disabilities about what obstacles they must overcome and how they do it.
+      tags: [inclusion]
+- name: Build It
+  url: https://www.scouting.org/cub-scout-adventures/build-it/
+  required: false
+  stem_nova: [Tech Talk, Swing!, Fearful Symmetry]
+  requirements:
+    - name: build-it#1
+      description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
+      tags: [tools, knife-safety]
+    - name: build-it#2
+      description: Demonstrate  how to check for plumb, level, and square when building.
+      tags: [tools]
+    - name: build-it#3
+      description: With the guidance of your Webelos den leader, parent, or legal guardian, select a carpentry project that requires it to be either plumb, level, and/or square.  Create a list of materials and tools you will need to complete the project.
+      tags: [tools]
+    - name: build-it#4
+      description: Build  your carpentry project.
+      tags: []
+- name: Catch the Big One
+  stem_nova: [Nova WILD!]
+  url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
+  required: false
+  alternate_name: Fishing
+  requirements:
+    - name: catch-the-big-one#1
+      description: Make a plan to go fishing.  Determine where you will go and what type of fish you plan to catch.  All of the following requirements are to be completed based on your choice.
+      tags: []
+    - name: catch-the-big-one#2
+      description: Use Scouting America SAFE Checklist to plan what you need for your fishing experience.
+      tags: []
+    - name: catch-the-big-one#3
+      description: Describe the environment where the fish might be found.
+      tags: []
+    - name: catch-the-big-one#4
+      description: Make a list of the equipment and materials you will need to fish.
+      tags: []
+    - name: catch-the-big-one#5
+      description: Determine the best type of knot to tie your hook to your line and tie it.
+      tags: []
+- name: Champions for Nature Webelos
+  url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/
+  required: false
+  alternate_name: Conservation
+  stem_nova: [Down and Dirty, Out of This World]
+  requirements:
+    - name: champions-for-nature-webelos#6
+      description: Participate in a conservation service project.
+      tags: [service-project, conservation]
+    - name: champions-for-nature-webelos#2
+      description: Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5.
+      tags: [conservation]
+    - name: champions-for-nature-webelos#3
+      description: Identify the characteristics that classify an animal as a threatened or endangered species.
+      tags: [conservation]
+    - name: champions-for-nature-webelos#4
+      description: Explore what caused this animal to be threatened or endangered.
+      tags: [conservation]
+    - name: champions-for-nature-webelos#5
+      description: Research what is currently being done to protect the animal.
+      tags: [conservation]
+- name: Chef’s Knife
+  url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
+  required: false
+  alternate_name: Knife Skills
+  requirements:
+    - name: chefs-knife#1
+      description: Read, understand, and promise to follow the "Cub Scout Knife Safety Rules."
+      tags: [knife-safety]
+    - name: chefs-knife#2
+      description: Demonstrate the knife safety circle.
+      tags: [knife-safety]
+    - name: chefs-knife#3
+      description: Demonstrate that you know how to care for and use a kitchen knife safely.
+      tags: [knife-care]
+    - name: chefs-knife#4
+      description: Choose the correct cooking knife and demonstrate how to properly slice, dice, and mince.
+      tags: [knife-use, food]
+- name: Earth Rocks
+  url: https://www.scouting.org/cub-scout-adventures/earth-rocks/
+  required: false
+  stem_nova: [Science is Everywhere, Down and Dirty, Uncovering the Past]
+  requirements:
+    - name: earth-rocks#1
+      description: Examine the three types of rocks, sedimentary, igneous, and metamorphic.
+      tags: [stem, natural-science]
+    - name: earth-rocks#2
+      description: Find a rock, safely break it apart and examine it.
+      tags: [stem, natural-science]
+    - name: earth-rocks#3
+      description: Make a mineral test kit and test minerals according to the Mohs scale of mineral hardness. Using the rock cycle chart or one like it, discuss how hardness determines which materials can be used in homes, in landscapes, or for recreation.
+      tags: [stem, natural-science]
+    - name: earth-rocks#4
+      description: Grow  a crystal.
+      tags: [stem, natural-science]
+- name: Let’s Camp Webelos
+  url: https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/
+  required: false
+  alternate_name: Camping
+  stem_nova: [Down and Dirty]
+  requirements:
+    - name: lets-camp-webelos#1
+      description: With your den, pack, or family, plan and participate in a campout.
+      tags: []
+    - name: lets-camp-webelos#2
+      description: Upon arrival at the campground, determine where to set up a tent.
+      tags: [tent]
+    - name: lets-camp-webelos#3
+      description: Set up your tent without help from an adult.
+      tags: [tent]
+    - name: lets-camp-webelos#4
+      description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
+      tags: [weather]
+    - name: lets-camp-webelos#5
+      description: Show how to tie a bowline.  Explain when this knot should be used and why.
+      tags: [knots]
+    - name: lets-camp-webelos#6
+      description: Know the fire safety rules. Using those rules, locate a safe area to build a campfire.
+      tags: [fire-safety]
+    - name: lets-camp-webelos#7
+      description: Using tinder, kindling, and fuel wood, properly build a teepee fire lay. If circumstances permit, and there is no local restriction on fires, show how to safely light the fire while under adult supervision. After allowing the fire to burn safely, extinguish the flames with minimal impact to the fire site.
+      tags: [fire-safety]
+    - name: lets-camp-webelos#8
+      description: Recite the Outdoor Code and Leave No Trace Principles for Kids from Memory.
+      tags: [outdoor-code]
+    - name: lets-camp-webelos#9
+      description: After your campout, share the things you did to follow the Outdoor Code and Leave No Trace Principles for Kids with your den or family.
+      tags: [outdoor-code]
+- name: Math on the Trail
+  url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
+  required: false
+  alternate_name: Math
+  stem_nova: [1-2-3 Go!]
+  requirements:
+    - name: math-on-the-trail#1
+      description: Determine your walking pace by walking ¼ mile.  Make a projection on how long it would take you to walk 2 miles.
+      tags: [stem, mathematics]
+    - name: math-on-the-trail#2
+      description: Walk 2 miles and record the time it took you to complete the two miles.
+      tags: [stem, mathematics, walk]
+    - name: math-on-the-trail#3
+      description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
+      tags: [stem, mathematics]
+- name: Modular Design
+  url: https://www.scouting.org/cub-scout-adventures/modular-design/
+  required: false
+  stem_nova: [Cub Scouts Can Code, Swing!, 1-2-3 Go!, Fearful Symmetry]
+  requirements:
+    - name: modular-design#1
+      description: Learn what modular design is and identify three things that use modular design in their construction.
+      tags: [stem, engineering]
+    - name: modular-design#2
+      description: Using modular-based building pieces, build a model without a set of instructions.
+      tags: [stem, engineering]
+    - name: modular-design#3
+      description: Using the model made in requirement 2, create a set of step-by-step instructions on how to make your model.
+      tags: [stem, engineering]
+    - name: modular-design#4
+      description: Have someone make your model using your instructions.
+      tags: [stem, engineering]
+    - name: modular-design#5
+      description: Using the same modular pieces used in requirement 2, build another model of something different.
+      tags: [stem, engineering]
+- name: Paddle Onward
+  url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
+  required: false
+  alternate_name: Paddle Craft
+  requirements:
+    - name: paddle-onward#1
+      description: Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
+      tags: []
+    - name: paddle-onward#2
+      description: 'Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.'
+      tags: []
+    - name: paddle-onward#3
+      description: Review Safety Afloat.
+      tags: []
+    - name: paddle-onward#4
+      description: Demonstrate how to choose  and properly wear a life jacket  that is the correct size. 
+      tags: []
+    - name: paddle-onward#5
+      description: Jump feet first into water over your head while wearing a life jacket  Then swim 25 feet wearing the life jacket. 
+      tags: []
+- name: Pedal Away
+  url: https://www.scouting.org/cub-scout-adventures/pedal-away/
+  required: false
+  alternate_name: Biking
+  requirements:
+    - name: pedal-away#1
+      description: Decide  on gear and supplies you should bring for a long bike ride.
+      tags: []
+    - name: pedal-away#2
+      description: Discover how multi-gear bicycles work and how they benefit a rider.
+      tags: []
+    - name: pedal-away#3
+      description: Practice how to lubricate a chain.
+      tags: []
+    - name: pedal-away#4
+      description: Pick a bicycle lock that you will use. Demonstrate how it locks and unlocks, how it secures your bicycle, and how you carry it while you are riding your bicycle.
+      tags: []
+    - name: pedal-away#5
+      description: With your family, den, or pack, use a map and plan a bicycle ride that is at least 5 miles.
+      tags: []
+- name: Race Time Webelos
+  url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
+  required: false
+  alternate_name: Race Time
+  stem_nova: [Up and Away]
+  requirements:
+    - name: race-time-webelos#1
+      description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.
+      tags: []
+    - name: race-time-webelos#2
+      description: Learn the rules of the race for the vehicle chosen in requirement 1.
+      tags: []
+    - name: race-time-webelos#3
+      description: Explore the properties of friction and how it impacts your chosen vehicle.
+      tags: []
+    - name: race-time-webelos#4
+      description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
+      tags: [sportsmanship]
+    - name: race-time-webelos#5
+      description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
+      tags: []
+- name: Summertime Fun Webelos
+  url: https://www.scouting.org/cub-scout-adventures/summertime-fun-webelos/
+  required: false
+  alternate_name: Summer Time
+  requirements:
+    - name: summertime-fun-webelos#1
+      description: Anytime during May through August participate in a total of three Cub Scout activities. 
+      tags: []
+- name: Tech on the Trail
+  url: https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/
+  required: false
+  alternate_name: Technology
+  stem_nova: [Cub Scouts Can Code, Tech Talk]
+  requirements:
+    - name: tech-on-the-trail#1
+      description: Discuss how technology can help keep you safe in the outdoors.
+      tags: [stem, technology]
+    - name: tech-on-the-trail#2
+      description: Explore Global Positioning Satellite and how to use it.
+      tags: [stem, technology]
+    - name: tech-on-the-trail#3
+      description: With an adult, choose an online mapping program tool and plan a 2-mile trek.
+      tags: [stem, technology]
+    - name: tech-on-the-trail#4
+      description: Take your 2-mile trek.
+      tags: [stem, technology]
+- name: Yo-yo
+  url: https://www.scouting.org/cub-scout-adventures/yo-yo/
+  required: false
+  stem_nova: [Science is Everywhere]
+  requirements:
+    - name: yo-yo#1
+      description: Learn the safety rules of using a yo-yo and always follow them.
+      tags: []
+    - name: yo-yo#2
+      description: Discover how to find the proper yo-yo string length for you.
+      tags: []
+    - name: yo-yo#3
+      description: Explain why it is important to have the correct string length and to be in the right location before throwing a yo-yo.
+      tags: []
+    - name: yo-yo#4
+      description: Demonstrate how to properly string a yo-yo and how to create a slip knot
+      tags: []
+    - name: yo-yo#5
+      description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
+      tags: [stem, physical-science]

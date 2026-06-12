@@ -231,6 +231,14 @@ function setupCopyUrlButton() {
         setupCopyUrlButton();
         const yamlText = await fetchYAML('data/adventure.yml');
         const data = jsyaml.load(yamlText);
+        //yaml data ranks array starts with string stubs to pull from data/ranks/<stub>.yml to replace with new full object arrays
+        for (let i = 0; i < data.ranks.length; i++) {
+            if (typeof data.ranks[i] === 'string') {
+                const rankYaml = await fetchYAML(`data/ranks/${data.ranks[i]}.yml`);
+                data.ranks[i] = jsyaml.load(rankYaml);
+            }
+        }
+
         const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
 

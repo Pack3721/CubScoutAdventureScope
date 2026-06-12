@@ -1,0 +1,458 @@
+rank: Bear
+grade: 3rd Grade
+url: https://www.scouting.org/programs/cub-scouts/adventures/bear/
+adventure_list:
+- name: Bobcat Adventure
+  url: https://www.scouting.org/cub-scout-adventures/bobcat-bear/
+  required: true
+  alternate_name: Character & Leadership
+  requirements:
+    - name: bobcat-bear#1
+      description: Get to know members of your den.
+      tags: []
+    - name: bobcat-bear#2
+      description: Recite the Scout Oath and Law with your den and den leader.
+      tags: []
+    - name: bobcat-bear#3
+      description: Learn about the Scout Oath. Identify the three points of the Scout Oath.
+      tags: []
+    - name: bobcat-bear#4
+      description: With your den create a den Code of Conduct.
+      tags: []
+    - name: bobcat-bear#5
+      description: Learn about the denner position and responsibilities.
+      tags: []
+    - name: bobcat-bear#6
+      description: Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake. Show how each is used.
+      tags: []
+    - name: bobcat-bear#7
+      description: Share with your den, or family, a time when you demonstrated the Cub Scout motto "Do Your Best." Explain why it is important to do your best.
+      tags: []
+    - name: bobcat-bear#8
+      description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
+      tags: []
+- name: Bear Strong
+  url: https://www.scouting.org/cub-scout-adventures/bear-strong/
+  required: true
+  alternate_name: Personal Fitness
+  requirements:
+    - name: bear-strong#1
+      description: 'Sample food from three of the following food groups: protein, vegetables, fruits, dairy, and grains.'
+      tags: [food]
+    - name: bear-strong#2
+      description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
+      tags: [game, game-active]
+    - name: bear-strong#3
+      description: Be active for 15 minutes doing personal exercises that include cardio, muscular strength, and flexibility.
+      tags: []
+    - name: bear-strong#4
+      description: Do a relaxing activity for 10 minutes.
+      tags: []
+    - name: bear-strong#5
+      description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+      tags: [first-aid]
+- name: Standing Tall
+  url: https://www.scouting.org/cub-scout-adventures/standing-tall/
+  required: true
+  alternate_name: Personal Safety
+  requirements:
+    - name: standing-tall#1
+      description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Bear rank.
+      tags: []
+    - name: standing-tall#2
+      description: Complete the Personal Space Bubble worksheet that is part of the Protect Yourself Rules resources.
+      tags: []
+    - name: standing-tall#3
+      description: With your parent or legal guardian, set up a family policy for digital devices.
+      tags: []
+    - name: standing-tall#4
+      description: Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity.
+      tags: []
+- name: Fellowship
+  url: https://www.scouting.org/cub-scout-adventures/fellowship/
+  required: true
+  alternate_name: Family & Reverence
+  requirements:
+    - name: fellowship#1
+      description: With your parent or legal guardian talk about your family’s faith traditions.
+      tags: []
+    - name: fellowship#2
+      description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
+      tags: []
+    - name: fellowship#3
+      description: Carry out an act of kindness.
+      tags: []
+    - name: fellowship#4
+      description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
+      tags: [inclusion]
+- name: Paws for Action
+  url: https://www.scouting.org/cub-scout-adventures/paws-for-action/
+  required: true
+  alternate_name: Citizenship
+  requirements:
+    - name: paws-for-action#1
+      description: Familiarize yourself with the flag of the United States of America including the history, demonstrating how to raise and lower the flag, how to properly fold and display, and the United States etiquette.
+      tags: [flag-ettiquette]
+    - name: paws-for-action#2
+      description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
+      tags: []
+    - name: paws-for-action#3
+      description: Learn about the mission of any non-profit. Find out how they fund their activities and how volunteers are used to help.
+      tags: []
+    - name: paws-for-action#4
+      description: Participate in a service project.
+      tags: [service-project]
+- name: Bear Habitat
+  url: https://www.scouting.org/cub-scout-adventures/bear-habitat/
+  required: true
+  alternate_name: Outdoors
+  requirements:
+    - name: bear-habitat#1
+      description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
+      tags: [six-essentials, walk, weather, packing]
+    - name: bear-habitat#2
+      description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
+      tags: [walk]
+    - name: bear-habitat#3
+      description: '"Choose the Right Path" Learn about the path and surrounding area you will be walking on.'
+      tags: [walk]
+    - name: bear-habitat#4
+      description: '"Trash your Trash" Make a plan for what you will do with your personal trash or trash you find along the trail.'
+      tags: [walk, outdoor-code]
+    - name: bear-habitat#5
+      description: '"Leave What You Find" Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.'
+      tags: [walk, outdoor-code]
+    - name: bear-habitat#6
+      description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
+      tags: [fire-safety,outdoor-code]
+    - name: bear-habitat#7
+      description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
+      tags: [walk, outdoor-code]
+    - name: bear-habitat#8
+      description: '"Be Kind to Other Visitors" Identify what you need to do as a den to be kind to others on the path.'
+      tags: [walk, outdoor-code]
+    - name: bear-habitat#9
+      description: Go on your one-mile walk while practicing your Leave No Trace Principles for Kids.
+      tags: [walk, outdoor-code]
+
+- name: A Bear Goes Fishing
+  url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
+  required: false
+  alternate_name: Fishing
+  stem_nova: [Science is Everywhere, Swing!, Nova WILD!]
+  requirements:
+    - name: a-bear-goes-fishing#1
+      description: Learn about three types of fish in your area.
+      tags: []
+    - name: a-bear-goes-fishing#2
+      description: Learn about your local fishing regulations with your den leader or an adult.
+      tags: []
+    - name: a-bear-goes-fishing#3
+      description: List three of the regulations you learned about, and one reason each regulation exists.
+      tags: []
+    - name: a-bear-goes-fishing#4
+      description: Become familiar with the safe use of the fishing equipment you will be using on your outing.
+      tags: []
+    - name: a-bear-goes-fishing#5
+      description: Learn the proper way to attach the hook, lure, or fly to the line.
+      tags: [knots]
+- name: Balancing Bears
+  url: https://www.scouting.org/cub-scout-adventures/balancing-bears/
+  required: false
+  alternate_name: Math
+  stem_nova: [1-2-3 Go!, Fearful Symmetry]
+  requirements:
+    - name: balancing-bears#1
+      description: Make trail mix using trail mix math.
+      tags: [stem, natural-science, food]
+    - name: balancing-bears#2
+      description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
+      tags: [stem, natural-science]
+    - name: balancing-bears#3
+      description: Find  examples of bilateral symmetry in nature.
+      tags: [stem, natural-science]
+    - name: balancing-bears#4
+      description: Find examples of radial symmetry in nature.
+      tags: [stem, natural-science]
+- name: Baloo the Builder
+  url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
+  required: false
+  stem_nova: [Swing!]
+  requirements:
+    - name: baloo-the-builder#1
+      description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
+      tags: [knife-safety, tools]
+    - name: baloo-the-builder#2
+      description: Practice using four of the tools you learned about in requirement 1.
+      tags: [tools]
+    - name: baloo-the-builder#3
+      description: Choose a project to build.
+      tags: []
+    - name: baloo-the-builder#4
+      description: Determine the tools and materials needed to build your project in requirement 3.
+      tags: [tools]
+    - name: baloo-the-builder#5
+      description: Build your project.
+      tags: []
+- name: Bears Afloat
+  url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
+  required: false
+  alternate_name: Paddle Craft
+  requirements:
+    - name: bears-afloat#1
+      description: Before attempting requirements 6 and 7 for this Adventure, you must pass Scouting America swimmer test.
+      tags: []
+    - name: bears-afloat#2
+      description: "Pick a paddle craft you’ll use to complete all requirements: canoe, kayak, or stand-up paddleboard."
+      tags: []
+    - name: bears-afloat#3
+      description: With your den or an adult, discuss the role of qualified adult supervision at a paddle craft activity.
+      tags: []
+    - name: bears-afloat#4
+      description: Explain the safety rules to follow when safely using a paddle craft.
+      tags: []
+    - name: bears-afloat#5
+      description: Discover how to tell if a life jacket is the correct size and approved for your paddle craft activity. Demonstrate how to wear it.
+      tags: []
+- name: Bears on Bikes
+  url: https://www.scouting.org/cub-scout-adventures/bears-on-bikes/
+  required: false
+  alternate_name: Biking
+  requirements:
+    - name: bears-on-bikes#1
+      description: Show how to properly wear a bicycle helmet.
+      tags: []
+    - name: bears-on-bikes#2
+      description: Decide what you should wear when riding a bike.
+      tags: []
+    - name: bears-on-bikes#3
+      description: Demonstrate proper hand signals.
+      tags: []
+    - name: bears-on-bikes#4
+      description: Demonstrate how to adjust saddle height.
+      tags: []
+    - name: bears-on-bikes#5
+      description: Demonstrate how to operate brakes.
+      tags: []
+- name: Champions for Nature Bear
+  url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
+  required: false
+  alternate_name: Conservation
+  stem_nova: [Down and Dirty, Nova WILD!]
+  requirements:
+    - name: champions-for-nature-bear#1
+      description: Discover natural resources.
+      tags: [conservation]
+    - name: champions-for-nature-bear#2
+      description: Discover what happens to the wastewater in your community.
+      tags: [conservation]
+    - name: champions-for-nature-bear#3
+      description: Investigate soil.
+      tags: [conservation]
+    - name: champions-for-nature-bear#4
+      description: Investigate air pollution.
+      tags: [conservation]
+    - name: champions-for-nature-bear#5
+      description: Participate in a conservation project.
+      tags: [conservation, service-project]
+- name: Chef Tech
+  url: https://www.scouting.org/cub-scout-adventures/chef-tech/
+  required: false
+  alternate_name: Technology
+  stem_nova: [Cub Scouts Can Code, Tech Talk]
+  requirements:
+    - name: chef-tech#1
+      description: Pick a kitchen appliance that uses technology to complete the following requirements.
+      tags: [stem, technology]
+    - name: chef-tech#2
+      description: With an adult, review the safety guidelines in the owner’s manual and follow all safety guidelines.
+      tags: []
+    - name: chef-tech#3
+      description: With adult supervision, download a cooking app or search online to find a recipe.
+      tags: [stem, technology]
+    - name: chef-tech#4
+      description: With adult supervision, follow the selected recipe and make the recipe.
+      tags: []
+    - name: chef-tech#5
+      description: Think of a way technology can improve the appliance used to make your recipe.
+      tags: [stem, technology]
+- name: Critter Care
+  url: https://www.scouting.org/cub-scout-adventures/critter-care/
+  required: false
+  stem_nova: [Science is Everywhere, Nova WILD!]
+  requirements:
+    - name: critter-care#1
+      description: Identify an animal that would be good pet for your family.
+      tags: []
+    - name: critter-care#2
+      description: Choose two animals that are allowed as pets in your community.  Compare and contrast why these pets may be a good choice for you.
+      tags: []
+    - name: critter-care#3
+      description: Based on your choice in requirement 1, investigate how to properly care for your chosen animal.
+      tags: []
+    - name: critter-care#4
+      description: Discover three ways a pet can help people.
+      tags: []
+- name: Forensics
+  url: https://www.scouting.org/cub-scout-adventures/forensics/
+  required: false
+  stem_nova: [Tech Talk, Uncovering the Past, Fearful Symmetry]
+  requirements:
+    - name: forensics#1
+      description: Explore the term "forensics" and how it is used to help solve crimes.
+      tags: [stem, physical-science]
+    - name: forensics#2
+      description: Analyze your fingerprints.
+      tags: [stem, physical-science]
+    - name: forensics#3
+      description: Make a shoe imprint.
+      tags: [stem, physical-science]
+    - name: forensics#4
+      description: "Do an analysis of four different substances: salt, sugar, baking soda and cornstarch."
+      tags: [stem, physical-science, food]
+    - name: forensics#5
+      description: Learn about chromatography and how it is used in solving crimes.
+      tags: [stem, physical-science]
+- name: Let’s Camp Bear
+  url: https://www.scouting.org/cub-scout-adventures/lets-camp-bear/
+  required: false
+  alternate_name: Camping
+  stem_nova: [Down and Dirty, Out of This World]
+  requirements:
+    - name: lets-camp-bear#1
+      description: Review the buddy system and how it works in the outdoors.
+      tags: [buddy-system]
+    - name: lets-camp-bear#2
+      description: Pack your Cub Scout Six Essentials for the campout.
+      tags: [six-essentials, packing]
+    - name: lets-camp-bear#3
+      description: In addition to your Cub Scout Six Essentials, show the personal items you need for your campout.
+      tags: [six-essentials, packing]
+    - name: lets-camp-bear#4
+      description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
+      tags: [tent]
+    - name: lets-camp-bear#5
+      description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
+      tags: []
+- name: Marble Madness
+  url: https://www.scouting.org/cub-scout-adventures/marble-madness/
+  required: false
+  stem_nova: [Science is Everywhere, Swing!, Fearful Symmetry]
+  requirements:
+    - name: marble-madness#1
+      description: Make a marble bag.
+      tags: []
+    - name: marble-madness#2
+      description: Learn five words that are used when talking about marbles.
+      tags: []
+    - name: marble-madness#3
+      description: Play three different marble games.
+      tags: [game-indoor, game]
+    - name: marble-madness#4
+      description: Build a marble racetrack with at least two lanes.
+      tags: [stem, engineering]
+    - name: marble-madness#5
+      description: Build a marble maze.
+      tags: [stem, engineering]
+- name: Race Time Bear
+  url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
+  required: false
+  alternate_name: Race Time
+  stem_nova: [Up and Away, 1-2-3 Go!]
+  requirements:
+    - name: race-time-bear#1
+      description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
+      tags: []
+    - name: race-time-bear#2
+      description: Learn the rules of the race for the vehicle chosen in requirement 1.
+      tags: []
+    - name: race-time-bear#3
+      description: Identify how you could increase the speed of your chosen vehicle.
+      tags: []
+    - name: race-time-bear#4
+      description: Before the race, discuss with your den how you will demonstrate good sportsmanship during the race.
+      tags: [sportsmanship]
+    - name: race-time-bear#5
+      description: Participate in a Pinewood Derby® or a Raingutter Regatta™.
+      tags: []
+- name: Roaring Laughter
+  url: https://www.scouting.org/cub-scout-adventures/roaring-laughter/
+  required: false
+  requirements:
+    - name: roaring-laughter#1
+      description: Think about what makes you laugh. Discuss these with your den or family.
+      tags: []
+    - name: roaring-laughter#2
+      description: Practice reading tongue twisters.
+      tags: []
+    - name: roaring-laughter#3
+      description: Play charades with your den or family.
+      tags: [game]
+    - name: roaring-laughter#4
+      description: Have a "funniest joke contest" with your den or family.
+      tags: []
+    - name: roaring-laughter#5
+      description: Practice "run-ons" with your den or family.
+      tags: []
+- name: Salmon Run
+  url: https://www.scouting.org/cub-scout-adventures/salmon-run/
+  required: false
+  alternate_name: Swimming
+  requirements:
+    - name: salmon-run#1
+      description: With your den or an adult, identify the attributes of qualified adult supervision at a swimming activity.
+      tags: []
+    - name: salmon-run#2
+      description: Learn the three swimming ability groups for Scouting America and water depths appropriate for each. 
+      tags: []
+    - name: salmon-run#3
+      description: Go swimming with your den, pack, or family for 30 minutes using the buddy system.
+      tags: []
+    - name: salmon-run#4
+      description: Demonstrate the use the buddy system, buddy checks, and ability groups with your den or an adult.
+      tags: []
+    - name: salmon-run#5
+      description: Attempt Scouting America beginner swim test.
+      tags: []
+- name: Summertime Fun Bear
+  url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
+  required: false
+  alternate_name: Summer Time
+  requirements:
+    - name: summertime-fun-bear#1
+      description: Anytime during May through August participate in a total of three Cub Scout activities.
+      tags: []
+- name: Super Science
+  url: https://www.scouting.org/cub-scout-adventures/super-science/
+  required: false
+  stem_nova: [Science is Everywhere, Down and Dirty, Out of This World, Up and Away]
+  requirements:
+    - name: super-science#1
+      description: Conduct static electricity investigation.
+      tags: [stem, physical-science]
+    - name: super-science#2
+      description: Conduct the sink-or-float investigation.
+      tags: [stem, physical-science]
+    - name: super-science#3
+      description: Conduct the color-morphing investigation.
+      tags: [stem, physical-science]
+    - name: super-science#4
+      description: Conduct the color-layering investigation.
+      tags: [stem, physical-science]
+- name: Whittling
+  url: https://www.scouting.org/cub-scout-adventures/whittling/
+  required: false
+  alternate_name: Knife Skills
+  requirements:
+    - name: whittling#1
+      description: Read, understand, and promise to abide by the "Cub Scout Knife Safety Rules."
+      tags: [knife-safety]
+    - name: whittling#2
+      description: Demonstrate the knife safety circle.
+      tags: [knife-safety]
+    - name: whittling#3
+      description: Demonstrate that you know how to care for and use your pocketknife safely.
+      tags: [knife-care]
+    - name: whittling#4
+      description: Make two carvings with a pocketknife.
+      tags: [knife-use]
