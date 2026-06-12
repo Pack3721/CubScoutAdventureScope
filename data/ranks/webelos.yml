@@ -27,7 +27,7 @@ adventure_list:
       tags: []
     - name: bobcat-webelos#7
       description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home, safety]
 - name: Stronger, Faster, Higher
   url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
   required: true
@@ -47,7 +47,7 @@ adventure_list:
       tags: []
     - name: stronger-faster-higher#5
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: []
+      tags: [at-home]
 - name: My Safety
   url: https://www.scouting.org/cub-scout-adventures/my-safety/
   required: true
@@ -92,7 +92,7 @@ adventure_list:
       tags: []
     - name: my-community#2
       description: Speak with someone who is elected to their position.  Discover the type of voting that was used for to elect them and why.
-      tags: []
+      tags: [guest-speaker]
     - name: my-community#3
       description: Choose a federal law and create a timeline of the history of the law.  Include the involvement of the 3 branches of government.
       tags: []
@@ -179,7 +179,7 @@ adventure_list:
       tags: [inclusion]
     - name: aware-and-care#4
       description: Meet someone who has a disability or someone who works with people with disabilities about what obstacles they must overcome and how they do it.
-      tags: [inclusion]
+      tags: [inclusion, guest-speaker]
 - name: Build It
   url: https://www.scouting.org/cub-scout-adventures/build-it/
   required: false
@@ -290,7 +290,7 @@ adventure_list:
   requirements:
     - name: lets-camp-webelos#1
       description: With your den, pack, or family, plan and participate in a campout.
-      tags: []
+      tags: [campout]
     - name: lets-camp-webelos#2
       description: Upon arrival at the campground, determine where to set up a tent.
       tags: [tent]

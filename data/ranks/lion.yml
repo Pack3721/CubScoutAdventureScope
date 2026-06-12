@@ -18,7 +18,7 @@ adventure_list:
       tags: []
     - name: bobcat-lion#4
       description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home]
 - name: Fun on the Run
   url: https://www.scouting.org/cub-scout-adventures/fun-on-the-run/
   required: true
@@ -63,7 +63,7 @@ adventure_list:
       tags: [art]
     - name: lions-pride#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
-      tags: []
+      tags: [site-visit]
     - name: lions-pride#3
       description: Make a cheerful card or a drawing for someone you love and give it to them.
       tags: [art]
@@ -80,7 +80,7 @@ adventure_list:
       tags: [flag-ettiquette]
     - name: king-of-the-jungle#3
       description: Talk with a grandparent or other older adult about what citizenship means to them.
-      tags: []
+      tags: [guest-speaker]
     - name: king-of-the-jungle#4
       description: Participate in a service project.
       tags: [service-project]
@@ -215,7 +215,7 @@ adventure_list:
       tags: [six-essentials, packing]
     - name: lets-camp-lion#4
       description: Attend a council or district Cub Scout overnight camp or attend an overnight campout with your pack.
-      tags: []
+      tags: [campout]
 - name: On a Roll
   url: https://www.scouting.org/cub-scout-adventures/on-a-roll/
   required: false
@@ -285,7 +285,7 @@ adventure_list:
       tags: []
     - name: ready-set-grow#3
       description: Visit with an individual who can demonstrate different ways to garden (outside, greenhouse, container, etc.) and the basic skills needed to garden.
-      tags: []
+      tags: [guest-speaker]
 - name: Time to Swim
   url: https://www.scouting.org/cub-scout-adventures/time-to-swim/
   required: false

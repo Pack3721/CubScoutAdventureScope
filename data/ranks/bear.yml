@@ -30,7 +30,7 @@ adventure_list:
       tags: []
     - name: bobcat-bear#8
       description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home, safety]
 - name: Bear Strong
   url: https://www.scouting.org/cub-scout-adventures/bear-strong/
   required: true
@@ -50,7 +50,7 @@ adventure_list:
       tags: []
     - name: bear-strong#5
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid]
+      tags: [first-aid, at-home]
 - name: Standing Tall
   url: https://www.scouting.org/cub-scout-adventures/standing-tall/
   required: true
@@ -58,16 +58,16 @@ adventure_list:
   requirements:
     - name: standing-tall#1
       description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Bear rank.
-      tags: []
+      tags: [at-home, safety]
     - name: standing-tall#2
       description: Complete the Personal Space Bubble worksheet that is part of the Protect Yourself Rules resources.
-      tags: []
+      tags: [safety]
     - name: standing-tall#3
       description: With your parent or legal guardian, set up a family policy for digital devices.
-      tags: []
+      tags: [at-home, technology]
     - name: standing-tall#4
       description: Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity.
-      tags: []
+      tags: [safety]
 - name: Fellowship
   url: https://www.scouting.org/cub-scout-adventures/fellowship/
   required: true
@@ -78,7 +78,7 @@ adventure_list:
       tags: []
     - name: fellowship#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
-      tags: []
+      tags: [site-visit]
     - name: fellowship#3
       description: Carry out an act of kindness.
       tags: []
@@ -351,7 +351,7 @@ adventure_list:
       tags: [tent]
     - name: lets-camp-bear#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: []
+      tags: [campout]
 - name: Marble Madness
   url: https://www.scouting.org/cub-scout-adventures/marble-madness/
   required: false
@@ -464,13 +464,13 @@ adventure_list:
   requirements:
     - name: whittling#1
       description: Read, understand, and promise to abide by the "Cub Scout Knife Safety Rules."
-      tags: [knife-safety]
+      tags: [knife, safety]
     - name: whittling#2
       description: Demonstrate the knife safety circle.
-      tags: [knife-safety]
+      tags: [knife, safety]
     - name: whittling#3
       description: Demonstrate that you know how to care for and use your pocketknife safely.
-      tags: [knife-care]
+      tags: [knife]
     - name: whittling#4
       description: Make two carvings with a pocketknife.
-      tags: [knife-use]
+      tags: [knife]

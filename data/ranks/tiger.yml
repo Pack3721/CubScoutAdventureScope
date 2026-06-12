@@ -24,7 +24,7 @@ adventure_list:
       tags: []
     - name: bobcat-tiger#6
       description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home]
 - name: Tiger Bites
   url: https://www.scouting.org/cub-scout-adventures/tiger-bites/
   required: true
@@ -69,7 +69,7 @@ adventure_list:
       tags: [art]
     - name: tiger-circles#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
-      tags: []
+      tags: [site-visit]
     - name: tiger-circles#3
       description: Carry out an act of kindness.
       tags: []
@@ -230,7 +230,7 @@ adventure_list:
       tags: [tent, knots]
     - name: lets-camp-tiger#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: []
+      tags: [campout]
 - name: Race Time Tiger
   url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
   required: false
@@ -350,7 +350,7 @@ adventure_list:
       tags: [stem, technology]
     - name: tech-all-around#4
       description: With your parent or legal guardian, set up a policy for digital devices.
-      tags: [stem, technology]
+      tags: [stem, technology, at-home]
 - name: Tiger Tag
   url: https://www.scouting.org/cub-scout-adventures/tiger-tag/
   required: false

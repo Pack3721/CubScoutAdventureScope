@@ -27,10 +27,10 @@ adventure_list:
       tags: []
     - name: bobcat-arrow-of-light#7
       description: With your patrol, or with your parent/legal guardian, visit a Scouting America troop.
-      tags: []
+      tags: [site-visit]
     - name: bobcat-arrow-of-light#8
       description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home,safety]
 - name: Personal Fitness
   url: https://www.scouting.org/cub-scout-adventures/personal-fitness/
   required: true
@@ -47,7 +47,7 @@ adventure_list:
       tags: [game, game-active]
     - name: personal-fitness#4
       description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in Arrow of Light patrol and pack activities.
-      tags: [first-aid]
+      tags: [first-aid, at-home]
 - name: First Aid
   url: https://www.scouting.org/cub-scout-adventures/first-aid/
   required: true
@@ -55,7 +55,7 @@ adventure_list:
   requirements:
     - name: first-aid#1
       description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Arrow of Light rank.
-      tags: []
+      tags: [safety,at-home]
     - name: first-aid#2
       description: Explain what you should do if you encounter someone in need of first aid.
       tags: [first-aid]
@@ -84,7 +84,7 @@ adventure_list:
       tags: []
     - name: duty-to-god#2
       description: Meet with a representative of a faith-based organization in your local community who provides a service that assists people in crisis regardless of their faith. Identify who they help and how.
-      tags: []
+      tags: [guest-speaker]
     - name: duty-to-god#3
       description: Discuss with your parent, legal guardian, or an adult leader what "Duty to God" means to you. Tell how you practice your Duty to God in your daily life.
       tags: []
@@ -118,13 +118,13 @@ adventure_list:
       tags: []
     - name: outdoor-adventurer#5
       description: With your patrol or a Scouting America troop, participate in a campout.
-      tags: []
+      tags: [campout]
     - name: outdoor-adventurer#6
       description: 'Upon arrival at the campout determine where to set up your campsite: kitchen, eating area, tents, and firepit. Help the patrol set up the patrol gear before setting up your own tent.'
       tags: []
     - name: outdoor-adventurer#7
       description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
-      tags: [food]
+      tags: [food, safety]
     - name: outdoor-adventurer#8
       description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave No Trace Principles for Kids.
       tags: [outdoor-code]

@@ -27,7 +27,7 @@ adventure_list:
       tags: []
     - name: bobcat-wolf#7
       description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: []
+      tags: [at-home]
 - name: Running With the Pack
   url: https://www.scouting.org/cub-scout-adventures/running-with-the-pack/
   required: true
@@ -78,7 +78,7 @@ adventure_list:
       tags: [art]
     - name: footsteps#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
-      tags: []
+      tags: [site-visit]
     - name: footsteps#3
       description: Carry out an act of kindness.
       tags: []
@@ -236,7 +236,7 @@ adventure_list:
       tags: [stem, technology]
     - name: computing-wolves#4
       description: With your parent or legal guardian, set up a policy for safely using digital devices.
-      tags: [stem, technology]
+      tags: [stem, technology, at-home]
 - name: Cubs Who Care
   url: https://www.scouting.org/cub-scout-adventures/cubs-who-care/
   required: false
@@ -331,7 +331,7 @@ adventure_list:
       tags: [tent, knots]
     - name: lets-camp-wolf#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: []
+      tags: [campout]
 - name: Paws for Water
   url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
   required: false
