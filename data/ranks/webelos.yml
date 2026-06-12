@@ -22,6 +22,12 @@ adventure_list:
     - name: bobcat-webelos#5
       description: Learn about the denner position and responsibilities.
       tags: []
+    - name: bobcat-webelos#6
+      description: Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each is used.
+      tags: []
+    - name: bobcat-webelos#7
+      description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
+      tags: []
 - name: Stronger, Faster, Higher
   url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
   required: true
@@ -113,6 +119,12 @@ adventure_list:
     - name: webelos-walkabout#5
       description: "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
       tags: [first-aid, walk]
+    - name: webelos-walkabout#6
+      description: With your den, pack, or family, go on your 2-mile walk while practicing the Leave No Trace Principles for Kids and Outdoor Code.
+      tags: [walk, outdoor-code]
+    - name: webelos-walkabout#7
+      description: After your 2-mile walk, discuss with your den what went well and what you would do differently next time.
+      tags: [walk]
 - name: Aquanaut
   url: https://www.scouting.org/cub-scout-adventures/aquanaut/
   required: false
@@ -212,9 +224,9 @@ adventure_list:
   alternate_name: Conservation
   stem_nova: [Down and Dirty, Out of This World]
   requirements:
-    - name: champions-for-nature-webelos#6
-      description: Participate in a conservation service project.
-      tags: [service-project, conservation]
+    - name: champions-for-nature-webelos#1
+      description: Discover the four components that make up a habitat - food, water, shelter, space.
+      tags: [conservation]
     - name: champions-for-nature-webelos#2
       description: Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5.
       tags: [conservation]
@@ -227,6 +239,9 @@ adventure_list:
     - name: champions-for-nature-webelos#5
       description: Research what is currently being done to protect the animal.
       tags: [conservation]
+    - name: champions-for-nature-webelos#6
+      description: Participate in a conservation service project.
+      tags: [service-project, conservation]
 - name: Chef’s Knife
   url: https://www.scouting.org/cub-scout-adventures/chefs-knife/
   required: false
@@ -329,6 +344,9 @@ adventure_list:
     - name: modular-design#5
       description: Using the same modular pieces used in requirement 2, build another model of something different.
       tags: [stem, engineering]
+    - name: modular-design#6
+      description: With your parent or legal guardian’s permission, watch a video demonstrating how something was built using modular design.
+      tags: [stem, engineering, technology]
 - name: Paddle Onward
   url: https://www.scouting.org/cub-scout-adventures/paddle-onward/
   required: false
@@ -349,6 +367,18 @@ adventure_list:
     - name: paddle-onward#5
       description: Jump feet first into water over your head while wearing a life jacket  Then swim 25 feet wearing the life jacket. 
       tags: []
+    - name: paddle-onward#6
+      description: Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely.
+      tags: []
+    - name: paddle-onward#7
+      description: Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard.
+      tags: []
+    - name: paddle-onward#8
+      description: Learn how to pick a paddle that is the right size for you. Explore how the paddle craft responds to moving the paddle.
+      tags: []
+    - name: paddle-onward#9
+      description: Have 30 minutes, or more, of canoe, kayak, or stand-up paddleboard paddle time.
+      tags: []
 - name: Pedal Away
   url: https://www.scouting.org/cub-scout-adventures/pedal-away/
   required: false
@@ -368,6 +398,9 @@ adventure_list:
       tags: []
     - name: pedal-away#5
       description: With your family, den, or pack, use a map and plan a bicycle ride that is at least 5 miles.
+      tags: []
+    - name: pedal-away#6
+      description: With your den, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 5 miles.
       tags: []
 - name: Race Time Webelos
   url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
@@ -436,3 +469,9 @@ adventure_list:
     - name: yo-yo#5
       description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
       tags: [stem, physical-science]
+    - name: yo-yo#6
+      description: Show that you can properly wind a yo-yo.
+      tags: []
+    - name: yo-yo#7
+      description: Attempt each of the following - gravity pull, sleeper, breakaway.
+      tags: []
