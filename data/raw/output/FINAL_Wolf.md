@@ -10,6 +10,10 @@
 6. Share with your den, or family, a time when you demonstrated the Cub Scout motto "Do Your Best."
 7. At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."
 
+## Summertime Fun Wolf (required) [🔗](https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/)
+
+1. Anytime during May through August participate in a total of three Cub Scout activities.
+
 ## Running With the Pack (required) [🔗](https://www.scouting.org/cub-scout-adventures/running-with-the-pack/)
 
 1. Sample 3 different foods that are naturally 3 different colors. The food must be a protein, vegetable, fruit, dairy, or a grain.
@@ -170,6 +174,3 @@
 3. Share some ways you can conserve water in your home.
 4. Discover how water in your community is treated to become safe to drink.
 
-## Summertime Fun Wolf (elective) [🔗](https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/)
-
-1. Anytime during May through August participate in a total of three Cub Scout activities.

@@ -83,9 +83,20 @@
 
 ## Fishing (elective) [🔗](https://www.scouting.org/cub-scout-adventures/fishing/)
 
+1. Make a plan to go fishing. Determine where you will go and what type of fish you plan to catch. All of the following requirements are to be completed based on your choice.
+2. Use Scouting America’s SAFE Checklist to plan what you need for your fishing experience.
+3. Describe the environment where the fish might be found.
+4. Make a list of the equipment and materials you will need to fish.
+5. Determine the best type of knot to tie your hook to your line and tie it.
+6. On your own, choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear.
+7. Using what you have learned about fish and fishing equipment, spend at least one hour fishing following local guidelines and regulations.
 
 ## High Tech Outdoors (elective) [🔗](https://www.scouting.org/cub-scout-adventures/high-tech-outdoors/)
 
+1. With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather.
+2. With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app.
+3. Discuss how technology has improved camping gear.
+4. Think of a way technology can improve camping gear used on one of your outdoor activities.
 
 ## Into the Wild (elective) [🔗](https://www.scouting.org/cub-scout-adventures/into-the-wild/)
 
@@ -113,6 +124,15 @@
 
 ## Paddle Craft (elective) [🔗](https://www.scouting.org/cub-scout-adventures/paddle-craft/)
 
+1. Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test.
+2. Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard.
+3. Review Safety Afloat.
+4. Demonstrate how to choose and properly wear a life jacket that is the correct size.
+5. Jump feet first into water over your head while wearing a life jacket then swim 25 feet wearing the life jacket.
+6. Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely.
+7. Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard.
+8. Learn two paddle strokes, power stroke and sweep.
+9. Have 30 minutes, or more, of canoe, kayak, or stand-up paddleboard paddle time.
 
 ## Race Time AOL (elective) [🔗](https://www.scouting.org/cub-scout-adventures/race-time-aol/)
 

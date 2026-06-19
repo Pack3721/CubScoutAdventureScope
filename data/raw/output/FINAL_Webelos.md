@@ -51,12 +51,26 @@
 
 ## Aquanaut (elective) [🔗](https://www.scouting.org/cub-scout-adventures/aquanaut/)
 
+1. State the safety precautions you need to take before doing any swimming activity.
+2. Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
+3. Learn how to prevent and treat hypothermia.
+4. Attempt to tread water.
+5. Attempt Scouting America swimmer test.
+6. Have 30 minutes, or more, of free swim time where you practice the Buddy System and stay within your ability group. The qualified adult supervision should conduct at least three buddy checks per half hour swimming.
 
 ## Art Explosion (elective) [🔗](https://www.scouting.org/cub-scout-adventures/art-explosion/)
 
+1. Create a piece of art by exploring drawing techniques using pencils.
+2. Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
+3. Create a piece of art using paint as your medium.
+4. Create a piece of art combining at least two media.
 
 ## Aware and Care (elective) [🔗](https://www.scouting.org/cub-scout-adventures/aware-and-care/)
 
+1. Do an activity that shows the challenges of a being visually impaired.
+2. Do an activity that shows the challenges of being hearing impaired.
+3. Explore barriers to access.
+4. Meet someone who has a disability or someone who works with people with disabilities about what obstacles they must overcome and how they do it.
 
 ## Build It (elective) [🔗](https://www.scouting.org/cub-scout-adventures/build-it/)
 
@@ -160,6 +174,10 @@
 
 ## Tech on the Trail (elective) [🔗](https://www.scouting.org/cub-scout-adventures/tech-on-the-trail/)
 
+1. Discuss how technology can help keep you safe in the outdoors.
+2. Explore Global Positioning Satellite and how to use it.
+3. With an adult, choose an online mapping program tool and plan a 2-mile trek.
+4. Take your 2-mile trek.
 
 ## Yo-yo (elective) [🔗](https://www.scouting.org/cub-scout-adventures/yo-yo/)
 
