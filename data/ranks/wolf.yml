@@ -81,7 +81,7 @@ adventure_list:
       tags: [site-visit, at-home]
     - name: footsteps#3
       description: Carry out an act of kindness.
-      tags: []
+      tags: [inclusion]
     - name: footsteps#4
       description: Listen to or read Aesop’s fable "The Boy Who Cried Wolf." With your den or family discuss why being truthful is important.
       tags: []
@@ -95,7 +95,7 @@ adventure_list:
       tags: [flag-etiquette]
     - name: council-fire#2
       description: Identify three points of the Scout Law that are important to being a good neighbor.
-      tags: []
+      tags: [inclusion]
     - name: council-fire#3
       description: Build a model of your home.
       tags: []

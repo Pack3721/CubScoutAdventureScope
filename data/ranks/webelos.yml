@@ -75,10 +75,10 @@ adventure_list:
       tags: [art, food, at-home]
     - name: my-family#2
       description: Carry out an act of kindness.
-      tags: []
+      tags: [inclusion]
     - name: my-family#3
       description: With your parent or legal guardian identify a religion or faith that is different from your own. Identify two things that it has in common with your family’s beliefs.
-      tags: [at-home]
+      tags: [at-home, inclusion]
     - name: my-family#4
       description: Discuss with your parent or legal guardian what it means to be reverent. Tell how you practice being reverent in your daily life.
       tags: [at-home]

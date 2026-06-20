@@ -81,7 +81,7 @@ adventure_list:
       tags: [site-visit, at-home]
     - name: fellowship#3
       description: Carry out an act of kindness.
-      tags: []
+      tags: [inclusion]
     - name: fellowship#4
       description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
       tags: [inclusion]

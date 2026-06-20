@@ -72,7 +72,7 @@ adventure_list:
       tags: [site-visit, at-home]
     - name: tiger-circles#3
       description: Carry out an act of kindness.
-      tags: []
+      tags: [inclusion]
 - name: Team Tiger
   url: https://www.scouting.org/cub-scout-adventures/team-tiger/
   required: true
