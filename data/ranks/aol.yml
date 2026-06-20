@@ -265,19 +265,19 @@ adventure_list:
   requirements:
     - name: into-the-wild#1
       description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-wild#2
       description: Create a model of your animal's ecosystem.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-wild#3
       description: Investigate how your animal coexists with other animals in the wild.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-wild#4
       description: Describe how humans interact with your chosen animal's ecosystem.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-wild#5
       description: Discover how wildlife management benefits your animal.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Into the Woods
   url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
   required: false
@@ -285,19 +285,19 @@ adventure_list:
   requirements:
     - name: into-the-woods#1
       description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-woods#2
       description: Determine if your tree is deciduous or evergreen.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-woods#3
       description: Determine if your tree is native or was introduced to your area.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: into-the-woods#4
       description: Find out how your tree deals with wildfire.
-      tags: [stem, natural-science, fire-safety]
+      tags: [stem, science, science-nature, fire-safety]
     - name: into-the-woods#5
       description: Learn how wildlife uses your tree.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Knife Safety
   url: https://www.scouting.org/cub-scout-adventures/knife-safety/
   required: false

@@ -167,16 +167,16 @@ adventure_list:
   requirements:
     - name: balancing-bears#1
       description: Make trail mix using trail mix math.
-      tags: [stem, natural-science, food]
+      tags: [stem, science, science-nature, food]
     - name: balancing-bears#2
       description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: balancing-bears#3
       description: Find  examples of bilateral symmetry in nature.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: balancing-bears#4
       description: Find examples of radial symmetry in nature.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Baloo the Builder
   url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
   required: false
@@ -315,19 +315,19 @@ adventure_list:
   requirements:
     - name: forensics#1
       description: Explore the term "forensics" and how it is used to help solve crimes.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: forensics#2
       description: Analyze your fingerprints.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: forensics#3
       description: Make a shoe imprint.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: forensics#4
       description: "Do an analysis of four different substances: salt, sugar, baking soda and cornstarch."
-      tags: [stem, physical-science, food]
+      tags: [stem, science, science-physical, food]
     - name: forensics#5
       description: Learn about chromatography and how it is used in solving crimes.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: forensics#6
       description: Find out how officers collect evidence.
       tags: []
@@ -450,16 +450,16 @@ adventure_list:
   requirements:
     - name: super-science#1
       description: Conduct static electricity investigation.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: super-science#2
       description: Conduct the sink-or-float investigation.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: super-science#3
       description: Conduct the color-morphing investigation.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: super-science#4
       description: Conduct the color-layering investigation.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
 - name: Whittling
   url: https://www.scouting.org/cub-scout-adventures/whittling/
   required: false

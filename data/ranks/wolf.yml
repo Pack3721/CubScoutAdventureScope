@@ -173,16 +173,16 @@ adventure_list:
   requirements:
     - name: air-of-the-wolf#1
       description: Make a paper airplane and fly it five times. Record the flight distance and time.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: air-of-the-wolf#2
       description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: air-of-the-wolf#3
       description: Compare and contrast the two paper airplanes by distance and flight times.
-      tags: [stem, physical-science, game]
+      tags: [stem, science, science-physical, game]
     - name: air-of-the-wolf#4
       description: Build a flying object that is not a paper airplane.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
 - name: Champions for Nature Wolf
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
   required: false
@@ -261,16 +261,16 @@ adventure_list:
   requirements:
     - name: digging-in-the-past#1
       description: Play a dinosaur game that shows what you know about them.
-      tags: [game, stem, natural-science]
+      tags: [game, stem, science, science-nature]
     - name: digging-in-the-past#2
       description: Create an imaginary dinosaur. Share with your den or family its name, what it eats, its size, and where it lives.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: digging-in-the-past#3
       description: Be a paleontologist and dig through a dinosaur dig.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: digging-in-the-past#4
       description: Build a fossil layer.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Finding Your Way
   url: https://www.scouting.org/cub-scout-adventures/finding-your-way/
   required: false
@@ -298,19 +298,19 @@ adventure_list:
   requirements:
     - name: germs-alive#1
       description: Wash your hands with soap and water while singing the "Happy Birthday" song two times.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: germs-alive#2
       description: Play Germ Magnet with our den or your family. Wash your hands afterward.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: germs-alive#3
       description: Conduct the sneeze demonstration.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: germs-alive#4
       description: Conduct the mucus demonstration.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: germs-alive#5
       description: Grow a mold culture. Show what formed at a den or pack meeting.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Let’s Camp Wolf
   url: https://www.scouting.org/cub-scout-adventures/lets-camp-wolf/
   required: false

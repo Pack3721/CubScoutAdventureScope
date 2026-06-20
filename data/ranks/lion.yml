@@ -165,13 +165,13 @@ adventure_list:
   requirements:
     - name: gizmos-and-gadgets#1
       description: Explore properties of motion.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: gizmos-and-gadgets#2
       description: Explore properties of force.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
     - name: gizmos-and-gadgets#3
       description: Use household materials to create a useful object.
-      tags: [stem, physical-science]
+      tags: [stem, science, science-physical]
 - name: Go Fish
   url: https://www.scouting.org/cub-scout-adventures/go-fish/
   required: false

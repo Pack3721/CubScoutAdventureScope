@@ -299,16 +299,16 @@ adventure_list:
   requirements:
     - name: sky-is-the-limit#1
       description: Observe the night sky with your den or Tiger adult partner. Talk about the items you see or might see there.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: sky-is-the-limit#2
       description: Look at distant objects through a telescope, binoculars, or camera. Show how to focus the device you choose.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: sky-is-the-limit#3
       description: Observe in the sky or select from a book, chart, computer, or electronic device two constellations that are easy to see in the night sky. With your den or Tiger adult partner, find out the constellation name and how to identify them. Create a picture of one of the constellations.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
     - name: sky-is-the-limit#4
       description: Create a homemade model of a constellation.
-      tags: [stem, natural-science]
+      tags: [stem, science, science-nature]
 - name: Stories in Shapes
   url: https://www.scouting.org/cub-scout-adventures/stories-in-shapes/
   required: false
