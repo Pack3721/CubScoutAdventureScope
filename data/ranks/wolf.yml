@@ -41,7 +41,7 @@ adventure_list:
       tags: []
     - name: running-with-the-pack#3
       description: Be active for 30 minutes with your den or at least 1 other person that includes both stretching and moving.
-      tags: [game, game-active]
+      tags: [be-active]
     - name: running-with-the-pack#4
       description: Be active for 10 minutes doing personal exercises.
       tags: []
@@ -365,7 +365,7 @@ adventure_list:
       tags: [sport,sportsmanship, game]
     - name: paws-of-skill#2
       description: Learn the rules of a team sport that you can play with your den, pack, family, or friends. After learning the rules, play the game for 30 minutes.
-      tags: [sport, game-active, game]
+      tags: [sport, be-active, game, game-team]
     - name: paws-of-skill#3
       description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
       tags: [sport]

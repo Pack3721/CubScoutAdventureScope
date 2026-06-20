@@ -38,7 +38,7 @@ adventure_list:
       tags: [meal-planning, food]
     - name: stronger-faster-higher#2
       description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
-      tags: [game, game-active]
+      tags: [be-active]
     - name: stronger-faster-higher#3
       description: Be active for 15 minutes doing personal exercises that boost your heart rate, use your muscles, and work on flexibility.
       tags: []

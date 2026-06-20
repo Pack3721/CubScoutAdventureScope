@@ -239,7 +239,7 @@ adventure_list:
       tags: [game]
     - name: on-your-mark#2
       description: Participate in an obstacle course relay.
-      tags: [game, game-active]
+      tags: [game, be-active, game-team]
     - name: on-your-mark#3
       description: Build a box derby and participate in a race.
       tags: []

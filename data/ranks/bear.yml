@@ -41,7 +41,7 @@ adventure_list:
       tags: [food]
     - name: bear-strong#2
       description: Be active for 30 minutes with your den or at least one other person that includes both stretching and moving.
-      tags: [game, game-active]
+      tags: [be-active]
     - name: bear-strong#3
       description: Be active for 15 minutes doing personal exercises that include cardio, muscular strength, and flexibility.
       tags: []
@@ -405,7 +405,7 @@ adventure_list:
       tags: []
     - name: roaring-laughter#3
       description: Play charades with your den or family.
-      tags: [game]
+      tags: [game, game-indoor]
     - name: roaring-laughter#4
       description: Have a "funniest joke contest" with your den or family.
       tags: []

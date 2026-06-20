@@ -38,7 +38,7 @@ adventure_list:
       tags: []
     - name: tiger-bites#3
       description: Be active for 30 minutes.
-      tags: [game, game-active]
+      tags: [be-active]
     - name: tiger-bites#4
       description: Practice methods that help you sleep.
       tags: []
@@ -357,10 +357,10 @@ adventure_list:
   requirements:
     - name: tiger-tag#1
       description: Play an active game with your den. Share with your Tiger adult partner or your den why you like this game.
-      tags: [game-active, game]
+      tags: [be-active, game]
     - name: tiger-tag#2
       description: Play a relay game with your den. Share with your Tiger adult partner or your den why you like this game.
-      tags: [game-active, game]
+      tags: [be-active, game]
     - name: tiger-tag#3
       description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
       tags: [sport, game]
