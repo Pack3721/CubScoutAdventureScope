@@ -30,7 +30,7 @@ adventure_list:
       tags: []
     - name: bobcat-bear#8
       description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: [at-home, safety]
+      tags: [at-home, safety, safety-personal]
 - name: Bear Strong
   url: https://www.scouting.org/cub-scout-adventures/bear-strong/
   required: true
@@ -58,10 +58,10 @@ adventure_list:
   requirements:
     - name: standing-tall#1
       description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Bear rank.
-      tags: [at-home, safety]
+      tags: [at-home, safety, safety-personal]
     - name: standing-tall#2
       description: Complete the Personal Space Bubble worksheet that is part of the Protect Yourself Rules resources.
-      tags: [safety]
+      tags: [safety, safety-personal]
     - name: standing-tall#3
       description: With your parent or legal guardian, set up a family policy for digital devices.
       tags: [at-home, technology]
@@ -124,7 +124,7 @@ adventure_list:
       tags: [walk, outdoor-code]
     - name: bear-habitat#6
       description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
-      tags: [fire-safety,outdoor-code]
+      tags: [safety, safety-fire,outdoor-code]
     - name: bear-habitat#7
       description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
       tags: [walk, outdoor-code]

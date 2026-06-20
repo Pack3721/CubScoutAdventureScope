@@ -26,8 +26,8 @@ adventure_list:
       description: Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each is used.
       tags: []
     - name: bobcat-webelos#7
-      description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: [at-home, safety]
+      description: ‘At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      tags: [at-home, safety, safety-personal]
 - name: Stronger, Faster, Higher
   url: https://www.scouting.org/cub-scout-adventures/stronger-faster-higher/
   required: true
@@ -55,7 +55,7 @@ adventure_list:
   requirements:
     - name: my-safety#1
       description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Webelos rank.
-      tags: [at-home]
+      tags: [at-home, safety, safety-personal]
     - name: my-safety#2
       description: Identify items in your house that are hazardous and make sure they are stored properly. Identify on the package where it describes what to do if someone is accidentally exposed to them.
       tags: []
@@ -308,10 +308,10 @@ adventure_list:
       tags: [knots]
     - name: lets-camp-webelos#6
       description: Know the fire safety rules. Using those rules, locate a safe area to build a campfire.
-      tags: [fire-safety]
+      tags: [safety, safety-fire]
     - name: lets-camp-webelos#7
       description: Using tinder, kindling, and fuel wood, properly build a teepee fire lay. If circumstances permit, and there is no local restriction on fires, show how to safely light the fire while under adult supervision. After allowing the fire to burn safely, extinguish the flames with minimal impact to the fire site.
-      tags: [fire-safety]
+      tags: [safety, safety-fire]
     - name: lets-camp-webelos#8
       description: Recite the Outdoor Code and Leave No Trace Principles for Kids from Memory.
       tags: [outdoor-code]

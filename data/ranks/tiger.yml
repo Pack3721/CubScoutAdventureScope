@@ -23,8 +23,8 @@ adventure_list:
       description: Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto "Do Your Best."
       tags: []
     - name: bobcat-tiger#6
-      description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: [at-home]
+      description: ‘At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      tags: [at-home, safety, safety-personal]
 - name: Tiger Bites
   url: https://www.scouting.org/cub-scout-adventures/tiger-bites/
   required: true
@@ -49,16 +49,16 @@ adventure_list:
   requirements:
     - name: tigers-roar#1
       description: With permission from your parent or legal guardian, watch Protect Yourself Rules for the Tiger rank.
-      tags: [at-home]
+      tags: [at-home, safety, safety-personal]
     - name: tigers-roar#2
       description: With your Tiger adult partner, demonstrate Shout, Run, Tell as described in Protect Yourself Rules.
-      tags: []
+      tags: [safety, safety-personal]
     - name: tigers-roar#3
       description: With your Tiger adult partner, demonstrate how to access emergency services.
-      tags: [first-aid]
+      tags: [first-aid, safety, safety-personal]
     - name: tigers-roar#4
       description: With your Tiger adult partner, demonstrate that you know what to do if you get lost or separated.
-      tags: []
+      tags: [safety, safety-personal]
 - name: Tiger Circles
   url: https://www.scouting.org/cub-scout-adventures/tiger-circles/
   required: true
@@ -274,22 +274,22 @@ adventure_list:
   requirements:
     - name: safe-and-smart#1
       description: Memorize your address. Recite it to your Tiger adult partner or den leader.
-      tags: []
+      tags: [safety, safety-personal]
     - name: safe-and-smart#2
       description: Memorize an emergency contact's phone number. Recite it to your Tiger adult partner or den leader.
-      tags: []
+      tags: [safety, safety-personal]
     - name: safe-and-smart#3
       description: Show you can Stop, Drop and Roll.
-      tags: [first-aid, fire-safety]
+      tags: [first-aid, safety, safety-fire]
     - name: safe-and-smart#4
       description: With your Tiger adult partner or den leader, create a fire escape plan for your home or den meeting place. Include your outside meet-up spot. Practice the escape route you would take.
-      tags: [fire-safety]
+      tags: [safety, safety-fire]
     - name: safe-and-smart#5
       description: With your Tiger adult partner, find the location of the smoke detectors in your home or den meeting place. Confirm they are working properly.
       tags: []
     - name: safe-and-smart#6
       description: With your Tiger adult partner or den leader, learn why matches and lighters are only for adults.
-      tags: [fire-safety]
+      tags: [safety, safety-fire]
     - name: safe-and-smart#7
       description: Visit an emergency responder station or have an emergency responder visit your den.
       tags: [first-aid, site-visit, guest-speaker]

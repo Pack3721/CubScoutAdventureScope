@@ -26,8 +26,8 @@ adventure_list:
       description: Share with your den, or family, a time when you demonstrated the Cub Scout motto "Do Your Best."
       tags: []
     - name: bobcat-wolf#7
-      description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
-      tags: [at-home]
+      description: ‘At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      tags: [at-home, safety, safety-personal]
 - name: Running With the Pack
   url: https://www.scouting.org/cub-scout-adventures/running-with-the-pack/
   required: true
@@ -58,10 +58,10 @@ adventure_list:
   requirements:
     - name: safety-in-numbers#1
       description: With permission from your parent or legal guardian, watch the "Protect Yourself Rules" video for the Wolf rank.
-      tags: [at-home]
+      tags: [at-home, safety, safety-personal]
     - name: safety-in-numbers#2
       description: Discuss "safe touch" as seen in the Protect Yourself Rules video.
-      tags: []
+      tags: [safety, safety-personal]
     - name: safety-in-numbers#3
       description: Learn about the buddy system and demonstrate how it works.
       tags: [buddy-system]
