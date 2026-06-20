@@ -133,10 +133,10 @@ adventure_list:
   requirements:
     - name: curiosity-intrigue-and-magical-mysteries#1
       description: Learn a magic trick. Practice the trick. Share the trick with you den or family members.
-      tags: []
+      tags: [art, art-performance]
     - name: curiosity-intrigue-and-magical-mysteries#2
       description: Demonstrate how a magic trick works to your den, family or Tiger adult partner.
-      tags: []
+      tags: [art, art-performance]
     - name: curiosity-intrigue-and-magical-mysteries#3
       description: Write your name in secret code.
       tags: [codes]
