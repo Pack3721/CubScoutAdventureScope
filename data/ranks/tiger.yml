@@ -49,7 +49,7 @@ adventure_list:
   requirements:
     - name: tigers-roar#1
       description: With permission from your parent or legal guardian, watch Protect Yourself Rules for the Tiger rank.
-      tags: []
+      tags: [at-home]
     - name: tigers-roar#2
       description: With your Tiger adult partner, demonstrate Shout, Run, Tell as described in Protect Yourself Rules.
       tags: []
@@ -66,7 +66,7 @@ adventure_list:
   requirements:
     - name: tiger-circles#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Draw a picture of your favorite family’s faith tradition holiday or celebration.
-      tags: [art]
+      tags: [art, at-home]
     - name: tiger-circles#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
       tags: [site-visit]

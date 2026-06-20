@@ -50,7 +50,7 @@ adventure_list:
       tags: []
     - name: running-with-the-pack#6
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid]
+      tags: [first-aid, at-home]
 - name: Safety in Numbers
   url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
   required: true
@@ -58,7 +58,7 @@ adventure_list:
   requirements:
     - name: safety-in-numbers#1
       description: With permission from your parent or legal guardian, watch the "Protect Yourself Rules" video for the Wolf rank.
-      tags: []
+      tags: [at-home]
     - name: safety-in-numbers#2
       description: Discuss "safe touch" as seen in the Protect Yourself Rules video.
       tags: []
@@ -75,7 +75,7 @@ adventure_list:
   requirements:
     - name: footsteps#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft or work of art of your favorite family’s faith tradition holiday or celebration.
-      tags: [art]
+      tags: [art, at-home]
     - name: footsteps#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
       tags: [site-visit]

@@ -81,7 +81,7 @@ adventure_list:
   requirements:
     - name: duty-to-god#1
       description: Discuss with your parent or legal guardian your family's faith traditions or one of your choosing. Choose a view or value of that faith tradition that is related to the Scout Law. Discuss with your family how each family member demonstrates this value.
-      tags: []
+      tags: [at-home]
     - name: duty-to-god#2
       description: Meet with a representative of a faith-based organization in your local community who provides a service that assists people in crisis regardless of their faith. Identify who they help and how.
       tags: [guest-speaker]

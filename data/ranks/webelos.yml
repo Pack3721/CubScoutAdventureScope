@@ -55,7 +55,7 @@ adventure_list:
   requirements:
     - name: my-safety#1
       description: With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Webelos rank.
-      tags: []
+      tags: [at-home]
     - name: my-safety#2
       description: Identify items in your house that are hazardous and make sure they are stored properly. Identify on the package where it describes what to do if someone is accidentally exposed to them.
       tags: []
@@ -72,7 +72,7 @@ adventure_list:
   requirements:
     - name: my-family#1
       description: With your parent or legal guardian, talk about your family’s faith traditions.   Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your family’s faith traditions.
-      tags: [art, food]
+      tags: [art, food, at-home]
     - name: my-family#2
       description: Carry out an act of kindness.
       tags: []
