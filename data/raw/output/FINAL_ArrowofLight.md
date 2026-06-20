@@ -2,11 +2,14 @@
 
 ## Bobcat Adventure (required) [🔗](https://www.scouting.org/cub-scout-adventures/bobcat-arrow-of-light/)
 
-1. Bring a map of the area.
-2. Pack enough water for the day.
-3. Wear sturdy hiking boots.
-4. Check the weather forecast before departing.
-5. Carry a first-aid kit.
+1. Demonstrate the patrol method by choosing a patrol name and electing a patrol leader. Discuss the benefits of using the patrol method.
+2. Get to know members of your patrol.
+3. Recite the Scout Oath and Scout Law with your patrol.
+4. With your patrol create a Code of Conduct.
+5. Demonstrate the Scout sign, Scout salute and Scout handshake used by Scouting America. Show how each are used.
+6. Learn the Scouting America slogan and motto.
+7. With your patrol, or with your parent/legal guardian, visit a Scouting America troop.
+8. At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent's Guide."
 
 ## Personal Fitness (required) [🔗](https://www.scouting.org/cub-scout-adventures/personal-fitness/)
 
