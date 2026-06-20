@@ -284,7 +284,7 @@ adventure_list:
       tags: []
     - name: chef-tech#3
       description: With adult supervision, download a cooking app or search online to find a recipe.
-      tags: [stem, technology, food]
+      tags: [stem, technology, food, food-plan-meal]
     - name: chef-tech#4
       description: With adult supervision, follow the selected recipe and make the recipe.
       tags: [food]

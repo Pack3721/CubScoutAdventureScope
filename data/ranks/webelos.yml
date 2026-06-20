@@ -35,7 +35,7 @@ adventure_list:
   requirements:
     - name: stronger-faster-higher#1
       description: With your den or family, plan, cook, and eat a balanced meal.
-      tags: [meal-planning, food]
+      tags: [food-plan-meal, food]
     - name: stronger-faster-higher#2
       description: Be active for 30 minutes with your den or at least one other person in a way that includes both stretching and moving.
       tags: [be-active]
