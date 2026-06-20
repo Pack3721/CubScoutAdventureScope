@@ -331,19 +331,19 @@ adventure_list:
       tags: []
     - name: paddle-craft#3
       description: Review Safety Afloat.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paddle-craft#4
       description: Demonstrate how to choose and properly wear a life jacket that is the correct size.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paddle-craft#5
       description: Jump feet first into water over your head while wearing a life jacket then swim 25 feet wearing the life jacket.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paddle-craft#6
       description: Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paddle-craft#7
       description: Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paddle-craft#8
       description: Learn two paddle strokes, power stroke and sweep.
       tags: []
@@ -386,10 +386,10 @@ adventure_list:
   requirements:
     - name: swimming#1
       description: Review Safe Swim Defense.
-      tags: [safety, first-aid]
+      tags: [safety, safety-water, first-aid]
     - name: swimming#2
       description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
-      tags: [safety, first-aid]
+      tags: [safety, safety-water, first-aid]
     - name: swimming#3
       description: Attempt Scouting America swimmer test.
       tags: []

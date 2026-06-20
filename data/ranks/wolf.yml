@@ -145,7 +145,7 @@ adventure_list:
       tags: []
     - name: a-wolf-goes-fishing#4
       description: Learn the rules of fishing safely.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: a-wolf-goes-fishing#5
       description: With your den, pack, or family, go fishing.
       tags: []
@@ -339,7 +339,7 @@ adventure_list:
   requirements:
     - name: paws-for-water#1
       description: Learn about the swimming safety rules that you need to follow.
-      tags: [safety]
+      tags: [safety, safety-water]
     - name: paws-for-water#2
       description: Demonstrate how to enter the swimming area properly.
       tags: []
