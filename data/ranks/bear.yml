@@ -152,7 +152,7 @@ adventure_list:
       tags: []
     - name: a-bear-goes-fishing#4
       description: Become familiar with the safe use of the fishing equipment you will be using on your outing.
-      tags: []
+      tags: [safety]
     - name: a-bear-goes-fishing#5
       description: Learn the proper way to attach the hook, lure, or fly to the line.
       tags: [knots]
@@ -184,7 +184,7 @@ adventure_list:
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools]
+      tags: [tools, safety]
     - name: baloo-the-builder#2
       description: Practice using four of the tools you learned about in requirement 1.
       tags: [tools]

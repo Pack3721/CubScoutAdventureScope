@@ -172,7 +172,7 @@ adventure_list:
       tags: []
     - name: fish-on#2
       description: With your Tiger adult partner, learn the rules of fishing safely.
-      tags: []
+      tags: [safety]
     - name: fish-on#3
       description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
       tags: [art]

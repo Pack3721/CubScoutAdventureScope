@@ -67,7 +67,7 @@ adventure_list:
       tags: [buddy-system]
     - name: safety-in-numbers#4
       description: Review common safety rules and demonstrate the proper use of playground equipment.
-      tags: []
+      tags: [safety]
 - name: Footsteps
   url: https://www.scouting.org/cub-scout-adventures/footsteps/
   required: true
@@ -145,7 +145,7 @@ adventure_list:
       tags: []
     - name: a-wolf-goes-fishing#4
       description: Learn the rules of fishing safely.
-      tags: []
+      tags: [safety]
     - name: a-wolf-goes-fishing#5
       description: With your den, pack, or family, go fishing.
       tags: []

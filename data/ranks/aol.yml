@@ -95,7 +95,7 @@ adventure_list:
   requirements:
     - name: citizenship#1
       description: Identify a community service project that your patrol or pack could accomplish. Use Scouting America's SAFE Checklist and develop a plan to conduct the service project safely.
-      tags: [service-project]
+      tags: [service-project, safety]
     - name: citizenship#2
       description: Participate in a service project for a minimum of two hours or multiple service projects for a total of two hours.
       tags: [service-project]
@@ -112,7 +112,7 @@ adventure_list:
       tags: [packing]
     - name: outdoor-adventurer#3
       description: Review the four points of Scouting America's SAFE Checklist and how you will apply them on the campout.
-      tags: []
+      tags: [safety]
     - name: outdoor-adventurer#4
       description: Locate the campsite where you will be camping on a map.
       tags: []
@@ -225,7 +225,7 @@ adventure_list:
       tags: []
     - name: fishing#2
       description: Use Scouting America's SAFE Checklist to plan what you need for your fishing experience.
-      tags: []
+      tags: [safety]
     - name: fishing#3
       description: Describe the environment where the fish might be found.
       tags: []

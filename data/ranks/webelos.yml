@@ -58,10 +58,10 @@ adventure_list:
       tags: [at-home, safety, safety-personal]
     - name: my-safety#2
       description: Identify items in your house that are hazardous and make sure they are stored properly. Identify on the package where it describes what to do if someone is accidentally exposed to them.
-      tags: []
+      tags: [safety]
     - name: my-safety#3
       description: Identify ways you and your family keep your home or your meeting space safe.
-      tags: []
+      tags: [safety]
     - name: my-safety#4
       description: Complete the Be Prepared for Natural Events worksheet. Complete a worksheet for at least two natural events most likely to happen near where you live.
       tags: []
@@ -115,7 +115,7 @@ adventure_list:
       tags: [walk, weather]
     - name: webelos-walkabout#4
       description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
-      tags: [walk]
+      tags: [walk, safety]
     - name: webelos-walkabout#5
       description: "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
       tags: [first-aid, walk]
@@ -190,7 +190,7 @@ adventure_list:
   requirements:
     - name: build-it#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools]
+      tags: [tools, safety]
     - name: build-it#2
       description: Demonstrate  how to check for plumb, level, and square when building.
       tags: [tools]
@@ -211,7 +211,7 @@ adventure_list:
       tags: []
     - name: catch-the-big-one#2
       description: Use Scouting America SAFE Checklist to plan what you need for your fishing experience.
-      tags: []
+      tags: [safety]
     - name: catch-the-big-one#3
       description: Describe the environment where the fish might be found.
       tags: []
@@ -302,7 +302,7 @@ adventure_list:
       tags: [tent]
     - name: lets-camp-webelos#4
       description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
-      tags: [weather]
+      tags: [weather, safety]
     - name: lets-camp-webelos#5
       description: Show how to tie a bowline.  Explain when this knot should be used and why.
       tags: [knots]

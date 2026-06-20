@@ -179,7 +179,7 @@ adventure_list:
   requirements:
     - name: go-fish#1
       description: With your Lion adult partner, learn the rules of fishing safely.
-      tags: []
+      tags: [safety]
     - name: go-fish#2
       description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
       tags: [art]
