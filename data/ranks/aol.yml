@@ -115,7 +115,7 @@ adventure_list:
       tags: [safety]
     - name: outdoor-adventurer#4
       description: Locate the campsite where you will be camping on a map.
-      tags: []
+      tags: [map-compass]
     - name: outdoor-adventurer#5
       description: With your patrol or a Scouting America troop, participate in a campout.
       tags: [campout]

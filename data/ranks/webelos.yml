@@ -454,7 +454,7 @@ adventure_list:
       tags: [stem, technology]
     - name: tech-on-the-trail#3
       description: With an adult, choose an online mapping program tool and plan a 2-mile trek.
-      tags: [stem, technology]
+      tags: [stem, technology, map-compass]
     - name: tech-on-the-trail#4
       description: Take your 2-mile trek.
       tags: [stem, technology]

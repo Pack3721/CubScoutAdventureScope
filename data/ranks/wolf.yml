@@ -278,19 +278,19 @@ adventure_list:
   requirements:
     - name: finding-your-way#1
       description: Using a map, locate where you live.
-      tags: []
+      tags: [map-compass]
     - name: finding-your-way#2
       description: Draw a map for a friend to locate your home or school. Create a key for the map.
-      tags: []
+      tags: [map-compass]
     - name: finding-your-way#3
       description: Find the directions north, east, south, and west and the compass rose on a map.
-      tags: []
+      tags: [map-compass]
     - name: finding-your-way#4
       description: Find the directions north, east, south, and west using a compass.
-      tags: []
+      tags: [map-compass]
     - name: finding-your-way#5
       description: Practice using both a map and a compass.
-      tags: []
+      tags: [map-compass]
 - name: Germs Alive!
   url: https://www.scouting.org/cub-scout-adventures/germs-alive/
   required: false

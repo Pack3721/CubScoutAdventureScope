@@ -112,7 +112,7 @@ adventure_list:
       tags: [six-essentials, walk, weather, packing]
     - name: bear-habitat#2
       description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
-      tags: [walk]
+      tags: [walk, map-compass]
     - name: bear-habitat#3
       description: '"Choose the Right Path" Learn about the path and surrounding area you will be walking on.'
       tags: [walk]
