@@ -72,7 +72,7 @@ adventure_list:
   requirements:
     - name: my-family#1
       description: With your parent or legal guardian, talk about your family’s faith traditions.   Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your family’s faith traditions.
-      tags: [art, food, at-home]
+      tags: [art, art-craft, food, at-home]
     - name: my-family#2
       description: Carry out an act of kindness.
       tags: [inclusion]

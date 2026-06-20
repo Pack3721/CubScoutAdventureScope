@@ -75,7 +75,7 @@ adventure_list:
   requirements:
     - name: fellowship#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your favorite family’s faith tradition, holiday or celebration.
-      tags: [at-home]
+      tags: [art, art-craft, at-home]
     - name: fellowship#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
       tags: [site-visit, at-home]
@@ -95,7 +95,7 @@ adventure_list:
       tags: [flag-etiquette]
     - name: paws-for-action#2
       description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
-      tags: []
+      tags: [art, art-craft]
     - name: paws-for-action#3
       description: Learn about the mission of any non-profit. Find out how they fund their activities and how volunteers are used to help.
       tags: []
@@ -360,7 +360,7 @@ adventure_list:
   requirements:
     - name: marble-madness#1
       description: Make a marble bag.
-      tags: []
+      tags: [art, art-craft]
     - name: marble-madness#2
       description: Learn five words that are used when talking about marbles.
       tags: []

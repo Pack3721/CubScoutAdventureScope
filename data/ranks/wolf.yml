@@ -75,7 +75,7 @@ adventure_list:
   requirements:
     - name: footsteps#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft or work of art of your favorite family’s faith tradition holiday or celebration.
-      tags: [art, at-home]
+      tags: [art, art-craft, at-home]
     - name: footsteps#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
       tags: [site-visit, at-home]
