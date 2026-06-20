@@ -477,4 +477,4 @@ adventure_list:
       tags: [knife, safety]
     - name: whittling#4
       description: Make two carvings with a pocketknife.
-      tags: [knife]
+      tags: [knife, art, art-craft]

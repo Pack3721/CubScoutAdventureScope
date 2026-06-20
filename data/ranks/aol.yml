@@ -315,7 +315,7 @@ adventure_list:
       tags: [knife, safety]
     - name: knife-safety#4
       description: Demonstrate the proper use of a pocketknife to make a useful object on a campout.
-      tags: [knife]
+      tags: [knife, art, art-craft]
     - name: knife-safety#5
       description: Choose the correct cooking knife and demonstrate how to properly slice, chop, and mince.
       tags: [knife, food]

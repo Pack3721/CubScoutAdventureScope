@@ -205,7 +205,7 @@ adventure_list:
       tags: []
     - name: good-knights#2
       description: Create a shield that can be for your den or a personal shield.
-      tags: []
+      tags: [art, art-craft]
     - name: good-knights#3
       description: Using recycled and other materials, design and build a small castle in your den or at home.
       tags: []
@@ -239,7 +239,7 @@ adventure_list:
   requirements:
     - name: race-time-tiger#1
       description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [art, art-craft]
     - name: race-time-tiger#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []
