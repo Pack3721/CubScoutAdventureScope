@@ -66,7 +66,7 @@ adventure_list:
   requirements:
     - name: tiger-circles#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Draw a picture of your favorite family’s faith tradition holiday or celebration.
-      tags: [art, at-home]
+      tags: [art, art-draw, at-home]
     - name: tiger-circles#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
       tags: [site-visit, at-home]
@@ -106,7 +106,7 @@ adventure_list:
       tags: [six-essentials,walk]
     - name: tigers-in-the-wild#4
       description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
-      tags: [art]
+      tags: [art, art-draw]
     - name: tigers-in-the-wild#5
       description: Look for a tree where you live. Describe how this tree is helpful.
       tags: []
@@ -176,7 +176,7 @@ adventure_list:
       tags: [safety, safety-water]
     - name: fish-on#3
       description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
-      tags: [art]
+      tags: [art, art-draw]
     - name: fish-on#4
       description: Go fishing with your Tiger adult partner.
       tags: []
@@ -323,7 +323,7 @@ adventure_list:
       tags: [art]
     - name: stories-in-shapes#3
       description: Create a piece of art using shapes.
-      tags: [art]
+      tags: [art, art-draw]
     - name: stories-in-shapes#4
       description: Learn how to spell your name in Braille and sign language.
       tags: [art]

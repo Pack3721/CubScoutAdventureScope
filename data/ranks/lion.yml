@@ -60,13 +60,13 @@ adventure_list:
   requirements:
     - name: lions-pride#1
       description: With your parent or legal guardian talk about your family’s faith traditions. Draw a picture of your favorite family’s faith tradition holiday or celebration.
-      tags: [art, at-home]
+      tags: [art, art-draw, at-home]
     - name: lions-pride#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
       tags: [site-visit, at-home]
     - name: lions-pride#3
       description: Make a cheerful card or a drawing for someone you love and give it to them.
-      tags: [art]
+      tags: [art, art-draw]
 - name: King of the Jungle
   url: https://www.scouting.org/cub-scout-adventures/king-of-the-jungle/
   required: true
@@ -74,7 +74,7 @@ adventure_list:
   requirements:
     - name: king-of-the-jungle#1
       description: Draw a picture or take a photo of the people you live with.
-      tags: []
+      tags: [art, art-draw]
     - name: king-of-the-jungle#2
       description: With your Lion adult partner, choose a job that will help your family. Follow through by doing that job at least once.
       tags: [flag-etiquette]
@@ -183,7 +183,7 @@ adventure_list:
       tags: [safety, safety-water]
     - name: go-fish#2
       description: Draw a picture of the type of fish you think lives in the water where you are going fishing.
-      tags: [art]
+      tags: [art, art-draw]
     - name: go-fish#3
       description: Go fishing with your Lion adult partner.
       tags: []
