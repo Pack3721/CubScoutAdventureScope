@@ -305,13 +305,13 @@ adventure_list:
   requirements:
     - name: knife-safety#1
       description: Know the safety rules for handling and using a knife.
-      tags: [knife]
+      tags: [knife, safety]
     - name: knife-safety#2
       description: Demonstrate the knife safety circle.
-      tags: [knife]
+      tags: [knife, safety]
     - name: knife-safety#3
       description: Demonstrate that you know how to care for and use a knife safely.
-      tags: [knife]
+      tags: [knife, safety]
     - name: knife-safety#4
       description: Demonstrate the proper use of a pocketknife to make a useful object on a campout.
       tags: [knife]

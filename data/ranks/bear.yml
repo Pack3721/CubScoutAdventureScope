@@ -473,7 +473,7 @@ adventure_list:
       tags: [knife, safety]
     - name: whittling#3
       description: Demonstrate that you know how to care for and use your pocketknife safely.
-      tags: [knife]
+      tags: [knife, safety]
     - name: whittling#4
       description: Make two carvings with a pocketknife.
       tags: [knife]
