@@ -186,6 +186,7 @@ adventure_list:
 - name: Build It
   url: https://www.scouting.org/cub-scout-adventures/build-it/
   required: false
+  alternate_name: Engineering
   stem_nova: [Tech Talk, Swing!, Fearful Symmetry]
   requirements:
     - name: build-it#1

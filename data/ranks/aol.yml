@@ -181,6 +181,7 @@ adventure_list:
 - name: Engineer
   url: https://www.scouting.org/cub-scout-adventures/engineer/
   required: false
+  alternate_name: Engineering
   stem_nova: [Out of This World, Swing!]
   requirements:
     - name: engineer#1

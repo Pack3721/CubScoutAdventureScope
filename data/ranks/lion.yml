@@ -104,6 +104,7 @@ adventure_list:
 - name: Build It Up, Knock It Down
   url: https://www.scouting.org/cub-scout-adventures/build-it-up-knock-it-down/
   required: false
+  alternate_name: Engineering
   requirements:
     - name: build-it-up-knock-it-down#1
       description: With your Lion adult partner, build a structure.

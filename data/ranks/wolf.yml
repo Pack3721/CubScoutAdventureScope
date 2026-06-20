@@ -169,6 +169,7 @@ adventure_list:
 - name: Air of the Wolf
   url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
   required: false
+  alternate_name: Engineering
   stem_nova: [Swing!, 1-2-3 Go!, Fearful Symmetry]
   requirements:
     - name: air-of-the-wolf#1

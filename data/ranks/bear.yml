@@ -180,6 +180,7 @@ adventure_list:
 - name: Baloo the Builder
   url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
   required: false
+  alternate_name: Engineering
   stem_nova: [Swing!]
   requirements:
     - name: baloo-the-builder#1

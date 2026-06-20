@@ -146,6 +146,7 @@ adventure_list:
 - name: Designed by Tiger
   url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
   required: false
+  alternate_name: Engineering
   requirements:
     - name: designed-by-tiger#1
       description: Think about something that you would like to build. Draw a picture of what the final project should look like.
