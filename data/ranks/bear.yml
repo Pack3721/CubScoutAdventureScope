@@ -184,7 +184,7 @@ adventure_list:
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [knife-safety, tools]
+      tags: [tools]
     - name: baloo-the-builder#2
       description: Practice using four of the tools you learned about in requirement 1.
       tags: [tools]
