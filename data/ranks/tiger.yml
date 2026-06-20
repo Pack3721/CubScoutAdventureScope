@@ -194,7 +194,7 @@ adventure_list:
       tags: []
     - name: floats-and-boats#4
       description: Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat.
-      tags: []
+      tags: [safety]
 - name: Good Knights
   url: https://www.scouting.org/cub-scout-adventures/good-knights/
   required: false
@@ -258,10 +258,10 @@ adventure_list:
       tags: []
     - name: rolling-tigers#2
       description: With your den or Tiger adult partner, learn about the safety gear you should use while riding a bicycle.
-      tags: []
+      tags: [safety]
     - name: rolling-tigers#3
       description: With your den or Tiger adult partner, learn the safety rules to follow when riding a bicycle.
-      tags: []
+      tags: [safety]
     - name: rolling-tigers#4
       description: With your den or Tiger adult partner, demonstrate proper hand signals.
       tags: []
@@ -390,7 +390,7 @@ adventure_list:
   requirements:
     - name: tigers-in-the-water#1
       description: Learn about the swimming safety rules that you need to follow.
-      tags: []
+      tags: [safety]
     - name: tigers-in-the-water#2
       description: Demonstrate how to enter the swimming area properly.
       tags: []

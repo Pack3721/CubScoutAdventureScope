@@ -132,10 +132,10 @@ adventure_list:
   requirements:
     - name: aquanaut#1
       description: State the safety precautions you need to take before doing any swimming activity.
-      tags: []
+      tags: [safety]
     - name: aquanaut#2
       description: Explain the meaning of "order of rescue" and demonstrate the reach and throw rescue techniques from land.
-      tags: [first-aid]
+      tags: [first-aid, safety]
     - name: aquanaut#3
       description: Learn how to prevent and treat hypothermia.
       tags: [first-aid]
@@ -369,19 +369,19 @@ adventure_list:
       tags: []
     - name: paddle-onward#3
       description: Review Safety Afloat.
-      tags: []
+      tags: [safety]
     - name: paddle-onward#4
       description: Demonstrate how to choose  and properly wear a life jacket  that is the correct size. 
-      tags: []
+      tags: [safety]
     - name: paddle-onward#5
       description: Jump feet first into water over your head while wearing a life jacket  Then swim 25 feet wearing the life jacket. 
-      tags: []
+      tags: [safety]
     - name: paddle-onward#6
       description: Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely.
-      tags: []
+      tags: [safety]
     - name: paddle-onward#7
       description: Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard.
-      tags: []
+      tags: [safety]
     - name: paddle-onward#8
       description: Learn how to pick a paddle that is the right size for you. Explore how the paddle craft responds to moving the paddle.
       tags: []

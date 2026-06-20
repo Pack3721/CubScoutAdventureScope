@@ -339,7 +339,7 @@ adventure_list:
   requirements:
     - name: paws-for-water#1
       description: Learn about the swimming safety rules that you need to follow.
-      tags: []
+      tags: [safety]
     - name: paws-for-water#2
       description: Demonstrate how to enter the swimming area properly.
       tags: []

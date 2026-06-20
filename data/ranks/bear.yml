@@ -213,10 +213,10 @@ adventure_list:
       tags: []
     - name: bears-afloat#4
       description: Explain the safety rules to follow when safely using a paddle craft.
-      tags: []
+      tags: [safety]
     - name: bears-afloat#5
       description: Discover how to tell if a life jacket is the correct size and approved for your paddle craft activity. Demonstrate how to wear it.
-      tags: []
+      tags: [safety]
     - name: bears-afloat#6
       description: Explore how your paddle craft responds as you move your paddle through the water from different places.
       tags: []
@@ -434,7 +434,7 @@ adventure_list:
       tags: []
     - name: salmon-run#6
       description: Demonstrate both a reach rescue and a throw rescue.
-      tags: [first-aid]
+      tags: [first-aid, safety]
 - name: Summertime Fun Bear
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
   required: false

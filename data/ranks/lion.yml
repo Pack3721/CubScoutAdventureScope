@@ -223,13 +223,13 @@ adventure_list:
   requirements:
     - name: on-a-roll#1
       description: With your den or Lion adult partner, learn about the safety gear you should use while riding a bicycle.
-      tags: []
+      tags: [safety]
     - name: on-a-roll#2
       description: With your den or Lion adult partner, learn the safety rules to follow when riding a bicycle.
-      tags: []
+      tags: [safety]
     - name: on-a-roll#3
       description: With your Lion adult partner or family, ride a bicycle wearing appropriate safety gear and follow safety rules.
-      tags: []
+      tags: [safety]
 - name: On Your Mark
   url: https://www.scouting.org/cub-scout-adventures/on-your-mark/
   required: false
@@ -293,7 +293,7 @@ adventure_list:
   requirements:
     - name: time-to-swim#1
       description: Learn about the swimming safety rules that you need to follow.
-      tags: []
+      tags: [safety]
     - name: time-to-swim#2
       description: Demonstrate how to enter the swimming area properly.
       tags: []
