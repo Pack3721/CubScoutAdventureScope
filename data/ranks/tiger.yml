@@ -186,13 +186,13 @@ adventure_list:
   requirements:
     - name: floats-and-boats#1
       description: Identify five different types of boats.
-      tags: []
+      tags: [stem, science]
     - name: floats-and-boats#2
       description: Identify five things that float and five things that do not float.
-      tags: []
+      tags: [stem, science-physical]
     - name: floats-and-boats#3
       description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
-      tags: []
+      tags: [stem, engineering]
     - name: floats-and-boats#4
       description: Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat.
       tags: [safety, safety-water]
@@ -287,7 +287,7 @@ adventure_list:
       tags: [safety, safety-fire]
     - name: safe-and-smart#5
       description: With your Tiger adult partner, find the location of the smoke detectors in your home or den meeting place. Confirm they are working properly.
-      tags: []
+      tags: [safety, safety-fire, at-home]
     - name: safe-and-smart#6
       description: With your Tiger adult partner or den leader, learn why matches and lighters are only for adults.
       tags: [safety, safety-fire]
