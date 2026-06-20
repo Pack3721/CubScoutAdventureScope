@@ -29,7 +29,7 @@ adventure_list:
       description: With your patrol, or with your parent/legal guardian, visit a Scouting America troop.
       tags: [site-visit, at-home]
     - name: bobcat-arrow-of-light#8
-      description: ‘At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
       tags: [at-home, safety, safety-personal]
 - name: Personal Fitness
   url: https://www.scouting.org/cub-scout-adventures/personal-fitness/

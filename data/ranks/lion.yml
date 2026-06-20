@@ -17,7 +17,7 @@ adventure_list:
       description: Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto "Do Your Best."
       tags: []
     - name: bobcat-lion#4
-      description: ‘At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
       tags: [at-home, safety, safety-personal]
 - name: Fun on the Run
   url: https://www.scouting.org/cub-scout-adventures/fun-on-the-run/

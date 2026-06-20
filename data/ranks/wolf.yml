@@ -26,7 +26,7 @@ adventure_list:
       description: Share with your den, or family, a time when you demonstrated the Cub Scout motto "Do Your Best."
       tags: []
     - name: bobcat-wolf#7
-      description: ‘At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."’
+      description: 'At home, with your parent or legal guardian, do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
       tags: [at-home, safety, safety-personal]
 - name: Running With the Pack
   url: https://www.scouting.org/cub-scout-adventures/running-with-the-pack/
