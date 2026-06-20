@@ -363,10 +363,10 @@ adventure_list:
       tags: [be-active, game]
     - name: tiger-tag#3
       description: Discuss what it means to be a good sport in a game with your Tiger adult partner or other Tigers.
-      tags: [sport, game]
+      tags: [sports, game]
     - name: tiger-tag#4
       description: Attend a sporting event.
-      tags: [sport, site-visit]
+      tags: [sports, site-visit]
 - name: Tiger-iffic!
   url: https://www.scouting.org/cub-scout-adventures/tiger-iffic/
   required: false
