@@ -78,10 +78,10 @@ adventure_list:
       tags: []
     - name: my-family#3
       description: With your parent or legal guardian identify a religion or faith that is different from your own. Identify two things that it has in common with your family’s beliefs.
-      tags: []
+      tags: [at-home]
     - name: my-family#4
       description: Discuss with your parent or legal guardian what it means to be reverent. Tell how you practice being reverent in your daily life.
-      tags: []
+      tags: [at-home]
 - name: My Community
   url: https://www.scouting.org/cub-scout-adventures/my-community/
   required: true
