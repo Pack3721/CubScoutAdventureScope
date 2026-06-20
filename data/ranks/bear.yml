@@ -432,6 +432,9 @@ adventure_list:
     - name: salmon-run#5
       description: Attempt Scouting America beginner swim test.
       tags: []
+    - name: salmon-run#6
+      description: Demonstrate both a reach rescue and a throw rescue.
+      tags: [first-aid]
 - name: Summertime Fun Bear
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-bear/
   required: false

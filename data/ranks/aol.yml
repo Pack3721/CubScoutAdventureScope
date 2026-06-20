@@ -255,6 +255,9 @@ adventure_list:
     - name: high-tech-outdoors#3
       description: Discuss how technology has improved camping gear.
       tags: [stem, technology]
+    - name: high-tech-outdoors#4
+      description: Think of a way technology can improve camping gear used on one of your outdoor activities.
+      tags: [stem, technology]
 - name: Into the Wild
   url: https://www.scouting.org/cub-scout-adventures/into-the-wild/
   required: false

@@ -46,7 +46,7 @@ adventure_list:
       description: Do a relaxing activity for 10 minutes.
       tags: []
     - name: stronger-faster-higher#5
-      description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
+      description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in den and pack activities.
       tags: [at-home]
 - name: My Safety
   url: https://www.scouting.org/cub-scout-adventures/my-safety/
@@ -77,7 +77,7 @@ adventure_list:
       description: Carry out an act of kindness.
       tags: []
     - name: my-family#3
-      description: With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs.
+      description: With your parent or legal guardian identify a religion or faith that is different from your own. Identify two things that it has in common with your family’s beliefs.
       tags: []
     - name: my-family#4
       description: Discuss with your parent or legal guardian what it means to be reverent. Tell how you practice being reverent in your daily life.
@@ -144,6 +144,9 @@ adventure_list:
       tags: []
     - name: aquanaut#5
       description: Attempt Scouting America swimmer test.
+      tags: []
+    - name: aquanaut#6
+      description: Have 30 minutes, or more, of free swim time where you practice the Buddy System and stay within your ability group. The qualified adult supervision should conduct at least three buddy checks per half hour swimming.
       tags: []
 - name: Art Explosion
   url: https://www.scouting.org/cub-scout-adventures/art-explosion/

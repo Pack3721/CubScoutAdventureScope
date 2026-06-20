@@ -99,7 +99,7 @@ adventure_list:
       description: Identify the Cub Scout Six Essentials. Show what you do with each item.
       tags: [six-essentials]
     - name: tigers-in-the-wild#2
-      description: With your Tiger adult partner, learn about the Outdoor Code.
+      description: With your den leader or Tiger adult partner, learn about the Outdoor Code.
       tags: [outdoor-code]
     - name: tigers-in-the-wild#3
       description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Tiger adult partner that are natural and things that are manmade.
@@ -125,7 +125,7 @@ adventure_list:
       description: Discover what happens to the garbage in your community.
       tags: [conservation]
     - name: champions-for-nature-tiger#4
-      description: Participate in a conservation service project.
+      description: Participate in a conservation project.
       tags: [service-project, conservation]
 - name: Curiosity, Intrigue, and Magical Mysteries
   url: https://www.scouting.org/cub-scout-adventures/curiosity-intrigue-and-magical-mysteries/
