@@ -87,7 +87,7 @@ adventure_list:
       tags: [guest-speaker]
     - name: duty-to-god#3
       description: Discuss with your parent, legal guardian, or an adult leader what "Duty to God" means to you. Tell how you practice your Duty to God in your daily life.
-      tags: []
+      tags: [at-home]
 - name: Citizenship
   url: https://www.scouting.org/cub-scout-adventures/citizenship/
   required: true
