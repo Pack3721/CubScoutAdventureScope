@@ -47,7 +47,7 @@ adventure_list:
       tags: []
     - name: stronger-faster-higher#5
       description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in den and pack activities.
-      tags: [at-home]
+      tags: [first-aid, at-home]
 - name: My Safety
   url: https://www.scouting.org/cub-scout-adventures/my-safety/
   required: true
