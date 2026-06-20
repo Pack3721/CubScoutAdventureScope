@@ -159,7 +159,7 @@ adventure_list:
   requirements:
     - name: cycling#1
       description: Decide on gear and supplies you should bring might bring for a long bike ride. Determine how to safely carry the gear.
-      tags: []
+      tags: [packing, safety]
     - name: cycling#2
       description: Discover how multi-gear bicycles work and their benefit.
       tags: []

@@ -395,7 +395,7 @@ adventure_list:
   requirements:
     - name: pedal-away#1
       description: Decide  on gear and supplies you should bring for a long bike ride.
-      tags: []
+      tags: [packing]
     - name: pedal-away#2
       description: Discover how multi-gear bicycles work and how they benefit a rider.
       tags: []

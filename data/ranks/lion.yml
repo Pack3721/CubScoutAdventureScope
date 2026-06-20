@@ -192,7 +192,7 @@ adventure_list:
   requirements:
     - name: ill-do-it-myself#1
       description: Make and use a "lion bag" for personal Scouting gear.
-      tags: []
+      tags: [packing]
     - name: ill-do-it-myself#2
       description: Construct a personal care checklist.
       tags: []
