@@ -309,7 +309,7 @@ adventure_list:
       tags: [stem, science, science-nature]
     - name: sky-is-the-limit#4
       description: Create a homemade model of a constellation.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, art, art-craft]
 - name: Stories in Shapes
   url: https://www.scouting.org/cub-scout-adventures/stories-in-shapes/
   required: false
