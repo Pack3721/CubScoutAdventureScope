@@ -27,7 +27,7 @@ adventure_list:
       tags: []
     - name: bobcat-arrow-of-light#7
       description: With your patrol, or with your parent/legal guardian, visit a Scouting America troop.
-      tags: [site-visit]
+      tags: [site-visit, at-home]
     - name: bobcat-arrow-of-light#8
       description: 'At home, with your parent or legal guardian do the activities in the booklet "How to Protect Your Children from Child Abuse: A Parent’s Guide."'
       tags: [at-home,safety]
@@ -265,7 +265,7 @@ adventure_list:
   requirements:
     - name: into-the-wild#1
       description: Visit a place with a variety of wild animals. Select one of the animals and observe its behavior. Use your selected animal to complete the remaining requirements.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, site-visit]
     - name: into-the-wild#2
       description: Create a model of your animal's ecosystem.
       tags: [stem, science, science-nature]
@@ -285,7 +285,7 @@ adventure_list:
   requirements:
     - name: into-the-woods#1
       description: Visit an area with trees and plants and conduct a tree inventory. Select one tree and complete the remaining requirements based on that tree.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, site-visit]
     - name: into-the-woods#2
       description: Determine if your tree is deciduous or evergreen.
       tags: [stem, science, science-nature]

@@ -78,7 +78,7 @@ adventure_list:
       tags: [art, at-home]
     - name: footsteps#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
-      tags: [site-visit]
+      tags: [site-visit, at-home]
     - name: footsteps#3
       description: Carry out an act of kindness.
       tags: []
@@ -368,7 +368,7 @@ adventure_list:
       tags: [sport, be-active, game, game-team]
     - name: paws-of-skill#3
       description: Visit or watch a team sporting event with your family or den. Look for ways the team works together and share with your family or den.
-      tags: [sport]
+      tags: [sport, site-visit]
 - name: Pedal With the Pack
   url: https://www.scouting.org/cub-scout-adventures/pedal-with-the-pack/
   required: false

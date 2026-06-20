@@ -78,7 +78,7 @@ adventure_list:
       tags: [at-home]
     - name: fellowship#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses reverence.
-      tags: [site-visit]
+      tags: [site-visit, at-home]
     - name: fellowship#3
       description: Carry out an act of kindness.
       tags: []

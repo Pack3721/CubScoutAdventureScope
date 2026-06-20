@@ -63,7 +63,7 @@ adventure_list:
       tags: [art, at-home]
     - name: lions-pride#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
-      tags: [site-visit]
+      tags: [site-visit, at-home]
     - name: lions-pride#3
       description: Make a cheerful card or a drawing for someone you love and give it to them.
       tags: [art]
@@ -285,7 +285,7 @@ adventure_list:
       tags: []
     - name: ready-set-grow#3
       description: Visit with an individual who can demonstrate different ways to garden (outside, greenhouse, container, etc.) and the basic skills needed to garden.
-      tags: [guest-speaker]
+      tags: [guest-speaker, site-visit]
 - name: Time to Swim
   url: https://www.scouting.org/cub-scout-adventures/time-to-swim/
   required: false

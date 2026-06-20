@@ -69,7 +69,7 @@ adventure_list:
       tags: [art, at-home]
     - name: tiger-circles#2
       description: With your family, attend a religious service OR other gathering that shows how your family expresses Family & Reverence.
-      tags: [site-visit]
+      tags: [site-visit, at-home]
     - name: tiger-circles#3
       description: Carry out an act of kindness.
       tags: []
@@ -292,7 +292,7 @@ adventure_list:
       tags: [fire-safety]
     - name: safe-and-smart#7
       description: Visit an emergency responder station or have an emergency responder visit your den.
-      tags: [first-aid]
+      tags: [first-aid, site-visit, guest-speaker]
 - name: Sky is the Limit
   url: https://www.scouting.org/cub-scout-adventures/sky-is-the-limit/
   required: false
@@ -366,7 +366,7 @@ adventure_list:
       tags: [sport, game]
     - name: tiger-tag#4
       description: Attend a sporting event.
-      tags: [sport]
+      tags: [sport, site-visit]
 - name: Tiger-iffic!
   url: https://www.scouting.org/cub-scout-adventures/tiger-iffic/
   required: false
