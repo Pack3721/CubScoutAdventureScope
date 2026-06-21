@@ -95,19 +95,19 @@ adventure_list:
       tags: [civics, civics-flag-ceremony]
     - name: council-fire#2
       description: Identify three points of the Scout Law that are important to being a good neighbor.
-      tags: [inclusion]
+      tags: [inclusion, civics]
     - name: council-fire#3
       description: Build a model of your home.
       tags: [stem, engineering]
     - name: council-fire#4
       description: Using the same materials from requirement 3, create a model of a building in your community.
-      tags: [stem, engineering]
+      tags: [stem, engineering, civics]
     - name: council-fire#5
       description: Using the models built in requirements 3 and 4, create a neighborhood.
-      tags: []
+      tags: [civics]
     - name: council-fire#6
       description: Participate in a service project. Explain how your volunteering is helpful to your neighborhood.
-      tags: [service-project]
+      tags: [service-project, civics]
 - name: Paws on the Path
   url: https://www.scouting.org/cub-scout-adventures/paws-on-the-path/
   required: true

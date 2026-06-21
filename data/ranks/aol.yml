@@ -95,10 +95,10 @@ adventure_list:
   requirements:
     - name: citizenship#1
       description: Identify a community service project that your patrol or pack could accomplish. Use Scouting America's SAFE Checklist and develop a plan to conduct the service project safely.
-      tags: [service-project, safety]
+      tags: [service-project, safety, civics]
     - name: citizenship#2
       description: Participate in a service project for a minimum of two hours or multiple service projects for a total of two hours.
-      tags: [service-project]
+      tags: [service-project, civics]
 - name: Outdoor Adventurer
   url: https://www.scouting.org/cub-scout-adventures/outdoor-adventurer/
   required: true
