@@ -47,7 +47,7 @@ adventure_list:
       tags: []
     - name: stronger-faster-higher#5
       description: Review your Scouting America Annual Health and Medical Record with your parent or legal guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid, at-home]
+      tags: [camp, camp-prep, first-aid, at-home]
 - name: My Safety
   url: https://www.scouting.org/cub-scout-adventures/my-safety/
   required: true
@@ -294,31 +294,31 @@ adventure_list:
   requirements:
     - name: lets-camp-webelos#1
       description: With your den, pack, or family, plan and participate in a campout.
-      tags: [campout]
+      tags: [camp, camp-overnight]
     - name: lets-camp-webelos#2
       description: Upon arrival at the campground, determine where to set up a tent.
-      tags: [tent]
+      tags: [camp, camp-tent]
     - name: lets-camp-webelos#3
       description: Set up your tent without help from an adult.
-      tags: [tent]
+      tags: [camp, camp-tent]
     - name: lets-camp-webelos#4
       description: Identify a potential weather hazard that could occur in your area.  Determine the action you will take if you experience the weather hazard during the campout.
-      tags: [weather, safety]
+      tags: [camp, weather, safety]
     - name: lets-camp-webelos#5
       description: Show how to tie a bowline.  Explain when this knot should be used and why.
-      tags: [knots]
+      tags: [camp, knots]
     - name: lets-camp-webelos#6
       description: Know the fire safety rules. Using those rules, locate a safe area to build a campfire.
-      tags: [safety, safety-fire]
+      tags: [camp, safety, safety-fire]
     - name: lets-camp-webelos#7
       description: Using tinder, kindling, and fuel wood, properly build a teepee fire lay. If circumstances permit, and there is no local restriction on fires, show how to safely light the fire while under adult supervision. After allowing the fire to burn safely, extinguish the flames with minimal impact to the fire site.
-      tags: [safety, safety-fire]
+      tags: [camp, safety, safety-fire]
     - name: lets-camp-webelos#8
       description: Recite the Outdoor Code and Leave No Trace Principles for Kids from Memory.
-      tags: [outdoor-code]
+      tags: [camp, outdoor-code]
     - name: lets-camp-webelos#9
       description: After your campout, share the things you did to follow the Outdoor Code and Leave No Trace Principles for Kids with your den or family.
-      tags: [outdoor-code]
+      tags: [camp, outdoor-code]
 - name: Math on the Trail
   url: https://www.scouting.org/cub-scout-adventures/math-on-the-trail/
   required: false

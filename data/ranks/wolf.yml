@@ -50,7 +50,7 @@ adventure_list:
       tags: []
     - name: running-with-the-pack#6
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid, at-home]
+      tags: [camp, camp-prep, first-aid, at-home]
 - name: Safety in Numbers
   url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
   required: true
@@ -320,19 +320,19 @@ adventure_list:
   requirements:
     - name: lets-camp-wolf#1
       description: Learn about the buddy system and how it works in the outdoors.
-      tags: [buddy-system]
+      tags: [camp, buddy-system]
     - name: lets-camp-wolf#2
       description: Know the Cub Scout Six Essentials.
-      tags: [six-essentials]
+      tags: [camp, camp-prep, six-essentials]
     - name: lets-camp-wolf#3
       description: In addition to your Cub Scout Six Essentials, list the personal items you need for your campout.
-      tags: [six-essentials, packing]
+      tags: [camp, camp-prep, six-essentials, packing]
     - name: lets-camp-wolf#4
       description: Learn a camping skill.
-      tags: [tent, knots]
+      tags: [camp, camp-tent, knots]
     - name: lets-camp-wolf#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: [campout]
+      tags: [camp, camp-overnight]
 - name: Paws for Water
   url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
   required: false
