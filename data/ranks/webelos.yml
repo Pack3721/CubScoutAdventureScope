@@ -147,7 +147,7 @@ adventure_list:
       tags: []
     - name: aquanaut#6
       description: Have 30 minutes, or more, of free swim time where you practice the Buddy System and stay within your ability group. The qualified adult supervision should conduct at least three buddy checks per half hour swimming.
-      tags: []
+      tags: [buddy-system]
 - name: Art Explosion
   url: https://www.scouting.org/cub-scout-adventures/art-explosion/
   required: false
@@ -411,7 +411,7 @@ adventure_list:
       tags: []
     - name: pedal-away#6
       description: With your den, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 5 miles.
-      tags: []
+      tags: [buddy-system]
 - name: Race Time Webelos
   url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
   required: false

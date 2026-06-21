@@ -249,7 +249,7 @@ adventure_list:
       tags: []
     - name: bears-on-bikes#7
       description: With your family, den, or pack, follow the buddy system and go on a 30-minute bike ride.
-      tags: []
+      tags: [buddy-system]
 - name: Champions for Nature Bear
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-bear/
   required: false
@@ -426,10 +426,10 @@ adventure_list:
       tags: []
     - name: salmon-run#3
       description: Go swimming with your den, pack, or family for 30 minutes using the buddy system.
-      tags: []
+      tags: [buddy-system]
     - name: salmon-run#4
       description: Demonstrate the use the buddy system, buddy checks, and ability groups with your den or an adult.
-      tags: []
+      tags: [buddy-system]
     - name: salmon-run#5
       description: Attempt Scouting America beginner swim test.
       tags: []
