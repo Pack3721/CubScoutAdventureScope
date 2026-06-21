@@ -64,7 +64,7 @@ adventure_list:
       tags: [safety, safety-personal]
     - name: standing-tall#3
       description: With your parent or legal guardian, set up a family policy for digital devices.
-      tags: [at-home, technology]
+      tags: [at-home, stem, technology]
     - name: standing-tall#4
       description: Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity.
       tags: [safety]
@@ -185,19 +185,19 @@ adventure_list:
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools, safety, engineering]
+      tags: [tools, safety, stem, engineering]
     - name: baloo-the-builder#2
       description: Practice using four of the tools you learned about in requirement 1.
-      tags: [tools, engineering]
+      tags: [tools, stem, engineering]
     - name: baloo-the-builder#3
       description: Choose a project to build.
-      tags: [engineering]
+      tags: [stem, engineering]
     - name: baloo-the-builder#4
       description: Determine the tools and materials needed to build your project in requirement 3.
-      tags: [tools, engineering]
+      tags: [tools, stem, engineering]
     - name: baloo-the-builder#5
       description: Build your project.
-      tags: [engineering]
+      tags: [stem, engineering]
 - name: Bears Afloat
   url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
   required: false

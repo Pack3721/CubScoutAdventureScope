@@ -189,7 +189,7 @@ adventure_list:
       tags: [stem, science]
     - name: floats-and-boats#2
       description: Identify five things that float and five things that do not float.
-      tags: [stem, science-physical]
+      tags: [stem, science, science-physical]
     - name: floats-and-boats#3
       description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
       tags: [stem, engineering]

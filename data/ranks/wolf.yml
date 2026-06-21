@@ -98,10 +98,10 @@ adventure_list:
       tags: [inclusion]
     - name: council-fire#3
       description: Build a model of your home.
-      tags: [engineering]
+      tags: [stem, engineering]
     - name: council-fire#4
       description: Using the same materials from requirement 3, create a model of a building in your community.
-      tags: [engineering]
+      tags: [stem, engineering]
     - name: council-fire#5
       description: Using the models built in requirements 3 and 4, create a neighborhood.
       tags: []
@@ -421,7 +421,7 @@ adventure_list:
   requirements:
     - name: spirit-of-the-water#1
       description: Discover where the water in your home comes from.
-      tags: [stem, science-nature]
+      tags: [stem, science, science-nature]
     - name: spirit-of-the-water#2
       description: Discuss how water can become polluted.
       tags: [conservation]
@@ -430,7 +430,7 @@ adventure_list:
       tags: [conservation]
     - name: spirit-of-the-water#4
       description: Discover how water in your community is treated to become safe to drink.
-      tags: [stem, science-physical]
+      tags: [stem, science, science-physical]
 - name: Summertime Fun Wolf
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
   required: false

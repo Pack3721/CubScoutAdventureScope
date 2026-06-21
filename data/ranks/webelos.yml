@@ -159,7 +159,7 @@ adventure_list:
       tags: [art, art-draw]
     - name: art-explosion#2
       description: Using a digital image, explore the effect of filters by changing an image using different editing or in-camera techniques.
-      tags: [art, technology]
+      tags: [art, stem, technology]
     - name: art-explosion#3
       description: Create a piece of art using paint as your medium.
       tags: [art, art-draw]
@@ -191,16 +191,16 @@ adventure_list:
   requirements:
     - name: build-it#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools, safety, engineering]
+      tags: [tools, safety, stem, engineering]
     - name: build-it#2
       description: Demonstrate  how to check for plumb, level, and square when building.
-      tags: [tools, engineering]
+      tags: [tools, stem, engineering]
     - name: build-it#3
       description: With the guidance of your Webelos den leader, parent, or legal guardian, select a carpentry project that requires it to be either plumb, level, and/or square.  Create a list of materials and tools you will need to complete the project.
-      tags: [tools, engineering]
+      tags: [tools, stem, engineering]
     - name: build-it#4
       description: Build  your carpentry project.
-      tags: [engineering]
+      tags: [stem, engineering]
 - name: Catch the Big One
   stem_nova: [Nova WILD!]
   url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
