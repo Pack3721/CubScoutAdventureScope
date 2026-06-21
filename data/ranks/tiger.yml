@@ -83,7 +83,7 @@ adventure_list:
       tags: [game]
     - name: team-tiger#2
       description: With your Tiger Adult Partner, choose a job that will help your team. Follow through by doing that job at least once.
-      tags: [flag-ceremony]
+      tags: [civics, civics-flag-ceremony, food-prep-meal]
     - name: team-tiger#3
       description: Play a game that requires at least 2 teams with your den, or two other family members. Afterwards discuss what it means to be part of a team and what makes a good team member.
       tags: [game-team, game]
@@ -103,7 +103,7 @@ adventure_list:
       tags: [outdoor-code]
     - name: tigers-in-the-wild#3
       description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Tiger adult partner that are natural and things that are manmade.
-      tags: [six-essentials,walk]
+      tags: [six-essentials,walk-hike]
     - name: tigers-in-the-wild#4
       description: Identify common animals that are found where you live. Learn which of those animals is domesticated and which animal is wild. Draw a picture of your favorite animal.
       tags: [art, art-draw]
@@ -120,7 +120,7 @@ adventure_list:
       tags: [conservation]
     - name: champions-for-nature-tiger#2
       description: Learn about the 3 R's; Reduce, Reuse, Recycle.
-      tags: [conservation]
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-tiger#3
       description: Discover what happens to the garbage in your community.
       tags: [conservation]
@@ -139,10 +139,10 @@ adventure_list:
       tags: [art, art-performance]
     - name: curiosity-intrigue-and-magical-mysteries#3
       description: Write your name in secret code.
-      tags: [codes]
+      tags: [codes-patterns]
     - name: curiosity-intrigue-and-magical-mysteries#4
       description: Write a message with the code. Challenge your den, family or Tiger adult partner to read your coded message.
-      tags: [codes]
+      tags: [codes-patterns]
 - name: Designed by Tiger
   url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
   required: false
@@ -156,7 +156,7 @@ adventure_list:
       tags: [stem, engineering]
     - name: designed-by-tiger#3
       description: When completed, discuss with your Tiger adult partner what could be done to improve your project.
-      tags: [stem]
+      tags: [stem, engineering]
     - name: designed-by-tiger#4
       description: Make the improvement to your project.
       tags: [stem, engineering]
@@ -189,10 +189,10 @@ adventure_list:
       tags: [stem, science]
     - name: floats-and-boats#2
       description: Identify five things that float and five things that do not float.
-      tags: [stem, science-physical]
+      tags: [stem, science, science-physical]
     - name: floats-and-boats#3
       description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
-      tags: [stem, engineering]
+      tags: [stem, engineering, conservation, conservation-recycle]
     - name: floats-and-boats#4
       description: Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat.
       tags: [safety, safety-water]
@@ -208,7 +208,7 @@ adventure_list:
       tags: [art, art-craft]
     - name: good-knights#3
       description: Using recycled and other materials, design and build a small castle in your den or at home.
-      tags: []
+      tags: [stem, engineering, conservation, conservation-recycle]
     - name: good-knights#4
       description: Do a Good Turn.
       tags: [good-turn]
@@ -219,19 +219,19 @@ adventure_list:
   requirements:
     - name: lets-camp-tiger#1
       description: Learn about the buddy system and how it works in the outdoors.
-      tags: [buddy-system]
+      tags: [camp, buddy-system]
     - name: lets-camp-tiger#2
       description: Before going on the overnight campout, discuss what type of weather is expected and what type of clothes you should wear.
-      tags: [packing, weather]
+      tags: [camp, camp-prep, packing, weather]
     - name: lets-camp-tiger#3
       description: Pack up your Cub Scout Six Essentials for the campout.
-      tags: [packing]
+      tags: [camp, camp-prep, packing]
     - name: lets-camp-tiger#4
       description: Learn a camping skill.
-      tags: [tent, knots]
+      tags: [camp, camp-tent, knots]
     - name: lets-camp-tiger#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: [campout]
+      tags: [camp, camp-overnight]
 - name: Race Time Tiger
   url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
   required: false
@@ -239,7 +239,7 @@ adventure_list:
   requirements:
     - name: race-time-tiger#1
       description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: [art, art-craft]
+      tags: [stem, engineering, art, art-craft]
     - name: race-time-tiger#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []
@@ -306,7 +306,7 @@ adventure_list:
       tags: [stem, science, science-nature]
     - name: sky-is-the-limit#3
       description: Observe in the sky or select from a book, chart, computer, or electronic device two constellations that are easy to see in the night sky. With your den or Tiger adult partner, find out the constellation name and how to identify them. Create a picture of one of the constellations.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, technology]
     - name: sky-is-the-limit#4
       description: Create a homemade model of a constellation.
       tags: [stem, science, science-nature, art, art-craft]

@@ -50,7 +50,7 @@ adventure_list:
       tags: []
     - name: bear-strong#5
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid, at-home]
+      tags: [camp, camp-prep, first-aid, at-home]
 - name: Standing Tall
   url: https://www.scouting.org/cub-scout-adventures/standing-tall/
   required: true
@@ -64,7 +64,7 @@ adventure_list:
       tags: [safety, safety-personal]
     - name: standing-tall#3
       description: With your parent or legal guardian, set up a family policy for digital devices.
-      tags: [at-home, technology]
+      tags: [at-home, stem, technology]
     - name: standing-tall#4
       description: Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity.
       tags: [safety]
@@ -92,7 +92,7 @@ adventure_list:
   requirements:
     - name: paws-for-action#1
       description: Familiarize yourself with the flag of the United States of America including the history, demonstrating how to raise and lower the flag, how to properly fold and display, and the United States etiquette.
-      tags: [flag-ceremony]
+      tags: [civics, civics-flag-ceremony]
     - name: paws-for-action#2
       description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
       tags: [art, art-craft]
@@ -109,31 +109,31 @@ adventure_list:
   requirements:
     - name: bear-habitat#1
       description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-      tags: [six-essentials, walk, weather, packing]
+      tags: [six-essentials, walk-hike, weather, packing]
     - name: bear-habitat#2
       description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
-      tags: [walk, map-compass]
+      tags: [walk-hike, map-compass]
     - name: bear-habitat#3
       description: '"Choose the Right Path" Learn about the path and surrounding area you will be walking on.'
-      tags: [walk]
+      tags: [walk-hike]
     - name: bear-habitat#4
       description: '"Trash your Trash" Make a plan for what you will do with your personal trash or trash you find along the trail.'
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#5
       description: '"Leave What You Find" Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.'
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#6
       description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
-      tags: [safety, safety-fire,outdoor-code]
+      tags: [safety, safety-fire, outdoor-code, conservation, walk-hike]
     - name: bear-habitat#7
       description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#8
       description: '"Be Kind to Other Visitors" Identify what you need to do as a den to be kind to others on the path.'
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#9
       description: Go on your one-mile walk while practicing your Leave No Trace Principles for Kids.
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code, conservation]
 
 - name: A Bear Goes Fishing
   url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
@@ -167,16 +167,16 @@ adventure_list:
   requirements:
     - name: balancing-bears#1
       description: Make trail mix using trail mix math.
-      tags: [stem, science, science-nature, food]
+      tags: [stem, science, science-nature, food, mathematics]
     - name: balancing-bears#2
       description: Identify an animal that has a pattern to its physical appearance. Investigate how the animal uses its pattern.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, mathematics]
     - name: balancing-bears#3
       description: Find  examples of bilateral symmetry in nature.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, mathematics]
     - name: balancing-bears#4
       description: Find examples of radial symmetry in nature.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, mathematics]
 - name: Baloo the Builder
   url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
   required: false
@@ -185,19 +185,19 @@ adventure_list:
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools, safety]
+      tags: [tools, safety, stem, engineering]
     - name: baloo-the-builder#2
       description: Practice using four of the tools you learned about in requirement 1.
-      tags: [tools]
+      tags: [tools, stem, engineering]
     - name: baloo-the-builder#3
       description: Choose a project to build.
-      tags: []
+      tags: [stem, engineering]
     - name: baloo-the-builder#4
       description: Determine the tools and materials needed to build your project in requirement 3.
-      tags: [tools]
+      tags: [tools, stem, engineering]
     - name: baloo-the-builder#5
       description: Build your project.
-      tags: []
+      tags: [stem, engineering]
 - name: Bears Afloat
   url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
   required: false
@@ -340,19 +340,19 @@ adventure_list:
   requirements:
     - name: lets-camp-bear#1
       description: Review the buddy system and how it works in the outdoors.
-      tags: [buddy-system]
+      tags: [camp, buddy-system]
     - name: lets-camp-bear#2
       description: Pack your Cub Scout Six Essentials for the campout.
-      tags: [six-essentials, packing]
+      tags: [camp, camp-prep, six-essentials, packing]
     - name: lets-camp-bear#3
       description: In addition to your Cub Scout Six Essentials, show the personal items you need for your campout.
-      tags: [six-essentials, packing]
+      tags: [camp, camp-prep, six-essentials, packing]
     - name: lets-camp-bear#4
       description: Help set up a tent.  Determine a good spot for the tent.  Explain why you picked the spot.
-      tags: [tent]
+      tags: [camp, camp-tent]
     - name: lets-camp-bear#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: [campout]
+      tags: [camp, camp-overnight]
 - name: Marble Madness
   url: https://www.scouting.org/cub-scout-adventures/marble-madness/
   required: false
@@ -381,7 +381,7 @@ adventure_list:
   requirements:
     - name: race-time-bear#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-bear#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []

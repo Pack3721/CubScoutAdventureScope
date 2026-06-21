@@ -50,7 +50,7 @@ adventure_list:
       tags: []
     - name: running-with-the-pack#6
       description: Review your Scouting America Annual Health and Medical record with your parent or guardian. Discuss your ability to participate in den and pack activities.
-      tags: [first-aid, at-home]
+      tags: [camp, camp-prep, first-aid, at-home]
 - name: Safety in Numbers
   url: https://www.scouting.org/cub-scout-adventures/safety-in-numbers/
   required: true
@@ -92,22 +92,22 @@ adventure_list:
   requirements:
     - name: council-fire#1
       description: Learn how to properly care for and fold the United States flag. With your den or pack, participate in a flag ceremony.
-      tags: [flag-ceremony]
+      tags: [civics, civics-flag-ceremony]
     - name: council-fire#2
       description: Identify three points of the Scout Law that are important to being a good neighbor.
-      tags: [inclusion]
+      tags: [inclusion, civics]
     - name: council-fire#3
       description: Build a model of your home.
-      tags: []
+      tags: [stem, engineering]
     - name: council-fire#4
       description: Using the same materials from requirement 3, create a model of a building in your community.
-      tags: []
+      tags: [stem, engineering, civics]
     - name: council-fire#5
       description: Using the models built in requirements 3 and 4, create a neighborhood.
-      tags: []
+      tags: [civics]
     - name: council-fire#6
       description: Participate in a service project. Explain how your volunteering is helpful to your neighborhood.
-      tags: [service-project]
+      tags: [service-project, civics]
 - name: Paws on the Path
   url: https://www.scouting.org/cub-scout-adventures/paws-on-the-path/
   required: true
@@ -118,16 +118,16 @@ adventure_list:
       tags: [six-essentials]
     - name: paws-on-the-path#2
       description: Learn about the buddy system and how it works in the outdoors. Pick a buddy for your walk.
-      tags: [buddy-system, walk]
+      tags: [buddy-system, walk-hike]
     - name: paws-on-the-path#3
       description: Identify appropriate clothes and shoes for your walk outside. Do your best to wear them on your walk.
-      tags: []
+      tags: [walk-hike]
     - name: paws-on-the-path#4
       description: Learn about the Outdoor Code and Leave No Trace Principle for Kids.
-      tags: [outdoor-code]
+      tags: [outdoor-code, walk-hike]
     - name: paws-on-the-path#5
       description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
-      tags: [six-essentials, walk]
+      tags: [six-essentials, walk-hike]
 - name: A Wolf Goes Fishing
   stem_nova: [Nova WILD!]
   url: https://www.scouting.org/cub-scout-adventures/a-wolf-goes-fishing/
@@ -174,16 +174,16 @@ adventure_list:
   requirements:
     - name: air-of-the-wolf#1
       description: Make a paper airplane and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering, mathematics]
     - name: air-of-the-wolf#2
       description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering, mathematics]
     - name: air-of-the-wolf#3
       description: Compare and contrast the two paper airplanes by distance and flight times.
-      tags: [stem, science, science-physical, game]
+      tags: [stem, science, science-physical, game, mathematics]
     - name: air-of-the-wolf#4
       description: Build a flying object that is not a paper airplane.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering]
 - name: Champions for Nature Wolf
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
   required: false
@@ -194,11 +194,11 @@ adventure_list:
       description: Discover the difference between renewable natural resources and non-renewable natural resources.
       tags: [conservation]
     - name: champions-for-nature-wolf#2
-      description: 'Learn about the 3 R’s: Reduce, Reuse, Recycle.'
-      tags: [conservation]
+      description: ‘Learn about the 3 R’s: Reduce, Reuse, Recycle.’
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-wolf#3
       description: Discover what happens to the recyclables in your community.
-      tags: [conservation]
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-wolf#4
       description: Participate in a conservation project.
       tags: [conservation,service-project]
@@ -210,13 +210,13 @@ adventure_list:
   requirements:
     - name: code-of-the-wolf#1
       description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
-      tags: [codes, stem, mathematics]
+      tags: [codes-patterns, stem, mathematics]
     - name: code-of-the-wolf#2
-      description: Build and play a game that requires the use of codes or patterns.
-      tags: [game-create, game-indoor, codes, stem, mathematics, game]
+      description: Build and play a game that requires the use of codes-patterns or patterns.
+      tags: [game-create, game-indoor, codes-patterns, stem, mathematics, game]
     - name: code-of-the-wolf#3
       description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
-      tags: [stem, mathematics]
+      tags: [codes-patterns, stem, mathematics]
     - name: code-of-the-wolf#4
       description: Using a package that contains a number of different colored items, discover the most common color.
       tags: [stem, mathematics]
@@ -320,19 +320,19 @@ adventure_list:
   requirements:
     - name: lets-camp-wolf#1
       description: Learn about the buddy system and how it works in the outdoors.
-      tags: [buddy-system]
+      tags: [camp, buddy-system]
     - name: lets-camp-wolf#2
       description: Know the Cub Scout Six Essentials.
-      tags: [six-essentials]
+      tags: [camp, camp-prep, six-essentials]
     - name: lets-camp-wolf#3
       description: In addition to your Cub Scout Six Essentials, list the personal items you need for your campout.
-      tags: [six-essentials, packing]
+      tags: [camp, camp-prep, six-essentials, packing]
     - name: lets-camp-wolf#4
       description: Learn a camping skill.
-      tags: [tent, knots]
+      tags: [camp, camp-tent, knots]
     - name: lets-camp-wolf#5
       description: Attend a council or district Cub Scout overnight camp or attend a campout with your pack.
-      tags: [campout]
+      tags: [camp, camp-overnight]
 - name: Paws for Water
   url: https://www.scouting.org/cub-scout-adventures/paws-for-water/
   required: false
@@ -401,7 +401,7 @@ adventure_list:
   requirements:
     - name: race-time-wolf#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-wolf#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []
@@ -421,7 +421,7 @@ adventure_list:
   requirements:
     - name: spirit-of-the-water#1
       description: Discover where the water in your home comes from.
-      tags: [stem, science-nature]
+      tags: [stem, science, science-nature]
     - name: spirit-of-the-water#2
       description: Discuss how water can become polluted.
       tags: [conservation]
@@ -430,7 +430,7 @@ adventure_list:
       tags: [conservation]
     - name: spirit-of-the-water#4
       description: Discover how water in your community is treated to become safe to drink.
-      tags: [stem, science-physical]
+      tags: [stem, science, science-physical]
 - name: Summertime Fun Wolf
   url: https://www.scouting.org/cub-scout-adventures/summertime-fun-wolf/
   required: false
