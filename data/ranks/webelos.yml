@@ -191,16 +191,16 @@ adventure_list:
   requirements:
     - name: build-it#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools, safety]
+      tags: [tools, safety, engineering]
     - name: build-it#2
       description: Demonstrate  how to check for plumb, level, and square when building.
-      tags: [tools]
+      tags: [tools, engineering]
     - name: build-it#3
       description: With the guidance of your Webelos den leader, parent, or legal guardian, select a carpentry project that requires it to be either plumb, level, and/or square.  Create a list of materials and tools you will need to complete the project.
-      tags: [tools]
+      tags: [tools, engineering]
     - name: build-it#4
       description: Build  your carpentry project.
-      tags: []
+      tags: [engineering]
 - name: Catch the Big One
   stem_nova: [Nova WILD!]
   url: https://www.scouting.org/cub-scout-adventures/catch-the-big-one/
@@ -420,7 +420,7 @@ adventure_list:
   requirements:
     - name: race-time-webelos#1
       description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-webelos#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []

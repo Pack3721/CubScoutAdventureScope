@@ -156,7 +156,7 @@ adventure_list:
       tags: [stem, engineering]
     - name: designed-by-tiger#3
       description: When completed, discuss with your Tiger adult partner what could be done to improve your project.
-      tags: [stem]
+      tags: [stem, engineering]
     - name: designed-by-tiger#4
       description: Make the improvement to your project.
       tags: [stem, engineering]
@@ -208,7 +208,7 @@ adventure_list:
       tags: [art, art-craft]
     - name: good-knights#3
       description: Using recycled and other materials, design and build a small castle in your den or at home.
-      tags: []
+      tags: [stem, engineering]
     - name: good-knights#4
       description: Do a Good Turn.
       tags: [good-turn]
@@ -239,7 +239,7 @@ adventure_list:
   requirements:
     - name: race-time-tiger#1
       description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: [art, art-craft]
+      tags: [stem, engineering, art, art-craft]
     - name: race-time-tiger#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []

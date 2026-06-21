@@ -359,7 +359,7 @@ adventure_list:
   requirements:
     - name: race-time-aol#1
       description: With adult supervision, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-aol#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []

@@ -243,7 +243,7 @@ adventure_list:
       tags: [game, be-active, game-team]
     - name: on-your-mark#3
       description: Build a box derby and participate in a race.
-      tags: []
+      tags: [stem, engineering]
 - name: Pick My Path
   url: https://www.scouting.org/cub-scout-adventures/pick-my-path-lion/
   required: false
@@ -264,7 +264,7 @@ adventure_list:
   requirements:
     - name: race-time-lion#1
       description: With your Lion adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: [art, art-craft]
+      tags: [stem, engineering, art, art-craft]
     - name: race-time-lion#2
       description: Learn the rules of the race for the vehicle chosen in Requirement 1.
       tags: []

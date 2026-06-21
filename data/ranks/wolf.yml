@@ -98,10 +98,10 @@ adventure_list:
       tags: [inclusion]
     - name: council-fire#3
       description: Build a model of your home.
-      tags: []
+      tags: [engineering]
     - name: council-fire#4
       description: Using the same materials from requirement 3, create a model of a building in your community.
-      tags: []
+      tags: [engineering]
     - name: council-fire#5
       description: Using the models built in requirements 3 and 4, create a neighborhood.
       tags: []
@@ -174,16 +174,16 @@ adventure_list:
   requirements:
     - name: air-of-the-wolf#1
       description: Make a paper airplane and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering]
     - name: air-of-the-wolf#2
       description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering]
     - name: air-of-the-wolf#3
       description: Compare and contrast the two paper airplanes by distance and flight times.
       tags: [stem, science, science-physical, game]
     - name: air-of-the-wolf#4
       description: Build a flying object that is not a paper airplane.
-      tags: [stem, science, science-physical]
+      tags: [stem, science, science-physical, engineering]
 - name: Champions for Nature Wolf
   url: https://www.scouting.org/cub-scout-adventures/champions-for-nature-wolf/
   required: false
@@ -401,7 +401,7 @@ adventure_list:
   requirements:
     - name: race-time-wolf#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-wolf#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []

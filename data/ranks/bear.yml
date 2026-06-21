@@ -185,19 +185,19 @@ adventure_list:
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
-      tags: [tools, safety]
+      tags: [tools, safety, engineering]
     - name: baloo-the-builder#2
       description: Practice using four of the tools you learned about in requirement 1.
-      tags: [tools]
+      tags: [tools, engineering]
     - name: baloo-the-builder#3
       description: Choose a project to build.
-      tags: []
+      tags: [engineering]
     - name: baloo-the-builder#4
       description: Determine the tools and materials needed to build your project in requirement 3.
-      tags: [tools]
+      tags: [tools, engineering]
     - name: baloo-the-builder#5
       description: Build your project.
-      tags: []
+      tags: [engineering]
 - name: Bears Afloat
   url: https://www.scouting.org/cub-scout-adventures/bears-afloat/
   required: false
@@ -381,7 +381,7 @@ adventure_list:
   requirements:
     - name: race-time-bear#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.
-      tags: []
+      tags: [stem, engineering]
     - name: race-time-bear#2
       description: Learn the rules of the race for the vehicle chosen in requirement 1.
       tags: []
