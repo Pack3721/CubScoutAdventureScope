@@ -121,10 +121,10 @@ adventure_list:
       tags: [buddy-system, walk-hike]
     - name: paws-on-the-path#3
       description: Identify appropriate clothes and shoes for your walk outside. Do your best to wear them on your walk.
-      tags: []
+      tags: [walk-hike]
     - name: paws-on-the-path#4
       description: Learn about the Outdoor Code and Leave No Trace Principle for Kids.
-      tags: [outdoor-code]
+      tags: [outdoor-code, walk-hike]
     - name: paws-on-the-path#5
       description: With your den, pack, or family, take a walk outside for at least 30 minutes to explore nature in your surroundings. Describe four different animals, domestic or wild, that you could see on your walk.
       tags: [six-essentials, walk-hike]

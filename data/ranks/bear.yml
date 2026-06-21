@@ -124,7 +124,7 @@ adventure_list:
       tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#6
       description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
-      tags: [safety, safety-fire, outdoor-code, conservation]
+      tags: [safety, safety-fire, outdoor-code, conservation, walk-hike]
     - name: bear-habitat#7
       description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
       tags: [walk-hike, outdoor-code, conservation]

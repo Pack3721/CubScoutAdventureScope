@@ -327,13 +327,13 @@ adventure_list:
   requirements:
     - name: math-on-the-trail#1
       description: Determine your walking pace by walking ¼ mile.  Make a projection on how long it would take you to walk 2 miles.
-      tags: [stem, mathematics]
+      tags: [stem, mathematics, walk-hike]
     - name: math-on-the-trail#2
       description: Walk 2 miles and record the time it took you to complete the two miles.
       tags: [stem, mathematics, walk-hike]
     - name: math-on-the-trail#3
-      description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
-      tags: [stem, mathematics]
+      description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection.
+      tags: [stem, mathematics, walk-hike]
 - name: Modular Design
   url: https://www.scouting.org/cub-scout-adventures/modular-design/
   required: false
@@ -449,16 +449,16 @@ adventure_list:
   requirements:
     - name: tech-on-the-trail#1
       description: Discuss how technology can help keep you safe in the outdoors.
-      tags: [stem, technology]
+      tags: [stem, technology, walk-hike]
     - name: tech-on-the-trail#2
       description: Explore Global Positioning Satellite and how to use it.
       tags: [stem, technology]
     - name: tech-on-the-trail#3
       description: With an adult, choose an online mapping program tool and plan a 2-mile trek.
-      tags: [stem, technology, map-compass]
+      tags: [stem, technology, map-compass, walk-hike]
     - name: tech-on-the-trail#4
       description: Take your 2-mile trek.
-      tags: [stem, technology]
+      tags: [stem, technology, walk-hike]
 - name: Yo-yo
   url: https://www.scouting.org/cub-scout-adventures/yo-yo/
   required: false
