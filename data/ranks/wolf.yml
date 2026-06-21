@@ -174,13 +174,13 @@ adventure_list:
   requirements:
     - name: air-of-the-wolf#1
       description: Make a paper airplane and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical, engineering]
+      tags: [stem, science, science-physical, engineering, mathematics]
     - name: air-of-the-wolf#2
       description: Make a paper airplane of a different design and fly it five times. Record the flight distance and time.
-      tags: [stem, science, science-physical, engineering]
+      tags: [stem, science, science-physical, engineering, mathematics]
     - name: air-of-the-wolf#3
       description: Compare and contrast the two paper airplanes by distance and flight times.
-      tags: [stem, science, science-physical, game]
+      tags: [stem, science, science-physical, game, mathematics]
     - name: air-of-the-wolf#4
       description: Build a flying object that is not a paper airplane.
       tags: [stem, science, science-physical, engineering]
