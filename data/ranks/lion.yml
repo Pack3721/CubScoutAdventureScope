@@ -94,7 +94,7 @@ adventure_list:
       tags: [six-essentials]
     - name: mountain-lion#2
       description: With your den, pack, or family, take a walk outside spending for at least 20 minutes exploring the outdoors with your Cub Scout Six Essentials. While outside, identify things that you see with your Lion adult partner that are natural and things that are manmade.
-      tags: [six-essentials, walk]
+      tags: [six-essentials, walk-hike]
     - name: mountain-lion#3
       description: Discover what S.A.W. means.
       tags: [six-essentials]

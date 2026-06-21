@@ -106,25 +106,25 @@ adventure_list:
   requirements:
     - name: webelos-walkabout#1
       description: Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes.
-      tags: [six-essentials, walk, weather, packing]
+      tags: [six-essentials, walk-hike, weather, packing]
     - name: webelos-walkabout#2
       description: Plan a 2-mile route for your walk.
-      tags: [walk]
+      tags: [walk-hike]
     - name: webelos-walkabout#3
       description: Check the weather forecast for the time of your planned 2-mile walk.
-      tags: [walk, weather]
+      tags: [walk-hike, weather]
     - name: webelos-walkabout#4
       description: Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk.
-      tags: [walk, safety]
+      tags: [walk-hike, safety]
     - name: webelos-walkabout#5
       description: "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
-      tags: [first-aid, walk]
+      tags: [first-aid, walk-hike]
     - name: webelos-walkabout#6
       description: With your den, pack, or family, go on your 2-mile walk while practicing the Leave No Trace Principles for Kids and Outdoor Code.
-      tags: [walk, outdoor-code]
+      tags: [walk-hike, outdoor-code]
     - name: webelos-walkabout#7
       description: After your 2-mile walk, discuss with your den what went well and what you would do differently next time.
-      tags: [walk]
+      tags: [walk-hike]
 - name: Aquanaut
   url: https://www.scouting.org/cub-scout-adventures/aquanaut/
   required: false
@@ -330,7 +330,7 @@ adventure_list:
       tags: [stem, mathematics]
     - name: math-on-the-trail#2
       description: Walk 2 miles and record the time it took you to complete the two miles.
-      tags: [stem, mathematics, walk]
+      tags: [stem, mathematics, walk-hike]
     - name: math-on-the-trail#3
       description: Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection. 
       tags: [stem, mathematics]

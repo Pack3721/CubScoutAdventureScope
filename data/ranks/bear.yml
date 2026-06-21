@@ -109,31 +109,31 @@ adventure_list:
   requirements:
     - name: bear-habitat#1
       description: Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes.
-      tags: [six-essentials, walk, weather, packing]
+      tags: [six-essentials, walk-hike, weather, packing]
     - name: bear-habitat#2
       description: '"Know Before You Go" Identify the location of your walk on a map and confirm your one-mile route.'
-      tags: [walk, map-compass]
+      tags: [walk-hike, map-compass]
     - name: bear-habitat#3
       description: '"Choose the Right Path" Learn about the path and surrounding area you will be walking on.'
-      tags: [walk]
+      tags: [walk-hike]
     - name: bear-habitat#4
       description: '"Trash your Trash" Make a plan for what you will do with your personal trash or trash you find along the trail.'
-      tags: [walk, outdoor-code, conservation]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#5
       description: '"Leave What You Find" Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk.'
-      tags: [walk, outdoor-code, conservation]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#6
       description: '"Be Careful with Fire" Determine the fire danger rating along your path.'
       tags: [safety, safety-fire, outdoor-code, conservation]
     - name: bear-habitat#7
       description: '"Respect Wildlife" From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles.'
-      tags: [walk, outdoor-code, conservation]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#8
       description: '"Be Kind to Other Visitors" Identify what you need to do as a den to be kind to others on the path.'
-      tags: [walk, outdoor-code, conservation]
+      tags: [walk-hike, outdoor-code, conservation]
     - name: bear-habitat#9
       description: Go on your one-mile walk while practicing your Leave No Trace Principles for Kids.
-      tags: [walk, outdoor-code, conservation]
+      tags: [walk-hike, outdoor-code, conservation]
 
 - name: A Bear Goes Fishing
   url: https://www.scouting.org/cub-scout-adventures/a-bear-goes-fishing/
