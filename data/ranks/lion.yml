@@ -77,7 +77,7 @@ adventure_list:
       tags: [art, art-draw]
     - name: king-of-the-jungle#2
       description: With your Lion adult partner, choose a job that will help your family. Follow through by doing that job at least once.
-      tags: [flag-ceremony, food-prep-meal]
+      tags: [civics, civics-flag-ceremony, food-prep-meal]
     - name: king-of-the-jungle#3
       description: Talk with a grandparent or other older adult about what citizenship means to them.
       tags: [guest-speaker]

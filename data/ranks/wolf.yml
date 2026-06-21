@@ -92,7 +92,7 @@ adventure_list:
   requirements:
     - name: council-fire#1
       description: Learn how to properly care for and fold the United States flag. With your den or pack, participate in a flag ceremony.
-      tags: [flag-ceremony]
+      tags: [civics, civics-flag-ceremony]
     - name: council-fire#2
       description: Identify three points of the Scout Law that are important to being a good neighbor.
       tags: [inclusion]
