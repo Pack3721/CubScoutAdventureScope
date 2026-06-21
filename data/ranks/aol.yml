@@ -124,7 +124,7 @@ adventure_list:
       tags: []
     - name: outdoor-adventurer#7
       description: Explain how to keep food safe and the kitchen area sanitary at the campsite. Demonstrate your knowledge during the campout.
-      tags: [food, safety]
+      tags: [food, safety, food-prep-meal]
     - name: outdoor-adventurer#8
       description: After your campout, discuss with your patrol what went well and what you would do differently next time. Include how you followed the Outdoor Code and Leave No Trace Principles for Kids.
       tags: [outdoor-code]
