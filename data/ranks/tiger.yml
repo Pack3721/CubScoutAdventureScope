@@ -306,7 +306,7 @@ adventure_list:
       tags: [stem, science, science-nature]
     - name: sky-is-the-limit#3
       description: Observe in the sky or select from a book, chart, computer, or electronic device two constellations that are easy to see in the night sky. With your den or Tiger adult partner, find out the constellation name and how to identify them. Create a picture of one of the constellations.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, technology]
     - name: sky-is-the-limit#4
       description: Create a homemade model of a constellation.
       tags: [stem, science, science-nature, art, art-craft]
