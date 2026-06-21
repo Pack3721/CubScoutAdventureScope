@@ -120,7 +120,7 @@ adventure_list:
       tags: [conservation]
     - name: champions-for-nature-tiger#2
       description: Learn about the 3 R's; Reduce, Reuse, Recycle.
-      tags: [conservation]
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-tiger#3
       description: Discover what happens to the garbage in your community.
       tags: [conservation]
@@ -192,7 +192,7 @@ adventure_list:
       tags: [stem, science, science-physical]
     - name: floats-and-boats#3
       description: Build or create a model boat and float it on the water. This can be made from recycled materials or other items.
-      tags: [stem, engineering, conservation]
+      tags: [stem, engineering, conservation, conservation-recycle]
     - name: floats-and-boats#4
       description: Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat.
       tags: [safety, safety-water]
@@ -208,7 +208,7 @@ adventure_list:
       tags: [art, art-craft]
     - name: good-knights#3
       description: Using recycled and other materials, design and build a small castle in your den or at home.
-      tags: [stem, engineering, conservation]
+      tags: [stem, engineering, conservation, conservation-recycle]
     - name: good-knights#4
       description: Do a Good Turn.
       tags: [good-turn]

@@ -128,7 +128,7 @@ adventure_list:
       tags: [conservation]
     - name: champions-for-nature-lion#3
       description: Discover recycling.
-      tags: [conservation]
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-lion#4
       description: Participate in a conservation service project.
       tags: [service-project, conservation]

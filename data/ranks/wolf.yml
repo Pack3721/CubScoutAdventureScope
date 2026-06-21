@@ -194,11 +194,11 @@ adventure_list:
       description: Discover the difference between renewable natural resources and non-renewable natural resources.
       tags: [conservation]
     - name: champions-for-nature-wolf#2
-      description: 'Learn about the 3 R’s: Reduce, Reuse, Recycle.'
-      tags: [conservation]
+      description: ‘Learn about the 3 R’s: Reduce, Reuse, Recycle.’
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-wolf#3
       description: Discover what happens to the recyclables in your community.
-      tags: [conservation]
+      tags: [conservation, conservation-recycle]
     - name: champions-for-nature-wolf#4
       description: Participate in a conservation project.
       tags: [conservation,service-project]
