@@ -275,10 +275,10 @@ adventure_list:
       tags: [stem, science, science-nature]
     - name: into-the-wild#4
       description: Describe how humans interact with your chosen animal's ecosystem.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, conservation]
     - name: into-the-wild#5
       description: Discover how wildlife management benefits your animal.
-      tags: [stem, science, science-nature]
+      tags: [stem, science, science-nature, conservation]
 - name: Into the Woods
   url: https://www.scouting.org/cub-scout-adventures/into-the-woods/
   required: false
