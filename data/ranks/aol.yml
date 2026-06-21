@@ -235,7 +235,7 @@ adventure_list:
       tags: []
     - name: fishing#5
       description: Determine the best type of knot to tie your hook to your line and tie it.
-      tags: []
+      tags: [knots]
     - name: fishing#6
       description: On your own, choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear.
       tags: []
@@ -252,7 +252,7 @@ adventure_list:
       tags: [stem, technology, weather]
     - name: high-tech-outdoors#2
       description: With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app.
-      tags: [stem, technology]
+      tags: [stem, technology, knots]
     - name: high-tech-outdoors#3
       description: Discuss how technology has improved camping gear.
       tags: [stem, technology]

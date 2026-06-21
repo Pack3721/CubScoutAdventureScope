@@ -221,7 +221,7 @@ adventure_list:
       tags: []
     - name: catch-the-big-one#5
       description: Determine the best type of knot to tie your hook to your line and tie it.
-      tags: []
+      tags: [knots]
     - name: catch-the-big-one#6
       description: Choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear.
       tags: []
@@ -475,7 +475,7 @@ adventure_list:
       tags: []
     - name: yo-yo#4
       description: Demonstrate how to properly string a yo-yo and how to create a slip knot
-      tags: []
+      tags: [knots]
     - name: yo-yo#5
       description: Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer.
       tags: [stem, science, science-physical]
