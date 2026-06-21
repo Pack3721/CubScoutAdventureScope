@@ -92,7 +92,7 @@ adventure_list:
   requirements:
     - name: paws-for-action#1
       description: Familiarize yourself with the flag of the United States of America including the history, demonstrating how to raise and lower the flag, how to properly fold and display, and the United States etiquette.
-      tags: [flag-etiquette]
+      tags: [flag-ceremony]
     - name: paws-for-action#2
       description: Identify 3 symbols that represent the United States. Pick your favorite and make a model, work of art, or other craft that depicts the symbol.
       tags: [art, art-craft]
