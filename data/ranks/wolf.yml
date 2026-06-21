@@ -346,7 +346,7 @@ adventure_list:
       tags: []
     - name: paws-for-water#3
       description: Using the buddy system and staying within your ability group, go swimming with your den or family for 30 minutes.
-      tags: []
+      tags: [buddy-system]
     - name: paws-for-water#4
       description: 'Attempt at least one swimming stroke: front crawl, restful backstroke, or breaststroke.'
       tags: []
@@ -392,7 +392,7 @@ adventure_list:
       tags: []
     - name: pedal-with-the-pack#6
       description: With your den, pack, or family, follow the buddy system and take a bike ride.
-      tags: []
+      tags: [buddy-system]
 - name: Race Time Wolf
   url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
   required: false

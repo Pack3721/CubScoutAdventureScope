@@ -177,7 +177,7 @@ adventure_list:
       tags: []
     - name: cycling#7
       description: With your patrol, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 10 miles.
-      tags: []
+      tags: [buddy-system]
 - name: Engineer
   url: https://www.scouting.org/cub-scout-adventures/engineer/
   required: false
@@ -397,4 +397,4 @@ adventure_list:
     - name: swimming#4
       description: Have 30 minutes or more of free swim time during which you practice the buddy system and stay within your ability group. The qualified adult supervision
         should conduct at least three buddy checks per half hour of swimming.
-      tags: []
+      tags: [buddy-system]

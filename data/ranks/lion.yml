@@ -300,7 +300,7 @@ adventure_list:
       tags: []
     - name: time-to-swim#3
       description: With your Lion adult partner as your buddy, be active in water depths matching your ability for 20 minutes.
-      tags: []
+      tags: [buddy-system]
     - name: time-to-swim#4
       description: Place your face in the water and blow bubbles.
       tags: []

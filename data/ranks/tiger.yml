@@ -397,7 +397,7 @@ adventure_list:
       tags: []
     - name: tigers-in-the-water#3
       description: With your Tiger adult partner as your buddy, be active in water depths matching your ability for 20 minutes.
-      tags: []
+      tags: [buddy-system]
     - name: tigers-in-the-water#4
       description: Place your face in the water and blow bubbles.
       tags: []
