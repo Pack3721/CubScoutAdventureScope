@@ -139,10 +139,10 @@ adventure_list:
       tags: [art, art-performance]
     - name: curiosity-intrigue-and-magical-mysteries#3
       description: Write your name in secret code.
-      tags: [codes]
+      tags: [codes-patterns]
     - name: curiosity-intrigue-and-magical-mysteries#4
       description: Write a message with the code. Challenge your den, family or Tiger adult partner to read your coded message.
-      tags: [codes]
+      tags: [codes-patterns]
 - name: Designed by Tiger
   url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
   required: false

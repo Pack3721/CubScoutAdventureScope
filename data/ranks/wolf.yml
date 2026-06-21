@@ -210,13 +210,13 @@ adventure_list:
   requirements:
     - name: code-of-the-wolf#1
       description: Create a secret code. Send a message to a member of your den or family. Have that person send a message back to you using the same secret code.
-      tags: [codes, stem, mathematics]
+      tags: [codes-patterns, stem, mathematics]
     - name: code-of-the-wolf#2
-      description: Build and play a game that requires the use of codes or patterns.
-      tags: [game-create, game-indoor, codes, stem, mathematics, game]
+      description: Build and play a game that requires the use of codes-patterns or patterns.
+      tags: [game-create, game-indoor, codes-patterns, stem, mathematics, game]
     - name: code-of-the-wolf#3
       description: Select a single shape. Observe the environment around you. Write down where you see that shape and how it is being used.
-      tags: [stem, mathematics]
+      tags: [codes-patterns, stem, mathematics]
     - name: code-of-the-wolf#4
       description: Using a package that contains a number of different colored items, discover the most common color.
       tags: [stem, mathematics]
