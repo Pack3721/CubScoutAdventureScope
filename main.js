@@ -438,6 +438,7 @@ function setupCopyUrlButton() {
             const allCheckbox = document.getElementById('rank-filter-all');
             const rankCheckboxes = document.querySelectorAll('.rank-filter-checkbox');
             const label = document.getElementById('rank-filter-label');
+            const printNote = document.getElementById('rank-filter-print-note');
             rankCheckboxes.forEach(cb => {
                 cb.checked = selectedRanks.includes(cb.getAttribute('data-rank'));
             });
@@ -450,6 +451,11 @@ function setupCopyUrlButton() {
                 } else {
                     label.textContent = 'Ranks: ' + selectedRanks.length + ' selected';
                 }
+            }
+            if (printNote) {
+                printNote.textContent = selectedRanks.length
+                    ? '(Ranks shown: ' + selectedRanks.join(', ') + ')'
+                    : '';
             }
         }
 

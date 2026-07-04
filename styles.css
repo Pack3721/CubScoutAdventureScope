@@ -115,6 +115,20 @@
 	background: var(--rank-color, #363636);
 }
 
+/* Rank filter printout note: hidden on screen, shown only when printing a constrained view */
+.rank-filter-print-note {
+	display: none;
+}
+@media print {
+	.rank-filter-print-note:not(:empty) {
+		display: inline-block;
+		font-size: 0.9em;
+		font-weight: normal;
+		color: #363636;
+		margin-left: 0.75em;
+	}
+}
+
 /* Rank filter dropdown */
 #rank-filter-menu {
 	min-width: 10em;
