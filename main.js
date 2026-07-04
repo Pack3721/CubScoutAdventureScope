@@ -208,10 +208,32 @@ function updateQueryStringAndTitle(selectedCloud, selectedRanks) {
 }
 
 // --- Rank Filter (r=) query string helpers ---
-// Grade-level letters in fixed display order: K, 1st..5th grade
-const RANK_ORDER = ['Lion', 'Tiger', 'Wolf', 'Bear', 'Webelos', 'Arrow of Light'];
-const gradeLetterToRank = { k: 'Lion', '1': 'Tiger', '2': 'Wolf', '3': 'Bear', '4': 'Webelos', '5': 'Arrow of Light' };
-const rankToGradeLetter = { Lion: 'k', Tiger: '1', Wolf: '2', Bear: '3', Webelos: '4', 'Arrow of Light': '5' };
+// Populated from each rank's `grade` field in data/ranks/*.yml (see buildRankGradeLetters below),
+// so the K/1/2/3/4/5 letters and rank display order come from the data, not a hardcoded list.
+let RANK_ORDER = [];
+let gradeLetterToRank = {};
+let rankToGradeLetter = {};
+// Derive a compact grade-level letter (k, 1-5) from a `grade` string like "Kindergarten" or "3rd Grade"
+function gradeToLetter(grade) {
+    const g = (grade || '').trim().toLowerCase();
+    if (g.startsWith('kindergarten')) return 'k';
+    const match = g.match(/^(\d+)/);
+    return match ? match[1] : null;
+}
+// Build RANK_ORDER/rankToGradeLetter/gradeLetterToRank from the loaded rank data,
+// in the same order the ranks appear in data.ranks.
+function buildRankGradeLetters(ranks) {
+    RANK_ORDER = [];
+    rankToGradeLetter = {};
+    gradeLetterToRank = {};
+    ranks.forEach(r => {
+        const letter = gradeToLetter(r.grade);
+        if (!letter) return;
+        RANK_ORDER.push(r.rank);
+        rankToGradeLetter[r.rank] = letter;
+        gradeLetterToRank[letter] = r.rank;
+    });
+}
 function encodeRanks(selectedRanks) {
     if (!selectedRanks || !selectedRanks.length) return '';
     return RANK_ORDER
@@ -262,6 +284,7 @@ function setupCopyUrlButton() {
                 data.ranks[i] = jsyaml.load(rankYaml);
             }
         }
+        buildRankGradeLetters(data.ranks);
 
         const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
