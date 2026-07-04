@@ -59,6 +59,16 @@ if ('serviceWorker' in navigator) {
                 .catch(err => console.warn('Service worker registration failed:', err));
         });
     }
+    // The service worker posts this when a new version fails to install (e.g. a flaky
+    // fetch for one of the precached files) -- otherwise that failure is invisible and the
+    // Refresh button would look like it's doing nothing indefinitely.
+    navigator.serviceWorker.addEventListener('message', event => {
+        if (event.data && event.data.type === 'SW_INSTALL_FAILED') {
+            console.warn('Service worker install failed:', event.data.error);
+            const errorBanner = document.getElementById('update-banner-error');
+            if (errorBanner) errorBanner.classList.add('is-active');
+        }
+    });
 }
 
 // Update banner: compares the version this page was loaded with (window.APP_VERSION,
@@ -93,6 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('update-banner');
     if (refreshBtn) {
         refreshBtn.addEventListener('click', () => {
+            // Immediate feedback so the button doesn't feel like it's doing nothing while
+            // we wait on the service worker below.
+            refreshBtn.disabled = true;
+            refreshBtn.textContent = 'Refreshing…';
             // If a new worker is still installing/activating, wait for it to take control
             // before reloading so we don't land back on the stale cache; otherwise just
             // reload -- reg.update() above has likely already finished by the time of a click.
@@ -112,6 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     if (dismissBtn) dismissBtn.addEventListener('click', () => banner && banner.classList.remove('is-active'));
+    const errorDismissBtn = document.getElementById('update-banner-error-dismiss');
+    const errorBanner = document.getElementById('update-banner-error');
+    if (errorDismissBtn) errorDismissBtn.addEventListener('click', () => errorBanner && errorBanner.classList.remove('is-active'));
 });
 
 // Helper: fetch YAML file with cache busting using extracted value

@@ -25,6 +25,9 @@
 .update-banner-dismiss:hover {
 	opacity: 0.8;
 }
+.update-banner-error {
+	background: #ff3860;
+}
 
 /* Word cloud base style */
 .cloud-keyword {

@@ -39,8 +39,16 @@ self.addEventListener('install', event => {
     self.skipWaiting();
     event.waitUntil((async () => {
         const cache = await caches.open(CACHE_NAME);
-        // Core shell: hard requirement -- fail install if these don't cache cleanly.
-        await cache.addAll(CORE_ASSETS);
+        try {
+            // Core shell: hard requirement -- fail install if these don't cache cleanly.
+            await cache.addAll(CORE_ASSETS);
+        } catch (err) {
+            // Install is about to fail (the old SW/cache stays in control) -- tell any open
+            // pages so they can show something instead of silently doing nothing forever.
+            const clients = await self.clients.matchAll();
+            clients.forEach(client => client.postMessage({ type: 'SW_INSTALL_FAILED', error: String(err) }));
+            throw err;
+        }
         // Data + CDN: soft -- one flaky fetch shouldn't sink the whole install.
         await Promise.allSettled(
             DATA_ASSETS.map(url => fetch(url).then(res => res.ok && cache.put(url, res)))
