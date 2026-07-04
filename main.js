@@ -143,16 +143,20 @@ function buildTagHierarchyMaps(tagsSet) {
     return { childrenMap, parentMap };
 }
 
+// True if a cloud item (req/elec adventure name, keyword tag, or nova award/group) applies to
+// a given requirement. Shared by the cloud-selection filter and the per-rank relevance map.
+function cloudItemMatchesRequirement(item, req) {
+    return (item.type === 'req' && (req.adventureAlt === item.text || req.adventure === item.text)) ||
+        (item.type === 'elec' && (req.adventureAlt === item.text || req.adventure === item.text)) ||
+        (item.type === 'keyword' && req.tags.includes(item.text)) ||
+        (item.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (item.isGroup || req.stemNova.includes(item.text)));
+}
+
 // Filter requirements by selected cloud items and group by rank
 function filterRequirementsByRank(requirements, selectedCloud) {
     if (!selectedCloud.length) return {};
     const filtered = requirements.filter(req => {
-        return selectedCloud.some(sel =>
-            (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-            (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-            (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (sel.isGroup || req.stemNova.includes(sel.text)))
-        );
+        return selectedCloud.some(sel => cloudItemMatchesRequirement(sel, req));
     });
     // Group by rank, then by adventure (as array for Ractive)
     const grouped = {};
@@ -315,6 +319,18 @@ function setupCopyUrlButton() {
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
         const { childrenMap: tagChildrenMap, parentMap: tagParentMap } = buildTagHierarchyMaps(tags);
 
+        // Which ranks each cloud item actually applies to (computed once, since cloud and
+        // requirements are both static after load). Used to grey out items that don't apply to
+        // any of the currently rank-filtered ranks.
+        const itemRankSets = new Map();
+        cloud.forEach(item => {
+            const ranks = new Set();
+            requirements.forEach(req => {
+                if (cloudItemMatchesRequirement(item, req)) ranks.add(req.rank);
+            });
+            itemRankSets.set(item, ranks);
+        });
+
         // The chain of ancestor tag names (immediate parent first) that must be expanded
         // for `item` to be visible in the cloud. Empty if it's already top-level.
         function getAncestorChain(item) {
@@ -408,12 +424,7 @@ function setupCopyUrlButton() {
         function computeFilteredAndOrder(selectedCloud) {
             const filtered = filterRequirementsByRank(requirements, selectedCloud);
             let order = getRankOrder(requirements.filter(req => {
-                return selectedCloud.some(sel =>
-                    (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                    (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                    (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (sel.isGroup || req.stemNova.includes(sel.text)))
-                );
+                return selectedCloud.some(sel => cloudItemMatchesRequirement(sel, req));
             }));
             let finalFiltered = filtered;
             if (selectedRanks.length) {
@@ -476,7 +487,10 @@ function setupCopyUrlButton() {
                 // Tags the user has manually expanded via the +N/- toggle (or that were selected
                 // on load). Tags required open by a *current* selection are derived fresh in
                 // visibleCloud for the forced-open/grey styling, independent of this.
-                expandedTags: initialExpandedTags
+                expandedTags: initialExpandedTags,
+                // Mirrors the module-level `selectedRanks` (kept in sync by updateRankFilterUI)
+                // so visibleCloud can grey out tags that don't apply to the chosen ranks.
+                selectedRanks: selectedRanks.slice()
             },
             computed: {
                 // Cloud items to render in the expanded (non-collapsed) view: tags nested under
@@ -489,6 +503,12 @@ function setupCopyUrlButton() {
                     const requiredOpen = getRequiredOpenTags(this.get('selectedCloud'));
                     const expanded = Object.assign({}, manualExpanded, requiredOpen);
                     const novaExpanded = !!expanded['Nova Awards'];
+                    const activeRanksSet = new Set(this.get('selectedRanks') || []);
+                    const isRankIrrelevant = item => {
+                        if (!activeRanksSet.size) return false;
+                        const ranks = itemRankSets.get(item);
+                        return !!ranks && ranks.size > 0 && ![...ranks].some(r => activeRanksSet.has(r));
+                    };
                     const result = [];
 
                     cloud.forEach((item, index) => {
@@ -500,7 +520,8 @@ function setupCopyUrlButton() {
                                     hasChildren: true,
                                     childCount: cloud.filter(c => c.type === 'nova' && !c.isGroup).length,
                                     expanded: novaExpanded,
-                                    forcedOpen: !!requiredOpen['Nova Awards']
+                                    forcedOpen: !!requiredOpen['Nova Awards'],
+                                    rankIrrelevant: isRankIrrelevant(item)
                                 }));
                             } else if (novaExpanded) {
                                 result.push(Object.assign({}, item, {
@@ -508,7 +529,8 @@ function setupCopyUrlButton() {
                                     depth: 1,
                                     hasChildren: false,
                                     childCount: 0,
-                                    expanded: false
+                                    expanded: false,
+                                    rankIrrelevant: isRankIrrelevant(item)
                                 }));
                             }
                             return;
@@ -532,7 +554,8 @@ function setupCopyUrlButton() {
                             hasChildren: !!children,
                             childCount: children ? children.length : 0,
                             expanded: !!expanded[item.text],
-                            forcedOpen: !!requiredOpen[item.text] || hasExpandedDescendant(item.text, expanded)
+                            forcedOpen: !!requiredOpen[item.text] || hasExpandedDescendant(item.text, expanded),
+                            rankIrrelevant: isRankIrrelevant(item)
                         }));
                     });
 
@@ -638,6 +661,7 @@ function setupCopyUrlButton() {
                     ? '(Ranks shown: ' + selectedRanks.join(', ') + ')'
                     : '';
             }
+            ractive.set('selectedRanks', selectedRanks.slice());
         }
 
         function setupRankFilterDropdown() {

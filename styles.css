@@ -113,6 +113,13 @@
 	outline-offset: 2px;
 }
 
+/* Grey out a tag that doesn't apply to any of the currently rank-filtered ranks. Left
+   selectable (not disabled) -- it's informational, not a hard block. */
+.cloud-keyword.rank-irrelevant:not(.selected) {
+	filter: grayscale(1);
+	opacity: 0.45;
+}
+
 .tag.is-light {
 	display: inline;
 	white-space: normal;

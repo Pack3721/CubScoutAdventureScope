@@ -100,7 +100,7 @@
 						  {{#if !cloudCollapsed}}
 							  {{#each visibleCloud:vi}}
 								<span class="cloud-tag-wrapper" style="{{visibleCloud[vi].depth ? 'margin-left: ' + (visibleCloud[vi].depth * 1) + 'em;' : ''}}">
-									<span class="cloud-keyword {{visibleCloud[vi].type}} {{selectedCloud.includes(cloud[visibleCloud[vi].index]) ? 'selected' : ''}} {{visibleCloud[vi].depth ? 'revealed-child' : ''}}"
+									<span class="cloud-keyword {{visibleCloud[vi].type}} {{selectedCloud.includes(cloud[visibleCloud[vi].index]) ? 'selected' : ''}} {{visibleCloud[vi].depth ? 'revealed-child' : ''}} {{visibleCloud[vi].rankIrrelevant ? 'rank-irrelevant' : ''}}"
 										on-click="toggleCloud"
 										data-index="{{visibleCloud[vi].index}}">
 									{{#if visibleCloud[vi].type === 'nova'}}
