@@ -1,6 +1,6 @@
 {
   "name": "Cub Scout Adventure Scope",
-  "short_name": "AdventureScope",
+  "short_name": "CubAdvScope",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
