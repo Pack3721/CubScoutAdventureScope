@@ -272,4 +272,7 @@
   .requirements-empty-message {
     display: none !important;
   }
+  .tag-expand-toggle {
+    display: none !important;
+  }
 }

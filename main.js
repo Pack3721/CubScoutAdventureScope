@@ -44,11 +44,21 @@ function getCacheBuster() {
 
 // Register the service worker for offline support. updateViaCache: 'none' ensures the
 // browser never serves the service-worker.js update check from its HTTP cache.
+// Skipped on localhost: site.github.build_revision tracks the git HEAD commit, not the
+// working tree, so uncommitted local edits never bust the cache-first cache -- the service
+// worker would otherwise mask live changes during local development.
+const isLocalDev = ['localhost', '127.0.0.1', ''].includes(location.hostname);
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
-            .catch(err => console.warn('Service worker registration failed:', err));
-    });
+    if (isLocalDev) {
+        // Clean up anything registered/cached from before this check existed.
+        navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(reg => reg.unregister()));
+        if (window.caches) caches.keys().then(keys => keys.forEach(key => caches.delete(key)));
+    } else {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
+                .catch(err => console.warn('Service worker registration failed:', err));
+        });
+    }
 }
 
 // Update banner: compares the version this page was loaded with (window.APP_VERSION,
