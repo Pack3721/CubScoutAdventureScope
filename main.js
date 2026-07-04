@@ -364,6 +364,21 @@ function setupCopyUrlButton() {
             return { filtered: finalFiltered, order };
         }
 
+        // Sync the collapse/expand button's label and icon to the given cloudCollapsed state.
+        // Label/icon always reflect the action the next click will perform.
+        function updateCloudToggleButton(collapsed) {
+            const btn = document.getElementById('toggle-cloud-btn');
+            const icon = document.getElementById('toggle-cloud-icon');
+            if (!btn || !icon) return;
+            if (collapsed) {
+                btn.querySelector('span:last-child').textContent = 'Expand Cloud';
+                icon.innerHTML = '<path fill="currentColor" d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/>';
+            } else {
+                btn.querySelector('span:last-child').textContent = 'Collapse Cloud';
+                icon.innerHTML = '<path fill="currentColor" d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z"/>';
+            }
+        }
+
         // Recompute and apply filtered requirements/rank order using the given cloud
         // selection and the current selectedRanks, then sync the URL.
         function applyFilters(selectedCloud) {
@@ -406,18 +421,7 @@ function setupCopyUrlButton() {
                 toggleCloudCollapse() {
                     const collapsed = this.get('cloudCollapsed');
                     this.set('cloudCollapsed', !collapsed);
-                    // Update button text/icon
-                    const btn = document.getElementById('toggle-cloud-btn');
-                    const icon = document.getElementById('toggle-cloud-icon');
-                    if (btn && icon) {
-                        if (!collapsed) {
-                            btn.querySelector('span:last-child').textContent = 'Expand Cloud';
-                            icon.innerHTML = '<path fill="currentColor" d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/>';
-                        } else {
-                            btn.querySelector('span:last-child').textContent = 'Collapse Cloud';
-                            icon.innerHTML = '<path fill="currentColor" d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z"/>';
-                        }
-                    }
+                    updateCloudToggleButton(!collapsed);
                 },
                 togglePopover(event) {
                     const adventureName = event.node.getAttribute('data-adventure');
@@ -432,6 +436,10 @@ function setupCopyUrlButton() {
 
         // Expose ractive globally for QR sizing logic
         window.ractive = ractive;
+
+        // Sync collapse/expand button to the initial state (e.g. already collapsed on
+        // refresh when the page loads with a populated q= query string)
+        updateCloudToggleButton(ractive.get('cloudCollapsed'));
 
         // Initial filter and title update if loaded with query string
         if (initialSelectedCloud.length) {
