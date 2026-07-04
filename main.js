@@ -453,6 +453,13 @@ function setupCopyUrlButton() {
             updateQueryStringAndTitle(selectedCloud, selectedRanks);
         }
 
+        // Persist the ancestor chain of any pre-selected child (e.g. from a shared q= URL) as
+        // expanded, so deselecting it later won't collapse the section (matches toggleCloud).
+        const initialExpandedTags = {};
+        initialSelectedCloud.forEach(item => {
+            getAncestorChain(item).forEach(tag => { initialExpandedTags[tag] = true; });
+        });
+
         const ractive = new Ractive({
             target: '#keyword-cloud',
             template: '#cloud-template',
@@ -466,9 +473,10 @@ function setupCopyUrlButton() {
                 popoverAdventure: null,
                 novaAwardLinks,
                 cloudCollapsed: initialSelectedCloud.length > 0,
-                // Tags the user has manually expanded via the +N/- toggle. Tags required open by
-                // a current selection are derived fresh in visibleCloud, not stored here.
-                expandedTags: {}
+                // Tags the user has manually expanded via the +N/- toggle (or that were selected
+                // on load). Tags required open by a *current* selection are derived fresh in
+                // visibleCloud for the forced-open/grey styling, independent of this.
+                expandedTags: initialExpandedTags
             },
             computed: {
                 // Cloud items to render in the expanded (non-collapsed) view: tags nested under
@@ -544,10 +552,18 @@ function setupCopyUrlButton() {
                     const item = this.get('cloud')[i];
                     let selected = this.get('selectedCloud').slice();
                     const idx = selected.findIndex(sel => sel.text === item.text && sel.type === item.type);
-                    if (idx >= 0) selected.splice(idx, 1);
-                    else selected.push(item);
-                    // No manual expandedTags bookkeeping needed here -- visibleCloud derives which
-                    // ancestors must be open from selectedCloud on every recompute.
+                    if (idx >= 0) {
+                        // Deselecting never collapses a section -- expandedTags is left as-is.
+                        selected.splice(idx, 1);
+                    } else {
+                        selected.push(item);
+                        // Persist the ancestor chain as expanded so a later deselect doesn't
+                        // close it back up (visibleCloud's forcedOpen/grey styling is still
+                        // derived live from selectedCloud, independent of this).
+                        const expandedTags = Object.assign({}, this.get('expandedTags'));
+                        getAncestorChain(item).forEach(tag => { expandedTags[tag] = true; });
+                        this.set('expandedTags', expandedTags);
+                    }
                     this.set('selectedCloud', selected);
                     applyFilters(selected);
                 },
