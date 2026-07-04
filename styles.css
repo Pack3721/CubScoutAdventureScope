@@ -151,6 +151,16 @@
 	}
 }
 
+/* Button bar is tight on mobile: show icon only for Copy URL, keep it labeled elsewhere */
+@media (max-width: 480px) {
+	.copy-url-label {
+		display: none;
+	}
+	#copy-url-btn .icon {
+		margin-right: 0;
+	}
+}
+
 @media print {
 	#qr-code-container {
 		display: flex !important;
