@@ -118,6 +118,26 @@ function renderCloud({ requiredNames, notRequiredNames, tags }) {
     return cloud;
 }
 
+// Group any tag under another tag that is its hyphen-prefix (e.g. `camp-overnight` under
+// `camp`, `civics-flag-ceremony` under `civics`), purely by name -- no explicit parent list.
+// Picks the longest existing prefix as the immediate parent.
+function buildTagHierarchyMaps(tagsSet) {
+    const childrenMap = {};
+    const parentMap = {};
+    Array.from(tagsSet).forEach(tag => {
+        const parts = tag.split('-');
+        for (let i = parts.length - 1; i > 0; i--) {
+            const candidate = parts.slice(0, i).join('-');
+            if (tagsSet.has(candidate)) {
+                parentMap[tag] = candidate;
+                (childrenMap[candidate] = childrenMap[candidate] || []).push(tag);
+                break;
+            }
+        }
+    });
+    return { childrenMap, parentMap };
+}
+
 // Filter requirements by selected cloud items and group by rank
 function filterRequirementsByRank(requirements, selectedCloud) {
     if (!selectedCloud.length) return {};
@@ -288,6 +308,7 @@ function setupCopyUrlButton() {
 
         const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
+        const { childrenMap: tagChildrenMap, parentMap: tagParentMap } = buildTagHierarchyMaps(tags);
 
         // Build a map of nova_awards name -> url (normalize to lower case, trimmed)
         let novaAwardLinks = {};
@@ -405,9 +426,51 @@ function setupCopyUrlButton() {
                 rankGrades: {}, // ensure grades are empty on initial load
                 popoverAdventure: null,
                 novaAwardLinks,
-                cloudCollapsed: initialSelectedCloud.length > 0
+                cloudCollapsed: initialSelectedCloud.length > 0,
+                expandedTags: {}
+            },
+            computed: {
+                // Cloud items to render in the expanded (non-collapsed) view: tags nested under
+                // a collapsed parent (e.g. camp-overnight under camp) are hidden until every
+                // ancestor in their chain has been expanded via the +N toggle.
+                visibleCloud() {
+                    const cloud = this.get('cloud');
+                    const expanded = this.get('expandedTags') || {};
+                    return cloud
+                        .map((item, index) => ({ item, index }))
+                        .filter(({ item }) => {
+                            let ancestor = tagParentMap[item.text];
+                            while (ancestor) {
+                                if (!expanded[ancestor]) return false;
+                                ancestor = tagParentMap[ancestor];
+                            }
+                            return true;
+                        })
+                        .map(({ item, index }) => {
+                            let depth = 0;
+                            let ancestor = tagParentMap[item.text];
+                            while (ancestor) {
+                                depth++;
+                                ancestor = tagParentMap[ancestor];
+                            }
+                            const children = tagChildrenMap[item.text];
+                            return Object.assign({}, item, {
+                                index,
+                                depth,
+                                hasChildren: !!children,
+                                childCount: children ? children.length : 0,
+                                expanded: !!expanded[item.text]
+                            });
+                        });
+                }
             },
             on: {
+                toggleTagExpand(event) {
+                    const tag = event.node.getAttribute('data-tag');
+                    const expanded = Object.assign({}, this.get('expandedTags'));
+                    expanded[tag] = !expanded[tag];
+                    this.set('expandedTags', expanded);
+                },
                 toggleCloud(event) {
                     const i = parseInt(event.node.getAttribute('data-index'), 10);
                     const item = this.get('cloud')[i];

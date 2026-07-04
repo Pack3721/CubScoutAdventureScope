@@ -98,16 +98,21 @@
 				  <div>
 					  <div class="mb-4" style="transition: max-height 0.3s;">
 						  {{#if !cloudCollapsed}}
-							  {{#each cloud:i}}
-								<span class="cloud-keyword {{type}} {{selectedCloud.includes(cloud[i]) ? 'selected' : ''}}"
-									on-click="toggleCloud"
-									data-index="{{i}}">
-								{{#if type === 'nova'}}
-									<span title="STEM Nova">{{text}} <span style="font-size:1.1em;">💥</span></span>
-								{{else}}
-									{{text}}
-								{{/if}}
-								  </span>
+							  {{#each visibleCloud:vi}}
+								<span class="cloud-tag-wrapper" style="{{visibleCloud[vi].depth ? 'margin-left: ' + (visibleCloud[vi].depth * 1) + 'em;' : ''}}">
+									<span class="cloud-keyword {{visibleCloud[vi].type}} {{selectedCloud.includes(cloud[visibleCloud[vi].index]) ? 'selected' : ''}}"
+										on-click="toggleCloud"
+										data-index="{{visibleCloud[vi].index}}">
+									{{#if visibleCloud[vi].type === 'nova'}}
+										<span title="STEM Nova">{{visibleCloud[vi].text}} <span style="font-size:1.1em;">💥</span></span>
+									{{else}}
+										{{visibleCloud[vi].text}}
+									{{/if}}
+									</span>
+									{{#if visibleCloud[vi].hasChildren}}
+										<span class="tag-expand-toggle" on-click="toggleTagExpand" data-tag="{{visibleCloud[vi].text}}" title="{{visibleCloud[vi].expanded ? 'Hide' : 'Show'}} sub-tags">{{visibleCloud[vi].expanded ? '−' : '+' + visibleCloud[vi].childCount}}</span>
+									{{/if}}
+								</span>
 							  {{/each}}
 						  {{else}}
 							  {{#if selectedCloud.length}}

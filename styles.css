@@ -59,6 +59,35 @@
 	box-shadow: 0 0 0 2px #b5b5b5;
 }
 
+/* Wrapper around a cloud chip + its optional expand/collapse toggle */
+.cloud-tag-wrapper {
+	display: inline-flex;
+	align-items: center;
+}
+
+/* +N / − toggle shown next to a parent tag (e.g. camp, stem) to reveal its child tags */
+.tag-expand-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #ff3860;
+	background: #fff0f3;
+	border: 1px solid #ff3860;
+	border-radius: 999px;
+	min-width: 1.6em;
+	padding: 0 0.3em;
+	margin-left: -0.2em;
+	cursor: pointer;
+	line-height: 1.5;
+	user-select: none;
+}
+.tag-expand-toggle:hover {
+	background: #ff3860;
+	color: #fff;
+}
+
 .tag.is-light {
 	display: inline;
 	white-space: normal;
