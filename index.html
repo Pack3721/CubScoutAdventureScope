@@ -36,6 +36,42 @@
 					   </span>
 					   <span>Collapse Cloud</span>
 				   </button>
+				   <div class="dropdown" id="rank-filter-dropdown" style="margin-left: 0.5em;">
+					   <div class="dropdown-trigger">
+						   <button class="button is-small is-light" id="rank-filter-btn" aria-haspopup="true" aria-controls="rank-filter-menu" title="Choose which ranks to display">
+							   <span id="rank-filter-label">Ranks: All</span>
+							   <span class="icon is-small">
+								   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5 5-5H7z"/></svg>
+							   </span>
+						   </button>
+					   </div>
+					   <div class="dropdown-menu" id="rank-filter-menu" role="menu">
+						   <div class="dropdown-content">
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" id="rank-filter-all" checked> All Ranks
+							   </label>
+							   <hr class="dropdown-divider">
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Lion"> Lion (K)
+							   </label>
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Tiger"> Tiger (1st)
+							   </label>
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Wolf"> Wolf (2nd)
+							   </label>
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Bear"> Bear (3rd)
+							   </label>
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Webelos"> Webelos (4th)
+							   </label>
+							   <label class="dropdown-item rank-filter-item">
+								   <input type="checkbox" class="rank-filter-checkbox" data-rank="Arrow of Light"> Arrow of Light (5th)
+							   </label>
+						   </div>
+					   </div>
+				   </div>
 			   </div>
 			   <div id="keyword-cloud"></div>
 

@@ -184,13 +184,19 @@ function decodeCloudItems(str, cloud) {
     }).filter(Boolean);
 }
 let originalTitle = document.title;
-function updateQueryStringAndTitle(selectedCloud) {
+function updateQueryStringAndTitle(selectedCloud, selectedRanks) {
     const encoded = encodeCloudItems(selectedCloud);
+    const encodedRanks = encodeRanks(selectedRanks || []);
     const url = new URL(window.location);
     if (encoded) {
         url.searchParams.set('q', encoded);
     } else {
         url.searchParams.delete('q');
+    }
+    if (encodedRanks) {
+        url.searchParams.set('r', encodedRanks);
+    } else {
+        url.searchParams.delete('r');
     }
     window.history.replaceState({}, '', url);
     // Update title
@@ -199,6 +205,24 @@ function updateQueryStringAndTitle(selectedCloud) {
     } else {
         document.title = originalTitle;
     }
+}
+
+// --- Rank Filter (r=) query string helpers ---
+// Grade-level letters in fixed display order: K, 1st..5th grade
+const RANK_ORDER = ['Lion', 'Tiger', 'Wolf', 'Bear', 'Webelos', 'Arrow of Light'];
+const gradeLetterToRank = { k: 'Lion', '1': 'Tiger', '2': 'Wolf', '3': 'Bear', '4': 'Webelos', '5': 'Arrow of Light' };
+const rankToGradeLetter = { Lion: 'k', Tiger: '1', Wolf: '2', Bear: '3', Webelos: '4', 'Arrow of Light': '5' };
+function encodeRanks(selectedRanks) {
+    if (!selectedRanks || !selectedRanks.length) return '';
+    return RANK_ORDER
+        .filter(rank => selectedRanks.includes(rank))
+        .map(rank => rankToGradeLetter[rank])
+        .join('');
+}
+function decodeRanks(str) {
+    if (!str) return [];
+    const ranks = str.toLowerCase().split('').map(ch => gradeLetterToRank[ch]).filter(Boolean);
+    return RANK_ORDER.filter(rank => ranks.includes(rank));
 }
 
 // Copy URL button logic
@@ -293,6 +317,43 @@ function setupCopyUrlButton() {
         if (params.has('q')) {
             initialSelectedCloud = decodeCloudItems(params.get('q'), cloud);
         }
+        // Ranks to display; empty means "all" (default)
+        let selectedRanks = decodeRanks(params.get('r'));
+
+        // Compute filtered requirements + rank order for a cloud selection, then
+        // narrow to selectedRanks (if any) while preserving RANK_ORDER.
+        function computeFilteredAndOrder(selectedCloud) {
+            const filtered = filterRequirementsByRank(requirements, selectedCloud);
+            let order = getRankOrder(requirements.filter(req => {
+                return selectedCloud.some(sel =>
+                    (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                    (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
+                    (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
+                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+                );
+            }));
+            let finalFiltered = filtered;
+            if (selectedRanks.length) {
+                order = order.filter(rank => selectedRanks.includes(rank));
+                finalFiltered = {};
+                order.forEach(rank => { if (filtered[rank]) finalFiltered[rank] = filtered[rank]; });
+            }
+            return { filtered: finalFiltered, order };
+        }
+
+        // Recompute and apply filtered requirements/rank order using the given cloud
+        // selection and the current selectedRanks, then sync the URL.
+        function applyFilters(selectedCloud) {
+            const { filtered, order } = computeFilteredAndOrder(selectedCloud);
+            const { styles, grades } = buildRankStylesAndGrades(order);
+            rankStyles = styles;
+            rankGrades = grades;
+            ractive.set('filteredRequirements', filtered);
+            ractive.set('rankOrder', order);
+            ractive.set('rankStyles', rankStyles);
+            ractive.set('rankGrades', rankGrades);
+            updateQueryStringAndTitle(selectedCloud, selectedRanks);
+        }
 
         const ractive = new Ractive({
             target: '#keyword-cloud',
@@ -317,23 +378,7 @@ function setupCopyUrlButton() {
                     if (idx >= 0) selected.splice(idx, 1);
                     else selected.push(item);
                     this.set('selectedCloud', selected);
-                    const filtered = filterRequirementsByRank(requirements, selected);
-                    const order = getRankOrder(requirements.filter(req => {
-                        return selected.some(sel =>
-                            (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                            (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                            (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-                            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
-                        );
-                    }));
-                    const { styles, grades } = buildRankStylesAndGrades(order);
-                    rankStyles = styles;
-                    rankGrades = grades;
-                    this.set('filteredRequirements', filtered);
-                    this.set('rankOrder', order);
-                    this.set('rankStyles', rankStyles);
-                    this.set('rankGrades', rankGrades);
-                    updateQueryStringAndTitle(selected);
+                    applyFilters(selected);
                 },
                 toggleCloudCollapse() {
                     const collapsed = this.get('cloudCollapsed');
@@ -367,40 +412,86 @@ function setupCopyUrlButton() {
 
         // Initial filter and title update if loaded with query string
         if (initialSelectedCloud.length) {
-            const filtered = filterRequirementsByRank(requirements, initialSelectedCloud);
-            const order = getRankOrder(requirements.filter(req => {
-                return initialSelectedCloud.some(sel =>
-                    (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                    (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
-                    (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
-                );
-            }));
-            const { styles, grades } = buildRankStylesAndGrades(order);
-            rankStyles = styles;
-            rankGrades = grades;
-            ractive.set('filteredRequirements', filtered);
-            ractive.set('rankOrder', order);
-            ractive.set('rankStyles', rankStyles);
-            ractive.set('rankGrades', rankGrades);
-            updateQueryStringAndTitle(initialSelectedCloud);
+            applyFilters(initialSelectedCloud);
         }
 
         // Add clear button functionality
         document.getElementById('clear-btn').addEventListener('click', function() {
+            selectedRanks = [];
+            updateRankFilterUI();
             ractive.set('selectedCloud', []);
             ractive.set('filteredRequirements', {});
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
             ractive.set('rankGrades', {});
             ractive.set('cloudCollapsed', false); // Expand the cloud
-            updateQueryStringAndTitle([]);
+            updateQueryStringAndTitle([], selectedRanks);
         });
 
         // Add cloud collapse/expand button functionality
         document.getElementById('toggle-cloud-btn').addEventListener('click', function() {
             ractive.fire('toggleCloudCollapse');
         });
+
+        // --- Rank filter dropdown ---
+        function updateRankFilterUI() {
+            const allCheckbox = document.getElementById('rank-filter-all');
+            const rankCheckboxes = document.querySelectorAll('.rank-filter-checkbox');
+            const label = document.getElementById('rank-filter-label');
+            rankCheckboxes.forEach(cb => {
+                cb.checked = selectedRanks.includes(cb.getAttribute('data-rank'));
+            });
+            if (allCheckbox) allCheckbox.checked = selectedRanks.length === 0;
+            if (label) {
+                if (!selectedRanks.length) {
+                    label.textContent = 'Ranks: All';
+                } else if (selectedRanks.length <= 2) {
+                    label.textContent = 'Ranks: ' + selectedRanks.join(', ');
+                } else {
+                    label.textContent = 'Ranks: ' + selectedRanks.length + ' selected';
+                }
+            }
+        }
+
+        function setupRankFilterDropdown() {
+            const dropdown = document.getElementById('rank-filter-dropdown');
+            const btn = document.getElementById('rank-filter-btn');
+            const allCheckbox = document.getElementById('rank-filter-all');
+            const rankCheckboxes = document.querySelectorAll('.rank-filter-checkbox');
+            if (!dropdown || !btn) return;
+
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('is-active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!dropdown.contains(e.target)) dropdown.classList.remove('is-active');
+            });
+
+            if (allCheckbox) {
+                allCheckbox.addEventListener('change', function() {
+                    selectedRanks = [];
+                    updateRankFilterUI();
+                    applyFilters(ractive.get('selectedCloud'));
+                });
+            }
+            rankCheckboxes.forEach(cb => {
+                cb.addEventListener('change', function() {
+                    const rank = cb.getAttribute('data-rank');
+                    if (cb.checked) {
+                        if (!selectedRanks.includes(rank)) selectedRanks.push(rank);
+                    } else {
+                        selectedRanks = selectedRanks.filter(r => r !== rank);
+                    }
+                    selectedRanks = RANK_ORDER.filter(r => selectedRanks.includes(r));
+                    updateRankFilterUI();
+                    applyFilters(ractive.get('selectedCloud'));
+                });
+            });
+        }
+
+        setupRankFilterDropdown();
+        updateRankFilterUI();
 
         // Remove special style for stem-nova; let all tags use the same style
     } catch (e) {
