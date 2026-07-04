@@ -42,10 +42,11 @@ function getCacheBuster() {
     return '';
 }
 
-// Register the service worker for offline support.
+// Register the service worker for offline support. updateViaCache: 'none' ensures the
+// browser never serves the service-worker.js update check from its HTTP cache.
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
+        navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
             .catch(err => console.warn('Service worker registration failed:', err));
     });
 }
@@ -62,6 +63,12 @@ function checkForUpdate() {
                 const text = document.getElementById('update-banner-text');
                 if (text) text.title = 'New version: ' + data.version;
                 if (banner) banner.classList.add('is-active');
+                // Browsers only check for a new service-worker.js periodically (up to 24h) on
+                // their own; force an immediate check now that we know a new version exists,
+                // so it's installed and active by the time the user clicks Refresh.
+                if (navigator.serviceWorker) {
+                    navigator.serviceWorker.getRegistration().then(reg => reg && reg.update());
+                }
             }
         })
         .catch(() => {}); // offline or fetch failed -- nothing to report
@@ -74,7 +81,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const refreshBtn = document.getElementById('update-banner-refresh');
     const dismissBtn = document.getElementById('update-banner-dismiss');
     const banner = document.getElementById('update-banner');
-    if (refreshBtn) refreshBtn.addEventListener('click', () => window.location.reload());
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+            // If a new worker is still installing/activating, wait for it to take control
+            // before reloading so we don't land back on the stale cache; otherwise just
+            // reload -- reg.update() above has likely already finished by the time of a click.
+            if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+                let reloaded = false;
+                const reloadOnce = () => {
+                    if (reloaded) return;
+                    reloaded = true;
+                    window.location.reload();
+                };
+                navigator.serviceWorker.addEventListener('controllerchange', reloadOnce, { once: true });
+                navigator.serviceWorker.getRegistration().then(reg => reg && reg.update());
+                setTimeout(reloadOnce, 1500); // fallback if already up to date
+            } else {
+                window.location.reload();
+            }
+        });
+    }
     if (dismissBtn) dismissBtn.addEventListener('click', () => banner && banner.classList.remove('is-active'));
 });
 
