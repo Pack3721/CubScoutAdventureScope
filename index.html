@@ -98,6 +98,12 @@
 			<img src="https://img.shields.io/badge/github-{{ site.github.repository_name }}-blue?logo=github"
 				alt="GitHub Repo Badge">
 		</a>
+		<a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}" target="_blank"
+			title="Build {{ site.github.build_revision | default: 'dev' }}"
+			style="display: inline-flex; align-items: center; margin-left: 0.4em;">
+			<img src="https://img.shields.io/badge/build-{{ site.github.build_revision | default: 'dev' | slice: 0, 7 }}-lightgrey"
+				alt="Build version badge">
+		</a>
 	</div>
 {% raw %}
 	   <script id="cloud-template" type="text/ractive">
