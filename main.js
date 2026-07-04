@@ -361,7 +361,11 @@ function setupCopyUrlButton() {
     if (navigator.share) {
         btn.title = 'Share this view';
         if (label) label.textContent = 'Share';
-        if (icon) icon.innerHTML = '<path fill="currentColor" d="M13 8V2l7 7-7 7v-6c-4 0-6.5 1.5-8 5C5 9 7 8 13 8Z"/>';
+        if (icon) {
+            // Apple-style "square and arrow up" share icon (note the different viewBox).
+            icon.setAttribute('viewBox', '0 0 16 16');
+            icon.innerHTML = '<path fill="currentColor" fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/><path fill="currentColor" fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>';
+        }
         btn.addEventListener('click', function() {
             navigator.share({ title: document.title, url: window.location.href })
                 .catch(function(err) {
