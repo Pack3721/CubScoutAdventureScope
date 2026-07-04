@@ -110,7 +110,7 @@
 									{{/if}}
 									</span>
 									{{#if visibleCloud[vi].hasChildren}}
-										<span class="tag-expand-toggle {{visibleCloud[vi].expanded ? 'expanded' : ''}}" on-click="toggleTagExpand" data-tag="{{visibleCloud[vi].text}}" title="{{visibleCloud[vi].expanded ? 'Hide' : 'Show'}} sub-tags">{{visibleCloud[vi].expanded ? '−' : '+' + visibleCloud[vi].childCount}}</span>
+										<span class="tag-expand-toggle {{visibleCloud[vi].expanded ? 'expanded' : ''}} {{visibleCloud[vi].forcedOpen ? 'forced-open' : ''}}" on-click="toggleTagExpand" data-tag="{{visibleCloud[vi].text}}" data-forced="{{visibleCloud[vi].forcedOpen}}" title="{{visibleCloud[vi].forcedOpen ? 'A selected tag is inside; expanded automatically' : (visibleCloud[vi].expanded ? 'Hide' : 'Show') + ' sub-tags'}}">{{visibleCloud[vi].expanded ? '−' : '+' + visibleCloud[vi].childCount}}</span>
 									{{/if}}
 								</span>
 							  {{/each}}

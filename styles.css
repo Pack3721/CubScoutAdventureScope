@@ -96,6 +96,15 @@
 	background: #ff3860;
 	color: #fff;
 }
+/* Auto-opened because a selected tag is inside -- greyed out and inert since collapsing it
+   won't hide anything (mouseover intentionally has no effect, unlike a normal toggle). */
+.tag-expand-toggle.expanded.forced-open,
+.tag-expand-toggle.expanded.forced-open:hover {
+	background: #f5f5f5;
+	border-color: #dbdbdb;
+	color: #b5b5b5;
+	cursor: default;
+}
 
 /* Highlight a child tag that just became visible from expanding its parent.
    Dashed outline (not a filled box-shadow ring) so it can't be mistaken for .selected. */

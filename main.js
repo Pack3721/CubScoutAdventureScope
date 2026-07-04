@@ -114,6 +114,11 @@ function renderCloud({ requiredNames, notRequiredNames, tags }) {
     requiredSorted.forEach(name => cloud.push({ text: name, type: 'req' }));
     notRequiredSorted.forEach(name => cloud.push({ text: name, type: 'elec' }));
     tagsSorted.forEach(tag => cloud.push({ text: tag, type: 'keyword' }));
+    // A selectable "Nova Awards" header matches any requirement with a stem_nova award,
+    // acting as a parent tag over the individual awards (see visibleCloud's grouping).
+    if (stemNovaSorted.length) {
+        cloud.push({ text: 'Nova Awards', type: 'nova', isGroup: true });
+    }
     stemNovaSorted.forEach(name => cloud.push({ text: name, type: 'nova' }));
     return cloud;
 }
@@ -146,7 +151,7 @@ function filterRequirementsByRank(requirements, selectedCloud) {
             (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
             (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
             (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+            (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (sel.isGroup || req.stemNova.includes(sel.text)))
         );
     });
     // Group by rank, then by adventure (as array for Ractive)
@@ -310,6 +315,40 @@ function setupCopyUrlButton() {
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
         const { childrenMap: tagChildrenMap, parentMap: tagParentMap } = buildTagHierarchyMaps(tags);
 
+        // The chain of ancestor tag names (immediate parent first) that must be expanded
+        // for `item` to be visible in the cloud. Empty if it's already top-level.
+        function getAncestorChain(item) {
+            if (item.type === 'nova') {
+                return item.isGroup ? [] : ['Nova Awards'];
+            }
+            const chain = [];
+            let ancestor = tagParentMap[item.text];
+            while (ancestor) {
+                chain.push(ancestor);
+                ancestor = tagParentMap[ancestor];
+            }
+            return chain;
+        }
+
+        // Tags that must be open because a currently selected item lives inside them -- computed
+        // fresh from selectedCloud every time, so it's correct regardless of whether/when the
+        // section had already been manually expanded.
+        function getRequiredOpenTags(selectedCloud) {
+            const requiredOpen = {};
+            selectedCloud.forEach(sel => {
+                getAncestorChain(sel).forEach(tag => { requiredOpen[tag] = true; });
+            });
+            return requiredOpen;
+        }
+
+        // True if any child (or deeper descendant) of `tag` is currently expanded. Collapsing
+        // `tag` would hide that descendant's own expanded section, so its toggle should be inert.
+        function hasExpandedDescendant(tag, expandedTags) {
+            const children = tagChildrenMap[tag];
+            if (!children) return false;
+            return children.some(child => expandedTags[child] || hasExpandedDescendant(child, expandedTags));
+        }
+
         // Build a map of nova_awards name -> url (normalize to lower case, trimmed)
         let novaAwardLinks = {};
         if (data.nova_awards && Array.isArray(data.nova_awards)) {
@@ -373,7 +412,7 @@ function setupCopyUrlButton() {
                     (sel.type === 'req' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
                     (sel.type === 'elec' && (req.adventureAlt === sel.text || req.adventure === sel.text)) ||
                     (sel.type === 'keyword' && req.tags.includes(sel.text)) ||
-                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.includes(sel.text))
+                    (sel.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (sel.isGroup || req.stemNova.includes(sel.text)))
                 );
             }));
             let finalFiltered = filtered;
@@ -427,45 +466,74 @@ function setupCopyUrlButton() {
                 popoverAdventure: null,
                 novaAwardLinks,
                 cloudCollapsed: initialSelectedCloud.length > 0,
+                // Tags the user has manually expanded via the +N/- toggle. Tags required open by
+                // a current selection are derived fresh in visibleCloud, not stored here.
                 expandedTags: {}
             },
             computed: {
                 // Cloud items to render in the expanded (non-collapsed) view: tags nested under
                 // a collapsed parent (e.g. camp-overnight under camp) are hidden until every
-                // ancestor in their chain has been expanded via the +N toggle.
+                // ancestor in their chain has been expanded via the +N toggle. STEM Nova awards
+                // are similarly collapsed behind the selectable "Nova Awards" header (see renderCloud).
                 visibleCloud() {
                     const cloud = this.get('cloud');
-                    const expanded = this.get('expandedTags') || {};
-                    return cloud
-                        .map((item, index) => ({ item, index }))
-                        .filter(({ item }) => {
-                            let ancestor = tagParentMap[item.text];
-                            while (ancestor) {
-                                if (!expanded[ancestor]) return false;
-                                ancestor = tagParentMap[ancestor];
+                    const manualExpanded = this.get('expandedTags') || {};
+                    const requiredOpen = getRequiredOpenTags(this.get('selectedCloud'));
+                    const expanded = Object.assign({}, manualExpanded, requiredOpen);
+                    const novaExpanded = !!expanded['Nova Awards'];
+                    const result = [];
+
+                    cloud.forEach((item, index) => {
+                        if (item.type === 'nova') {
+                            if (item.isGroup) {
+                                result.push(Object.assign({}, item, {
+                                    index,
+                                    depth: 0,
+                                    hasChildren: true,
+                                    childCount: cloud.filter(c => c.type === 'nova' && !c.isGroup).length,
+                                    expanded: novaExpanded,
+                                    forcedOpen: !!requiredOpen['Nova Awards']
+                                }));
+                            } else if (novaExpanded) {
+                                result.push(Object.assign({}, item, {
+                                    index,
+                                    depth: 1,
+                                    hasChildren: false,
+                                    childCount: 0,
+                                    expanded: false
+                                }));
                             }
-                            return true;
-                        })
-                        .map(({ item, index }) => {
-                            let depth = 0;
-                            let ancestor = tagParentMap[item.text];
-                            while (ancestor) {
-                                depth++;
-                                ancestor = tagParentMap[ancestor];
-                            }
-                            const children = tagChildrenMap[item.text];
-                            return Object.assign({}, item, {
-                                index,
-                                depth,
-                                hasChildren: !!children,
-                                childCount: children ? children.length : 0,
-                                expanded: !!expanded[item.text]
-                            });
-                        });
+                            return;
+                        }
+
+                        let ancestor = tagParentMap[item.text];
+                        while (ancestor) {
+                            if (!expanded[ancestor]) return;
+                            ancestor = tagParentMap[ancestor];
+                        }
+                        let depth = 0;
+                        let d = tagParentMap[item.text];
+                        while (d) {
+                            depth++;
+                            d = tagParentMap[d];
+                        }
+                        const children = tagChildrenMap[item.text];
+                        result.push(Object.assign({}, item, {
+                            index,
+                            depth,
+                            hasChildren: !!children,
+                            childCount: children ? children.length : 0,
+                            expanded: !!expanded[item.text],
+                            forcedOpen: !!requiredOpen[item.text] || hasExpandedDescendant(item.text, expanded)
+                        }));
+                    });
+
+                    return result;
                 }
             },
             on: {
                 toggleTagExpand(event) {
+                    if (event.node.getAttribute('data-forced') === 'true') return; // inert while a selected child forces it open
                     const tag = event.node.getAttribute('data-tag');
                     const expanded = Object.assign({}, this.get('expandedTags'));
                     expanded[tag] = !expanded[tag];
@@ -478,6 +546,8 @@ function setupCopyUrlButton() {
                     const idx = selected.findIndex(sel => sel.text === item.text && sel.type === item.type);
                     if (idx >= 0) selected.splice(idx, 1);
                     else selected.push(item);
+                    // No manual expandedTags bookkeeping needed here -- visibleCloud derives which
+                    // ancestors must be open from selectedCloud on every recompute.
                     this.set('selectedCloud', selected);
                     applyFilters(selected);
                 },
@@ -518,6 +588,7 @@ function setupCopyUrlButton() {
             ractive.set('rankOrder', []);
             ractive.set('rankStyles', {});
             ractive.set('rankGrades', {});
+            ractive.set('expandedTags', {});
             ractive.set('cloudCollapsed', false); // Expand the cloud
             updateQueryStringAndTitle([], selectedRanks);
         });
