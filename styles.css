@@ -74,7 +74,7 @@
 	font-weight: bold;
 	color: #ff3860;
 	background: #fff0f3;
-	border: 1px solid #ff3860;
+	border: 1px solid #ffd6dd;
 	border-radius: 999px;
 	min-width: 1.6em;
 	padding: 0 0.3em;
@@ -86,6 +86,22 @@
 .tag-expand-toggle:hover {
 	background: #ff3860;
 	color: #fff;
+}
+.tag-expand-toggle.expanded {
+	background: #fff0f3;
+	border-color: #ff3860;
+	color: #ff3860;
+}
+.tag-expand-toggle.expanded:hover {
+	background: #ff3860;
+	color: #fff;
+}
+
+/* Highlight a child tag that just became visible from expanding its parent.
+   Dashed outline (not a filled box-shadow ring) so it can't be mistaken for .selected. */
+.cloud-keyword.revealed-child:not(.selected) {
+	outline: 1px dashed #ffcc80;
+	outline-offset: 2px;
 }
 
 .tag.is-light {
