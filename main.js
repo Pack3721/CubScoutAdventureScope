@@ -348,25 +348,45 @@ function decodeRanks(str) {
     return RANK_ORDER.filter(rank => ranks.includes(rank));
 }
 
-// Copy URL button logic
+// Copy URL / Share button logic. Where the Web Share API is available (mainly mobile
+// browsers), use the native share sheet instead of a clipboard copy -- it's the more
+// natural mobile pattern (Messages, Mail, AirDrop, etc.) and needs no "Copied!" feedback
+// of its own since the OS sheet already confirms the action.
 function setupCopyUrlButton() {
     var btn = document.getElementById('copy-url-btn');
     if (!btn) return;
+    var label = btn.querySelector('.copy-url-label');
+    var icon = document.getElementById('copy-url-icon');
+
+    if (navigator.share) {
+        btn.title = 'Share this view';
+        if (label) label.textContent = 'Share';
+        if (icon) icon.innerHTML = '<path fill="currentColor" d="M13 8V2l7 7-7 7v-6c-4 0-6.5 1.5-8 5C5 9 7 8 13 8Z"/>';
+        btn.addEventListener('click', function() {
+            navigator.share({ title: document.title, url: window.location.href })
+                .catch(function(err) {
+                    if (err && err.name === 'AbortError') return; // user dismissed the sheet
+                    console.warn('Share failed:', err);
+                });
+        });
+        return;
+    }
+
     btn.addEventListener('click', function() {
         var url = window.location.href;
         navigator.clipboard.writeText(url).then(function() {
             btn.classList.add('is-success');
-            btn.querySelector('span:last-child').textContent = 'Copied!';
+            if (label) label.textContent = 'Copied!';
             setTimeout(function() {
                 btn.classList.remove('is-success');
-                btn.querySelector('span:last-child').textContent = 'Copy URL';
+                if (label) label.textContent = 'Copy URL';
             }, 1200);
         }, function() {
             btn.classList.add('is-danger');
-            btn.querySelector('span:last-child').textContent = 'Failed';
+            if (label) label.textContent = 'Failed';
             setTimeout(function() {
                 btn.classList.remove('is-danger');
-                btn.querySelector('span:last-child').textContent = 'Copy URL';
+                if (label) label.textContent = 'Copy URL';
             }, 1200);
         });
     });
