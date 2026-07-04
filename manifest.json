@@ -1,0 +1,12 @@
+{
+  "name": "Cub Scout Adventure Scope",
+  "short_name": "AdventureScope",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3273dc",
+  "icons": [
+    { "src": "graphics/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "graphics/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
