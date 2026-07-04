@@ -75,7 +75,10 @@ if ('serviceWorker' in navigator) {
 // baked in by Jekyll at build time) against version.json, always fetched fresh, which
 // reflects whatever is actually deployed right now.
 function checkForUpdate() {
-    fetch('version.json', { cache: 'no-store' })
+    // The timestamp query param (not just `cache: 'no-store'`) is deliberate: Safari has a
+    // history of not reliably honoring no-store for a URL it's fetched before, so a unique
+    // URL every time is the only fully dependable way to defeat any HTTP-cache layer here.
+    fetch('version.json?_=' + Date.now(), { cache: 'no-store' })
         .then(res => res.json())
         .then(data => {
             if (data.version && data.version !== window.APP_VERSION) {
