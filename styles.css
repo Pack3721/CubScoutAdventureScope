@@ -144,6 +144,12 @@
 	cursor: pointer;
 }
 
+/* Shrink the page title smoothly as the viewport narrows, instead of wrapping to two lines.
+   Selector needs two classes to out-specificity Bulma's `.title.is-2` rule. */
+.title.site-title {
+	font-size: clamp(1.1rem, 7vw, 2.5rem);
+}
+
 /* QR code visibility: hide on mobile except when printing */
 @media (max-width: 600px) {
 	#qr-code-container {
