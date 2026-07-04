@@ -170,7 +170,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/air-of-the-wolf/
   required: false
   alternate_name: Engineering
-  stem_nova: [Swing!, 1-2-3 Go!, Fearful Symmetry]
+  stem_nova: [Swing!, 1-2-3 Go!, Fearful Symmetry, Motorsport Science]
   requirements:
     - name: air-of-the-wolf#1
       description: Make a paper airplane and fly it five times. Record the flight distance and time.
@@ -397,7 +397,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/race-time-wolf/
   required: false
   alternate_name: Race Time
-  stem_nova: [Up and Away, 1-2-3 Go!, Fearful Symmetry]
+  stem_nova: [Up and Away, 1-2-3 Go!, Fearful Symmetry, Motorsport Science]
   requirements:
     - name: race-time-wolf#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.

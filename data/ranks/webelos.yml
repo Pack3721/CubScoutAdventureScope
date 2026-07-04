@@ -337,7 +337,7 @@ adventure_list:
 - name: Modular Design
   url: https://www.scouting.org/cub-scout-adventures/modular-design/
   required: false
-  stem_nova: [Cub Scouts Can Code, Swing!, 1-2-3 Go!, Fearful Symmetry]
+  stem_nova: [Cub Scouts Can Code, Swing!, 1-2-3 Go!, Fearful Symmetry, Motorsport Science]
   requirements:
     - name: modular-design#1
       description: Learn what modular design is and identify three things that use modular design in their construction.
@@ -416,7 +416,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/race-time-webelos/
   required: false
   alternate_name: Race Time
-  stem_nova: [Up and Away]
+  stem_nova: [Up and Away, Motorsport Science]
   requirements:
     - name: race-time-webelos#1
       description: With an adult, build either a Pinewood Derby® and car or a Raingutter Regatta™  boat.

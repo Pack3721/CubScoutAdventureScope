@@ -182,7 +182,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/engineer/
   required: false
   alternate_name: Engineering
-  stem_nova: [Out of This World, Swing!]
+  stem_nova: [Out of This World, Swing!, Motorsport Science]
   requirements:
     - name: engineer#1
       description: Learn the focus, related sciences, and products of civil, electrical, and mechanical engineers.
@@ -355,7 +355,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/race-time-aol/
   required: false
   alternate_name: Race Time
-  stem_nova: [Up and Away, 1-2-3 Go!]
+  stem_nova: [Up and Away, 1-2-3 Go!, Motorsport Science]
   requirements:
     - name: race-time-aol#1
       description: With adult supervision, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.

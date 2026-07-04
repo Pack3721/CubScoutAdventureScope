@@ -181,7 +181,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/baloo-the-builder/
   required: false
   alternate_name: Engineering
-  stem_nova: [Swing!]
+  stem_nova: [Swing!, Motorsport Science]
   requirements:
     - name: baloo-the-builder#1
       description: Learn about some basic tools and the proper use of each tool. Learn about and understand the need for safety when you work with tools.
@@ -377,7 +377,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/race-time-bear/
   required: false
   alternate_name: Race Time
-  stem_nova: [Up and Away, 1-2-3 Go!]
+  stem_nova: [Up and Away, 1-2-3 Go!, Motorsport Science]
   requirements:
     - name: race-time-bear#1
       description: With an adult, build either a Pinewood Derby® car or a Raingutter Regatta™ boat.

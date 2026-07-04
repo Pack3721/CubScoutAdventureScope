@@ -147,6 +147,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/designed-by-tiger/
   required: false
   alternate_name: Engineering
+  stem_nova: [Motorsport Science]
   requirements:
     - name: designed-by-tiger#1
       description: Think about something that you would like to build. Draw a picture of what the final project should look like.
@@ -236,6 +237,7 @@ adventure_list:
   url: https://www.scouting.org/cub-scout-adventures/race-time-tiger/
   required: false
   alternate_name: Race Time
+  stem_nova: [Motorsport Science]
   requirements:
     - name: race-time-tiger#1
       description: With your Tiger adult partner, assemble and decorate either a Pinewood Derby® car or a Raingutter Regatta™ boat.
