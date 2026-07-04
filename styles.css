@@ -1,4 +1,31 @@
 
+/* Update-available banner: hidden until a newer deploy is detected (see checkForUpdate in main.js) */
+.update-banner {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75em;
+	background: #3273dc;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 0.95em;
+}
+.update-banner.is-active {
+	display: flex;
+}
+.update-banner-dismiss {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.3em;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0 0.3em;
+}
+.update-banner-dismiss:hover {
+	opacity: 0.8;
+}
+
 /* Word cloud base style */
 .cloud-keyword {
 	font-size: 1.2em;

@@ -16,9 +16,15 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<meta name="apple-mobile-web-app-title" content="AdventureScope">
+	<script>window.APP_VERSION = "{{ site.github.build_revision | default: 'dev' }}";</script>
 </head>
 
 <body>
+	<div id="update-banner" class="update-banner">
+		<span id="update-banner-text">A new version is available.</span>
+		<button id="update-banner-refresh" class="button is-small is-light">Refresh</button>
+		<button id="update-banner-dismiss" class="update-banner-dismiss" title="Dismiss" aria-label="Dismiss">&times;</button>
+	</div>
 	<section class="section">
 		<div class="container">
 			<div class="mb-2">

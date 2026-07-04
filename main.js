@@ -42,6 +42,42 @@ function getCacheBuster() {
     return '';
 }
 
+// Register the service worker for offline support.
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+            .catch(err => console.warn('Service worker registration failed:', err));
+    });
+}
+
+// Update banner: compares the version this page was loaded with (window.APP_VERSION,
+// baked in by Jekyll at build time) against version.json, always fetched fresh, which
+// reflects whatever is actually deployed right now.
+function checkForUpdate() {
+    fetch('version.json', { cache: 'no-store' })
+        .then(res => res.json())
+        .then(data => {
+            if (data.version && data.version !== window.APP_VERSION) {
+                const banner = document.getElementById('update-banner');
+                const text = document.getElementById('update-banner-text');
+                if (text) text.title = 'New version: ' + data.version;
+                if (banner) banner.classList.add('is-active');
+            }
+        })
+        .catch(() => {}); // offline or fetch failed -- nothing to report
+}
+window.addEventListener('load', checkForUpdate);
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') checkForUpdate();
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const refreshBtn = document.getElementById('update-banner-refresh');
+    const dismissBtn = document.getElementById('update-banner-dismiss');
+    const banner = document.getElementById('update-banner');
+    if (refreshBtn) refreshBtn.addEventListener('click', () => window.location.reload());
+    if (dismissBtn) dismissBtn.addEventListener('click', () => banner && banner.classList.remove('is-active'));
+});
+
 // Helper: fetch YAML file with cache busting using extracted value
 async function fetchYAML(url) {
     const cacheBuster = encodeURIComponent(getCacheBuster());
