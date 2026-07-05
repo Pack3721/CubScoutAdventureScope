@@ -1,4 +1,27 @@
 
+/* Shown inside #keyword-cloud until Ractive mounts and replaces it -- fills the gap between
+   the OS splash screen disappearing and the YAML/CDN fetches actually completing. */
+.loading-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6em;
+	color: #7a7a7a;
+	padding: 2.5em 0;
+	font-size: 1.05em;
+}
+.loading-spinner {
+	width: 1.1em;
+	height: 1.1em;
+	border: 2px solid #dbdbdb;
+	border-top-color: #3273dc;
+	border-radius: 50%;
+	animation: loading-spin 0.7s linear infinite;
+}
+@keyframes loading-spin {
+	to { transform: rotate(360deg); }
+}
+
 /* Update-available banner: hidden until a newer deploy is detected (see checkForUpdate in main.js) */
 .update-banner {
 	display: none;
