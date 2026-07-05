@@ -446,6 +446,13 @@ function setupCopyUrlButton() {
         const { requiredNames, notRequiredNames, tags, stemNovaNames, requirements } = extractKeywordsAndRequirements(data);
         const cloud = renderCloud({ requiredNames, notRequiredNames, tags, stemNovaNames });
         const { childrenMap: tagChildrenMap, parentMap: tagParentMap } = buildTagHierarchyMaps(tags);
+        // Fold the "Nova Awards" header into the same generic parent/child maps instead of
+        // special-casing it throughout: every individual award is a child of that one header.
+        const novaAwardNames = cloud.filter(c => c.type === 'nova' && !c.isGroup).map(c => c.text);
+        if (novaAwardNames.length) {
+            tagChildrenMap['Nova Awards'] = novaAwardNames;
+            novaAwardNames.forEach(name => { tagParentMap[name] = 'Nova Awards'; });
+        }
 
         // Which ranks each cloud item actually applies to (computed once, since cloud and
         // requirements are both static after load). Used to grey out items that don't apply to
@@ -460,11 +467,9 @@ function setupCopyUrlButton() {
         });
 
         // The chain of ancestor tag names (immediate parent first) that must be expanded
-        // for `item` to be visible in the cloud. Empty if it's already top-level.
+        // for `item` to be visible in the cloud. Empty if it's already top-level. Works for
+        // any item type -- tagParentMap covers both keyword tags and nova awards (seeded above).
         function getAncestorChain(item) {
-            if (item.type === 'nova') {
-                return item.isGroup ? [] : ['Nova Awards'];
-            }
             const chain = [];
             let ancestor = tagParentMap[item.text];
             while (ancestor) {
@@ -622,68 +627,40 @@ function setupCopyUrlButton() {
             },
             computed: {
                 // Cloud items to render in the expanded (non-collapsed) view: tags nested under
-                // a collapsed parent (e.g. camp-overnight under camp) are hidden until every
-                // ancestor in their chain has been expanded via the +N toggle. STEM Nova awards
-                // are similarly collapsed behind the selectable "Nova Awards" header (see renderCloud).
+                // a collapsed parent (e.g. camp-overnight under camp, or an individual STEM Nova
+                // award under the "Nova Awards" header) are hidden until every ancestor in their
+                // chain has been expanded via the +N toggle. One unified pass handles every cloud
+                // item type, since getAncestorChain/tagParentMap/tagChildrenMap already cover both
+                // keyword tags and nova awards (see the seeding right after buildTagHierarchyMaps).
                 visibleCloud() {
                     const cloud = this.get('cloud');
+                    const selectedCloud = this.get('selectedCloud');
                     const manualExpanded = this.get('expandedTags') || {};
-                    const requiredOpen = getRequiredOpenTags(this.get('selectedCloud'));
+                    const requiredOpen = getRequiredOpenTags(selectedCloud);
                     const expanded = Object.assign({}, manualExpanded, requiredOpen);
-                    const novaExpanded = !!expanded['Nova Awards'];
                     const activeRanksSet = new Set(this.get('selectedRanks') || []);
                     const isRankIrrelevant = item => {
                         if (!activeRanksSet.size) return false;
                         const ranks = itemRankSets.get(item);
-                        return !!ranks && ranks.size > 0 && ![...ranks].some(r => activeRanksSet.has(r));
+                        if (!ranks || !ranks.size) return false;
+                        for (const rank of ranks) if (activeRanksSet.has(rank)) return false;
+                        return true;
                     };
                     const result = [];
 
                     cloud.forEach((item, index) => {
-                        if (item.type === 'nova') {
-                            if (item.isGroup) {
-                                result.push(Object.assign({}, item, {
-                                    index,
-                                    depth: 0,
-                                    hasChildren: true,
-                                    childCount: cloud.filter(c => c.type === 'nova' && !c.isGroup).length,
-                                    expanded: novaExpanded,
-                                    forcedOpen: !!requiredOpen['Nova Awards'],
-                                    rankIrrelevant: isRankIrrelevant(item)
-                                }));
-                            } else if (novaExpanded) {
-                                result.push(Object.assign({}, item, {
-                                    index,
-                                    depth: 1,
-                                    hasChildren: false,
-                                    childCount: 0,
-                                    expanded: false,
-                                    rankIrrelevant: isRankIrrelevant(item)
-                                }));
-                            }
-                            return;
-                        }
-
-                        let ancestor = tagParentMap[item.text];
-                        while (ancestor) {
-                            if (!expanded[ancestor]) return;
-                            ancestor = tagParentMap[ancestor];
-                        }
-                        let depth = 0;
-                        let d = tagParentMap[item.text];
-                        while (d) {
-                            depth++;
-                            d = tagParentMap[d];
-                        }
+                        const chain = getAncestorChain(item);
+                        if (chain.some(ancestor => !expanded[ancestor])) return;
                         const children = tagChildrenMap[item.text];
                         result.push(Object.assign({}, item, {
                             index,
-                            depth,
+                            depth: chain.length,
                             hasChildren: !!children,
                             childCount: children ? children.length : 0,
                             expanded: !!expanded[item.text],
                             forcedOpen: !!requiredOpen[item.text] || hasExpandedDescendant(item.text, expanded),
-                            rankIrrelevant: isRankIrrelevant(item)
+                            rankIrrelevant: isRankIrrelevant(item),
+                            selected: selectedCloud.includes(item)
                         }));
                     });
 
@@ -692,8 +669,10 @@ function setupCopyUrlButton() {
             },
             on: {
                 toggleTagExpand(event) {
-                    if (event.node.getAttribute('data-forced') === 'true') return; // inert while a selected child forces it open
                     const tag = event.node.getAttribute('data-tag');
+                    // Inert while a selected child forces it open -- collapsing it wouldn't hide
+                    // anything since the required-open computation would just force it back.
+                    if (getRequiredOpenTags(this.get('selectedCloud'))[tag]) return;
                     const expanded = Object.assign({}, this.get('expandedTags'));
                     expanded[tag] = !expanded[tag];
                     this.set('expandedTags', expanded);

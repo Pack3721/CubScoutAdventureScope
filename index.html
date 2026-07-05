@@ -127,7 +127,7 @@
 						  {{#if !cloudCollapsed}}
 							  {{#each visibleCloud:vi}}
 								<span class="cloud-tag-wrapper" style="{{visibleCloud[vi].depth ? 'margin-left: ' + (visibleCloud[vi].depth * 1) + 'em;' : ''}}">
-									<span class="cloud-keyword {{visibleCloud[vi].type}} {{selectedCloud.includes(cloud[visibleCloud[vi].index]) ? 'selected' : ''}} {{visibleCloud[vi].depth ? 'revealed-child' : ''}} {{visibleCloud[vi].rankIrrelevant ? 'rank-irrelevant' : ''}}"
+									<span class="cloud-keyword {{visibleCloud[vi].type}} {{visibleCloud[vi].selected ? 'selected' : ''}} {{visibleCloud[vi].depth ? 'revealed-child' : ''}} {{visibleCloud[vi].rankIrrelevant ? 'rank-irrelevant' : ''}}"
 										on-click="toggleCloud"
 										data-index="{{visibleCloud[vi].index}}">
 									{{#if visibleCloud[vi].type === 'nova'}}
@@ -137,7 +137,7 @@
 									{{/if}}
 									</span>
 									{{#if visibleCloud[vi].hasChildren}}
-										<span class="tag-expand-toggle {{visibleCloud[vi].expanded ? 'expanded' : ''}} {{visibleCloud[vi].forcedOpen ? 'forced-open' : ''}}" on-click="toggleTagExpand" data-tag="{{visibleCloud[vi].text}}" data-forced="{{visibleCloud[vi].forcedOpen}}" title="{{visibleCloud[vi].forcedOpen ? 'A selected tag is inside; expanded automatically' : (visibleCloud[vi].expanded ? 'Hide' : 'Show') + ' sub-tags'}}">{{visibleCloud[vi].expanded ? '−' : '+' + visibleCloud[vi].childCount}}</span>
+										<span class="tag-expand-toggle {{visibleCloud[vi].expanded ? 'expanded' : ''}} {{visibleCloud[vi].forcedOpen ? 'forced-open' : ''}}" on-click="toggleTagExpand" data-tag="{{visibleCloud[vi].text}}" title="{{visibleCloud[vi].forcedOpen ? 'A selected tag is inside; expanded automatically' : (visibleCloud[vi].expanded ? 'Hide' : 'Show') + ' sub-tags'}}">{{visibleCloud[vi].expanded ? '−' : '+' + visibleCloud[vi].childCount}}</span>
 									{{/if}}
 								</span>
 							  {{/each}}
