@@ -35,10 +35,15 @@ const CDN_ASSETS = [
     'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js'
 ];
 
+// CACHE_NAME is constant for this worker's lifetime, so open it once and reuse the same
+// Cache handle everywhere instead of calling caches.open() again on every install step and
+// every intercepted fetch.
+const cachePromise = caches.open(CACHE_NAME);
+
 self.addEventListener('install', event => {
     self.skipWaiting();
     event.waitUntil((async () => {
-        const cache = await caches.open(CACHE_NAME);
+        const cache = await cachePromise;
         try {
             // Core shell: hard requirement -- fail install if these don't cache cleanly.
             await cache.addAll(CORE_ASSETS);
@@ -49,13 +54,12 @@ self.addEventListener('install', event => {
             clients.forEach(client => client.postMessage({ type: 'SW_INSTALL_FAILED', error: String(err) }));
             throw err;
         }
-        // Data + CDN: soft -- one flaky fetch shouldn't sink the whole install.
-        await Promise.allSettled(
-            DATA_ASSETS.map(url => fetch(url).then(res => res.ok && cache.put(url, res)))
-        );
-        await Promise.allSettled(
-            CDN_ASSETS.map(url => fetch(url, { mode: 'cors' }).then(res => cache.put(url, res)))
-        );
+        // Data + CDN: soft -- one flaky fetch shouldn't sink the whole install. Run both
+        // groups concurrently rather than awaiting one before starting the other.
+        await Promise.allSettled([
+            ...DATA_ASSETS.map(url => fetch(url).then(res => res.ok && cache.put(url, res))),
+            ...CDN_ASSETS.map(url => fetch(url, { mode: 'cors' }).then(res => cache.put(url, res)))
+        ]);
     })());
 });
 
@@ -75,7 +79,7 @@ function isPinnedCdn(url) {
 }
 
 async function cacheFirst(request) {
-    const cache = await caches.open(CACHE_NAME);
+    const cache = await cachePromise;
     const cached = await cache.match(request);
     if (cached) return cached;
     const fresh = await fetch(request, { mode: request.mode === 'navigate' ? undefined : 'cors' });
