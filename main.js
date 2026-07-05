@@ -42,22 +42,28 @@ function getCacheBuster() {
     return '';
 }
 
-// Register the service worker for offline support. updateViaCache: 'none' ensures the
-// browser never serves the service-worker.js update check from its HTTP cache.
+// Register the service worker for offline support. The registration URL is versioned
+// (?v=<build revision>, same as main.js/styles.css) rather than relying on the browser's
+// own implicit byte-diff of a fixed service-worker.js URL: that diff depends on GitHub
+// Pages' CDN having actually invalidated its cache for that exact URL by the time the
+// check runs, which isn't reliable enough in practice. A URL that's never been requested
+// before can't be served stale by any cache, so registerServiceWorker(version) below is
+// called again -- safely, idempotently -- whenever checkForUpdate() learns of a new version.
 // Skipped on localhost: site.github.build_revision tracks the git HEAD commit, not the
 // working tree, so uncommitted local edits never bust the cache-first cache -- the service
 // worker would otherwise mask live changes during local development.
 const isLocalDev = ['localhost', '127.0.0.1', ''].includes(location.hostname);
+function registerServiceWorker(version) {
+    navigator.serviceWorker.register('service-worker.js?v=' + encodeURIComponent(version), { updateViaCache: 'none' })
+        .catch(err => console.warn('Service worker registration failed:', err));
+}
 if ('serviceWorker' in navigator) {
     if (isLocalDev) {
         // Clean up anything registered/cached from before this check existed.
         navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(reg => reg.unregister()));
         if (window.caches) caches.keys().then(keys => keys.forEach(key => caches.delete(key)));
     } else {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
-                .catch(err => console.warn('Service worker registration failed:', err));
-        });
+        window.addEventListener('load', () => registerServiceWorker(window.APP_VERSION));
     }
     // The service worker posts this when a new version fails to install (e.g. a flaky
     // fetch for one of the precached files) -- otherwise that failure is invisible and the
@@ -74,6 +80,7 @@ if ('serviceWorker' in navigator) {
 // Update banner: compares the version this page was loaded with (window.APP_VERSION,
 // baked in by Jekyll at build time) against version.json, always fetched fresh, which
 // reflects whatever is actually deployed right now.
+let latestKnownVersion = null;
 function checkForUpdate() {
     // The timestamp query param (not just `cache: 'no-store'`) is deliberate: Safari has a
     // history of not reliably honoring no-store for a URL it's fetched before, so a unique
@@ -82,16 +89,15 @@ function checkForUpdate() {
         .then(res => res.json())
         .then(data => {
             if (data.version && data.version !== window.APP_VERSION) {
+                latestKnownVersion = data.version;
                 const banner = document.getElementById('update-banner');
                 const text = document.getElementById('update-banner-text');
                 if (text) text.title = 'New version: ' + data.version;
                 if (banner) banner.classList.add('is-active');
-                // Browsers only check for a new service-worker.js periodically (up to 24h) on
-                // their own; force an immediate check now that we know a new version exists,
-                // so it's installed and active by the time the user clicks Refresh.
-                if (navigator.serviceWorker) {
-                    navigator.serviceWorker.getRegistration().then(reg => reg && reg.update());
-                }
+                // Register the new version's worker now (see registerServiceWorker), so it's
+                // already installed/active in the background by the time the user notices
+                // the banner and clicks Refresh.
+                if (navigator.serviceWorker && !isLocalDev) registerServiceWorker(data.version);
             }
         })
         .catch(() => {}); // offline or fetch failed -- nothing to report
@@ -112,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
             refreshBtn.textContent = 'Refreshing…';
             // If a new worker is still installing/activating, wait for it to take control
             // before reloading so we don't land back on the stale cache; otherwise just
-            // reload -- reg.update() above has likely already finished by the time of a click.
+            // reload -- registerServiceWorker() in checkForUpdate() has likely already
+            // finished installing the new version by the time of a click.
             if (navigator.serviceWorker && navigator.serviceWorker.controller) {
                 let reloaded = false;
                 const reloadOnce = () => {
@@ -121,8 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.location.reload();
                 };
                 navigator.serviceWorker.addEventListener('controllerchange', reloadOnce, { once: true });
-                navigator.serviceWorker.getRegistration().then(reg => reg && reg.update());
-                setTimeout(reloadOnce, 1500); // fallback if already up to date
+                if (latestKnownVersion) registerServiceWorker(latestKnownVersion);
+                setTimeout(reloadOnce, 3000); // fallback if already up to date, or install is slow
             } else {
                 window.location.reload();
             }
