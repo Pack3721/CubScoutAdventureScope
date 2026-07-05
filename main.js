@@ -49,11 +49,13 @@ function getCacheBuster() {
 // check runs, which isn't reliable enough in practice. A URL that's never been requested
 // before can't be served stale by any cache, so registerServiceWorker(version) below is
 // called again -- safely, idempotently -- whenever checkForUpdate() learns of a new version.
-// Skipped on localhost: site.github.build_revision tracks the git HEAD commit, not the
-// working tree, so uncommitted local edits never bust the cache-first cache -- the service
-// worker would otherwise mask live changes during local development.
+// Self-guarding against localhost: site.github.build_revision tracks the git HEAD commit,
+// not the working tree, so uncommitted local edits never bust the cache-first cache -- the
+// service worker would otherwise mask live changes during local development. Callers don't
+// need to know dev mode exists.
 const isLocalDev = ['localhost', '127.0.0.1', ''].includes(location.hostname);
 function registerServiceWorker(version) {
+    if (isLocalDev) return;
     navigator.serviceWorker.register('service-worker.js?v=' + encodeURIComponent(version), { updateViaCache: 'none' })
         .catch(err => console.warn('Service worker registration failed:', err));
 }
@@ -71,10 +73,21 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.addEventListener('message', event => {
         if (event.data && event.data.type === 'SW_INSTALL_FAILED') {
             console.warn('Service worker install failed:', event.data.error);
-            const errorBanner = document.getElementById('update-banner-error');
-            if (errorBanner) errorBanner.classList.add('is-active');
+            setBannerActive(errorBanner, true);
         }
     });
+}
+
+// Update banner elements + small helpers, shared by checkForUpdate() and the click wiring below.
+const updateBanner = document.getElementById('update-banner');
+const updateBannerText = document.getElementById('update-banner-text');
+const errorBanner = document.getElementById('update-banner-error');
+function setBannerActive(el, active) {
+    if (el) el.classList.toggle('is-active', active);
+}
+function onClick(id, handler) {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', handler);
 }
 
 // Update banner: compares the version this page was loaded with (window.APP_VERSION,
@@ -90,14 +103,12 @@ function checkForUpdate() {
         .then(data => {
             if (data.version && data.version !== window.APP_VERSION) {
                 latestKnownVersion = data.version;
-                const banner = document.getElementById('update-banner');
-                const text = document.getElementById('update-banner-text');
-                if (text) text.title = 'New version: ' + data.version;
-                if (banner) banner.classList.add('is-active');
+                if (updateBannerText) updateBannerText.title = 'New version: ' + data.version;
+                setBannerActive(updateBanner, true);
                 // Register the new version's worker now (see registerServiceWorker), so it's
                 // already installed/active in the background by the time the user notices
                 // the banner and clicks Refresh.
-                if (navigator.serviceWorker && !isLocalDev) registerServiceWorker(data.version);
+                if (navigator.serviceWorker) registerServiceWorker(data.version);
             }
         })
         .catch(() => {}); // offline or fetch failed -- nothing to report
@@ -107,38 +118,32 @@ document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') checkForUpdate();
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const refreshBtn = document.getElementById('update-banner-refresh');
-    const dismissBtn = document.getElementById('update-banner-dismiss');
-    const banner = document.getElementById('update-banner');
-    if (refreshBtn) {
-        refreshBtn.addEventListener('click', () => {
-            // Immediate feedback so the button doesn't feel like it's doing nothing while
-            // we wait on the service worker below.
-            refreshBtn.disabled = true;
-            refreshBtn.textContent = 'Refreshing…';
-            // If a new worker is still installing/activating, wait for it to take control
-            // before reloading so we don't land back on the stale cache; otherwise just
-            // reload -- registerServiceWorker() in checkForUpdate() has likely already
-            // finished installing the new version by the time of a click.
-            if (navigator.serviceWorker && navigator.serviceWorker.controller) {
-                let reloaded = false;
-                const reloadOnce = () => {
-                    if (reloaded) return;
-                    reloaded = true;
-                    window.location.reload();
-                };
-                navigator.serviceWorker.addEventListener('controllerchange', reloadOnce, { once: true });
-                if (latestKnownVersion) registerServiceWorker(latestKnownVersion);
-                setTimeout(reloadOnce, 3000); // fallback if already up to date, or install is slow
-            } else {
+    onClick('update-banner-refresh', () => {
+        const refreshBtn = document.getElementById('update-banner-refresh');
+        // Immediate feedback so the button doesn't feel like it's doing nothing while
+        // we wait on the service worker below.
+        refreshBtn.disabled = true;
+        refreshBtn.textContent = 'Refreshing…';
+        // If a new worker is still installing/activating, wait for it to take control
+        // before reloading so we don't land back on the stale cache; otherwise just
+        // reload -- registerServiceWorker() in checkForUpdate() has likely already
+        // finished installing the new version by the time of a click.
+        if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+            let reloaded = false;
+            const reloadOnce = () => {
+                if (reloaded) return;
+                reloaded = true;
                 window.location.reload();
-            }
-        });
-    }
-    if (dismissBtn) dismissBtn.addEventListener('click', () => banner && banner.classList.remove('is-active'));
-    const errorDismissBtn = document.getElementById('update-banner-error-dismiss');
-    const errorBanner = document.getElementById('update-banner-error');
-    if (errorDismissBtn) errorDismissBtn.addEventListener('click', () => errorBanner && errorBanner.classList.remove('is-active'));
+            };
+            navigator.serviceWorker.addEventListener('controllerchange', reloadOnce, { once: true });
+            if (latestKnownVersion) registerServiceWorker(latestKnownVersion);
+            setTimeout(reloadOnce, 3000); // fallback if already up to date, or install is slow
+        } else {
+            window.location.reload();
+        }
+    });
+    onClick('update-banner-dismiss', () => setBannerActive(updateBanner, false));
+    onClick('update-banner-error-dismiss', () => setBannerActive(errorBanner, false));
 });
 
 // Helper: fetch YAML file with cache busting using extracted value
