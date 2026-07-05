@@ -233,7 +233,7 @@ function renderCloud({ requiredNames, notRequiredNames, tags }) {
 function buildTagHierarchyMaps(tagsSet) {
     const childrenMap = {};
     const parentMap = {};
-    Array.from(tagsSet).forEach(tag => {
+    tagsSet.forEach(tag => {
         const parts = tag.split('-');
         for (let i = parts.length - 1; i > 0; i--) {
             const candidate = parts.slice(0, i).join('-');
@@ -250,8 +250,7 @@ function buildTagHierarchyMaps(tagsSet) {
 // True if a cloud item (req/elec adventure name, keyword tag, or nova award/group) applies to
 // a given requirement. Shared by the cloud-selection filter and the per-rank relevance map.
 function cloudItemMatchesRequirement(item, req) {
-    return (item.type === 'req' && (req.adventureAlt === item.text || req.adventure === item.text)) ||
-        (item.type === 'elec' && (req.adventureAlt === item.text || req.adventure === item.text)) ||
+    return ((item.type === 'req' || item.type === 'elec') && (req.adventureAlt === item.text || req.adventure === item.text)) ||
         (item.type === 'keyword' && req.tags.includes(item.text)) ||
         (item.type === 'nova' && Array.isArray(req.stemNova) && req.stemNova.length && (item.isGroup || req.stemNova.includes(item.text)));
 }
