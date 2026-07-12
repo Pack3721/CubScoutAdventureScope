@@ -3,14 +3,14 @@ Website to cross reference Cub Scout Adventures across ranks.
 
 ## Features
 
-- **Keyword/tag cloud filtering** — pick one or more adventures, requirements,
+- **Keyword/tag cloud filtering** — pick one or more generic adventures descriptions
   or tags and the list narrows to matching requirements across all ranks.
   Tags are hierarchical (e.g. `safety` → `safety-water`); child tags are
   collapsed under their parent until expanded (via the `+N` toggle, or
   automatically when you select a child tag directly).
 - **Rank filter** — show/hide individual ranks (Lion through Arrow of Light)
   independent of the keyword filter.
-- **STEM Nova award callouts** — requirements that count toward a Nova Award
+- **STEM Nova award callouts** — adventures that count toward a Nova Award
   show a popover linking to the award's official PDF.
 - **Shareable views** — the current keyword/rank selection is encoded into
   the URL query string, with a "Copy URL" button and a live QR code. The QR
