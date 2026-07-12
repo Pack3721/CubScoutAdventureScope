@@ -30,7 +30,7 @@ Tags represent **options** for den leaders, not just what a requirement explicit
 ## Tag conventions
 
 ### Parent/child tags
-Always include **both** the parent tag and the child tag when a child applies. Never use a child tag without its parent.
+Generally include **both** the parent tag and the child tag when a child applies. Strong consider any case of using a child tag without its parent.
 
 | Parent | Children |
 |--------|----------|
