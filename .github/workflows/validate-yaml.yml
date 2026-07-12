@@ -1,0 +1,33 @@
+name: Validate YAML
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install PyYAML
+        run: pip install pyyaml
+      - name: Validate YAML
+        run: |
+          python3 -c "
+          import glob, sys, yaml
+          ok = True
+          for f in sorted(glob.glob('data/**/*.yml', recursive=True)):
+              try:
+                  with open(f) as fh:
+                      yaml.safe_load(fh)
+                  print(f'OK: {f}')
+              except yaml.YAMLError as e:
+                  print(f'ERROR: {f}: {e}')
+                  ok = False
+          sys.exit(0 if ok else 1)
+          "
