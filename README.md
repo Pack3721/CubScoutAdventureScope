@@ -10,7 +10,7 @@ Website to cross reference Cub Scout Adventures across ranks.
   automatically when you select a child tag directly).
 - **Rank filter** — show/hide individual ranks (Lion through Arrow of Light)
   independent of the keyword filter.
-- **STEM Nova award callouts** — requirements that count toward a Nova Award
+- **STEM Nova award callouts** — adventures that count toward a Nova Award
   show a popover linking to the award's official PDF.
 - **Shareable views** — the current keyword/rank selection is encoded into
   the URL query string, with "Copy URL" and a live QR code for sharing a
