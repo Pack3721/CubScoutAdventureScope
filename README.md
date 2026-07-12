@@ -5,8 +5,9 @@ Website to cross reference Cub Scout Adventures across ranks.
 
 - **Keyword/tag cloud filtering** — pick one or more adventures, requirements,
   or tags and the list narrows to matching requirements across all ranks.
-  Tags are hierarchical (e.g. `camp` → `camp-overnight`); picking a parent
-  tag's children auto-expands under it.
+  Tags are hierarchical (e.g. `camp` → `camp-overnight`); child tags are
+  collapsed under their parent until expanded (via the `+N` toggle, or
+  automatically when you select a child tag directly).
 - **Rank filter** — show/hide individual ranks (Lion through Arrow of Light)
   independent of the keyword filter.
 - **STEM Nova award callouts** — requirements that count toward a Nova Award
@@ -39,8 +40,9 @@ To refine or extend content:
   use to satisfy an open-ended requirement, not just what's explicitly named.
   For example, the Lion requirement "choose a job that will help your
   family" (`data/ranks/lion.yml`) doesn't mention cooking, but making a meal
-  is a valid job choice, so it's tagged `food-prep-meal` — a leader
-  filtering looking for cross rank requirments for an activity by that tag should be able to find it. 
+  is a valid job choice, so it's tagged `food-prep-meal` — a leader looking
+  across ranks for requirements an activity like meal prep could satisfy
+  should find it by filtering on that tag.
 - Every push is checked by the `Validate YAML` GitHub Action; a syntax error
   in any `data/**/*.yml` file will fail the run.
 
@@ -60,9 +62,10 @@ repo has that wired up as a convenience — it's not required:
 
 - Install the recommended **Shopify Liquid** extension
   (`sissel.shopify-liquid`) for syntax highlighting of `index.html`'s Liquid
-  tags. Note it also highlights the `{{ }}` / `{% %}` inside the
-  `{% raw %}` block, which is actually Ractive template syntax, not Liquid, but is beneficial —
-  `raw` only affects Jekyll's build-time processing, not the editor.
+  tags. It also highlights the `{{ }}` / `{% %}` inside the `{% raw %}`
+  block — that's actually Ractive template syntax, not Liquid (`raw` only
+  affects Jekyll's build-time processing, not the editor), but the
+  highlighting is still useful there.
 - One-time: `bundle install` (uses the Ruby version pinned in
   `.ruby-version` via chruby).
 - Then **Terminal → Run Task → Jekyll: serve** starts `bundle exec jekyll
