@@ -5,7 +5,7 @@ Website to cross reference Cub Scout Adventures across ranks.
 
 - **Keyword/tag cloud filtering** — pick one or more adventures, requirements,
   or tags and the list narrows to matching requirements across all ranks.
-  Tags are hierarchical (e.g. `camp` → `camp-overnight`); child tags are
+  Tags are hierarchical (e.g. `safety` → `safety-water`); child tags are
   collapsed under their parent until expanded (via the `+N` toggle, or
   automatically when you select a child tag directly).
 - **Rank filter** — show/hide individual ranks (Lion through Arrow of Light)
@@ -13,11 +13,16 @@ Website to cross reference Cub Scout Adventures across ranks.
 - **STEM Nova award callouts** — requirements that count toward a Nova Award
   show a popover linking to the award's official PDF.
 - **Shareable views** — the current keyword/rank selection is encoded into
-  the URL query string, with "Copy URL" and a live QR code for sharing a
-  filtered view (e.g. printing a den's exact set of requirements).
-- **Offline-capable / installable** — a service worker caches the app for
-  offline use and it's installable as a PWA (`manifest.json`), with an
-  in-app banner when a new version is deployed.
+  the URL query string, with a "Copy URL" button and a live QR code. The QR
+  code is especially handy when printing a filtered view (e.g. a den's exact
+  set of requirements) — scan it straight off the page instead of retyping
+  a URL.
+- **Offline-capable / installable** — a service worker caches the app *and*
+  the `data/*.yml` requirement data, so it keeps working with no connection
+  after one visit. It's installable as a PWA (`manifest.json`) — "Add to
+  Home Screen" on mobile, or the install icon in a desktop browser's address
+  bar — so it opens like a regular app, with an in-app banner when a new
+  version is deployed.
 
 ## Data & how to refine it
 
