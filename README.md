@@ -3,7 +3,7 @@ Website to cross reference Cub Scout Adventures across ranks.
 
 ## Features
 
-- **Keyword/tag cloud filtering** — pick one or more adventures, requirements,
+- **Keyword/tag cloud filtering** — pick one or more generic adventures descriptions
   or tags and the list narrows to matching requirements across all ranks.
   Tags are hierarchical (e.g. `camp` → `camp-overnight`); child tags are
   collapsed under their parent until expanded (via the `+N` toggle, or
